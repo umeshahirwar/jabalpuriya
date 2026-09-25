@@ -1,0 +1,59 @@
+---
+// Weather and Air Quality Widget for Jabalpur, MP
+const weatherData = {
+  city: "Jabalpur",
+  temp: "28°C",
+  condition: "Partly Cloudy",
+  humidity: "62%",
+  wind: "11 km/h ENE",
+  aqi: 58,
+  aqiStatus: "Satisfactory",
+  narmadaGhats: "Water Level Normal",
+  sunrise: "6:04 AM",
+  sunset: "6:12 PM"
+};
+---
+
+<div class="bg-gradient-to-br from-jabalpur-900 to-jabalpur-950 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-jabalpur-800/60">
+  <div class="flex items-center justify-between pb-4 border-b border-jabalpur-800">
+    <div>
+      <div class="flex items-center gap-1.5 text-xs text-jabalpur-300 font-semibold uppercase tracking-wider">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+          <circle cx="10" cy="10" r="6" />
+        </svg>
+        Jabalpur Live Bulletin
+      </div>
+      <h3 class="text-xl font-bold mt-0.5">Sanskaardhani Weather</h3>
+    </div>
+    <div class="text-right">
+      <span class="text-3xl font-extrabold text-white">{weatherData.temp}</span>
+      <span class="block text-[11px] text-slate-300">{weatherData.condition}</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs">
+    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
+      <span class="block text-slate-400">Air Quality (AQI)</span>
+      <span class="text-base font-bold text-emerald-400">{weatherData.aqi}</span>
+      <span class="block text-[10px] text-slate-300">{weatherData.aqiStatus}</span>
+    </div>
+
+    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
+      <span class="block text-slate-400">Narmada Water Level</span>
+      <span class="text-base font-bold text-jabalpur-300">Normal</span>
+      <span class="block text-[10px] text-slate-300">Gwarighat / Bargi</span>
+    </div>
+
+    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
+      <span class="block text-slate-400">Humidity</span>
+      <span class="text-base font-bold text-white">{weatherData.humidity}</span>
+      <span class="block text-[10px] text-slate-300">Wind {weatherData.wind}</span>
+    </div>
+
+    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
+      <span class="block text-slate-400">Sun Timings</span>
+      <span class="text-sm font-bold text-amber-300">🌅 {weatherData.sunrise}</span>
+      <span class="block text-[10px] text-slate-300">🌇 {weatherData.sunset}</span>
+    </div>
+  </div>
+</div>

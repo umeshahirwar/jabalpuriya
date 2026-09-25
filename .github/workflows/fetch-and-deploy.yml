@@ -1,0 +1,60 @@
+name: Jabalpuriya News Aggregator & Netlify Auto-Deploy
+
+on:
+  schedule:
+    # Run every 3 hours (00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC)
+    - cron: '0 */3 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ⚙️ Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci || npm install
+
+      - name: 📡 Execute Jabalpur RSS News Aggregator
+        run: node scripts/fetch-news.mjs
+
+      - name: 🔍 Check for Data Updates
+        id: git-check
+        run: |
+          git config user.name "Jabalpuriya NewsBot"
+          git config user.email "bot@jabalpuriya.com"
+          git add src/data/news.json
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No new articles found during this cycle."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Fresh news stories aggregated."
+          fi
+
+      - name: 💾 Commit and Push Updated News Data
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          git commit -m "chore(news): auto-update Jabalpur news wire [skip ci]"
+          git push origin HEAD
+
+      - name: 🚀 Trigger Netlify Build & Deploy
+        if: steps.git-check.outputs.has_changes == 'true' && env.NETLIFY_BUILD_HOOK != ''
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          curl -X POST -d '{}' "$NETLIFY_BUILD_HOOK"

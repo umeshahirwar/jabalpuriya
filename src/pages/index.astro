@@ -1,0 +1,273 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NewsCard from '../components/NewsCard.astro';
+import WeatherWidget from '../components/WeatherWidget.astro';
+import CommunitySpotlight from '../components/CommunitySpotlight.astro';
+import newsData from '../data/news.json';
+
+// Partition news data
+const featuredArticle = newsData.articles.find(a => a.isFeatured) || newsData.articles[0];
+const regularArticles = newsData.articles.filter(a => a.id !== featuredArticle.id);
+
+// Extract distinct categories
+const categories = ['All', ...new Set(newsData.articles.map(a => a.category))];
+
+const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('en-IN', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'Asia/Kolkata'
+});
+---
+
+<Layout
+  title="Jabalpuriya.com | Jabalpur News, Breaking Updates & Community Guide"
+  description="Discover the latest Jabalpur news, MP smart city projects, Bhedaghat tourism updates, local civic alerts, and community announcements on Jabalpuriya."
+>
+  <div class="space-y-12">
+    
+    <!-- Hero Section: Top Breaking Story & Live Weather Snapshot -->
+    <section class="space-y-6">
+      
+      <!-- Top Alert Ribbon -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white dark:bg-[#0f2139] px-4 py-3 rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-sm gap-2">
+        <div class="flex items-center space-x-2 text-xs">
+          <span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950/80 text-red-700 dark:text-red-400 font-extrabold tracking-wide uppercase">
+            ⚡ Jabalpur Top Wire
+          </span>
+          <span class="text-slate-600 dark:text-slate-300 font-medium truncate">
+            {featuredArticle.title}
+          </span>
+        </div>
+        <div class="text-[11px] text-slate-400 whitespace-nowrap">
+          Updated: {lastUpdatedFormatted} IST
+        </div>
+      </div>
+
+      <!-- Main Hero Grid: Featured Headline + Weather & Quick Stats -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Large Featured Story Banner (2 Cols) -->
+        <div class="lg:col-span-2 relative group rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl min-h-[380px] sm:min-h-[460px] flex flex-col justify-end p-6 sm:p-10">
+          <img
+            src={featuredArticle.imageUrl}
+            alt={featuredArticle.title}
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+
+          <!-- Hero Story Details -->
+          <div class="relative z-10 space-y-4 max-w-2xl">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-jabalpur-secondary text-white shadow-lg">
+                ★ Breaking Headline
+              </span>
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/20 backdrop-blur-md text-white border border-white/20">
+                {featuredArticle.category}
+              </span>
+              <span class="text-xs text-slate-300 flex items-center gap-1 font-medium">
+                • {featuredArticle.source}
+              </span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight drop-shadow-md">
+              <a href={featuredArticle.sourceUrl} target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none">
+                {featuredArticle.title}
+              </a>
+            </h1>
+
+            <p class="text-slate-200 text-sm sm:text-base leading-relaxed line-clamp-3">
+              {featuredArticle.excerpt}
+            </p>
+
+            <div class="pt-2 flex items-center justify-between text-xs text-slate-300">
+              <a
+                href={featuredArticle.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-5 py-2.5 rounded-xl font-bold bg-white text-jabalpur-950 hover:bg-slate-100 transition-colors shadow"
+              >
+                Read Full Story
+                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <span>{featuredArticle.readTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Weather, Helplines & City Metrics (1 Col) -->
+        <div class="flex flex-col gap-6 justify-between">
+          <WeatherWidget />
+
+          <!-- Jabalpur Community Fast Links -->
+          <div class="bg-white dark:bg-[#0f2139] p-5 sm:p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-4">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <span class="text-jabalpur-secondary">📍</span> City Quick Services
+            </h3>
+            
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
+              <a href="#directory" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+                <span>🚌</span> City Bus Routes
+              </a>
+              <a href="#events" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+                <span>🎭</span> Weekend Events
+              </a>
+              <a href="#culture" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+                <span>🌊</span> Narmada Aarti
+              </a>
+              <a href="#directory" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+                <span>🏥</span> Hospitals & Care
+              </a>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+              <span>District Code: MP-20</span>
+              <span>PIN: 482001 - 482056</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- News Feed Section with Interactive Category Filter -->
+    <section id="news-grid" class="space-y-6 pt-4">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-slate-200 dark:border-slate-800">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-jabalpur-secondary">
+            Verified City Journalism
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-1">
+            Latest Jabalpur News & Wire
+          </h2>
+        </div>
+
+        <!-- Filter Pill Buttons -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full" id="category-filter-bar">
+          {categories.map((cat, idx) => (
+            <button
+              type="button"
+              data-filter={cat}
+              class={`category-btn px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-200 cursor-pointer ${
+                idx === 0
+                  ? 'bg-jabalpur-primary text-white shadow-sm'
+                  : 'bg-slate-200/80 text-slate-700 hover:bg-slate-300 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="articles-container">
+        {regularArticles.map((article) => (
+          <NewsCard {...article} />
+        ))}
+      </div>
+
+      <!-- No items fallback -->
+      <div id="no-articles-msg" class="hidden py-12 text-center text-slate-500">
+        <p class="text-base font-semibold">No stories found in this category currently.</p>
+        <p class="text-xs mt-1">Check back in our next 3-hour aggregation cycle.</p>
+      </div>
+    </section>
+
+    <!-- Cultural Showcase Section -->
+    <CommunitySpotlight />
+
+    <!-- Community Feedback, Tip Submission & Social Integration -->
+    <section id="submit-tip" class="my-16 bg-gradient-to-r from-jabalpur-950 via-[#0d223d] to-jabalpur-950 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            📢 Citizen Journalism
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
+            Have a story or civic update from your neighborhood?
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Help keep Jabalpur informed. Whether it's a neighborhood civic issue, an inspiring local achievement, or an upcoming community event in Wright Town, Civil Lines, or Vijay Nagar — let our editorial desk know.
+          </p>
+          <div class="flex items-center space-x-4 pt-2">
+            <div class="flex -space-x-2">
+              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-jabalpur-600 text-center text-xs leading-8 font-bold">J</span>
+              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-amber-600 text-center text-xs leading-8 font-bold">B</span>
+              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-emerald-600 text-center text-xs leading-8 font-bold">P</span>
+            </div>
+            <span class="text-xs text-slate-300 font-medium">Join 25,000+ local Jabalpur readers</span>
+          </div>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/10 space-y-4">
+          <h3 class="text-lg font-bold text-white">Submit News Tip / Event</h3>
+          <form class="space-y-3" onsubmit="event.preventDefault(); alert('Thank you! Your news tip has been sent to our Jabalpur editorial team.'); this.reset();">
+            <div>
+              <label for="tip-name" class="block text-xs font-medium text-slate-300 mb-1">Your Name / Organization</label>
+              <input type="text" id="tip-name" required placeholder="e.g. Amit Verma" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+            </div>
+            <div>
+              <label for="tip-location" class="block text-xs font-medium text-slate-300 mb-1">Location in Jabalpur</label>
+              <input type="text" id="tip-location" required placeholder="e.g. Gorakhpur / Napier Town" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+            </div>
+            <div>
+              <label for="tip-details" class="block text-xs font-medium text-slate-300 mb-1">Tip or Event Details</label>
+              <textarea id="tip-details" rows="3" required placeholder="Brief description of the event or news..." class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500"></textarea>
+            </div>
+            <button type="submit" class="w-full py-2.5 bg-jabalpur-secondary hover:bg-[#c84d22] font-bold text-sm rounded-lg transition-colors shadow">
+              Submit News Tip
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</Layout>
+
+<script>
+  // Category filtering logic
+  const filterBtns = document.querySelectorAll('.category-btn');
+  const articles = document.querySelectorAll('#articles-container article');
+  const noArticlesMsg = document.getElementById('no-articles-msg');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const category = btn.getAttribute('data-filter');
+      
+      // Update button styles
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-jabalpur-primary', 'text-white', 'shadow-sm');
+        b.classList.add('bg-slate-200/80', 'text-slate-700', 'dark:bg-slate-800', 'dark:text-slate-300');
+      });
+      btn.classList.add('bg-jabalpur-primary', 'text-white', 'shadow-sm');
+      btn.classList.remove('bg-slate-200/80', 'text-slate-700', 'dark:bg-slate-800', 'dark:text-slate-300');
+
+      // Filter articles
+      let visibleCount = 0;
+      articles.forEach(article => {
+        const itemCategory = article.getAttribute('data-category');
+        if (category === 'All' || itemCategory === category) {
+          (article as HTMLElement).style.display = 'flex';
+          visibleCount++;
+        } else {
+          (article as HTMLElement).style.display = 'none';
+        }
+      });
+
+      // Handle empty state
+      if (noArticlesMsg) {
+        if (visibleCount === 0) {
+          noArticlesMsg.classList.remove('hidden');
+        } else {
+          noArticlesMsg.classList.add('hidden');
+        }
+      }
+    });
+  });
+</script>

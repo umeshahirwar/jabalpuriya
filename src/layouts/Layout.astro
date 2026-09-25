@@ -1,0 +1,181 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  author?: string;
+  category?: string;
+  keywords?: string[];
+}
+
+const {
+  title = "Jabalpuriya | Jabalpur's #1 News & Community Portal",
+  description = "Stay informed with real-time Jabalpur local news, breaking headlines, smart city updates, cultural events, business directories, and community insights from Madhya Pradesh.",
+  image = "/og-banner.png",
+  canonicalUrl = Astro.url.href,
+  type = "website",
+  publishedTime,
+  author = "Jabalpuriya Editorial Desk",
+  category = "Local News",
+  keywords = ["Jabalpur News", "Jabalpuriya", "Jabalpur Breaking News", "Madhya Pradesh News", "Bhedaghat", "Dhuandhar", "Jabalpur Smart City", "Narmada Aarti Gwarighat"]
+} = Astro.props;
+
+const siteUrl = "https://jabalpuriya.com";
+const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+
+// Structured Data (Schema.org JSON-LD)
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Jabalpuriya",
+  "alternateName": ["Jabalpuriya.com", "जबलपुरिया"],
+  "url": siteUrl,
+  "description": description,
+  "inLanguage": "en-IN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${siteUrl}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const newsOrgSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "Jabalpuriya",
+  "url": siteUrl,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/favicon.svg`,
+    "width": 512,
+    "height": 512
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jabalpur",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "482001",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://twitter.com/jabalpuriya",
+    "https://facebook.com/jabalpuriya",
+    "https://instagram.com/jabalpuriya"
+  ]
+};
+
+const articleSchema = type === 'article' ? {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": title,
+  "description": description,
+  "image": [fullImageUrl],
+  "datePublished": publishedTime || new Date().toISOString(),
+  "dateModified": new Date().toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": author
+  },
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Jabalpuriya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${siteUrl}/favicon.svg`
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl
+  },
+  "articleSection": category,
+  "keywords": keywords.join(", "),
+  "contentLocation": {
+    "@type": "Place",
+    "name": "Jabalpur, Madhya Pradesh, India",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.1815,
+      "longitude": 79.9864
+    }
+  }
+} : null;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <!-- Character & Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Title & SEO Meta -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords.join(", ")} />
+    <meta name="author" content={author} />
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- Geo Meta Tags for Jabalpur, MP (Local SEO & GEO LLM Optimizations) -->
+    <meta name="geo.region" content="IN-MP" />
+    <meta name="geo.placename" content="Jabalpur" />
+    <meta name="geo.position" content="23.1815;79.9864" />
+    <meta name="ICBM" content="23.1815, 79.9864" />
+    
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:site_name" content="Jabalpuriya" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
+    <meta name="twitter:site" content="@jabalpuriya" />
+
+    <!-- Favicon & PWA Theme -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0c3f6e" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(newsOrgSchema)} />
+    {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+  </head>
+  <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#07111e] dark:text-slate-100 font-sans">
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-jabalpur-secondary focus:text-white focus:rounded-md focus:shadow-lg focus:outline-none">
+      Skip to main content
+    </a>
+
+    <!-- Global Header -->
+    <Header />
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <slot />
+    </main>
+
+    <!-- Global Footer -->
+    <Footer />
+  </body>
+</html>

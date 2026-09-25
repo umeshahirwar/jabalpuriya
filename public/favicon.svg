@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="narmada" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c3f6e" />
+      <stop offset="100%" stop-color="#0170c7" />
+    </linearGradient>
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e05a2b" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#narmada)" />
+  <circle cx="50" cy="50" r="36" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.2" />
+  <!-- Letter J stylized with Narmada River Wave & Marble Peak -->
+  <path d="M58 26 H68 V60 C68 73 57 80 44 80 C32 80 24 74 22 65 L34 62 C35 67 40 70 45 70 C51 70 56 66 56 59 V26 Z" fill="#ffffff" />
+  <circle cx="68" cy="28" r="7" fill="url(#marble)" />
+</svg>

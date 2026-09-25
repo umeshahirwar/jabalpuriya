@@ -1,0 +1,107 @@
+---
+const attractions = [
+  {
+    title: "Bhedaghat & Marble Rocks",
+    hindi: "भेड़ाघाट और संगमरमर की चट्टानें",
+    category: "UNESCO Tentative Site",
+    description: "Soaring 100-foot white marble cliffs carved over millennia by the sacred Narmada river, famous for night boat rides under full moonlight.",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+    badge: "Must Visit"
+  },
+  {
+    title: "Dhuandhar Waterfalls",
+    hindi: "धुआंधार जलप्रपात",
+    category: "Natural Wonder",
+    description: "The roaring cascade where the Narmada plunges down, creating a dramatic mist cloud that resembles smoke (dhuan).",
+    image: "https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=600&q=80",
+    badge: "Scenic Spot"
+  },
+  {
+    title: "Madan Mahal & Balancing Rock",
+    hindi: "मदन महल और बैलेंसिंग रॉक",
+    category: "Gond Heritage",
+    description: "11th-century watchtower castle built by Raja Madan Singh perched on a geological miracle: a giant boulder balanced precariously on a rock base.",
+    image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=600&q=80",
+    badge: "Heritage"
+  },
+  {
+    title: "Gwarighat Maha Aarti",
+    hindi: "ग्वारीघाट माँ नर्मदा महाआरती",
+    category: "Spiritual Culture",
+    description: "Daily evening riverfront worship and lamps floating on holy Narmada, bringing thousands of devotees in a serene spiritual communion.",
+    image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=600&q=80",
+    badge: "Daily Ritual"
+  }
+];
+---
+
+<section id="culture" class="my-16 py-12 px-6 sm:px-8 bg-gradient-to-b from-slate-100 to-white dark:from-[#0b1b30] dark:to-[#07111e] rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+  <div class="max-w-7xl mx-auto space-y-10">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-jabalpur-100 dark:bg-jabalpur-900/60 text-jabalpur-700 dark:text-jabalpur-300">
+          🏛️ Heritage & Tourism
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-slate-900 dark:text-white">
+          Pride of Jabalpur <span class="text-jabalpur-secondary font-hindi font-normal">(संस्कारधानी की धरोहर)</span>
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm max-w-2xl">
+          Discover the geological marvels, historic fortresses, and sacred traditions that make Jabalpur the cultural capital of Madhya Pradesh.
+        </p>
+      </div>
+
+      <div class="flex-shrink-0">
+        <a href="#directory" class="inline-flex items-center text-sm font-bold text-jabalpur-primary dark:text-jabalpur-300 hover:text-jabalpur-secondary">
+          <span>Explore Jabalpur City Guide</span>
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Spotlight Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {attractions.map((item) => (
+        <div class="group bg-white dark:bg-[#10223d] rounded-2xl overflow-hidden border border-slate-200/70 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden bg-slate-200 dark:bg-slate-800">
+            <img
+              src={item.image}
+              alt={item.title}
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow">
+                {item.badge}
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-bold text-jabalpur-secondary uppercase tracking-wider block">
+                {item.category}
+              </span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white mt-1">
+                {item.title}
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-hindi">
+                {item.hindi}
+              </p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed line-clamp-3">
+                {item.description}
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800">
+              <span class="text-xs font-semibold text-jabalpur-600 dark:text-jabalpur-400 group-hover:text-jabalpur-secondary flex items-center gap-1">
+                View Visitor Guide
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

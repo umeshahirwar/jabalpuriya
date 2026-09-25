@@ -1,0 +1,147 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  categories: [
+    { name: 'Local News & Civic', href: '/#news-grid' },
+    { name: 'Smart City Jabalpur', href: '/#news-grid' },
+    { name: 'Culture & Bhedaghat', href: '/#culture' },
+    { name: 'Education & RDVV/IIIT', href: '/#news-grid' },
+    { name: 'Business & Garment Park', href: '/#news-grid' },
+  ],
+  quickLinks: [
+    { name: 'About Jabalpuriya', href: '#about' },
+    { name: 'Editorial Guidelines & Ethics', href: '#ethics' },
+    { name: 'Submit News Tip', href: '#submit-tip' },
+    { name: 'Privacy Policy', href: '#privacy' },
+    { name: 'RSS Sitemap', href: '/sitemap.xml' },
+  ],
+  civicHelplines: [
+    { name: 'JMC City Helpline', number: '0761-2611111' },
+    { name: 'Police Control Room', number: '112 / 100' },
+    { name: 'Jabalpur Ambulance', number: '108' },
+    { name: 'Smart City Control Center', number: '1800-233-0104' },
+  ]
+};
+---
+
+<footer class="bg-jabalpur-dark text-slate-300 pt-16 pb-12 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top Grid Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+      
+      <!-- Brand & Mission Column -->
+      <div class="lg:col-span-2 space-y-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-jabalpur-700 to-jabalpur-500 flex items-center justify-center text-white font-serif font-extrabold text-xl shadow-lg">
+            J
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-white">Jabalpuriya<span class="text-jabalpur-secondary">.com</span></span>
+            <p class="text-xs text-slate-400">The Independent Voice of Jabalpur</p>
+          </div>
+        </div>
+        
+        <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+          Jabalpuriya is the premier community and news aggregation portal dedicated to Jabalpur (Sanskaardhani), Madhya Pradesh. We deliver fast, verified, and brand-safe local reporting on infrastructure, tourism, education, and civic affairs.
+        </p>
+
+        <!-- Social Media Links -->
+        <div class="flex items-center space-x-3 pt-2">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800/60 hover:bg-jabalpur-600 text-slate-300 hover:text-white transition-colors" aria-label="Follow Jabalpuriya on Twitter">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800/60 hover:bg-jabalpur-600 text-slate-300 hover:text-white transition-colors" aria-label="Follow Jabalpuriya on Facebook">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800/60 hover:bg-jabalpur-secondary text-slate-300 hover:text-white transition-colors" aria-label="Follow Jabalpuriya on Instagram">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="/sitemap.xml" class="p-2 rounded-lg bg-slate-800/60 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors" aria-label="RSS Feed">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Categories Column -->
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-jabalpur-secondary pl-2">
+          Categories
+        </h4>
+        <ul class="space-y-2.5 text-sm">
+          {footerLinks.categories.map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-jabalpur-300 transition-colors">
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Quick Links & Policy Column -->
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-jabalpur-500 pl-2">
+          Portal & Portal
+        </h4>
+        <ul class="space-y-2.5 text-sm">
+          {footerLinks.quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-jabalpur-300 transition-colors">
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Jabalpur City Emergency Contacts -->
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-red-500 pl-2">
+          City Helplines
+        </h4>
+        <ul class="space-y-2.5 text-xs">
+          {footerLinks.civicHelplines.map((item) => (
+            <li class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
+              <span class="block text-slate-400 font-medium">{item.name}</span>
+              <span class="font-bold text-emerald-400">{item.number}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Newsletter & Disclaimer Strip -->
+    <div id="newsletter" class="my-10 bg-gradient-to-r from-jabalpur-950 via-slate-900 to-jabalpur-950 p-6 sm:p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div class="space-y-1 text-center md:text-left">
+        <h3 class="text-lg font-bold text-white">Daily Jabalpur Digest</h3>
+        <p class="text-xs sm:text-sm text-slate-400">Get the top verified headlines from Jabalpur delivered to your inbox every morning at 7:00 AM.</p>
+      </div>
+      <form class="flex w-full md:w-auto max-w-md gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Jabalpuriya alerts!');">
+        <input
+          type="email"
+          required
+          placeholder="Enter your email"
+          aria-label="Email Address for newsletter"
+          class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-jabalpur-500"
+        />
+        <button
+          type="submit"
+          class="px-5 py-2.5 bg-jabalpur-secondary hover:bg-[#c84d22] text-white font-bold text-sm rounded-lg transition-colors whitespace-nowrap shadow"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- Bottom Attribution & Disclaimer -->
+    <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <p>© {currentYear} Jabalpuriya.com. All rights reserved. Made with ❤️ for Jabalpur, Madhya Pradesh.</p>
+      <p class="text-center sm:text-right">
+        Aggregated news content is attributed to original publishers under fair news reporting standards.
+      </p>
+    </div>
+  </div>
+</footer>

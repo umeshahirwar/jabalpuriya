@@ -1,0 +1,24 @@
+{
+  "name": "jabalpuriya",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jabalpuriya.com - Modern News & Community Information Portal for Jabalpur, MP",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "fetch-news": "node scripts/fetch-news.mjs"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.16.0",
+    "tailwindcss": "^3.4.13"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "rss-parser": "^3.13.0"
+  }
+}
