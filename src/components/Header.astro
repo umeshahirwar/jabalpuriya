@@ -2,9 +2,9 @@
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Local News', href: '/#news-grid' },
-  { name: 'Events', href: '/#events' },
+  { name: 'Rashifal (राशिफल)', href: '/#rashifal' },
   { name: 'Culture & Tourism', href: '/#culture' },
-  { name: 'Business Directory', href: '/#directory' },
+  { name: 'City Services', href: '/#directory' },
   { name: 'About Jabalpur', href: '/#about' },
 ];
 
@@ -79,9 +79,11 @@ const currentPath = Astro.url.pathname;
           <a
             href={item.href}
             class={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors duration-150 ${
-              currentPath === item.href
-                ? 'text-jabalpur-primary bg-jabalpur-50 dark:bg-jabalpur-900/40 dark:text-jabalpur-300'
-                : 'text-slate-700 hover:text-jabalpur-primary hover:bg-slate-100 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800/60'
+              item.name.includes('Rashifal')
+                ? 'text-amber-600 hover:text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40'
+                : currentPath === item.href
+                  ? 'text-jabalpur-primary bg-jabalpur-50 dark:bg-jabalpur-900/40 dark:text-jabalpur-300'
+                  : 'text-slate-700 hover:text-jabalpur-primary hover:bg-slate-100 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800/60'
             }`}
           >
             {item.name}
@@ -92,10 +94,10 @@ const currentPath = Astro.url.pathname;
       <!-- Action & Mobile Menu Toggle Button -->
       <div class="flex items-center space-x-3">
         <a
-          href="#newsletter"
+          href="#editorial-desk"
           class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-bold rounded-lg text-white bg-jabalpur-secondary hover:bg-[#c84d22] transition-all shadow-sm hover:shadow"
         >
-          Subscribe
+          Submit Verified Tip
         </a>
 
         <!-- Mobile Menu Toggle Button -->
@@ -130,17 +132,16 @@ const currentPath = Astro.url.pathname;
     ))}
     <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
       <a
-        href="#newsletter"
+        href="#editorial-desk"
         class="w-full text-center py-2.5 px-4 text-sm font-bold text-white bg-jabalpur-secondary rounded-lg hover:bg-[#c84d22]"
       >
-        Get Jabalpur News Alerts
+        Submit News Tip for Verification
       </a>
     </div>
   </div>
 </header>
 
 <script>
-  // Mobile menu interaction
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const openIcon = document.getElementById('menu-open-icon');
@@ -155,7 +156,6 @@ const currentPath = Astro.url.pathname;
       closeIcon.classList.toggle('hidden');
     });
 
-    // Close menu when clicking link
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -166,7 +166,6 @@ const currentPath = Astro.url.pathname;
     });
   }
 
-  // Live IST Date
   const dateEl = document.getElementById('live-ist-date');
   if (dateEl) {
     const options: Intl.DateTimeFormatOptions = { 

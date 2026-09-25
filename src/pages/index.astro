@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import NewsCard from '../components/NewsCard.astro';
 import WeatherWidget from '../components/WeatherWidget.astro';
 import CommunitySpotlight from '../components/CommunitySpotlight.astro';
+import RashifalSection from '../components/RashifalSection.astro';
 import newsData from '../data/news.json';
 
 // Partition news data
@@ -10,7 +11,7 @@ const featuredArticle = newsData.articles.find(a => a.isFeatured) || newsData.ar
 const regularArticles = newsData.articles.filter(a => a.id !== featuredArticle.id);
 
 // Extract distinct categories
-const categories = ['All', ...new Set(newsData.articles.map(a => a.category))];
+const categories = ['All', 'Rashifal', ...new Set(newsData.articles.map(a => a.category))];
 
 const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('en-IN', {
   weekday: 'long',
@@ -24,8 +25,8 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
 ---
 
 <Layout
-  title="Jabalpuriya.com | Jabalpur News, Breaking Updates & Community Guide"
-  description="Discover the latest Jabalpur news, MP smart city projects, Bhedaghat tourism updates, local civic alerts, and community announcements on Jabalpuriya."
+  title="Jabalpuriya.com | Jabalpur News, Breaking Updates, Rashifal & City Guide"
+  description="Discover the latest Jabalpur news, MP smart city projects, daily & annual Rashifal (Horoscope), Bhedaghat tourism updates, and verified editorial reporting on Jabalpuriya."
 >
   <div class="space-y-12">
     
@@ -109,17 +110,17 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
             </h3>
             
             <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
-              <a href="#directory" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+              <a href="#rashifal" class="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 text-amber-900 dark:text-amber-300 transition-colors flex items-center gap-1.5 border border-amber-200/50 dark:border-amber-900/50">
+                <span>✨</span> आज का राशिफल
+              </a>
+              <a href="#news-grid" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
                 <span>🚌</span> City Bus Routes
               </a>
-              <a href="#events" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
-                <span>🎭</span> Weekend Events
-              </a>
               <a href="#culture" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
-                <span>🌊</span> Narmada Aarti
+                <span>🌊</span> Gwarighat Aarti
               </a>
-              <a href="#directory" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
-                <span>🏥</span> Hospitals & Care
+              <a href="#editorial-desk" class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 hover:bg-jabalpur-50 dark:hover:bg-jabalpur-900/40 text-slate-700 dark:text-slate-200 transition-colors flex items-center gap-1.5">
+                <span>📰</span> Press Desk
               </a>
             </div>
 
@@ -158,7 +159,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
                   : 'bg-slate-200/80 text-slate-700 hover:bg-slate-300 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700'
               }`}
             >
-              {cat}
+              {cat === 'Rashifal' ? '✨ Rashifal (राशिफल)' : cat}
             </button>
           ))}
         </div>
@@ -174,56 +175,104 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
       <!-- No items fallback -->
       <div id="no-articles-msg" class="hidden py-12 text-center text-slate-500">
         <p class="text-base font-semibold">No stories found in this category currently.</p>
-        <p class="text-xs mt-1">Check back in our next 3-hour aggregation cycle.</p>
+        <p class="text-xs mt-1">
+          For astrology and horoscope updates, please explore our dedicated <a href="#rashifal" class="text-jabalpur-primary underline font-bold">Rashifal Section</a> below.
+        </p>
       </div>
     </section>
+
+    <!-- Rashifal (Horoscope) Section: Annual & Daily Vedic Predictions -->
+    <RashifalSection />
 
     <!-- Cultural Showcase Section -->
     <CommunitySpotlight />
 
-    <!-- Community Feedback, Tip Submission & Social Integration -->
-    <section id="submit-tip" class="my-16 bg-gradient-to-r from-jabalpur-950 via-[#0d223d] to-jabalpur-950 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div class="space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-            📢 Citizen Journalism
+    <!-- Editorial Desk: Verified News Tip & Press Release Submission (Moderated with strict Brand Safety Guidelines) -->
+    <section id="editorial-desk" class="my-16 bg-gradient-to-r from-jabalpur-950 via-[#0d223d] to-jabalpur-950 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        
+        <!-- Editorial Guidance & Brand Safety Protocol -->
+        <div class="space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            🛡️ Strict Editorial Verification & Brand Safety
           </div>
           <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
-            Have a story or civic update from your neighborhood?
+            Jabalpuriya Editorial Verification Desk
           </h2>
           <p class="text-slate-300 text-sm leading-relaxed">
-            Help keep Jabalpur informed. Whether it's a neighborhood civic issue, an inspiring local achievement, or an upcoming community event in Wright Town, Civil Lines, or Vijay Nagar — let our editorial desk know.
+            To preserve journalistic integrity and maintain 100% brand safety for the citizens of Jabalpur, <strong>Jabalpuriya.com does not permit unmoderated open posting</strong>.
           </p>
-          <div class="flex items-center space-x-4 pt-2">
-            <div class="flex -space-x-2">
-              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-jabalpur-600 text-center text-xs leading-8 font-bold">J</span>
-              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-amber-600 text-center text-xs leading-8 font-bold">B</span>
-              <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-emerald-600 text-center text-xs leading-8 font-bold">P</span>
+          
+          <div class="space-y-3 pt-1 text-xs text-slate-300">
+            <div class="flex items-start space-x-3 bg-white/5 p-3 rounded-xl border border-white/5">
+              <span class="text-emerald-400 font-bold text-sm">✓</span>
+              <p><strong>100% Human Editorial Review:</strong> Every tip, press release, and event submission is fact-checked and verified by our editorial desk before publication.</p>
             </div>
-            <span class="text-xs text-slate-300 font-medium">Join 25,000+ local Jabalpur readers</span>
+            <div class="flex items-start space-x-3 bg-white/5 p-3 rounded-xl border border-white/5">
+              <span class="text-emerald-400 font-bold text-sm">✓</span>
+              <p><strong>Anti-Spam & Brand Safety:</strong> Promotional spam, unverified rumors, defamatory claims, or uncorroborated allegations are automatically rejected.</p>
+            </div>
+            <div class="flex items-start space-x-3 bg-white/5 p-3 rounded-xl border border-white/5">
+              <span class="text-emerald-400 font-bold text-sm">✓</span>
+              <p><strong>Source Protection:</strong> Confidential news tips are handled under strict journalistic confidentiality standards.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Moderated Submission Form -->
         <div class="bg-white/5 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/10 space-y-4">
-          <h3 class="text-lg font-bold text-white">Submit News Tip / Event</h3>
-          <form class="space-y-3" onsubmit="event.preventDefault(); alert('Thank you! Your news tip has been sent to our Jabalpur editorial team.'); this.reset();">
-            <div>
-              <label for="tip-name" class="block text-xs font-medium text-slate-300 mb-1">Your Name / Organization</label>
-              <input type="text" id="tip-name" required placeholder="e.g. Amit Verma" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+          <div class="border-b border-white/10 pb-3">
+            <h3 class="text-lg font-bold text-white">Submit News Tip / Press Release</h3>
+            <p class="text-xs text-slate-400">All submissions are queued for editorial verification prior to publication.</p>
+          </div>
+
+          <form class="space-y-3.5" onsubmit="event.preventDefault(); alert('Thank you. Your submission has been securely transmitted to the Jabalpuriya Editorial Desk for verification.'); this.reset();">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="tip-sender-name" class="block text-xs font-medium text-slate-300 mb-1">Full Name / Organization</label>
+                <input type="text" id="tip-sender-name" required placeholder="e.g. Dr. Rajesh Sharma" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+              </div>
+              <div>
+                <label for="tip-contact" class="block text-xs font-medium text-slate-300 mb-1">Official Email or Phone</label>
+                <input type="text" id="tip-contact" required placeholder="contact@domain.com" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+              </div>
             </div>
-            <div>
-              <label for="tip-location" class="block text-xs font-medium text-slate-300 mb-1">Location in Jabalpur</label>
-              <input type="text" id="tip-location" required placeholder="e.g. Gorakhpur / Napier Town" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="tip-category" class="block text-xs font-medium text-slate-300 mb-1">Category</label>
+                <select id="tip-category" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white focus:outline-none focus:ring-2 focus:ring-jabalpur-500">
+                  <option value="civic">Civic & Infrastructure</option>
+                  <option value="events">Cultural / Community Event</option>
+                  <option value="education">Education & Academic</option>
+                  <option value="business">Business & Industry</option>
+                  <option value="other">General City News</option>
+                </select>
+              </div>
+              <div>
+                <label for="tip-location" class="block text-xs font-medium text-slate-300 mb-1">Location in Jabalpur</label>
+                <input type="text" id="tip-location" required placeholder="e.g. Civil Lines / Gwarighat" class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500" />
+              </div>
             </div>
+
             <div>
-              <label for="tip-details" class="block text-xs font-medium text-slate-300 mb-1">Tip or Event Details</label>
-              <textarea id="tip-details" rows="3" required placeholder="Brief description of the event or news..." class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500"></textarea>
+              <label for="tip-details" class="block text-xs font-medium text-slate-300 mb-1">News Details & Source Evidence</label>
+              <textarea id="tip-details" rows="3" required placeholder="Provide clear facts, dates, context, and official references..." class="w-full px-3.5 py-2 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-500"></textarea>
             </div>
+
+            <div class="flex items-center space-x-2 pt-1">
+              <input type="checkbox" id="verify-consent" required class="rounded bg-slate-900 border-slate-700 text-jabalpur-secondary focus:ring-jabalpur-500 h-4 w-4" />
+              <label for="verify-consent" class="text-[11px] text-slate-300">
+                I confirm this information is accurate and agree to human editorial verification before publication.
+              </label>
+            </div>
+
             <button type="submit" class="w-full py-2.5 bg-jabalpur-secondary hover:bg-[#c84d22] font-bold text-sm rounded-lg transition-colors shadow">
-              Submit News Tip
+              Submit for Editorial Verification
             </button>
           </form>
         </div>
+
       </div>
     </section>
 
@@ -247,6 +296,14 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
       });
       btn.classList.add('bg-jabalpur-primary', 'text-white', 'shadow-sm');
       btn.classList.remove('bg-slate-200/80', 'text-slate-700', 'dark:bg-slate-800', 'dark:text-slate-300');
+
+      if (category === 'Rashifal') {
+        const rashifalEl = document.getElementById('rashifal');
+        if (rashifalEl) {
+          rashifalEl.scrollIntoView({ behavior: 'smooth' });
+        }
+        return;
+      }
 
       // Filter articles
       let visibleCount = 0;

@@ -4,6 +4,7 @@ const currentYear = new Date().getFullYear();
 const footerLinks = {
   categories: [
     { name: 'Local News & Civic', href: '/#news-grid' },
+    { name: 'Rashifal 2026 (राशिफल)', href: '/#rashifal' },
     { name: 'Smart City Jabalpur', href: '/#news-grid' },
     { name: 'Culture & Bhedaghat', href: '/#culture' },
     { name: 'Education & RDVV/IIIT', href: '/#news-grid' },
@@ -11,10 +12,10 @@ const footerLinks = {
   ],
   quickLinks: [
     { name: 'About Jabalpuriya', href: '#about' },
-    { name: 'Editorial Guidelines & Ethics', href: '#ethics' },
-    { name: 'Submit News Tip', href: '#submit-tip' },
-    { name: 'Privacy Policy', href: '#privacy' },
-    { name: 'RSS Sitemap', href: '/sitemap.xml' },
+    { name: 'Editorial Guidelines & Verification Protocol', href: '#editorial-desk' },
+    { name: 'Submit Verified News Tip', href: '#editorial-desk' },
+    { name: 'Brand Safety & Privacy Policy', href: '#privacy' },
+    { name: 'XML Sitemap Index', href: '/sitemap.xml' },
   ],
   civicHelplines: [
     { name: 'JMC City Helpline', number: '0761-2611111' },
@@ -83,7 +84,7 @@ const footerLinks = {
       <!-- Quick Links & Policy Column -->
       <div>
         <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-jabalpur-500 pl-2">
-          Portal & Portal
+          Editorial & Policy
         </h4>
         <ul class="space-y-2.5 text-sm">
           {footerLinks.quickLinks.map((link) => (
@@ -140,7 +141,7 @@ const footerLinks = {
     <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
       <p>© {currentYear} Jabalpuriya.com. All rights reserved. Made with ❤️ for Jabalpur, Madhya Pradesh.</p>
       <p class="text-center sm:text-right">
-        Aggregated news content is attributed to original publishers under fair news reporting standards.
+        Brand-safe editorial journalism. All content is fact-checked and verified under strict editorial guidelines.
       </p>
     </div>
   </div>
