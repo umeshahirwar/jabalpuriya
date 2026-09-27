@@ -1,28 +1,87 @@
 {
-  "lastUpdated": "2026-09-27T09:03:40.993Z",
+  "lastUpdated": "2026-09-27T12:03:54.393Z",
   "totalStories": 24,
   "sources": [
+    "स्टार समाचार",
+    "Palpalindia.com",
+    "Dainik Bhaskar",
     "Nai Dunia",
     "businesstoday.in",
+    "HumSamvet",
     "Amar Ujala",
+    "AIMA Media",
     "Dainik Jagran MP CG",
     "rajexpress.com",
     "bhaskar.com",
     "CarDekho",
     "MP Breaking News",
-    "Dainik Bhaskar",
     "Social News XYZ",
     "Patrika News",
-    "हिन्दुस्थान समाचार",
     "Vocal TV",
     "Inh News",
     "inhnews.in",
-    "bhaskarhindi.com",
-    "bhaskarenglish.in"
+    "bhaskarhindi.com"
   ],
   "articles": [
     {
-      "id": "jbp-mujld3io-w2ub",
+      "id": "jbp-mujrsv0h-wsba",
+      "title": "जबलपुर-हिरन मार्ग के यात्रियों को बड़ी राहत: शहपुरा टोल प्लाजा पर टोल वसूली अस्थायी रूप से बंद - स्टार समाचार",
+      "slug": "",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNMmdoTE1IMG9Rd3JrZGsyektib2tLWEpMUkdES3hIamp0b0thdGFEZVdFMnZUNm9wLVdfZE1FWnlLeTIxYkcxT0c0MDBaS1JlbWNuWmtIXzg3WGY5Mmx0bFdqY2ZJdVoxZnZrUjNWZlc5SERDVDZzcDRnUHJmY3ZlbVRQTm8?oc=5\" targ",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNMmdoTE1IMG9Rd3JrZGsyektib2tLWEpMUkdES3hIamp0b0thdGFEZVdFMnZUNm9wLVdfZE1FWnlLeTIxYkcxT0c0MDBaS1JlbWNuWmtIXzg3WGY5Mmx0bFdqY2ZJdVoxZnZrUjNWZlc5SERDVDZzcDRnUHJmY3ZlbVRQTm8?oc=5\" targ",
+      "category": "Local News",
+      "source": "स्टार समाचार",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMmdoTE1IMG9Rd3JrZGsyektib2tLWEpMUkdES3hIamp0b0thdGFEZVdFMnZUNm9wLVdfZE1FWnlLeTIxYkcxT0c0MDBaS1JlbWNuWmtIXzg3WGY5Mmx0bFdqY2ZJdVoxZnZrUjNWZlc5SERDVDZzcDRnUHJmY3ZlbVRQTm8?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T11:31:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mujrsv0h-2rgd",
+      "title": "जबलपुर रेल मंडल के सागर रनिंग रूम में लगी आग, सो रहे रनिंग कर्मचारी बाल-बाल बचे - Palpalindia.com",
+      "slug": "palpalindia-com",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxOX1k2NUFTei1TazhYekxwNWZxWndyTTBrUFpKa0lZMG5EbHl0Y0pWdk0tVHRqQjJaR1l5M2FyQ2pnSGtKcTFDMnZPcUNUNlZtVTRBbkw2X21tSFNFc0RYOVU0UXNWeGVjZ2dOYTg3S0hjVm5EVHEtU2E2VE91ZjN2VjVHcl9QVzZxcG9FV0",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxOX1k2NUFTei1TazhYekxwNWZxWndyTTBrUFpKa0lZMG5EbHl0Y0pWdk0tVHRqQjJaR1l5M2FyQ2pnSGtKcTFDMnZPcUNUNlZtVTRBbkw2X21tSFNFc0RYOVU0UXNWeGVjZ2dOYTg3S0hjVm5EVHEtU2E2VE91ZjN2VjVHcl9QVzZxcG9FV0",
+      "category": "Local News",
+      "source": "Palpalindia.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOX1k2NUFTei1TazhYekxwNWZxWndyTTBrUFpKa0lZMG5EbHl0Y0pWdk0tVHRqQjJaR1l5M2FyQ2pnSGtKcTFDMnZPcUNUNlZtVTRBbkw2X21tSFNFc0RYOVU0UXNWeGVjZ2dOYTg3S0hjVm5EVHEtU2E2VE91ZjN2VjVHcl9QVzZxcG9FV0RrLTNkVW9xM2Z1Q2FsNjJqa0twRUt0N2NEWTJERUVlSkFQdnl2QTlfWjJyMmxHLVVnaGlfRW92dXctekJSZkpLdmc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T11:26:40.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mujrsv0c-f6hx",
+      "title": "शहपुरा टोल प्लाजा पर टोल वसूली बंद: जबलपुर-हिरन नदी मार्ग पर सड़क खराब होने और निर्माण के चलते यात्रियों को... - Dainik Bhaskar",
+      "slug": "dainik-bhaskar",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjc5QVkyOUVlekIwa0d2STFMdHJjdlljMWxKWWZnRDU0Q2FYUEpfRG52V2FVX0g5NnFYRXhhUi1QeTV2WURtcmdOenVHSDNVTXEyUl9rUTUzSXB6RlBUNGNFYnoxTEZVSXUxUHd3Qi13aDFGSWhfWDNLVDRrU0ZNWmZIUGpJbXFaQ0NLeE",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjc5QVkyOUVlekIwa0d2STFMdHJjdlljMWxKWWZnRDU0Q2FYUEpfRG52V2FVX0g5NnFYRXhhUi1QeTV2WURtcmdOenVHSDNVTXEyUl9rUTUzSXB6RlBUNGNFYnoxTEZVSXUxUHd3Qi13aDFGSWhfWDNLVDRrU0ZNWmZIUGpJbXFaQ0NLeE",
+      "category": "Local News",
+      "source": "Dainik Bhaskar",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjc5QVkyOUVlekIwa0d2STFMdHJjdlljMWxKWWZnRDU0Q2FYUEpfRG52V2FVX0g5NnFYRXhhUi1QeTV2WURtcmdOenVHSDNVTXEyUl9rUTUzSXB6RlBUNGNFYnoxTEZVSXUxUHd3Qi13aDFGSWhfWDNLVDRrU0ZNWmZIUGpJbXFaQ0NLeERMdlJta2tLVmUwRGJhX2FCMW9CY1JMbXR5RjBfUVJGLVhwU2k0cndmZjJlZ19ERnFn0gHDAUFVX3lxTE5NYWlZM1RhUm8xYnMzamE4QV9WTkFFSWpJdnh1ZkNBaHMtTTctS0FzcmNpRURmLUJaMGtleU1YRmlFZDd5NlNJLTRHNkhDTy0zc2FIcHh1dEwzVVlXZFp1dnAwOG15U2k2OEliaWVpaVNSWGwyOUd0QnlldnVUV3RXbHZFZHBmY0JIcXYyM1gtV3h1LTd3Tzg4dUNvZU45eVFSSGIybUxPV0dEUHpTRXFZb1JQbWt4SlFXNXJmaFl3dFNKUQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T11:20:46.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mujrsv0g-6cb6",
       "title": "जबलपुर में स्वाइन फ्लू का खौफ दिखाकर निजी अस्पतालों की अवैध वसूली, सभी 24 संदिग्ध मिले निगेटिव - Nai Dunia",
       "slug": "24-nai-dunia",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxPRXBQMFVWLXRTa3FtSEJucUVZVzFWSzZWbzFydVhKU2RGWi1aM0RYamVhSC0wUFowLUd2NF9VdXRxdGZoUHJZRnlCX0Q2VE5haGpvS1Y1bm94bFVkU05INmFQajRtSVhCMWg5NEhzVGxwZjNVcEQ4ajEwZnFRX1VhSlAxbnc0U19PS1MyQl",
@@ -33,7 +92,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-27T08:56:42.000Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
       "tags": [
         "Local News",
         "Jabalpur",
@@ -41,7 +100,7 @@
       ]
     },
     {
-      "id": "jbp-mujld34s-a3os",
+      "id": "jbp-mujrsunq-jccc",
       "title": "Gold Rate Today in Jabalpur 27th September 2026 : 22 & 24 Carat, Todays Gold Price in Jabalpur - businesstoday.in",
       "slug": "gold-rate-today-in-jabalpur-27th-september-2026-22-24-carat-",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5\" target=\"_blank\">Gold Rate T",
@@ -60,7 +119,26 @@
       ]
     },
     {
-      "id": "jbp-mujld3ik-g7jr",
+      "id": "jbp-mujrsv0h-24xn",
+      "title": "जबलपुर में बाइक सवार बदमाशों ने दो युवकों को मारी गोली, एक की मौत और दूसरा घायल - HumSamvet",
+      "slug": "humsamvet",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotcz",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotcz",
+      "category": "Local News",
+      "source": "HumSamvet",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotczNKamo3TmVvVloyd1dMRGI3SURDV25uZFB6MlRrU0NPcmJsSEh5RkFVSC0tMHZ1Q9IBwgFBVV95cUxNc1BOZUl3T2luT09SMFk4d0ZkbGc5ZjVwWUxMT3V2bjFMWEE5OEdfajNSbXEzdVNOY05iMUFCamtyajJRVVllaDBWY2c5VXpQU0pNNHhKMHh1VWxic3JFeDluQWt0OUlZSzFmOTh2SXFObUVqNTRqdGZxVnZzYmdiLUdYdmZBTHlwcndDOGNNOVFfMnlXRWtFY0RvRGVjZHRVd0RaOHBkYldLTVE3THJ4SUtvZXlqOE5ZdndOZmJWc282dw?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T07:48:20.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mujrsv0c-4ae2",
       "title": "जबलपुर: हत्या केस में हाईकोर्ट ने तीन आरोपियों को किया बरी, मुख्य आरोपी की सजा घटाकर 10 साल की - Amar Ujala",
       "slug": "10-amar-ujala",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxONmNtVUVzY3RvekZuR1M1cFJpQjFKT1BvMGtkeE45bk5ISFpvNEttemx3U2xDY2JNSXBpLTBZVXV1YVpsYmQ3OUprb0gwMWxZNHRuNjRDWWtYb0JldVdjVm1lLXIzUGJDeVdoRWpKTGd2NWNuZ2hYc2lwV2lENjVrekM3bnpxTHh2U0NtbG",
@@ -79,7 +157,26 @@
       ]
     },
     {
-      "id": "jbp-mujld34y-4oid",
+      "id": "jbp-mujrsv0c-z9dm",
+      "title": "भेड़ाघाट में बनेगा विश्वस्तरीय जियोलॉजिकल पार्क और म्यूजियम, केंद्र सरकार से 87 करोड़ की परियोजना को मंजूरी... - AIMA Media",
+      "slug": "87-aima-media",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiqAdBVV95cUxNR1pDeGZRNDBkQmVmcWRjdVNxWE9CeF9tM3AyLWpZMUZiZlFtYXpndTM1SXA3QzRPMUNLUk9NVm1ndnVYSFVTWDU1cDE2QlJvVFRsOVJTQ1E2Y3VYQWFqeFN6UkdHZWFtdE9tV1RubWZ4dW5QS2ZUUF9lczI3TDE2eXF2OGxZZG9ORUdDY1",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiqAdBVV95cUxNR1pDeGZRNDBkQmVmcWRjdVNxWE9CeF9tM3AyLWpZMUZiZlFtYXpndTM1SXA3QzRPMUNLUk9NVm1ndnVYSFVTWDU1cDE2QlJvVFRsOVJTQ1E2Y3VYQWFqeFN6UkdHZWFtdE9tV1RubWZ4dW5QS2ZUUF9lczI3TDE2eXF2OGxZZG9ORUdDY1",
+      "category": "Local News",
+      "source": "AIMA Media",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAdBVV95cUxNR1pDeGZRNDBkQmVmcWRjdVNxWE9CeF9tM3AyLWpZMUZiZlFtYXpndTM1SXA3QzRPMUNLUk9NVm1ndnVYSFVTWDU1cDE2QlJvVFRsOVJTQ1E2Y3VYQWFqeFN6UkdHZWFtdE9tV1RubWZ4dW5QS2ZUUF9lczI3TDE2eXF2OGxZZG9ORUdDY1R6N2Qwc1JZcVliVWRaejNSdy1FRFZwZVh1LWd2TlE5SHgxVF9QS2ZJNzQ1ODJZd2xuZXR0a3hyRkVBeWVFQkw2THZNMUxMcWdQZFY0eWxRelJUUXR1anVwSFFibV9iMVh2bjI2bFptMkgyMDBGWHU3SlRtYUJTcWxBUjRfSmpzSHpoc0VwUFI0djV6bktYdXhJSnFyYU14R2dYVVJYNzBZeU1MNE1NcnhnVXZnbnhDNTZkMVk4RWcwUzdHeGYyQjR2QVRqcXZmb1VzeVlUZV93WXRzaWRSUm55MkVYcVFlcTItRlhlY2FXejBKQnlwaWpCbzNKMUlkbzJ0NzJUZ0JPdXdKOUhyNm1mbnRRYVlQaDRVWHhXYUFCMXhVYjFhRXkzTUJRU1ZnLW1WcDFTQUpYVUNtclN2WTFLb3dYaDRfUG5ybGJuX3RNNmtfcHg2VzJCNXU5UWpEVHhvS0hTR25qQlZNdEN3MV9OTWpEYVpBM3pPRGJNb1ZPcUlTay1uNmw5Q0lhNDliSFkxV2dYdkdyellDczNBRnBudjRjYjNRLUVrZGxUWmVvQU13UG4yRjFLTGpJUHA0YTdCMi1yTGFtSG92enBqUUpuUUdDQU1TS2pmYmRSZnNUQnUtZTVNMFhyOVJrZlVpYkVPemQyeXo5NU15dmhaN3g5am5iRkZCOS1fa0VJNi1WSzN2aDVSMEdHbUJsdGVteDY0SXpwdDJsTVQ5SWgyeTFTei1nN040NUZsbXJTTWQ3NERxUm9PdFU0S1paSDlhRVA5RXZ5UjVNbi1MMGRLSDlyc2JMWkp1eTBiRUszNGJyVldVY29KRVNVYlljUzROdXd6b3JwbnNvMzlyZUhWTWRlWjdBV2g4NjRpckEyV253bmY1NmFOOWtFanVSWUp1UTBVMHRDaFk1N1UzNEJDc1FLSEc0VHNLWUVDblZRaTNSU0prUGhreWl1eUZJbjdELU56cG0yWHRwQXpGRmNfNjBWdks4bGNGS2xpTnNnOVRVcXROR0NpOWtWSEt5WE5oR2dTZDZZRDFGaFhEdWFGbDAtc2c?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T06:58:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mujrsunr-xbfu",
       "title": "Jabalpur Shooting: Youth Killed, Another Injured in Firing - Dainik Jagran MP CG",
       "slug": "jabalpur-shooting-youth-killed-another-injured-in-firing-dai",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZWR1ckV3cE05enE3M3A0UkNoSlVCUC1uM1lhdzdNMzBJTWVWX1RSNVpoQlJReF9CQ01uVlk4NjJWRnhja0lrYVRUSjNWMERIU3o4N05uUEdpOExlTFp1d2F1eHRzdHZWbkdaNFpnUFFlVy03cHRrT1NLUnBUc0F4WUdBcEJSVjNobG1tbW",
@@ -98,7 +195,7 @@
       ]
     },
     {
-      "id": "jbp-mujld3io-l919",
+      "id": "jbp-mujrsv0g-9n4a",
       "title": "जबलपुर: पितृपक्ष में गया जाने वालों के लिए रेलवे की सौगात - rajexpress.com",
       "slug": "rajexpress-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNcndRS0ZtbGdwSllyOTF5WE1qUWtCUjBwSFROYWdfenU5TXhVbTFYRUZhX1VWaDZnQWZlNlZQdkw0OFZfX1pNN2QtbXFxTzhNdnVzS0d4NXg1ZURtZXdzMU1ONFJvOEIzZ0x6Nk80QnJvTU5rc1V0TlBFSGxCTVFlU2xyMG00TzM4MmVVdm",
@@ -136,7 +233,7 @@
       ]
     },
     {
-      "id": "jbp-mujld3ik-1s22",
+      "id": "jbp-mujrsv0c-9ofv",
       "title": "जबलपुर में टाटा aeris प्राइस/कीमत - 2026 ऑन-रोड प्राइस देखें - CarDekho",
       "slug": "aeris-2026-cardekho",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5uN0U4VUpFN1ZpbXlSbHg5SEE5WUo5RFhaWk1COUcxRFpaWjF3QU93NTl3alRQMmVmTGdWYWpQbHYyQ2NrNl9EYjRRdWROSmM4YzRIdVQ2NEU1bUU1Rmx6Vld0TEczQ3M?oc=5\" target=\"_blank\">जबलपुर में टाटा aeris प्राइस",
@@ -165,25 +262,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNNUlZOWxCd0hWcTdkb2RScV8tOEtPU1VqQzFQSnNhZ3JDRXd0Qk1LSEdaTFZQLXBPNXo0eEZoLUZNM09BTy1kVGx3Nllleks3Y3RNWm1nR1lIMFlJWVhHLVY4b2lncjBjRWFQdlc2OHdkUHJ2dEhLRmdGSzR2UEMzYXRnRFAwLTV3UDl3UVBjS2RaQnVfZWR1dDkwQmNMdWV5a0VRdEpCb3Q5YWRGWHE4WjZRalJtTVlvQ3B1U2NzTkd5NkFoRHVoS3RJSkNid3ExMF9CaHpodVZNMW1LeEFrZGdaS3RCQdIB5gFBVV95cUxNNUlZOWxCd0hWcTdkb2RScV8tOEtPU1VqQzFQSnNhZ3JDRXd0Qk1LSEdaTFZQLXBPNXo0eEZoLUZNM09BTy1kVGx3Nllleks3Y3RNWm1nR1lIMFlJWVhHLVY4b2lncjBjRWFQdlc2OHdkUHJ2dEhLRmdGSzR2UEMzYXRnRFAwLTV3UDl3UVBjS2RaQnVfZWR1dDkwQmNMdWV5a0VRdEpCb3Q5YWRGWHE4WjZRalJtTVlvQ3B1U2NzTkd5NkFoRHVoS3RJSkNid3ExMF9CaHpodVZNMW1LeEFrZGdaS3RCQQ?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-27T03:46:35.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mujld3ik-bscq",
-      "title": "सिवनी में दो बाइक की भिड़ंत, 2 घायल: एक गंभीर, जबलपुर रेफर; घंसौर पुलिस ने जांच शुरू की - Seoni News - Dainik Bhaskar",
-      "slug": "2-seoni-news-dainik-bhaskar",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQWFFKdU56YzkwZ3g4eU9QdUFudTJPNXhDbWl6RFlQWjVJY3loX0o0RkhRRTlyUkFEbllJdXROMWU3d25aQW5TMko5Zk9DMzhEblBaMmhTSUNMOHdJdnhLV1dyV29zOUJCNFR5Y1VWQm1tZEZ6R1p3Q0gtT2Vzd0lmbW9qcllnQVFHUlFCdW",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQWFFKdU56YzkwZ3g4eU9QdUFudTJPNXhDbWl6RFlQWjVJY3loX0o0RkhRRTlyUkFEbllJdXROMWU3d25aQW5TMko5Zk9DMzhEblBaMmhTSUNMOHdJdnhLV1dyV29zOUJCNFR5Y1VWQm1tZEZ6R1p3Q0gtT2Vzd0lmbW9qcllnQVFHUlFCdW",
-      "category": "Local News",
-      "source": "Dainik Bhaskar",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWFFKdU56YzkwZ3g4eU9QdUFudTJPNXhDbWl6RFlQWjVJY3loX0o0RkhRRTlyUkFEbllJdXROMWU3d25aQW5TMko5Zk9DMzhEblBaMmhTSUNMOHdJdnhLV1dyV29zOUJCNFR5Y1VWQm1tZEZ6R1p3Q0gtT2Vzd0lmbW9qcllnQVFHUlFCdWVVWDI2cllWRW1tQ1ZId0tjNldGOXdYWGFUSXhQWXBreVQwUjk3SDREZjB3dllSbXlUaDlLdmoxMFlB?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T01:26:22.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -231,25 +309,6 @@
       ]
     },
     {
-      "id": "jbp-mujld3ik-stxx",
-      "title": "MP के शिक्षकों की 15-20 हजार तक बढ़ेगी सैलरी: 70 हजार टीचर्स को 10 साल का एरियर; एमपी हाईकोर्ट ने सरकार को ... - Dainik Bhaskar",
-      "slug": "mp-15-20-70-10-dainik-bhaskar",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPYW04YU44TjZZREU3dnViVzBvYWtmc2pscG15T1VnaDhWbW9aV1g3YmllTENCNl9SVXBDakZMbnFja21OX01IbXYydW1GMkNWVlR1UC1iYlBJNkRLakdXWFVELUgxT0JjcTV5YkJvZEhsRm5QZ3ZKRThsYW5ueWRHWkxQWWxJV3BXTUZZal",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPYW04YU44TjZZREU3dnViVzBvYWtmc2pscG15T1VnaDhWbW9aV1g3YmllTENCNl9SVXBDakZMbnFja21OX01IbXYydW1GMkNWVlR1UC1iYlBJNkRLakdXWFVELUgxT0JjcTV5YkJvZEhsRm5QZ3ZKRThsYW5ueWRHWkxQWWxJV3BXTUZZal",
-      "category": "Local News",
-      "source": "Dainik Bhaskar",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYW04YU44TjZZREU3dnViVzBvYWtmc2pscG15T1VnaDhWbW9aV1g3YmllTENCNl9SVXBDakZMbnFja21OX01IbXYydW1GMkNWVlR1UC1iYlBJNkRLakdXWFVELUgxT0JjcTV5YkJvZEhsRm5QZ3ZKRThsYW5ueWRHWkxQWWxJV3BXTUZZal9fTzhsU1NzelVVWnp2blhPYmQxQUF3NHhOTFVKT0RINVFMSlp0NENMVHJ2ZFFZd9IBwgFBVV95cUxQTXp5ek12MHZUdllYOGsxNUE5X2w2Z0pILTIxZFVUcDZiWWljcEs1aDRyTFphWUF5QnZuMzNNYWZ3dkRoX3RRUnVURmYtNEtHUDZXYl96S0RfR1Bka0taRVFkY0hvR3BRTFJEd3FjQ2U5WHB6c2p2ZGdHbkRUYnNBc0FhWHhZSTBDeEF4OVRockZwQW1wZjdYOFA2VldPT3hVZ3RMZkdual9sLWJ5QnotTjB2M1M2WGMxQ090VnhXeWxEZw?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T00:42:25.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
       "id": "jbp-mujey576-jw9o",
       "title": "MP के शिक्षकों की 15-20 हजार तक बढ़ेगी सैलरी: 70 हजार टीचर्स को 10 साल का एरियर; एमपी हाईकोर्ट ने सरकार को ... - bhaskar.com",
       "slug": "mp-15-20-70-10-bhaskar-com",
@@ -269,7 +328,7 @@
       ]
     },
     {
-      "id": "jbp-mujld34y-rv5h",
+      "id": "jbp-mujrsunr-dnby",
       "title": "Very heavy rain alert issued in 13 districts of Madhya Pradesh - Social News XYZ",
       "slug": "very-heavy-rain-alert-issued-in-13-districts-of-madhya-prade",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOeEJIaTVUeEl2XzVUN29nLWdRWDl2cmk3MUtXS2ExbHcwVXlZRHFUTWwyZXdXQUtydUxGRXFYVk4wTHFNX3RKZ3IzUFZCZGFXdnJlcWRQWnZ0VlozVVUtNENqZU0yZnU1Q1dXRDc0MVlPX21qaTlSb2tNRDAycVVUTjlmXzhQWXBnbzJ5eF",
@@ -283,25 +342,6 @@
       "isFeatured": false,
       "tags": [
         "Environment & City",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mujld3ik-02nf",
-      "title": "रेल यात्रियों को मिलेगा स्वच्छ-सुरक्षित पेयजल: 284 स्टेशनों पर निगरानी, 9,850 नलों-वाटर बूथों की सफाई; पश्च... - Dainik Bhaskar",
-      "slug": "284-9-850-dainik-bhaskar",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmVheURpcEpxUHpTTVV4UHV0Mnd0S0Q4Y1FheGxKWmdnNXRHYjB5elpBbVBhdkl3ZnlVWm9udmNjSTVxZlZ3RHFkNTRpZ1pnc1hsdlZlOVV3NVVRVWRjYlJ2dy1XejUtMEYwSGYzZHlOZXNJUDh0M2duVWJ1Y24zWDktU2tRQ2JoQ1BZX3",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmVheURpcEpxUHpTTVV4UHV0Mnd0S0Q4Y1FheGxKWmdnNXRHYjB5elpBbVBhdkl3ZnlVWm9udmNjSTVxZlZ3RHFkNTRpZ1pnc1hsdlZlOVV3NVVRVWRjYlJ2dy1XejUtMEYwSGYzZHlOZXNJUDh0M2duVWJ1Y24zWDktU2tRQ2JoQ1BZX3",
-      "category": "Local News",
-      "source": "Dainik Bhaskar",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmVheURpcEpxUHpTTVV4UHV0Mnd0S0Q4Y1FheGxKWmdnNXRHYjB5elpBbVBhdkl3ZnlVWm9udmNjSTVxZlZ3RHFkNTRpZ1pnc1hsdlZlOVV3NVVRVWRjYlJ2dy1XejUtMEYwSGYzZHlOZXNJUDh0M2duVWJ1Y24zWDktU2tRQ2JoQ1BZX3V4emFWNDYtMHpVbURzcGU1bFY3N0huaXU2ZE5XbkNxQ2wwSzh6T1h1LXBjb3hvMTFCRDdoUdIBxwFBVV95cUxQUFlwM3JNMjhjcTIxT2duM0R1cjZYR2tGbmRyS09pWmFlb082bU5CTmtnV0NILU52cWdtZUQtOEJKMHZKWkM2V2hCd1hiVF9HZDh3cnA4VXc1bmQ1RVk3eFI1QTdRSGJ1SnlvUnZlQXZZM281QkF2NzlJdi1aZlVDUUdKaEQ0Wkt1LTZ5M2Q1dXRMMU9DQ1VoWk9JODNmQVhhUjRSdDhpSVg0TkRwOU1Cd2xOWlo2em40Vy1vTUk4QWpjZjVONXdV?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-26T20:46:50.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
         "Jabalpur",
         "Madhya Pradesh"
       ]
@@ -355,25 +395,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT1E4b3VEekpybXZoYzhsYUl3NlRISVZCaFNfMUZGTHFKa21nVWRRQXItaGN6LVYzVVd3NHhqcFNhMER6ZlRPeTlGc1JRbmswRWxEUlhEdjBMRGd0S1hrSEY2c2tkS19hUl94ZFVjeG5NOS15LURGZmJWWlg5aXloSWVmUlJkYlZtZmlmaW50WUVPYVkwWW9Id2dlaGRVTnfSAaQBQVVfeXFMT2IxY2VGd2s4VTBvaE5heG80b19ETEJUZmxzN3Y0Vkc0azRQeXBJN3R5YXp0VXh2QmxKcV9hdnBsYVNwS21xLVFWTGxFZ3h4QWplajI1YUVWdWgxdGd0XzRGbVpRT0VoSXdXT2lkQjl0UzBEN3dnWTBqR2RNek1qcGpYeVhUYnZ2NW5jQVQ0YkRNTGVmMVZMOV9tMUQ2RGlxdUY4cGU?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-26T15:39:53.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mujld3io-i4dp",
-      "title": "जबलपुर : दिनदहाड़े गोलियों से गूंजा भोला नगर, युवक की हत्या, साथी गंभीर घायल - हिन्दुस्थान समाचार",
-      "slug": "",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNYldpck9mU056YjgwYlc2d0F3NllXZVR1T3hyQno4bU5tMXE0akpCZzRfeXhNNXJTSkZYSjZFem50VjR5TkstcFA2TGhHSUJsV1ZESnFvd19NdkVCamc2Si16TGUtMkVPQW1fdFVZdFFlRmI0WklteWZ6RlF3aUxXOVlXRDRaWEU?oc=5\" ",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNYldpck9mU056YjgwYlc2d0F3NllXZVR1T3hyQno4bU5tMXE0akpCZzRfeXhNNXJTSkZYSjZFem50VjR5TkstcFA2TGhHSUJsV1ZESnFvd19NdkVCamc2Si16TGUtMkVPQW1fdFVZdFFlRmI0WklteWZ6RlF3aUxXOVlXRDRaWEU?oc=5\" ",
-      "category": "Local News",
-      "source": "हिन्दुस्थान समाचार",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYldpck9mU056YjgwYlc2d0F3NllXZVR1T3hyQno4bU5tMXE0akpCZzRfeXhNNXJTSkZYSjZFem50VjR5TkstcFA2TGhHSUJsV1ZESnFvd19NdkVCamc2Si16TGUtMkVPQW1fdFVZdFFlRmI0WklteWZ6RlF3aUxXOVlXRDRaWEU?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-26T15:37:53.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -450,25 +471,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORHZCTDMwT0liRDc1ZlBkVENJUjJhNkNkblFseUI5YnpaZGwweFh6S3Y4bjNSVFlFdFhvU0lfb29QNFZDLTZ3YUJzTmU2UlNMNHhPRmpjbWlUVE1OSm5GUFM5LUxJbDk0Tl80NGpHWXd3dFRXaUhTbVpWQnYxaHR3MEc4TFVQTXBBbGI4WkhwVU5MaUtOM2EtOGdFTDhLY0IwN1c5cWVlUmRYQ3BJRGFBMUhERkR3NVJCb1hPQ29UWHV4ekh6?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-26T15:30:21.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mujld34s-j0zz",
-      "title": "Two youths shot in Jabalpur, one killed: Bike-borne attackers fired 3-4 rounds; police scan CCTV footage - bhaskarenglish.in",
-      "slug": "two-youths-shot-in-jabalpur-one-killed-bike-borne-attackers-",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ3MXlDUVZ0OFVTSXZ5MFpVdUdJbE10QVFicFBSUXJXdXJreFVGVl9fNWkyQnVUbGJmMVhmVXp2dDdyOTBhcGNDZnRaWHV5dlBKcGx1aWVxS0tBbmJ2eUQ5MnFzaUU3eXVManVNTUJPQnI0V1NZQzh2THFwWFhZN2EycUJ6RVJTUk1fZl",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ3MXlDUVZ0OFVTSXZ5MFpVdUdJbE10QVFicFBSUXJXdXJreFVGVl9fNWkyQnVUbGJmMVhmVXp2dDdyOTBhcGNDZnRaWHV5dlBKcGx1aWVxS0tBbmJ2eUQ5MnFzaUU3eXVManVNTUJPQnI0V1NZQzh2THFwWFhZN2EycUJ6RVJTUk1fZl",
-      "category": "Local News",
-      "source": "bhaskarenglish.in",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ3MXlDUVZ0OFVTSXZ5MFpVdUdJbE10QVFicFBSUXJXdXJreFVGVl9fNWkyQnVUbGJmMVhmVXp2dDdyOTBhcGNDZnRaWHV5dlBKcGx1aWVxS0tBbmJ2eUQ5MnFzaUU3eXVManVNTUJPQnI0V1NZQzh2THFwWFhZN2EycUJ6RVJTUk1fZld4bl96SDJqTmZubkRXS3p3eWktVHQwVXBGYnVjTVRQZ3hFaTlRT3pmNWw4dm9aU0RVSnhPRGNQ0gHKAUFVX3lxTFBqR1lrS0dJMGEwZ19VTUVMTmMwN2tmaFRUdEJWbnJBV2VCR2R6UHdnUGNSTkJnY0hWbi1qYXA1REZIWGU0aTNJUWJzVmJIaXhWWXZHbFpsNjRaWkNLVWFzZkowS3gtLUxBSEtuOUtkMUtfMWpZRW5hVXFfd1htXzdxRTdtYmI2RFM4OEtkdFhmeHNvdmVXeklxZ2VXOVZJeVhqbm1WeEhaTzNWWmZCNndZYjkySzg5MUZFdFpsQ2gwNUxaeU5iUDZfZmc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-26T15:00:53.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
