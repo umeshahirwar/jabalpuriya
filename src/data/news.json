@@ -1,16 +1,19 @@
 {
-  "lastUpdated": "2026-09-28T03:04:03.840Z",
+  "lastUpdated": "2026-09-28T06:04:19.072Z",
   "totalStories": 24,
   "sources": [
+    "Nai Dunia",
+    "Lalluram",
+    "bhaskarenglish.in",
     "News18 Hindi",
-    "Bhaskar English",
     "AIMA Media",
-    "The CSR Journal",
+    "thecsrjournal.in",
     "Business Today",
+    "The Hindu",
     "The Sootr",
     "tv9hindi.com",
     "Jagran",
-    "Nai Dunia",
+    "Dainik Bhaskar",
     "bhaskarhindi.com",
     "Navbharat Times",
     "navbharattimes.indiatimes.com",
@@ -18,15 +21,68 @@
     "ETV Bharat",
     "Aaj Tak",
     "स्टार समाचार",
-    "IBC24 News",
-    "MP Breaking News",
-    "mpbreakingnews.in",
-    "Dainik Bhaskar",
-    "HumSamvet"
+    "IBC24 News"
   ],
   "articles": [
     {
-      "id": "jbp-muknyh1h-1f31",
+      "id": "jbp-mukueaa8-mvx3",
+      "title": "पितृपक्ष स्पेशल ट्रेन: जबलपुर से गया जाने वालों की बल्ले-बल्ले, 24 कोच वाली ट्रेन लगाएगी 3-3 ट्रिप, यहां देखिए पूरा शेड्यूल - Nai Dunia",
+      "slug": "24-3-3-nai-dunia",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxPcjMyamdDcjNLeWlrQ21ncVpNS2JjYmg2dGRJUHF5T1pnTGk3VjI4am5VcURWa0hZUF8xQXoxNS15S1FaNHJCbGJYQVlSQ0Y2UzZkbzdYa1U3aG9TVWtqVklSU1F2NFVnWnpCeG8yaU0ySUdtUWhhb2wtLUNEX3hOZnIyaWdOZ0M0bE5hOF",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxPcjMyamdDcjNLeWlrQ21ncVpNS2JjYmg2dGRJUHF5T1pnTGk3VjI4am5VcURWa0hZUF8xQXoxNS15S1FaNHJCbGJYQVlSQ0Y2UzZkbzdYa1U3aG9TVWtqVklSU1F2NFVnWnpCeG8yaU0ySUdtUWhhb2wtLUNEX3hOZnIyaWdOZ0M0bE5hOF",
+      "category": "Local News",
+      "source": "Nai Dunia",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPcjMyamdDcjNLeWlrQ21ncVpNS2JjYmg2dGRJUHF5T1pnTGk3VjI4am5VcURWa0hZUF8xQXoxNS15S1FaNHJCbGJYQVlSQ0Y2UzZkbzdYa1U3aG9TVWtqVklSU1F2NFVnWnpCeG8yaU0ySUdtUWhhb2wtLUNEX3hOZnIyaWdOZ0M0bE5hOFcyajdtV1pVaVFZa2tPaUZDNDdRbVVqdGlTMFZsQ1pXNlpzZ3RVRzlVUm9tZDVqdkdhbm1vVEluM19kdHJrQWwtQ1BuWllvYWlwWG5OMWNDUkh5Yk1BNjl5Tm5vOHRPUHpENmt4Ull5bTRXYmJSWQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-28T05:18:58.000Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mukueaa9-v17r",
+      "title": "प्रेमानंद महाराज के शिष्य की मौत का मामला गहरायाः जबलपुर निवासी परिजनों ने की सीबीआई जांच की मांग - Lalluram",
+      "slug": "lalluram",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUlkNXdILXBJaTdIOWwyampVQk9YR2hmR0hnUlRETDFoYTY4S0Q0QXZucHNSam5vM3hLWTRhUkN2OGF4Vk53VjN6bExzZ012MmV0aWVlUmd3MDAydC1YN21yMnRNRlotUDRra01MLTFuTDZ5V3dNLWhlWXNfajlmNVdPMHZfelpadkZWZl",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUlkNXdILXBJaTdIOWwyampVQk9YR2hmR0hnUlRETDFoYTY4S0Q0QXZucHNSam5vM3hLWTRhUkN2OGF4Vk53VjN6bExzZ012MmV0aWVlUmd3MDAydC1YN21yMnRNRlotUDRra01MLTFuTDZ5V3dNLWhlWXNfajlmNVdPMHZfelpadkZWZl",
+      "category": "Local News",
+      "source": "Lalluram",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUlkNXdILXBJaTdIOWwyampVQk9YR2hmR0hnUlRETDFoYTY4S0Q0QXZucHNSam5vM3hLWTRhUkN2OGF4Vk53VjN6bExzZ012MmV0aWVlUmd3MDAydC1YN21yMnRNRlotUDRra01MLTFuTDZ5V3dNLWhlWXNfajlmNVdPMHZfelpadkZWZlRqdy1qTS1TWVItR1dTT1hNRlY2MDY0VUNGcC1ULUR4d0ZUT0VpbFM?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-28T05:08:22.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mukue9yl-yhxc",
+      "title": "Pitru Paksha special train from Jabalpur to Gaya: 3 trips each, 24 coaches; check dates and timings - bhaskarenglish.in",
+      "slug": "pitru-paksha-special-train-from-jabalpur-to-gaya-3-trips-eac",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTk95UUpWSm1oQThwWFluWVkxYjFwaVF3QkpXLVUtU2ctdTFqOGY2T25vYmE3bkc5QnR4ekpFN3FVWWFudzd3LXZBVmswUFMyenBzVkwzMUZNZDZXcVBXYjh5TWpVazZqRVg5Nm9oLWY5YTJEQVNIeVFPbzY1QWdQTS00bWE4RGh2c21wRz",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTk95UUpWSm1oQThwWFluWVkxYjFwaVF3QkpXLVUtU2ctdTFqOGY2T25vYmE3bkc5QnR4ekpFN3FVWWFudzd3LXZBVmswUFMyenBzVkwzMUZNZDZXcVBXYjh5TWpVazZqRVg5Nm9oLWY5YTJEQVNIeVFPbzY1QWdQTS00bWE4RGh2c21wRz",
+      "category": "Environment & City",
+      "source": "bhaskarenglish.in",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTk95UUpWSm1oQThwWFluWVkxYjFwaVF3QkpXLVUtU2ctdTFqOGY2T25vYmE3bkc5QnR4ekpFN3FVWWFudzd3LXZBVmswUFMyenBzVkwzMUZNZDZXcVBXYjh5TWpVazZqRVg5Nm9oLWY5YTJEQVNIeVFPbzY1QWdQTS00bWE4RGh2c21wRzNPalNKNklhbkdHM2loNHFDYkk4R3Jxc0VnYWVKMzlaT2hDR1k5OWU0eVdxRms1bXllbknSAcYBQVVfeXFMTVl2MEk0STBhOC1nSDZCdHRzR2gtTkJhdjZ1RzBuVGhrOEtHTkNPZVpHS0JXY0Y5OTJxY3hob2w4ZUNzYnl1SHNhX3AxSFRfZ0FSemYxMkhKeGVscE9ISm9MYi10MEIzS3A0YnRWMmtSY0lqMlZoUFN2ODNhQ3A5OWh6V2lnZUVmeVFlQmt4eEl2eFVxZWh3QUI5UnFBREtJOW9TY09Ja2J0T1dJa05CdFBqSHdFeHRQTHBEWjBNT2tUbHBDcU53?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-28T04:51:07.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mukueaa4-xyeg",
       "title": "MP में धीमी पड़ी मानसून की रफ्तार, अब बारिश नहीं...झोंकेदार हवा से सावधान - News18 Hindi",
       "slug": "mp-news18-hindi",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxNbVg5eGZWRFZNS19aVWgwY18tMmpZY2JPWGg0SkxTOXp3RUJuckp0R1k0bm5HNVN6U0tQQkh2MU8tUHpISThPaVZ4Uk8tcms5NGNWVnI3MUdSWTNHd2FSMkR6ckZoMTgxcklZdF9qdk43dG5ScWY4XzFqZ284UW80SUxLendCZ1h4dUY4TG",
@@ -37,7 +93,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-28T00:33:00.000Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
       "tags": [
         "Local News",
         "Jabalpur",
@@ -45,13 +101,13 @@
       ]
     },
     {
-      "id": "jbp-muknygos-mbk3",
-      "title": "MP records 37.7 inches of rain, reaching 95.8% of quota: Monsoon withdrawal to begin within a week, bright ... - Bhaskar English",
+      "id": "jbp-mukue9ym-6l0z",
+      "title": "MP records 37.7 inches of rain, reaching 95.8% of quota: Monsoon withdrawal to begin within a week, bright ... - bhaskarenglish.in",
       "slug": "mp-records-37-7-inches-of-rain-reaching-95-8-of-quota-monsoo",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQck5kY1oza0swME1ndEdsNFluMWdjRDVNUHp4RHcxampfZ0dFU0VKWjNVVEUyWGkxVXRFMjRXNzFmREJ4N0l6R3VDX3ZOblNTMlhpWElTdzc0TnMzYVZ2bzhKaFVHaW1nbXlLem1IbVlpclRoQjlLSl9ieFlJaFMwZnVXRXRMY2lQWm9RbF",
       "content": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQck5kY1oza0swME1ndEdsNFluMWdjRDVNUHp4RHcxampfZ0dFU0VKWjNVVEUyWGkxVXRFMjRXNzFmREJ4N0l6R3VDX3ZOblNTMlhpWElTdzc0TnMzYVZ2bzhKaFVHaW1nbXlLem1IbVlpclRoQjlLSl9ieFlJaFMwZnVXRXRMY2lQWm9RbF",
       "category": "Environment & City",
-      "source": "Bhaskar English",
+      "source": "bhaskarenglish.in",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQck5kY1oza0swME1ndEdsNFluMWdjRDVNUHp4RHcxampfZ0dFU0VKWjNVVEUyWGkxVXRFMjRXNzFmREJ4N0l6R3VDX3ZOblNTMlhpWElTdzc0TnMzYVZ2bzhKaFVHaW1nbXlLem1IbVlpclRoQjlLSl9ieFlJaFMwZnVXRXRMY2lQWm9RbFF4bDZ5SFpaYzZiRms3WC1HTmhoNGgwQmU3ZTZoaVVIZmRFbmRQVk42QnNUVWfSAb8BQVVfeXFMUDNwT0lHQ2s1ekkzVGhiaVJlRnZtaU5hODUydGN2eEtNTUlUbE1SOTBOZlExSmt1MzJnempVVHVRbGl5RnRuU1d1TDUxQTNHV0NZUHVocjNFdWc3dG1nZTRQanRCNkgyeDFRaGd5eEtRRmhDT2tGSkg1VTgwZ04tN29nd05RcXdydjFmVGpIYzlVVHA4dnoyQ3dBd242VU50SmhWUkNEd1dyR1B2SVBrV1dvOW5ZalVNVXc5TlBUR00?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-28T00:30:00.000Z",
@@ -64,7 +120,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1h-hx5k",
+      "id": "jbp-mukueaa4-11c3",
       "title": "जबलपुर: गणेश विसर्जन में तीन किशोरों की डूबने से मौत - AIMA Media",
       "slug": "aima-media",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiogdBVV95cUxQOEJTNHhNekhnTlJHWlQwZTF4SXlERWpmczZQV3BkTVl4d0x3QkxXVjNZb1Rmb0d5YVhobWpJWnJZZFBLODBKdTlUVjYwZDAxOHBEVFBXQUtIeWpFMjYxWjR3cmV5ckppRmJqRHpIdG9KOGY1OUg5bE1jUGc3LTFzSnZwZ2N4TzF5bTBpbG",
@@ -83,13 +139,13 @@
       ]
     },
     {
-      "id": "jbp-muknyh1h-hev3",
-      "title": "India First World Class Geological Museum: जबलपुर में बनेगा देश का पहला वर्ल्ड क्लास जियोलॉजिकल म्यूजियम - The CSR Journal",
-      "slug": "india-first-world-class-geological-museum-the-csr-journal",
+      "id": "jbp-mukueaa4-2le7",
+      "title": "India First World Class Geological Museum: जबलपुर में बनेगा देश का पहला वर्ल्ड क्लास जियोलॉजिकल म्यूजियम - thecsrjournal.in",
+      "slug": "india-first-world-class-geological-museum-thecsrjournal-in",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNdGNhTmhTWXItWHpWczJ3dU9BclRqZFFoaW5VX2RtUnhsMENjekJhaHU1d0JGd09hcWJVRmJueGpLT3ZoRkNWcEdSUlhndzFuN0t0NzNlWHdoMGFSM1NkbmF6YnkyNjV5Z2VMeERlOXFHVG5rc2JuaERBTzgybFBhRVA5QUZGd2FOM2ZfLS",
       "content": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNdGNhTmhTWXItWHpWczJ3dU9BclRqZFFoaW5VX2RtUnhsMENjekJhaHU1d0JGd09hcWJVRmJueGpLT3ZoRkNWcEdSUlhndzFuN0t0NzNlWHdoMGFSM1NkbmF6YnkyNjV5Z2VMeERlOXFHVG5rc2JuaERBTzgybFBhRVA5QUZGd2FOM2ZfLS",
       "category": "Local News",
-      "source": "The CSR Journal",
+      "source": "thecsrjournal.in",
       "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdGNhTmhTWXItWHpWczJ3dU9BclRqZFFoaW5VX2RtUnhsMENjekJhaHU1d0JGd09hcWJVRmJueGpLT3ZoRkNWcEdSUlhndzFuN0t0NzNlWHdoMGFSM1NkbmF6YnkyNjV5Z2VMeERlOXFHVG5rc2JuaERBTzgybFBhRVA5QUZGd2FOM2ZfLS1DSUtTNHV3THJmM3lOMG14MTdOcDN5WQ?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-27T19:14:02.000Z",
@@ -102,7 +158,7 @@
       ]
     },
     {
-      "id": "jbp-muknygoq-a1ec",
+      "id": "jbp-mukue9yl-owf6",
       "title": "Silver Rate Today in Jabalpur 28th September 2026 : 1 KG, Todays Silver Price in Jabalpur - Business Today",
       "slug": "silver-rate-today-in-jabalpur-28th-september-2026-1-kg-today",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBRb2xCNUVNU0Z4Y2tJS2ZnSTRzSXJZVGhmenpydXRVb05waU9aNW1rMmNqcWZBZU5TUFJnRl9qbzlvNlBpdlJpSXZRMlQ5X2ZrZzlTdU5vS045YXlxM1dGaGMzRWtwRmNhd1VCNTNRRWNRckRBdmZ3?oc=5\" target=\"_blank\">Silver ",
@@ -121,7 +177,26 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-xpbt",
+      "id": "jbp-mukue9yl-t3gu",
+      "title": "In need of an overhaul: on the Election Commission of India’s press note - The Hindu",
+      "slug": "in-need-of-an-overhaul-on-the-election-commission-of-india-s",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSDlIZ3BVam8zd3M1WXg5VkRhaGVWdDFNOEJvZTIzOHZDalk4UGo4TEd6YllpZG9Ubl9ibmFrY3lrOTZIX2UxcjBPRW9Rc0MzY3lWWlBSVzhCTTFndTRUcG5hOFJRSW9CVmVqRTdhRU5VdlRsazB0TEYybW8yckRzQWt4ZThfTTl2QXY3d0",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSDlIZ3BVam8zd3M1WXg5VkRhaGVWdDFNOEJvZTIzOHZDalk4UGo4TEd6YllpZG9Ubl9ibmFrY3lrOTZIX2UxcjBPRW9Rc0MzY3lWWlBSVzhCTTFndTRUcG5hOFJRSW9CVmVqRTdhRU5VdlRsazB0TEYybW8yckRzQWt4ZThfTTl2QXY3d0",
+      "category": "Local News",
+      "source": "The Hindu",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSDlIZ3BVam8zd3M1WXg5VkRhaGVWdDFNOEJvZTIzOHZDalk4UGo4TEd6YllpZG9Ubl9ibmFrY3lrOTZIX2UxcjBPRW9Rc0MzY3lWWlBSVzhCTTFndTRUcG5hOFJRSW9CVmVqRTdhRU5VdlRsazB0TEYybW8yckRzQWt4ZThfTTl2QXY3d011blRsSVRVZzNvTkJlVmI3TDBJdmRpTE1aNklmUlpwT092cjIwZVZMLVFORUFRQ3N3Z1VTeVJJR2VjQmRUQThFN3BadF9ZatIB1AFBVV95cUxNSDlIZ3BVam8zd3M1WXg5VkRhaGVWdDFNOEJvZTIzOHZDalk4UGo4TEd6YllpZG9Ubl9ibmFrY3lrOTZIX2UxcjBPRW9Rc0MzY3lWWlBSVzhCTTFndTRUcG5hOFJRSW9CVmVqRTdhRU5VdlRsazB0TEYybW8yckRzQWt4ZThfTTl2QXY3d011blRsSVRVZzNvTkJlVmI3TDBJdmRpTE1aNklmUlpwT092cjIwZVZMLVFORUFRQ3N3Z1VTeVJJR2VjQmRUQThFN3BadF9Zag?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
+      "publishedAt": "2026-09-27T18:50:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mukueaa9-pzzf",
       "title": "ICMR जबलपुर में निकली सरकारी नौकरी, 5-6 अक्टूबर को होगा इंटरव्यू - The Sootr",
       "slug": "icmr-5-6-the-sootr",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE1nM2ppdk44bDZ3YTJjdjFGeVllSjNWbVpONjRxdkFsNWZlazJLQ1ZjeTlrQ2NQVENfNHJrZjZDbHk5ekdEQ3hNc0dRNjByZVJqQkZzRXlzOFEzUlJPaldQeVIwV0xUM0JUYXYtZ2JyTEpuS3VmYkhMQjkweE5jdw?oc=5\" target=\"_blan",
@@ -140,7 +215,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-vyaf",
+      "id": "jbp-mukueaa9-xo2w",
       "title": "जबलपुर में होटल में पत्नी को वकील के साथ देख भड़का शौहर, जमकर हुआ हंगामा… तोड़ा रिश्ता - tv9hindi.com",
       "slug": "tv9hindi-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZVNYeVZqNGtoeE9femhqWDQtMWlpZkxqa3hVLUwxcWZ0T2lmSUZmSy1yUDV2X1FCRFpkY283anNtUUdOTHZacWlPVE5WNi1LdWItT2RaZG45end6Q0NZbmVMVXdmWGVYOGVrOTVPREIwdE9pYklyYWl3SDJMcTJGajB1RDBtdC1zQXUydz",
@@ -159,7 +234,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1h-ojmg",
+      "id": "jbp-mukueaa4-xp08",
       "title": "जबलपुर: होटल में पत्नी को दूसरे पुरुष के साथ देख भड़का पति, जमकर हंगामा; सड़क पर मारपीट में कपड़े फटे - Jagran",
       "slug": "jagran",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWnVwTUpOZ29kcUh2R1JkdU8xcFpRWEFkaXBIaEQ3X0huRHBIZnlXbE14TlhPeEE4V3QyeXZTd2tpQUZOOS1vZ043T01hczVFaGUxbEJzZVRIUVFtLUpUWEVRdmZEMm5iTlE0dnJYMUkwaWlBRTdGUG1md0tmLWlqamxRLXBkbzllXzBBOU",
@@ -178,7 +253,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-104t",
+      "id": "jbp-mukueaa9-ebw8",
       "title": "Jabalpur: प्रेमानंद महाराज के शिष्य की मौत पर गहराया रहस्य, परिजनों ने की CBI जांच की मांग - tv9hindi.com",
       "slug": "jabalpur-cbi-tv9hindi-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxPak00RzRvSERzUHMtMG95ZjJ1UlBwSnhfS18tcFBSbnpVVVMtcGhNVGFERWNoTGRkTFlZSEFuUkdxZU5HUkdrc3VFRmZFZk9BT3dJVWxGYUNvM2R3NElNMzdkMWVfR0UzclNvakp5aG9ZY2QyV2k1YXJVOXVVRlVDZWlHclJOVVRlemFKMU",
@@ -197,16 +272,16 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-l9u5",
-      "title": "2 दिन से बूंद-बूंद पानी को तरस रहा आधा जबलपुर, 19 पानी की टंकियां खाली, जलसंकट से शहर में हाहाकार - Nai Dunia",
-      "slug": "2-19-nai-dunia",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxONk1VT1ZXOEQtdFltdldST1l3R2NocTlLa3RmaXZCeWh6WENLQmRHcHhyZUJRa2psLTl4aFozSDBrWjlBaDJXd0UtcVd5T3BBOWVYTmRZVEw2SzRrMVBrNmxYRFI1aEFaYXc2N2JnMWlWLTlveUN0bGJsYURaZkxVVjB4RnNlaHhFZlIyMG",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxONk1VT1ZXOEQtdFltdldST1l3R2NocTlLa3RmaXZCeWh6WENLQmRHcHhyZUJRa2psLTl4aFozSDBrWjlBaDJXd0UtcVd5T3BBOWVYTmRZVEw2SzRrMVBrNmxYRFI1aEFaYXc2N2JnMWlWLTlveUN0bGJsYURaZkxVVjB4RnNlaHhFZlIyMG",
+      "id": "jbp-mukueaa4-507i",
+      "title": "होटल में घुसी कार, वकील की मौत, 4 घायल: जबलपुर में दोस्त से मिलने जा रहे थे; बैक सीट पर मिली शराब की बोतल - Dainik Bhaskar",
+      "slug": "4-dainik-bhaskar",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMGdNeGRseURNZHlWbHhnRVA5ZU5jSDgwZDROelZfcS01dXdDQTducHZNUVhUOHFyZFRoQldFbnprS29GQmsyR05MZG1CR2txVTg0Y0h5ZDQydzc3RndjX09GNFpfODFCNi1RX3pMRllMZUlrT1BXZWxxek1PR2ZqM2dRVFJneTdzT0lnRU",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMGdNeGRseURNZHlWbHhnRVA5ZU5jSDgwZDROelZfcS01dXdDQTducHZNUVhUOHFyZFRoQldFbnprS29GQmsyR05MZG1CR2txVTg0Y0h5ZDQydzc3RndjX09GNFpfODFCNi1RX3pMRllMZUlrT1BXZWxxek1PR2ZqM2dRVFJneTdzT0lnRU",
       "category": "Local News",
-      "source": "Nai Dunia",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONk1VT1ZXOEQtdFltdldST1l3R2NocTlLa3RmaXZCeWh6WENLQmRHcHhyZUJRa2psLTl4aFozSDBrWjlBaDJXd0UtcVd5T3BBOWVYTmRZVEw2SzRrMVBrNmxYRFI1aEFaYXc2N2JnMWlWLTlveUN0bGJsYURaZkxVVjB4RnNlaHhFZlIyMGhhUjFGU21SLVJMNV9oOUpGTWxQX3VJTGJJbjdjbVZnY1VyYUZfTWxLZ1FyQTJXN3Fhb0lidkVPWXA1c3hRcFkzRlJocjZR?oc=5",
+      "source": "Dainik Bhaskar",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMGdNeGRseURNZHlWbHhnRVA5ZU5jSDgwZDROelZfcS01dXdDQTducHZNUVhUOHFyZFRoQldFbnprS29GQmsyR05MZG1CR2txVTg0Y0h5ZDQydzc3RndjX09GNFpfODFCNi1RX3pMRllMZUlrT1BXZWxxek1PR2ZqM2dRVFJneTdzT0lnRURrNXJwN0hiVkhPU3V1TjNmUmVMMW01TV8tSTZOZzU3WFdCbTV3ZmZxN3ZXMVlXY19zUE9XUdIBxwFBVV95cUxQTWM1V1F0MzQzby1rWFBMRTZnbEFWYjdqYVB6RkRmaTZjN0czOUFzZWZYU1JvV1hDcTJDNmd4SDdkaUF3NUtSZ1B4R1E3WWU2RVFmTl9MV2d3UWprN0pqX0JJVEY1dGI0VXZQWndsUWpEeHNTeTA4eWIwWlBlQnh2X0hBUnVxaHFCWnFvR1RoM2x5ZWVoV2FlandueFdZeWc5dkF2eTFQSDBfNGExZUhWX21EU2Q5YU9jZnIxUFpNT29kS3BXTkdF?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T16:29:08.000Z",
+      "publishedAt": "2026-09-27T16:49:13.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -216,13 +291,13 @@
       ]
     },
     {
-      "id": "jbp-muknygor-y4fp",
-      "title": "Premanand Maharaj’s disciple dies in suspicious circumstances, family questions suicide: Says he could not ... - Bhaskar English",
+      "id": "jbp-mukue9yl-t7hz",
+      "title": "Premanand Maharaj’s disciple dies in suspicious circumstances, family questions suicide: Says he could not ... - bhaskarenglish.in",
       "slug": "premanand-maharaj-s-disciple-dies-in-suspicious-circumstance",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQN3pjUEphM3pQOHpYVks0dU5LLS1HVWRySUhhLXZlSUlhZUFJODdHU3NMUEFXWW5EeHBzVU8xUUNuOG9nS2tiS2V1bmwyTEpNNFYyaDJVcjVoWVpRaXVhdDBvd3plNlJQT3NyN1NfY0huSXhCUTEzZDNvTEJrNHlRSHdFVzRSdkg5RGlIMV",
       "content": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQN3pjUEphM3pQOHpYVks0dU5LLS1HVWRySUhhLXZlSUlhZUFJODdHU3NMUEFXWW5EeHBzVU8xUUNuOG9nS2tiS2V1bmwyTEpNNFYyaDJVcjVoWVpRaXVhdDBvd3plNlJQT3NyN1NfY0huSXhCUTEzZDNvTEJrNHlRSHdFVzRSdkg5RGlIMV",
       "category": "Local News",
-      "source": "Bhaskar English",
+      "source": "bhaskarenglish.in",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQN3pjUEphM3pQOHpYVks0dU5LLS1HVWRySUhhLXZlSUlhZUFJODdHU3NMUEFXWW5EeHBzVU8xUUNuOG9nS2tiS2V1bmwyTEpNNFYyaDJVcjVoWVpRaXVhdDBvd3plNlJQT3NyN1NfY0huSXhCUTEzZDNvTEJrNHlRSHdFVzRSdkg5RGlIMVoycHVRTEJWUDhOYkpmejRLbmNRa09LS1JmZFF4bllXRUZiWnBicmF0ZWttR3N6QWdzUk9zd1BaVlNHN2RJNmRRSVV50gHQAUFVX3lxTFA3emNQSmEzelA4elhWSzR1TkstLUdVZHJJSGEtdmVJSWFlQUk4N0dTc0xQQVdZbkR4cHNVTzFRQ244b2dLa2JLZXVubDJMSk00VjJoMlVyNWhZWlFpdWF0MG93emU2UlBPc3I3U19jSG5JeEJRMTNkM29MQms0eVFId0VXNFJ2SDlEaUgxWjJwdVFMQlZQOE5iSmZ6NEtuY1FrT0tLUmZkUXhuWVdFRmJacGJyYXRla21Hc3pBZ3NST3N3UFpWU0c3ZEk2ZFFJVXk?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-27T16:20:47.000Z",
@@ -235,7 +310,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-w9x4",
+      "id": "jbp-mukueaa9-mccc",
       "title": "जबलपुर न्यूज: जेन जी स्टाइल गरबा में थिरकाए कदम... - bhaskarhindi.com",
       "slug": "bhaskarhindi-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOLXFkTC1rUFoxeFZCTTFYLXQzejNnTGRmalQwNnNNdVFzSXFVak9MR2FoV2pzTHdWdWJpSElld2o0X3JnamJVeEVicTJnR1plTnZ3YVdmYk9qalZDcWdoT0ZqRTZUc0ZhMDljWEdhYjBiXy00bjliR215TndGTnREVXhWVFg1N3M4Znlnam",
@@ -254,7 +329,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1i-ubs8",
+      "id": "jbp-mukueaa5-pdpt",
       "title": "एमपी के शहपुरा टोल प्लाजा पर अब नहीं लगेगा टोल, ROB की मरम्मत तक वसूली बंद, वाहन चालकों को बड़ी राहत - Navbharat Times",
       "slug": "rob-navbharat-times",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUDVGd1l1VjNSeGZ0elNiX19lWXNWQjFKLU4xRWNIcWk3RmlLV2lualAyZHE0VnA5OUxjTjRXOG90NzJfQ2dpRTZTR1YyTW1iUEtESEREaGZVN0NXLVZsc0x2QmpaVDlnSUgwTlZja2kzRjJLUHdCTUlpbVpHanBPLWMwU1VLTVpWUjdPdk",
@@ -292,7 +367,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-o6fy",
+      "id": "jbp-mukueaa9-hr9v",
       "title": "गया-जबलपुर एवं जबलपुर से गया के बीच पितृपक्ष स्पेशल ट्रेन की तीन-तीन ट्रिप चलेगी - Palpalindia.com",
       "slug": "palpalindia-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxOak1ucXFPRWM5akJSLXVxNlg0QV9yZ2s5YWVrZWxNeVZKb0d4X0hINU5mdkxHMnBpdUc0ekJySXVWWXNydnlQVmRCcHNGSGtGZ1E0amJZOWJtU1ZVY2JSckpfTmo2eFVxRUYtU21kWUdCN1dnNU05YlZ2anlnQzF5OTYzQ25uNDAtbmNJOT",
@@ -311,7 +386,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1h-zmv6",
+      "id": "jbp-mukueaa5-zyhw",
       "title": "मध्य प्रदेश खिंचे चले आएंगे टूरिस्ट, भेड़ाघाट और लम्हेटाघाट में बनेगा जियो पार्क और जियोलॉजिक म्यूजियम - ETV Bharat",
       "slug": "etv-bharat",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNRWpjUEVKa19wdkZaaXRXbWFWRUxKWEp0eVpYUE1aam5IbkF5QXh6TW5uaTVYLU9icElPR2thX09xY3laeGJvWXJjamg2UkhhWHQ5VnQ1V3psN3dsVzlCbWRmNjM0b0NkMEwwLTlubEwxWmVtUlBUall4NkV1QUtGV0NENjRkaG50aDhjZG",
@@ -330,7 +405,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1h-tg7q",
+      "id": "jbp-mukueaa4-2kgr",
       "title": "जहां मिला था भारत का पहला डायनासोर जीवाश्म, वहां बनेगा पहला वर्ल्डक्लास जियोलॉजिकल म्यूजियम; सरकार ने दी हरी झंडी - Aaj Tak",
       "slug": "aaj-tak",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxObFowakFVTXpTMWFwZE5oei0yMHY3M3JVNUk5WEpMRG5GTXZraWhocGlxWThCeFpPY3hWZFU1Y1NCYzhXVFd5ams2Q1hhQnJZQjM4NWVhMzFEbktWbFBaTWhiaER5S29GME9ON3dGSGh0Z3M0TmhyZGtXTFVXQk9NZEhfSjNVRGxJVV9Kcl",
@@ -349,7 +424,7 @@
       ]
     },
     {
-      "id": "jbp-muknyh1m-qqkj",
+      "id": "jbp-mukueaa9-yuiq",
       "title": "Jabalpur News: 2 साल में 5 अवसर मिले, नहीं पेश किया जवाब, लगा जुर्माना - bhaskarhindi.com",
       "slug": "jabalpur-news-2-5-bhaskarhindi-com",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWE1VY3QxNlFxbUh0dk1uSHlnclV4VFA2am1LWk9sQjVYVVBkOV9xWUpHbmg4bWpwOFd1eHMtbThjMlMzWFlfc05WaXRyZmxGX2E5WEYyOU94T2FyY2c2YUo4VDZpd1E0eWtzd0l1LXdhclBtYW94Y2g2YjkzOUVPanl1QTcxQlN0X2oxUk",
@@ -387,7 +462,7 @@
       ]
     },
     {
-      "id": "jbp-muknygot-wtvz",
+      "id": "jbp-mukue9yn-44ly",
       "title": "Premanand Maharaj Shishya Death News: प्रेमानंद महाराज के शिष्य दीपक पटेल के गांव पहुंची IBC24 की टीम, परिजनों ने की CBI जांच की मांग - IBC24 News",
       "slug": "premanand-maharaj-shishya-death-news-ibc24-cbi-ibc24-news",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNeU9JZlNaWGlBUXZUUTFBbVluY2liMnVWUnpLRVAwLWFQd2hGYldfSnNUdXlwRHd5UlJkUUtpdk5NSS1ibzNVVXM4cE41a1d2aHByZnFKZ29tYUtYajF6cTNfSzBiODF3ZjRHLWpzcDhhcktUS3BVNFlCSDEyVGV1bTdjWk9YTjh5aTFsND",
@@ -397,82 +472,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeU9JZlNaWGlBUXZUUTFBbVluY2liMnVWUnpLRVAwLWFQd2hGYldfSnNUdXlwRHd5UlJkUUtpdk5NSS1ibzNVVXM4cE41a1d2aHByZnFKZ29tYUtYajF6cTNfSzBiODF3ZjRHLWpzcDhhcktUS3BVNFlCSDEyVGV1bTdjWk9YTjh5aTFsNDFvVWJ6d3duV2VFSnBpaEjSAaIBQVVfeXFMUDlPS0o5QWdQZ1VraEpyMDQ5ZWc4VkxMaWJzRElYcUYzT3E0b0QxMnVSa19nam1mR19IeEpHcWZvWnhJc3ZkVDM0S2ZzNmU0S1pndFAwWGN4UDhhNnZsajVrSng4VlJTanYzZG9Xdkk5SkFDd19uNVVoTUZ2UXByUmpUUktXa3p2RGVta3RYSXpEeE9UdjRxRE9naC1FWDZseWdn?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
       "publishedAt": "2026-09-27T11:29:33.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mukhjxvy-a0au",
-      "title": "जबलपुर: बरगी बांध का जलस्तर क्षमता से ऊपर, 17 गेट खोलकर की जा रही पानी की निकासी, प्रशासन ने जारी किया अलर्ट - MP Breaking News",
-      "slug": "17-mp-breaking-news",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVD",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVD",
-      "category": "Local News",
-      "source": "MP Breaking News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVDdJb3JISHFVQmt0VndMQlV5Z2EtMnBJVE9MVGZ0ZFNLVFI2bTh1aEtTU1doT0xqZ3dHWdIBxAFBVV95cUxPeXhWcTRodlhSZExZYjZqSS1hTTA5ZDZldWtFaFEyV19NZGcyblBpdGFjWHJON0YtX3lfd2NFS3AyY2d5VWhwdldXa0xQeDZLQVRhd25NU0NHeWQ4RUVsQVZkb3ZGaFBVb2kwOG5EaE9FWXk4ZmVadUZpQW02ejZBSWpCcFd6NWRIb2szd05Nb1k5TlR1XzVicnIxbDl1ZG1FLUtlc2pNa0NiQWRqRElQUjRRbEJuSE94dHdrZGpnOTZ0UjNX?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T10:24:38.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mukb2mli-531b",
-      "title": "जबलपुर: बरगी बांध का जलस्तर क्षमता से ऊपर, 17 गेट खोलकर की जा रही पानी की निकासी, प्रशासन ने जारी किया अलर्ट - mpbreakingnews.in",
-      "slug": "17-mpbreakingnews-in",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVD",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVD",
-      "category": "Local News",
-      "source": "mpbreakingnews.in",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQndRTEhNZFloUThXYUwyS1Ayc3N4dHJOMXRSb2ZidFNGVE1hTzgwZmVSYzJLT2FIajNld0hlU3p2dEViUjFNTGlkdEhWWXJUQ3FyUGlwWDkyOTVsX3VkSnE4a3N1Rkc4c3BMelk3ME5RTFA4UmlYWDdibFhDVUhRaE1TMjU3RU1ZOHhnVDdJb3JISHFVQmt0VndMQlV5Z2EtMnBJVE9MVGZ0ZFNLVFI2bTh1aEtTU1doT0xqZ3dHWdIBxAFBVV95cUxPeXhWcTRodlhSZExZYjZqSS1hTTA5ZDZldWtFaFEyV19NZGcyblBpdGFjWHJON0YtX3lfd2NFS3AyY2d5VWhwdldXa0xQeDZLQVRhd25NU0NHeWQ4RUVsQVZkb3ZGaFBVb2kwOG5EaE9FWXk4ZmVadUZpQW02ejZBSWpCcFd6NWRIb2szd05Nb1k5TlR1XzVicnIxbDl1ZG1FLUtlc2pNa0NiQWRqRElQUjRRbEJuSE94dHdrZGpnOTZ0UjNX?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T10:24:38.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-muknyh1h-9wgy",
-      "title": "गणेश पंडाल के खंभे में करंट से किशोर की मौत: जबलपुर में महाआरती के बाद घर लौटते समय हादसा; बचाने पहुंचे दोस... - Dainik Bhaskar",
-      "slug": "dainik-bhaskar",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaVB2SjQxSHBPMUdCS0QtUFdLWUJhNloxdnA3NXd0MDFaaFhKdkptblFIWXB1Y2g5S2RoVllpVFFXa0pwa0NXNEZUYWtoaHBxYWdfOGRobXpwTzVnTm8zV2V3MkU5ZkNkc2xSRVBRTmR4ak1NOWtBc2FpalJzSnJMYUtYcGQ4MnAwVTBGRk",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaVB2SjQxSHBPMUdCS0QtUFdLWUJhNloxdnA3NXd0MDFaaFhKdkptblFIWXB1Y2g5S2RoVllpVFFXa0pwa0NXNEZUYWtoaHBxYWdfOGRobXpwTzVnTm8zV2V3MkU5ZkNkc2xSRVBRTmR4ak1NOWtBc2FpalJzSnJMYUtYcGQ4MnAwVTBGRk",
-      "category": "Local News",
-      "source": "Dainik Bhaskar",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaVB2SjQxSHBPMUdCS0QtUFdLWUJhNloxdnA3NXd0MDFaaFhKdkptblFIWXB1Y2g5S2RoVllpVFFXa0pwa0NXNEZUYWtoaHBxYWdfOGRobXpwTzVnTm8zV2V3MkU5ZkNkc2xSRVBRTmR4ak1NOWtBc2FpalJzSnJMYUtYcGQ4MnAwVTBGRkNfaHhsWXN6OVdaTkIyajBWV2d1TTdNSGY3Yy15OEs1QzdFczVZUDEzV2IxWnAwcllHdWLSAcYBQVVfeXFMUFR1bG9wVDNWNXZrQzZGMEZ4UnowUG80T0tQc3JVdGJmaGV0b010eVZuU3R1NEZMSlpJZWZoV2JsNnEzaUY1dTFOZmpLTVdUd0I1bzE3UnBOcGYxdmpBTjRLdV8xNWRHRWVveWpPdEZ3a1BIS1ZPdDlBZk56R085Qk9QNG8zcGIxQ2xtNUFwcWR4SXlpbnFfcTFvVXlGck5KQlpqYUtyMWgtc1EtQlJhczZpY1htNHdnSlZSZHE5MHJlX2hkQVdn?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T09:35:26.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mujrsv0h-24xn",
-      "title": "जबलपुर में बाइक सवार बदमाशों ने दो युवकों को मारी गोली, एक की मौत और दूसरा घायल - HumSamvet",
-      "slug": "humsamvet",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotcz",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotcz",
-      "category": "Local News",
-      "source": "HumSamvet",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3FuS1BOVTUtTXp2bDBVTXhGR1REb1dhdm90WXVMbnpxRDFDUnVlcXVLRnRmVng2WkxhVmVYNHVfc0JMSTd2M0hFb1FxM2NtdWFwazF3Slc4Z0ZveEtWNlVjaGkxbll4WUJiYmdjQl8tcEZlWTMxWVh6ZC1YQU9pcGdBNTRDYjB6dHotczNKamo3TmVvVloyd1dMRGI3SURDV25uZFB6MlRrU0NPcmJsSEh5RkFVSC0tMHZ1Q9IBwgFBVV95cUxNc1BOZUl3T2luT09SMFk4d0ZkbGc5ZjVwWUxMT3V2bjFMWEE5OEdfajNSbXEzdVNOY05iMUFCamtyajJRVVllaDBWY2c5VXpQU0pNNHhKMHh1VWxic3JFeDluQWt0OUlZSzFmOTh2SXFObUVqNTRqdGZxVnZzYmdiLUdYdmZBTHlwcndDOGNNOVFfMnlXRWtFY0RvRGVjZHRVd0RaOHBkYldLTVE3THJ4SUtvZXlqOE5ZdndOZmJWc282dw?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80",
-      "publishedAt": "2026-09-27T07:48:20.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
