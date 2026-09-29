@@ -1,8 +1,8 @@
 ---
 const navItems = [
   { name: 'Home', href: '/' },
-  { name: 'Local News', href: '/#news-grid' },
-  { name: 'Rashifal (राशिफल)', href: '/#rashifal' },
+  { name: 'Latest News', href: '/#news-grid' },
+  { name: '✨ Rashifal (राशिफल)', href: '/#rashifal' },
   { name: 'Culture & Tourism', href: '/#culture' },
   { name: 'City Services', href: '/#directory' },
   { name: 'About Jabalpur', href: '/#about' },
@@ -11,38 +11,43 @@ const navItems = [
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="w-full bg-white dark:bg-[#0a182c] border-b border-slate-200 dark:border-slate-800 shadow-sm sticky top-0 z-40">
-  <!-- Top Auxiliary Bar: Weather, Date & Live Ticker -->
-  <div class="bg-jabalpur-950 text-slate-200 text-xs py-1.5 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <!-- Date & Location Indicator -->
-      <div class="flex items-center space-x-3">
-        <span class="inline-flex items-center text-jabalpur-300 font-medium">
-          <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          Jabalpur, MP (23.18° N, 79.98° E)
+<header class="w-full bg-white/95 dark:bg-[#07162c]/95 backdrop-blur-md border-b border-slate-200/90 dark:border-slate-800 shadow-md sticky top-0 z-50">
+  
+  <!-- Top Auxiliary Ribbon with Live Ticker -->
+  <div class="bg-gradient-to-r from-jabalpur-950 via-[#072445] to-jabalpur-950 text-slate-200 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-jabalpur-800/60 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Live Indicator Tag -->
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
         </span>
-        <span class="hidden sm:inline-block text-slate-500">•</span>
-        <span class="hidden sm:inline-block text-slate-300" id="live-ist-date">
-          Sanskaardhani Time (IST)
+        <span class="font-extrabold uppercase tracking-widest text-red-400 text-[10px] bg-red-950/80 px-2 py-0.5 rounded border border-red-800/60">
+          BREAKING WIRE
         </span>
       </div>
 
-      <!-- Live Breaking Indicator & Weather Snapshot -->
-      <div class="flex items-center space-x-4">
-        <div class="flex items-center space-x-1.5">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-          </span>
-          <span class="font-bold uppercase tracking-wider text-red-400 text-[10px]">LIVE UPDATES</span>
+      <!-- Ticker Marquee -->
+      <div class="flex-1 overflow-hidden relative max-w-2xl hidden md:block">
+        <div class="animate-ticker-infinite text-xs text-slate-300 font-medium">
+          <span class="mx-4 font-bold text-amber-400">⚡ Sanskaardhani 24x7:</span>
+          <span>Bhedaghat & Dhuandhar record autumn tourism surge •</span>
+          <span class="mx-2 text-emerald-400">JMC Zero Waste Ward Drive Launches •</span>
+          <span class="mx-2 text-sky-400">IIITDM Jabalpur AI Prototyping Center operational •</span>
+          <span class="mx-2 text-orange-400">Gwarighat Maha Aarti ghat promenade expansion complete •</span>
         </div>
-        <div class="hidden md:flex items-center space-x-1 text-slate-300">
-          <span>🌡️ 27°C Jabalpur</span>
-          <span class="text-emerald-400 font-medium">(AQI 54 • Good)</span>
-        </div>
+      </div>
+
+      <!-- Location & Live IST Clock -->
+      <div class="flex items-center space-x-3 flex-shrink-0 text-[11px] text-slate-300">
+        <span class="font-bold text-jabalpur-300 flex items-center gap-1">
+          📍 Jabalpur, MP
+        </span>
+        <span class="text-slate-500">•</span>
+        <span class="font-semibold text-emerald-400" id="live-ist-date">
+          Sanskaardhani Time
+        </span>
       </div>
     </div>
   </div>
@@ -51,22 +56,22 @@ const currentPath = Astro.url.pathname;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 sm:h-20">
       
-      <!-- Brand Logo -->
+      <!-- Brand Logo with Saffron & Navy Gradients -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="/" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-jabalpur-900 to-jabalpur-600 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
-            <span class="text-white font-extrabold text-xl sm:text-2xl font-serif">J</span>
+        <a href="/" class="flex items-center space-x-3.5 group">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-jabalpur-950 via-jabalpur-700 to-jabalpur-secondary flex items-center justify-center shadow-lg group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 ring-2 ring-jabalpur-secondary/30">
+            <span class="text-white font-black text-2xl font-serif">J</span>
           </div>
           <div class="flex flex-col">
-            <div class="flex items-center space-x-1">
-              <span class="text-xl sm:text-2xl font-black tracking-tight text-jabalpur-950 dark:text-white group-hover:text-jabalpur-600 transition-colors">
+            <div class="flex items-center space-x-1.5">
+              <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white group-hover:text-jabalpur-secondary transition-colors">
                 Jabalpuriya
               </span>
-              <span class="text-xs px-1.5 py-0.5 rounded bg-jabalpur-secondary text-white font-bold tracking-wide">
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-gradient-to-r from-jabalpur-secondary to-amber-500 text-white font-black tracking-wider uppercase shadow-sm">
                 .com
               </span>
             </div>
-            <span class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium tracking-wide">
+            <span class="text-[11px] sm:text-xs text-slate-600 dark:text-slate-400 font-bold tracking-wide font-hindi">
               संस्कारधानी जबलपुर का डिजिटल मंच
             </span>
           </div>
@@ -74,16 +79,16 @@ const currentPath = Astro.url.pathname;
       </div>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center space-x-1" aria-label="Main Navigation">
+      <nav class="hidden lg:flex items-center space-x-1.5" aria-label="Main Navigation">
         {navItems.map((item) => (
           <a
             href={item.href}
-            class={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors duration-150 ${
+            class={`px-3.5 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${
               item.name.includes('Rashifal')
-                ? 'text-amber-600 hover:text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40'
+                ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-800/60 shadow-sm'
                 : currentPath === item.href
-                  ? 'text-jabalpur-primary bg-jabalpur-50 dark:bg-jabalpur-900/40 dark:text-jabalpur-300'
-                  : 'text-slate-700 hover:text-jabalpur-primary hover:bg-slate-100 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800/60'
+                  ? 'text-white bg-jabalpur-primary shadow-md'
+                  : 'text-slate-700 hover:text-jabalpur-secondary hover:bg-slate-100 dark:text-slate-200 dark:hover:text-white dark:hover:bg-slate-800/80'
             }`}
           >
             {item.name}
@@ -95,7 +100,7 @@ const currentPath = Astro.url.pathname;
       <div class="flex items-center space-x-3">
         <a
           href="#editorial-desk"
-          class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-bold rounded-lg text-white bg-jabalpur-secondary hover:bg-[#c84d22] transition-all shadow-sm hover:shadow"
+          class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-extrabold rounded-xl text-white bg-gradient-to-r from-jabalpur-secondary to-orange-600 hover:from-orange-600 hover:to-jabalpur-secondary transition-all shadow-md hover:shadow-lg hover:scale-[1.02]"
         >
           Submit Verified Tip
         </a>
@@ -107,7 +112,7 @@ const currentPath = Astro.url.pathname;
           aria-label="Toggle navigation menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
-          class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-jabalpur-500"
+          class="lg:hidden p-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary"
         >
           <svg id="menu-open-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -121,19 +126,19 @@ const currentPath = Astro.url.pathname;
   </div>
 
   <!-- Mobile Drawer Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1f38] px-4 pt-3 pb-6 space-y-1">
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#07162c]/95 backdrop-blur-lg px-4 pt-3 pb-6 space-y-1">
     {navItems.map((item) => (
       <a
         href={item.href}
-        class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-800 dark:text-slate-200 hover:text-jabalpur-secondary hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+        class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-slate-800 dark:text-slate-200 hover:text-jabalpur-secondary hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
       >
         {item.name}
       </a>
     ))}
-    <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+    <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
       <a
         href="#editorial-desk"
-        class="w-full text-center py-2.5 px-4 text-sm font-bold text-white bg-jabalpur-secondary rounded-lg hover:bg-[#c84d22]"
+        class="w-full text-center py-3 px-4 text-sm font-extrabold text-white bg-jabalpur-secondary rounded-xl hover:bg-orange-600 shadow-md"
       >
         Submit News Tip for Verification
       </a>

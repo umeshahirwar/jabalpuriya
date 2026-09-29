@@ -1,59 +1,68 @@
 ---
-// Weather and Air Quality Widget for Jabalpur, MP
 const weatherData = {
   city: "Jabalpur",
   temp: "28°C",
-  condition: "Partly Cloudy",
-  humidity: "62%",
-  wind: "11 km/h ENE",
-  aqi: 58,
-  aqiStatus: "Satisfactory",
+  condition: "Sunny & Pleasant",
+  humidity: "58%",
+  wind: "12 km/h ENE",
+  aqi: 52,
+  aqiStatus: "Good / स्वच्छ हवा",
   narmadaGhats: "Water Level Normal",
-  sunrise: "6:04 AM",
-  sunset: "6:12 PM"
+  sunrise: "6:05 AM",
+  sunset: "6:14 PM"
 };
 ---
 
-<div class="bg-gradient-to-br from-jabalpur-900 to-jabalpur-950 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-jabalpur-800/60">
-  <div class="flex items-center justify-between pb-4 border-b border-jabalpur-800">
+<div class="relative overflow-hidden bg-gradient-to-br from-[#0c2e56] via-jabalpur-950 to-[#071930] text-white rounded-3xl p-6 shadow-xl border border-jabalpur-700/50 group">
+  <!-- Glowing ambient accent -->
+  <div class="absolute -top-16 -right-16 w-36 h-36 bg-jabalpur-secondary/20 rounded-full blur-2xl pointer-events-none group-hover:bg-jabalpur-secondary/30 transition-all duration-700"></div>
+
+  <!-- Top Header -->
+  <div class="flex items-center justify-between pb-4 border-b border-jabalpur-800/80">
     <div>
-      <div class="flex items-center gap-1.5 text-xs text-jabalpur-300 font-semibold uppercase tracking-wider">
-        <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-          <circle cx="10" cy="10" r="6" />
-        </svg>
+      <div class="flex items-center gap-2 text-xs text-amber-400 font-extrabold uppercase tracking-wider">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
         Jabalpur Live Bulletin
       </div>
-      <h3 class="text-xl font-bold mt-0.5">Sanskaardhani Weather</h3>
+      <h3 class="text-xl font-black mt-0.5 tracking-tight font-hindi">
+        संस्कारधानी मौसम
+      </h3>
     </div>
     <div class="text-right">
-      <span class="text-3xl font-extrabold text-white">{weatherData.temp}</span>
-      <span class="block text-[11px] text-slate-300">{weatherData.condition}</span>
+      <span class="text-3xl sm:text-4xl font-black text-white bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-amber-200">
+        {weatherData.temp}
+      </span>
+      <span class="block text-[11px] font-bold text-amber-300">{weatherData.condition}</span>
     </div>
   </div>
 
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs">
-    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
-      <span class="block text-slate-400">Air Quality (AQI)</span>
-      <span class="text-base font-bold text-emerald-400">{weatherData.aqi}</span>
-      <span class="block text-[10px] text-slate-300">{weatherData.aqiStatus}</span>
+  <!-- Metrics Grid -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-4 text-xs">
+    <div class="bg-white/10 dark:bg-white/5 rounded-2xl p-3 border border-white/10 backdrop-blur-sm">
+      <span class="block text-slate-300 text-[10px] font-medium">Air Quality (AQI)</span>
+      <span class="text-lg font-black text-emerald-400">{weatherData.aqi}</span>
+      <span class="block text-[10px] text-emerald-300 font-bold">{weatherData.aqiStatus}</span>
     </div>
 
-    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
-      <span class="block text-slate-400">Narmada Water Level</span>
-      <span class="text-base font-bold text-jabalpur-300">Normal</span>
-      <span class="block text-[10px] text-slate-300">Gwarighat / Bargi</span>
+    <div class="bg-white/10 dark:bg-white/5 rounded-2xl p-3 border border-white/10 backdrop-blur-sm">
+      <span class="block text-slate-300 text-[10px] font-medium">Narmada Water Level</span>
+      <span class="text-base font-black text-sky-300">Normal</span>
+      <span class="block text-[10px] text-slate-300 font-medium">Gwarighat / Bargi</span>
     </div>
 
-    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
-      <span class="block text-slate-400">Humidity</span>
-      <span class="text-base font-bold text-white">{weatherData.humidity}</span>
-      <span class="block text-[10px] text-slate-300">Wind {weatherData.wind}</span>
+    <div class="bg-white/10 dark:bg-white/5 rounded-2xl p-3 border border-white/10 backdrop-blur-sm">
+      <span class="block text-slate-300 text-[10px] font-medium">Humidity</span>
+      <span class="text-base font-black text-white">{weatherData.humidity}</span>
+      <span class="block text-[10px] text-slate-300 font-medium">{weatherData.wind}</span>
     </div>
 
-    <div class="bg-white/5 rounded-xl p-3 border border-white/5">
-      <span class="block text-slate-400">Sun Timings</span>
-      <span class="text-sm font-bold text-amber-300">🌅 {weatherData.sunrise}</span>
-      <span class="block text-[10px] text-slate-300">🌇 {weatherData.sunset}</span>
+    <div class="bg-white/10 dark:bg-white/5 rounded-2xl p-3 border border-white/10 backdrop-blur-sm">
+      <span class="block text-slate-300 text-[10px] font-medium">Sun Timings</span>
+      <span class="text-xs font-bold text-amber-300 block">🌅 {weatherData.sunrise}</span>
+      <span class="text-[10px] text-orange-300 block">🌇 {weatherData.sunset}</span>
     </div>
   </div>
 </div>

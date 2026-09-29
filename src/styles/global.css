@@ -9,8 +9,40 @@
   }
   
   body {
-    @apply bg-slate-50 text-slate-900 antialiased selection:bg-jabalpur-secondary selection:text-white dark:bg-jabalpur-dark dark:text-slate-100;
+    @apply bg-slate-100/90 text-slate-900 antialiased selection:bg-jabalpur-secondary selection:text-white dark:bg-[#050e1a] dark:text-slate-100;
+    background-image: 
+      radial-gradient(at 15% 15%, rgba(255, 90, 31, 0.05) 0px, transparent 50%),
+      radial-gradient(at 85% 85%, rgba(2, 132, 199, 0.06) 0px, transparent 50%);
   }
+}
+
+/* Glassmorphic utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .glass-panel {
+  background: rgba(10, 26, 48, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 58, 102, 0.6);
+}
+
+.glass-card-glow {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(12, 74, 110, 0.18), 0 0 0 1px rgba(255, 90, 31, 0.25);
+}
+
+.dark .glass-card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 90, 31, 0.2);
 }
 
 /* Custom scrollbar */
@@ -20,19 +52,39 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #e2e8f0;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #09172a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #ff5a1f;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #ea580c;
 }
 
-/* Line clamp utility helpers */
+/* Ticker Animation */
+@keyframes ticker-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker-infinite {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.animate-ticker-infinite:hover {
+  animation-play-state: paused;
+}
+
+/* Line clamps */
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -45,4 +97,22 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Shimmer skeleton for lazy loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.dark .skeleton-shimmer {
+  background: linear-gradient(90deg, #0b1e36 25%, #132d4e 50%, #0b1e36 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
