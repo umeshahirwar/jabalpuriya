@@ -120,8 +120,8 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
               <a href="#culture" class="p-3 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 transition-all flex items-center gap-2 border border-emerald-300/40 dark:border-emerald-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">🌊</span> Gwarighat Aarti
               </a>
-              <a href="#editorial-desk" class="p-3 rounded-2xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center gap-2 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.02]">
-                <span class="text-base">📰</span> Press Desk
+              <a href="#footer" class="p-3 rounded-2xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center gap-2 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.02]">
+                <span class="text-base">📞</span> City Helplines
               </a>
             </div>
 
@@ -214,91 +214,6 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
 
     <!-- Cultural Showcase Section -->
     <CommunitySpotlight />
-
-    <!-- Editorial Desk: Verified News Tip & Press Release Submission -->
-    <section id="editorial-desk" class="my-16 bg-gradient-to-r from-[#071930] via-jabalpur-950 to-[#071930] text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-2xl">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        
-        <!-- Editorial Guidance & Brand Safety Protocol -->
-        <div class="space-y-5">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-            🛡️ Human Editorial Verification & Brand Safety
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
-            Jabalpuriya Editorial Verification Desk
-          </h2>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            To preserve journalistic accuracy and maintain 100% brand safety for our readers, <strong>Jabalpuriya.com enforces strict human editorial review</strong>. No automated or unverified content is published.
-          </p>
-          
-          <div class="space-y-3 pt-1 text-xs text-slate-300">
-            <div class="flex items-start space-x-3 bg-white/5 p-3.5 rounded-2xl border border-white/5">
-              <span class="text-emerald-400 font-bold text-sm">✓</span>
-              <p><strong>100% Fact Checked:</strong> Every news tip, event, and press release is verified by our desk before publication.</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white/5 p-3.5 rounded-2xl border border-white/5">
-              <span class="text-emerald-400 font-bold text-sm">✓</span>
-              <p><strong>Anti-Spam & Defamation Shield:</strong> Promotional spam, fake news, and unverified allegations are rejected automatically.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Moderated Submission Form -->
-        <div class="bg-white/10 dark:bg-white/5 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-white/10 space-y-4 shadow-xl">
-          <div class="border-b border-white/10 pb-3">
-            <h3 class="text-lg font-black text-white">Submit News Tip / Press Release</h3>
-            <p class="text-xs text-slate-300">All submissions are queued for editorial review prior to publication.</p>
-          </div>
-
-          <form class="space-y-3.5" onsubmit="event.preventDefault(); alert('Thank you. Your news tip has been transmitted to our editorial desk for verification.'); this.reset();">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label for="tip-sender-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Name / Organization</label>
-                <input type="text" id="tip-sender-name" required placeholder="e.g. Dr. Rajesh Sharma" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary" />
-              </div>
-              <div>
-                <label for="tip-contact" class="block text-xs font-semibold text-slate-300 mb-1">Official Email or Phone</label>
-                <input type="text" id="tip-contact" required placeholder="contact@domain.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label for="tip-category" class="block text-xs font-semibold text-slate-300 mb-1">Category</label>
-                <select id="tip-category" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary">
-                  <option value="civic">Civic & Infrastructure</option>
-                  <option value="events">Cultural / Community Event</option>
-                  <option value="education">Education & Tech</option>
-                  <option value="business">Business & Industry</option>
-                  <option value="other">General City News</option>
-                </select>
-              </div>
-              <div>
-                <label for="tip-location" class="block text-xs font-semibold text-slate-300 mb-1">Location in Jabalpur</label>
-                <input type="text" id="tip-location" required placeholder="e.g. Civil Lines / Gwarighat" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary" />
-              </div>
-            </div>
-
-            <div>
-              <label for="tip-details" class="block text-xs font-semibold text-slate-300 mb-1">News Details & Source Reference</label>
-              <textarea id="tip-details" rows="3" required placeholder="Provide clear facts, dates, context, and official references..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary"></textarea>
-            </div>
-
-            <div class="flex items-center space-x-2 pt-1">
-              <input type="checkbox" id="verify-consent" required class="rounded bg-slate-900 border-slate-700 text-jabalpur-secondary focus:ring-jabalpur-secondary h-4 w-4" />
-              <label for="verify-consent" class="text-[11px] text-slate-300">
-                I confirm this submission is factual and agree to editorial verification.
-              </label>
-            </div>
-
-            <button type="submit" class="w-full py-3 bg-gradient-to-r from-jabalpur-secondary to-orange-600 font-extrabold text-sm rounded-xl transition-all shadow-lg hover:scale-[1.01]">
-              Submit for Editorial Verification
-            </button>
-          </form>
-        </div>
-
-      </div>
-    </section>
 
   </div>
 </Layout>
