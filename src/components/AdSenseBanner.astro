@@ -1,0 +1,63 @@
+---
+export interface Props {
+  slotType: 'masthead' | 'sidebar' | 'bottom' | 'in-feed';
+  adSlot?: string;
+  className?: string;
+}
+
+const {
+  slotType = 'masthead',
+  adSlot,
+  className = ''
+} = Astro.props;
+
+const adClient = "ca-pub-4149190564501770";
+
+// Dimension specifications to prevent Cumulative Layout Shift (CLS)
+let containerClasses = "";
+let minHeightStyle = "";
+
+if (slotType === 'masthead') {
+  containerClasses = "w-full max-w-5xl mx-auto my-4 text-center";
+  minHeightStyle = "min-height: 90px;";
+} else if (slotType === 'sidebar') {
+  containerClasses = "w-full max-w-[320px] mx-auto my-6 text-center";
+  minHeightStyle = "min-height: 250px;";
+} else if (slotType === 'bottom' || slotType === 'in-feed') {
+  containerClasses = "w-full max-w-5xl mx-auto my-8 text-center";
+  minHeightStyle = "min-height: 90px;";
+}
+---
+
+<div class={`adsense-wrapper relative overflow-hidden rounded-2xl bg-slate-100/60 dark:bg-slate-900/60 border border-dashed border-slate-300/80 dark:border-slate-800 p-2.5 transition-all ${containerClasses} ${className}`} style={minHeightStyle}>
+  
+  <!-- Subtle AdSense Policy Compliant Disclosure -->
+  <div class="flex items-center justify-between px-2 pb-1.5 text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500 select-none">
+    <span class="flex items-center gap-1">
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-500/60 inline-block"></span>
+      Advertisement • विज्ञापन
+    </span>
+    <span class="text-[9px] text-slate-400/70">Jabalpuriya Ads</span>
+  </div>
+
+  <!-- Google AdSense Unit Container -->
+  <div class="flex items-center justify-center min-h-[60px] w-full">
+    <ins
+      class="adsbygoogle w-full block"
+      style="display:block"
+      data-ad-client={adClient}
+      {...(adSlot ? { 'data-ad-slot': adSlot } : {})}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+  </div>
+</div>
+
+<script is:inline>
+  // Safely trigger AdSense unit render
+  try {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (e) {
+    // Gracefully handle ad blocker or initialization errors
+  }
+</script>
