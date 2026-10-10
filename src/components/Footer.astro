@@ -11,9 +11,11 @@ const footerLinks = {
     { name: 'Business & Garment Park', href: '/#news-grid' },
   ],
   quickLinks: [
-    { name: 'About Jabalpuriya', href: '#about' },
-    { name: 'Editorial Guidelines & Ethics', href: '#about' },
-    { name: 'Privacy Policy & Terms', href: '#privacy' },
+    { name: 'About Jabalpuriya', href: '/about' },
+    { name: 'Editorial Guidelines & Ethics', href: '/about' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms of Service', href: '/terms' },
+    { name: 'Contact Us', href: '/contact' },
     { name: 'XML Sitemap Index', href: '/sitemap.xml' },
   ],
   civicHelplines: [
@@ -139,9 +141,13 @@ const footerLinks = {
     <!-- Bottom Attribution & Disclaimer -->
     <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
       <p>© {currentYear} Jabalpuriya.com. All rights reserved. Made with ❤️ for Jabalpur, Madhya Pradesh.</p>
-      <p class="text-center sm:text-right">
-        Brand-safe editorial journalism. All content is fact-checked and verified under strict editorial guidelines.
-      </p>
+      <div class="flex items-center gap-3 text-slate-400">
+        <a href="/privacy-policy" class="hover:text-jabalpur-secondary transition-colors">Privacy Policy</a>
+        <span>•</span>
+        <a href="/terms" class="hover:text-jabalpur-secondary transition-colors">Terms of Service</a>
+        <span>•</span>
+        <a href="/contact" class="hover:text-jabalpur-secondary transition-colors">Contact Us</a>
+      </div>
     </div>
   </div>
 </footer>
