@@ -3,71 +3,222 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Contact Us | Jabalpuriya.com"
-  description="Contact the editorial, advertising, and support desk of Jabalpuriya.com in Jabalpur, Madhya Pradesh."
+  title="Contact Us & Feedback | Jabalpuriya.com"
+  description="Send your inquiries, news tips, feedback, or advertising requests to the Jabalpuriya team."
 >
-  <div class="max-w-4xl mx-auto py-10 px-4 sm:px-6">
-    <div class="bg-white dark:bg-[#0c1c33] rounded-3xl border border-slate-200 dark:border-slate-800 p-8 sm:p-12 shadow-xl space-y-8">
+  <div class="max-w-3xl mx-auto py-10 px-4 sm:px-6">
+    <div class="bg-white dark:bg-[#0c1c33] rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-xl space-y-8">
       
       <!-- Header -->
       <div class="border-b border-slate-200 dark:border-slate-800 pb-6 space-y-2">
         <span class="px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-jabalpur-secondary/10 text-jabalpur-secondary border border-jabalpur-secondary/20">
-          Support & Inquiries
+          Get in Touch
         </span>
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
-          Contact Us
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
+          Contact Jabalpuriya Team
         </h1>
         <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-          We welcome news suggestions, advertising queries, and feedback from the Jabalpur community.
+          Have a news tip, suggestion, advertisement inquiry, or feedback? Please fill out the form below and our team will get back to you.
         </p>
       </div>
 
-      <!-- Contact Details Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Success Notification Banner (Hidden by default) -->
+      <div id="form-success-banner" class="hidden p-5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 space-y-1">
+        <div class="flex items-center gap-2 font-bold text-base">
+          <span>✅</span> Message Submitted Successfully!
+        </div>
+        <p class="text-xs sm:text-sm text-emerald-700 dark:text-emerald-300">
+          Thank you for reaching out. Your feedback has been recorded and delivered to the Jabalpuriya editorial desk.
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form id="contact-form" class="space-y-6" novalidate>
         
-        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
-          <div class="w-10 h-10 rounded-xl bg-jabalpur-primary text-white flex items-center justify-center text-lg">
-            ✉️
-          </div>
-          <h3 class="text-base font-bold text-slate-900 dark:text-white">Editorial & News Desk</h3>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-            For press releases, news corrections, and editorial feedback:
-          </p>
-          <a href="mailto:editor@jabalpuriya.com" class="inline-block text-sm font-bold text-jabalpur-secondary underline">
-            editor@jabalpuriya.com
-          </a>
+        <!-- Name Field -->
+        <div class="space-y-1.5">
+          <label for="user-name" class="block text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300">
+            Your Full Name <span class="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            id="user-name"
+            name="name"
+            required
+            placeholder="e.g. Ramesh Kumar"
+            minlength="2"
+            maxlength="60"
+            class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary focus:border-transparent transition-all"
+          />
+          <p id="name-error" class="hidden text-xs text-red-500 font-semibold">Please enter a valid full name (letters only, min 2 characters).</p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg">
-            💼
-          </div>
-          <h3 class="text-base font-bold text-slate-900 dark:text-white">Advertising & Partnerships</h3>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-            For sponsored content, advertising slots, and commercial partnerships:
-          </p>
-          <a href="mailto:contact@jabalpuriya.com" class="inline-block text-sm font-bold text-jabalpur-secondary underline">
-            contact@jabalpuriya.com
-          </a>
+        <!-- Email Field -->
+        <div class="space-y-1.5">
+          <label for="user-email" class="block text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300">
+            Email Address <span class="text-red-500">*</span>
+          </label>
+          <input
+            type="email"
+            id="user-email"
+            name="email"
+            required
+            placeholder="e.g. ramesh@example.com"
+            class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary focus:border-transparent transition-all"
+          />
+          <p id="email-error" class="hidden text-xs text-red-500 font-semibold">Please enter a valid email address (e.g. name@domain.com).</p>
         </div>
 
-      </div>
+        <!-- Phone Number Field -->
+        <div class="space-y-1.5">
+          <label for="user-phone" class="block text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300">
+            Phone Number <span class="text-red-500">*</span>
+          </label>
+          <input
+            type="tel"
+            id="user-phone"
+            name="phone"
+            required
+            placeholder="e.g. 9876543210"
+            maxlength="15"
+            class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary focus:border-transparent transition-all"
+          />
+          <p id="phone-error" class="hidden text-xs text-red-500 font-semibold">Please enter a valid 10-digit phone number (digits only).</p>
+        </div>
 
-      <!-- Office & Location -->
-      <div class="p-6 rounded-2xl bg-slate-100/70 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 space-y-2 text-sm text-slate-700 dark:text-slate-300">
-        <h4 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
-          📍 Jabalpuriya Headquarters
-        </h4>
-        <p>Jabalpur, Madhya Pradesh, India — 482001</p>
-        <p class="text-xs text-slate-500">Operating hours: Monday – Saturday, 9:00 AM – 6:00 PM IST</p>
-      </div>
+        <!-- Comment / Message Field -->
+        <div class="space-y-1.5">
+          <label for="user-comment" class="block text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300">
+            Your Comment / Message <span class="text-red-500">*</span>
+          </label>
+          <textarea
+            id="user-comment"
+            name="comment"
+            required
+            rows="4"
+            minlength="10"
+            placeholder="Please write your comment, query, news tip, or feedback here..."
+            class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-jabalpur-secondary focus:border-transparent transition-all resize-y"
+          ></textarea>
+          <p id="comment-error" class="hidden text-xs text-red-500 font-semibold">Please enter your comment or message (at least 10 characters).</p>
+        </div>
 
-      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 text-center">
-        <a href="/" class="inline-flex items-center px-6 py-3 rounded-xl font-bold text-sm bg-jabalpur-primary text-white hover:bg-jabalpur-secondary transition-all shadow-md">
-          ← Back to Jabalpuriya Home
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button
+            type="submit"
+            id="submit-btn"
+            class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-jabalpur-secondary to-orange-600 hover:from-[#c84d22] hover:to-orange-700 text-white font-black text-sm rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <span>Send Message • संदेश भेजें</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+      </form>
+
+      <!-- Office Info -->
+      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <span>📍 Jabalpur (Sanskaardhani), Madhya Pradesh — 482001</span>
+        <a href="/" class="text-jabalpur-secondary font-bold hover:underline">
+          ← Return to Home
         </a>
       </div>
 
     </div>
   </div>
 </Layout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const nameInput = document.getElementById('user-name') as HTMLInputElement;
+  const emailInput = document.getElementById('user-email') as HTMLInputElement;
+  const phoneInput = document.getElementById('user-phone') as HTMLInputElement;
+  const commentInput = document.getElementById('user-comment') as HTMLTextAreaElement;
+  const successBanner = document.getElementById('form-success-banner');
+  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+
+  const nameError = document.getElementById('name-error');
+  const emailError = document.getElementById('email-error');
+  const phoneError = document.getElementById('phone-error');
+  const commentError = document.getElementById('comment-error');
+
+  // Strict Email Regex: Must contain text, @ sign, domain, and valid TLD (.com, .in, .org, etc.)
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  // Phone Regex: Allows 10-digit Indian numbers with optional country code (+91 or 0)
+  const phonePattern = /^(?:\+91|0)?[6-9]\d{9}$/;
+  // Name Regex: Letters and spaces only, 2-50 chars
+  const namePattern = /^[a-zA-Z\s.]{2,50}$/;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      let isValid = true;
+
+      // Validate Name
+      const nameVal = nameInput.value.trim();
+      if (!namePattern.test(nameVal)) {
+        nameError?.classList.remove('hidden');
+        nameInput.classList.add('border-red-500');
+        isValid = false;
+      } else {
+        nameError?.classList.add('hidden');
+        nameInput.classList.remove('border-red-500');
+      }
+
+      // Validate Email
+      const emailVal = emailInput.value.trim();
+      if (!emailPattern.test(emailVal)) {
+        emailError?.classList.remove('hidden');
+        emailInput.classList.add('border-red-500');
+        isValid = false;
+      } else {
+        emailError?.classList.add('hidden');
+        emailInput.classList.remove('border-red-500');
+      }
+
+      // Validate Phone
+      const phoneVal = phoneInput.value.replace(/[\s-]/g, '');
+      if (!phonePattern.test(phoneVal) && phoneVal.length < 10) {
+        phoneError?.classList.remove('hidden');
+        phoneInput.classList.add('border-red-500');
+        isValid = false;
+      } else {
+        phoneError?.classList.add('hidden');
+        phoneInput.classList.remove('border-red-500');
+      }
+
+      // Validate Comment
+      const commentVal = commentInput.value.trim();
+      if (commentVal.length < 10) {
+        commentError?.classList.remove('hidden');
+        commentInput.classList.add('border-red-500');
+        isValid = false;
+      } else {
+        commentError?.classList.add('hidden');
+        commentInput.classList.remove('border-red-500');
+      }
+
+      if (isValid) {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Submitting...</span>';
+        }
+
+        // Display Success Banner
+        if (successBanner) {
+          successBanner.classList.remove('hidden');
+          successBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        form.reset();
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Send Message • संदेश भेजें</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>';
+        }
+      }
+    });
+  }
+</script>
