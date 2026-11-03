@@ -1,19 +1,23 @@
 {
-  "lastUpdated": "2026-11-02T08:06:52.018Z",
+  "lastUpdated": "2026-11-03T08:27:17.622Z",
   "totalStories": 48,
   "sources": [
-    "Urban Acres",
+    "Dainik Jagran MP CG",
+    "ANI News",
+    "Social News XYZ",
     "Bhaskar English",
-    "Navbharat Times",
-    "Free Press Journal",
     "Business Today",
+    "Navbharat Times",
+    "Jagran",
     "ETV Bharat",
+    "Free Press Journal",
     "Dainik Bhaskar",
+    "CarDekho",
+    "Urban Acres",
     "The Times of India",
     "Amar Ujala",
     "AIMA Media",
     "ThePrint Hindi",
-    "Lokmat Times",
     "Rediff",
     "The Cliff News",
     "Navbharat Live",
@@ -22,27 +26,155 @@
     "Live Law",
     "Inventiva",
     "scanx.trade",
-    "ANI News",
-    "Dainik Jagran MP CG",
-    "The Hitavada",
-    "EMS-News",
-    "DD News",
-    "BikeWale"
+    "The Hitavada"
   ],
   "articles": [
     {
-      "id": "jbp-mvyz6opc-42-0osq",
-      "title": "Jabalpur School-Liquor Shop Case Exposes a Serious Enforcement Gap - Urban Acres",
-      "slug": "jabalpur-school-liquor-shop-case-exposes-a-serious-enforcement-ga",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5\" targ",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5\" targ",
-      "category": "Education & Tech",
-      "source": "Urban Acres",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-11-02T05:20:06.000Z",
+      "id": "jbp-mw0fcsw0-67-n8j6",
+      "title": "MP: Brain-Dead Man's Family Donates Organs, Two Green Corridors Created in Jabalpur - Dainik Jagran MP CG",
+      "slug": "mp-brain-dead-man-s-family-donates-organs-two-green-corridors-cre",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNSU1qUndYdmdiaWlMcUpFbXB0UVlpWjFaM1B4Sjc1LWdkY09WdFBUVW9tbkZNQk5qdUtoV1VsaGgzRWRvaWlUS2ZySVozWnVBb3ZBQUhkdEtNWlY5N0F3UnY2V2VWcURMWEZRWFN5eXNvU3l2OVBuOUQ4Q2xpbWoxZGdLWTdPTld1dUpCaG9qaVA2SGhFa1h6LWlWN3",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNSU1qUndYdmdiaWlMcUpFbXB0UVlpWjFaM1B4Sjc1LWdkY09WdFBUVW9tbkZNQk5qdUtoV1VsaGgzRWRvaWlUS2ZySVozWnVBb3ZBQUhkdEtNWlY5N0F3UnY2V2VWcURMWEZRWFN5eXNvU3l2OVBuOUQ4Q2xpbWoxZGdLWTdPTld1dUpCaG9qaVA2SGhFa1h6LWlWN3",
+      "category": "Environment & City",
+      "source": "Dainik Jagran MP CG",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSU1qUndYdmdiaWlMcUpFbXB0UVlpWjFaM1B4Sjc1LWdkY09WdFBUVW9tbkZNQk5qdUtoV1VsaGgzRWRvaWlUS2ZySVozWnVBb3ZBQUhkdEtNWlY5N0F3UnY2V2VWcURMWEZRWFN5eXNvU3l2OVBuOUQ4Q2xpbWoxZGdLWTdPTld1dUpCaG9qaVA2SGhFa1h6LWlWN3BrWF9Ga3RIQWstQzMzTjZIbWpXdXlUR0hhQXhFRjZQV213?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T08:06:29.000Z",
       "readTime": "2 min read",
       "isFeatured": true,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvw-26-syoz",
+      "title": "MP: Road accident victim's organ donation to save at least 4 lives; two green corridors set up in Jabalpur for quick transport - ANI News",
+      "slug": "mp-road-accident-victim-s-organ-donation-to-save-at-least-4-lives",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMilgJBVV95cUxQby0teF9RZmFfSzR1RjRYSUgzbHZsLWJ0S3lpNWpDZWVISWxST1E5bmQ0bkpnUWlxMEt6QjEtV0tRd25WdENzb0F4b293VzhZVDdrRUdSMW9pNERESDFMbDUybEJMeEVEOF9HUkhXYV9fakh4WVlJa1psanM2TkE3X2VyeWs0UU9QSU9PT1pKTElIQi1vODFVQ3VicV",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMilgJBVV95cUxQby0teF9RZmFfSzR1RjRYSUgzbHZsLWJ0S3lpNWpDZWVISWxST1E5bmQ0bkpnUWlxMEt6QjEtV0tRd25WdENzb0F4b293VzhZVDdrRUdSMW9pNERESDFMbDUybEJMeEVEOF9HUkhXYV9fakh4WVlJa1psanM2TkE3X2VyeWs0UU9QSU9PT1pKTElIQi1vODFVQ3VicV",
+      "category": "Local News",
+      "source": "ANI News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQby0teF9RZmFfSzR1RjRYSUgzbHZsLWJ0S3lpNWpDZWVISWxST1E5bmQ0bkpnUWlxMEt6QjEtV0tRd25WdENzb0F4b293VzhZVDdrRUdSMW9pNERESDFMbDUybEJMeEVEOF9HUkhXYV9fakh4WVlJa1psanM2TkE3X2VyeWs0UU9QSU9PT1pKTElIQi1vODFVQ3VicVh5bmRrSUI0SjlxdE5SMmVSTHBFanN6alltWWZ1dUlmNXhSd3BrWllKZ19GZjNIaTU0eXFteV9Yam9vSW5IelFqNm1XcHNZSS1UU2h6NkEtanRORnozT0hMQzB5aW9KOXFtaFl2ZnVSNk9vd3M1dVphWEpQQkc3c1piQQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T07:38:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvy-56-36zu",
+      "title": "Jabalpur: BJP’s Loktantra Bachao, Arajakta Hatao Rally #Gallery - Social News XYZ",
+      "slug": "jabalpur-bjp-s-loktantra-bachao-arajakta-hatao-rally-gallery-soci",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGhOZjRkdklCaXNYR0tZeWVXRThJazdvTHI3V2ZiSlgtUW1fNmlXb255R1ViV1Z6YjRsNHcxazVSbkRhY2tUZlFMcmdPajhqWVNPb3dPS3JzenRnQU1mVG1ZUENZeW9FUGlVNU9DUWdtMFA0VjhqRzhaY1o4WUlBdDJOaV8zNEwzUjJoeVVZNnVEOHR4RVNJN3l5dV",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGhOZjRkdklCaXNYR0tZeWVXRThJazdvTHI3V2ZiSlgtUW1fNmlXb255R1ViV1Z6YjRsNHcxazVSbkRhY2tUZlFMcmdPajhqWVNPb3dPS3JzenRnQU1mVG1ZUENZeW9FUGlVNU9DUWdtMFA0VjhqRzhaY1o4WUlBdDJOaV8zNEwzUjJoeVVZNnVEOHR4RVNJN3l5dV",
+      "category": "Local News",
+      "source": "Social News XYZ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGhOZjRkdklCaXNYR0tZeWVXRThJazdvTHI3V2ZiSlgtUW1fNmlXb255R1ViV1Z6YjRsNHcxazVSbkRhY2tUZlFMcmdPajhqWVNPb3dPS3JzenRnQU1mVG1ZUENZeW9FUGlVNU9DUWdtMFA0VjhqRzhaY1o4WUlBdDJOaV8zNEwzUjJoeVVZNnVEOHR4RVNJN3l5dVFzRTjSAZ8BQVVfeXFMTTRoTmY0ZHZJQmlzWEdLWXllV0U4SWs3b0xyN1dmYkpYLVFtXzZpV29ueUdVYldWemI0bDR3MWs1Um5EYWNrVGZRTHJnT2o4allTT293T0tyc3p0Z0FNZlRtWVBDWXlvRVBpVTVPQ1FnbTBQNFY4akc4WmNaOFlJQXQyTmlfMzRMM1IyaHlVWTZ1RDh0eEVTSTd5eXVRc0U4?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T05:02:16.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvw-30-iwnd",
+      "title": "Brain-dead Narendra's organs to save 5 lives: Two green corridors created in Jabalpur; liver sent to Ahmeda... - Bhaskar English",
+      "slug": "brain-dead-narendra-s-organs-to-save-5-lives-two-green-corridors-",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOcGhNeldNSHFOTllGWkx2UVROYm1ZdkJRa1l5c2lBdWpaUTcwVWI2YkoyYUo3cVdTNWVMMmNuS0R4Vm9UcVNTRmh3bEViVXR2VUNOY0lpMVlhYTNMWFNWZWJnZlEwSW9uNk9kN3hRbFlTX1pnY29kc3FCYmRVMGRKQ3hLeHhWUk42dmZEb2RyaXpYUTYwTC05UDdyYn",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOcGhNeldNSHFOTllGWkx2UVROYm1ZdkJRa1l5c2lBdWpaUTcwVWI2YkoyYUo3cVdTNWVMMmNuS0R4Vm9UcVNTRmh3bEViVXR2VUNOY0lpMVlhYTNMWFNWZWJnZlEwSW9uNk9kN3hRbFlTX1pnY29kc3FCYmRVMGRKQ3hLeHhWUk42dmZEb2RyaXpYUTYwTC05UDdyYn",
+      "category": "Environment & City",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcGhNeldNSHFOTllGWkx2UVROYm1ZdkJRa1l5c2lBdWpaUTcwVWI2YkoyYUo3cVdTNWVMMmNuS0R4Vm9UcVNTRmh3bEViVXR2VUNOY0lpMVlhYTNMWFNWZWJnZlEwSW9uNk9kN3hRbFlTX1pnY29kc3FCYmRVMGRKQ3hLeHhWUk42dmZEb2RyaXpYUTYwTC05UDdyYnFIRnpqWW1TUG5iVkhRbW9IQmRqd2tXcWhuWnRYTGfSAb8BQVVfeXFMT3kwTnQxNjJYTl9fTGhwcHQ5SThlU1NINFRqcGMwdmp0cUhwLU1PTDlkQUF6ei1YWkdMSnpUVUlUc204MmswblowRUppT3VhQkVvVmlzanIxUHlocWR4azh5WFdQU2ZwMzVRSVNCcFVUb3J5b0ZpWVZmU3UxdFZQSFRKVlp0NENBbGpyYmtXeEhzWXZkei1XVEVtbDQyUW8wNExtcVYwdTJwTzQ4WUFCM04zcUFrUVNjWUVROTE1WDA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T04:19:02.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvt-3-hulf",
+      "title": "Gold Rate Today in Jabalpur 3rd November 2026 : 22 & 24 Carat, Todays Gold Price in Jabalpur - Business Today",
+      "slug": "gold-rate-today-in-jabalpur-3rd-november-2026-22-24-carat-todays-",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5\" target=\"_blank\">Gold Rate Today in Jabalpur 3rd",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5\" target=\"_blank\">Gold Rate Today in Jabalpur 3rd",
+      "category": "Business & Jobs",
+      "source": "Business Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T02:17:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Business & Jobs",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fct8p-6-4rxn",
+      "title": "जबलपुर में आज का मौसम (Jabalpur Weather Today) - Navbharat Times",
+      "slug": "jabalpur-weather-today-navbharat-times",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5\" target=\"_blank\">जबलपुर में आज का मौसम (Jabal",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5\" target=\"_blank\">जबलपुर में आज का मौसम (Jabal",
+      "category": "Environment & City",
+      "source": "Navbharat Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-03T00:10:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvw-24-v9ei",
+      "title": "Thunderstorms and rain forecast in 23 districts, including Jabalpur: Storm ‘Murasu’ to affect MP, with gust... - Bhaskar English",
+      "slug": "thunderstorms-and-rain-forecast-in-23-districts-including-jabalpu",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXBlNlgwOFpvTkVfamdiY01kd09zN2p5MUVMdExFeHhjMTQ4WFpWQ1p4YWFZanBGT0lSdUt0M2xjeFhXcmlLdzhuVjFreTNBa0RNS0hkUVFaVWtrU1dLWnVmdFpJRjhYSHBlbGhPZk5xQmVHSHkyY2NBcjcwWmVrMTM2YVFleTNTWC01OUpSUXRDc21pYW5MRDBtZV",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXBlNlgwOFpvTkVfamdiY01kd09zN2p5MUVMdExFeHhjMTQ4WFpWQ1p4YWFZanBGT0lSdUt0M2xjeFhXcmlLdzhuVjFreTNBa0RNS0hkUVFaVWtrU1dLWnVmdFpJRjhYSHBlbGhPZk5xQmVHSHkyY2NBcjcwWmVrMTM2YVFleTNTWC01OUpSUXRDc21pYW5MRDBtZV",
+      "category": "Environment & City",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXBlNlgwOFpvTkVfamdiY01kd09zN2p5MUVMdExFeHhjMTQ4WFpWQ1p4YWFZanBGT0lSdUt0M2xjeFhXcmlLdzhuVjFreTNBa0RNS0hkUVFaVWtrU1dLWnVmdFpJRjhYSHBlbGhPZk5xQmVHSHkyY2NBcjcwWmVrMTM2YVFleTNTWC01OUpSUXRDc21pYW5MRDBtZVJFaUJNekNpVm5YMV9sak1YZU1SakFwSUNFZ2t3S1ljU0ZGMNIBxAFBVV95cUxPWWxBZmw5bTBkclkxek5xM2RXd2M4dlRjbGtoWnhxc3MxcklESVpSMG5zWTlrYzNtSDU0UEM3SU40WW5iMzNzNE1lNzc0LWtGeFRGXy0wYjNLWmhPRGQzSkFZQ3lFZkxCVWpoQktqUk15RWw0Z01aMFQ5cWFIMTRvVHMxeG1SVTZyWXVxSkMwTkFlVFk4VDY3OG9JVUxud0QzSkZ1WGJJeUJoeTlrVmFzempTc3NxN2g1Uy1SLTVZeUh0WmlQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T23:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvx-42-fjth",
+      "title": "Wine shop operating for 20 years alongside a school in Jabalpur’s Sanjeevani Nagar - Bhaskar English",
+      "slug": "wine-shop-operating-for-20-years-alongside-a-school-in-jabalpur-s",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeUktaWRMN2VHbTF3VzFHLWZQRWRISF8wd2dBd1JrRkxHVFU5VmxyS2FNdTE5aFRLXzRqZjIxVWZhNWd1S0s4N1hjc040ckdHOGhNWVBWRWNxUERON19BeEtLOUVZNjZfQXQtT1NFRDhBbzJwRUlyd0wxbHNhdjFLQWdOM3lRRkJTV1JrSVNkSEZPOG9vMnFOUmlCMW",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeUktaWRMN2VHbTF3VzFHLWZQRWRISF8wd2dBd1JrRkxHVFU5VmxyS2FNdTE5aFRLXzRqZjIxVWZhNWd1S0s4N1hjc040ckdHOGhNWVBWRWNxUERON19BeEtLOUVZNjZfQXQtT1NFRDhBbzJwRUlyd0wxbHNhdjFLQWdOM3lRRkJTV1JrSVNkSEZPOG9vMnFOUmlCMW",
+      "category": "Education & Tech",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeUktaWRMN2VHbTF3VzFHLWZQRWRISF8wd2dBd1JrRkxHVFU5VmxyS2FNdTE5aFRLXzRqZjIxVWZhNWd1S0s4N1hjc040ckdHOGhNWVBWRWNxUERON19BeEtLOUVZNjZfQXQtT1NFRDhBbzJwRUlyd0wxbHNhdjFLQWdOM3lRRkJTV1JrSVNkSEZPOG9vMnFOUmlCMWpxMEhMVWdoQnEtcFh4WW5vWG5FMXRQQjd0NGg3Sk5CWEk5cHZMbkJOX1Nnem53bEJ3cE1PUGc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T23:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
       "tags": [
         "Education & Tech",
         "Jabalpur",
@@ -50,7 +182,140 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opc-35-6pnr",
+      "id": "jbp-mw0fct8o-3-e83m",
+      "title": "जबलपुर के नरेंद्र कुमार नहीं रहे, लेकिन कई लोगों को दे गए जीवन दान - Jagran",
+      "slug": "jagran",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNFV0dVNFalBwUjhyUHRlZU5YMmdHUmZUMkx6U2NNMzdVNHJ6VnA2RnhUaE1OWVQ2dGpaMTc1YTNIRG9ISVdDbEdES1NvbWxfM2pLUzhtSFVwUW5qaVNlelpGRXRCbkVudUZrdDRMLUtNcnY2cUF2SFZ2azZTOTNfNTB4LXU4X0dOdjlhUjRrZnlLcHBBTDM1Y0U4NX",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNFV0dVNFalBwUjhyUHRlZU5YMmdHUmZUMkx6U2NNMzdVNHJ6VnA2RnhUaE1OWVQ2dGpaMTc1YTNIRG9ISVdDbEdES1NvbWxfM2pLUzhtSFVwUW5qaVNlelpGRXRCbkVudUZrdDRMLUtNcnY2cUF2SFZ2azZTOTNfNTB4LXU4X0dOdjlhUjRrZnlLcHBBTDM1Y0U4NX",
+      "category": "Local News",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNFV0dVNFalBwUjhyUHRlZU5YMmdHUmZUMkx6U2NNMzdVNHJ6VnA2RnhUaE1OWVQ2dGpaMTc1YTNIRG9ISVdDbEdES1NvbWxfM2pLUzhtSFVwUW5qaVNlelpGRXRCbkVudUZrdDRMLUtNcnY2cUF2SFZ2azZTOTNfNTB4LXU4X0dOdjlhUjRrZnlLcHBBTDM1Y0U4NXFYNzJQS2RyWHdwUFdVWngteHJmaWduSmRLN0hveE91RVlwcVRSV2d2emNxclgzcElUZldIOHp4R1lSbWxPZ0VCNmtqdlViUFA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T20:22:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fct8p-10-vh7p",
+      "title": "जबलपुर में तीन किमी की पदयात्रा में जुटे BJP के दिग्गज, मोहन यादव बोले- 2029 में कांग्रेस का होगा सफाया - Jagran",
+      "slug": "bjp-2029-jagran",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWXB1UVJ3RDg3b1lpU0s5Um43SmdqVnBRZ01TWGNwamVPSkFxNXhvbEZTYkx4SEVNU3hLcGozdlRMeVdSOGJfRmxMLVRaeHl5anFPUG16YmhHcE9Vako1VGpHc09nSENjOXFYZEZSN29OMEZUWjZQa2h5aUZfUmJJT0NyRmFQU01LOU12WEM3OXdxV1Q4eUNNbGdiR2",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWXB1UVJ3RDg3b1lpU0s5Um43SmdqVnBRZ01TWGNwamVPSkFxNXhvbEZTYkx4SEVNU3hLcGozdlRMeVdSOGJfRmxMLVRaeHl5anFPUG16YmhHcE9Vako1VGpHc09nSENjOXFYZEZSN29OMEZUWjZQa2h5aUZfUmJJT0NyRmFQU01LOU12WEM3OXdxV1Q4eUNNbGdiR2",
+      "category": "Local News",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWXB1UVJ3RDg3b1lpU0s5Um43SmdqVnBRZ01TWGNwamVPSkFxNXhvbEZTYkx4SEVNU3hLcGozdlRMeVdSOGJfRmxMLVRaeHl5anFPUG16YmhHcE9Vako1VGpHc09nSENjOXFYZEZSN29OMEZUWjZQa2h5aUZfUmJJT0NyRmFQU01LOU12WEM3OXdxV1Q4eUNNbGdiR2drY2FMeTltRm1oYWkzeXFPQ1U4QWwyY09zQ2ZXRmJV?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T16:37:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvs-0-j8c3",
+      "title": "Student From Telangana Dies By Suicide At IIIT-DM, Jabalpur - ETV Bharat",
+      "slug": "student-from-telangana-dies-by-suicide-at-iiit-dm-jabalpur-etv-bh",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOTUxYY1BIaTRKRkpmaF9COVliVGpQTnhfVkFhRnhqUEN6S1Z5Z0JGVUhQMzFqOEtPVGZVYTVvR1ZERWJ2ejFaRVAyQmVrVkV3QS1Dc0sycjh4eWNSZ0xkWGpPZ2ZwSHlNYklqcGhXVWJwdnpNNGc4U2Y4MncwektTRWxWX24zYWdhNjhzM3pzUE1fSXR2dGExS3ZHTn",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOTUxYY1BIaTRKRkpmaF9COVliVGpQTnhfVkFhRnhqUEN6S1Z5Z0JGVUhQMzFqOEtPVGZVYTVvR1ZERWJ2ejFaRVAyQmVrVkV3QS1Dc0sycjh4eWNSZ0xkWGpPZ2ZwSHlNYklqcGhXVWJwdnpNNGc4U2Y4MncwektTRWxWX24zYWdhNjhzM3pzUE1fSXR2dGExS3ZHTn",
+      "category": "Local News",
+      "source": "ETV Bharat",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTUxYY1BIaTRKRkpmaF9COVliVGpQTnhfVkFhRnhqUEN6S1Z5Z0JGVUhQMzFqOEtPVGZVYTVvR1ZERWJ2ejFaRVAyQmVrVkV3QS1Dc0sycjh4eWNSZ0xkWGpPZ2ZwSHlNYklqcGhXVWJwdnpNNGc4U2Y4MncwektTRWxWX24zYWdhNjhzM3pzUE1fSXR2dGExS3ZHTnNJaWtfSm54OEQ0eTgyRUs3MWdYbmoxVEFINWx1SV9BeHQxTW56b0ZWNkNnZHJ1X2vSAdIBQVVfeXFMTjJtZjR6QkkyOHRsNXNSQlJQTDh5bW1BZnhlN1RjZVpkUmxZXzQ3UXNMNUIxUjRuTnBiWXgtSU10WHNyZWpoMnFqV2hMU2loNjBjbGlvbkpNQjh0VlZIeEh6bF9qUHdTSk42Um1BZDJCT0JOWG1aWER1eW1KQlhFN1pydFBRTVFZd3BJbHhXcnFiSmdUTnJpLWw3bGFzRVZoV0sxVUtBeUs4bjJhdHFldWZybEN2ZXFnVnZtQ1ptZnRsakJRUEJkWmg0NXdvM1RNaXVR?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T15:51:03.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvy-55-wb33",
+      "title": "Jabalpur IIITDM Female Student Found Dead In Hostel Room, Police Suspect Suicide, Launch Probe - Free Press Journal",
+      "slug": "jabalpur-iiitdm-female-student-found-dead-in-hostel-room-police-s",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFBUQ2RxYWc4SjdmNklINndLSGpTc2V6UndFQjlmakVpSG83LWJmY254ekN5YmlnNDEzc2k5QXY0ci05TlpQWWN1SWdmdFIwYlBGbmdrVThxckVvWGF3Q3NkcEFsMVVPN0I0UDJXUnYzakVCU0VuVUtCal84Z0FEWllGbldqTkpGZnN3MzBtT2JEM1YtODg3d3JCMj",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFBUQ2RxYWc4SjdmNklINndLSGpTc2V6UndFQjlmakVpSG83LWJmY254ekN5YmlnNDEzc2k5QXY0ci05TlpQWWN1SWdmdFIwYlBGbmdrVThxckVvWGF3Q3NkcEFsMVVPN0I0UDJXUnYzakVCU0VuVUtCal84Z0FEWllGbldqTkpGZnN3MzBtT2JEM1YtODg3d3JCMj",
+      "category": "Education & Tech",
+      "source": "Free Press Journal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFBUQ2RxYWc4SjdmNklINndLSGpTc2V6UndFQjlmakVpSG83LWJmY254ekN5YmlnNDEzc2k5QXY0ci05TlpQWWN1SWdmdFIwYlBGbmdrVThxckVvWGF3Q3NkcEFsMVVPN0I0UDJXUnYzakVCU0VuVUtCal84Z0FEWllGbldqTkpGZnN3MzBtT2JEM1YtODg3d3JCMjR6bzBobmhZZVFROXBvNHVhbmxZcmZ0VDVCaWJYempSVlJHbGZWYnhCUFV3S05CTdIB0AFBVV95cUxNSTdJMWc5VEhfQ2taeGFpNDhNRzVfakhibnZSdW85NF82RWQ1NjFQWXZ6c0VsdFlTWmkwRnVNLVQ1SEtFVUdFZ2o1M2trXzRfVHRRMUVNWmhoQkt1SGx0WTd3REYxM0h4NmprZlB3OFctcHowODRTcG52T25jLW1heHdxRXVQTktlaGNFYklRODVTSjdRU05mdWU2YTlHM28weFpBb21WM3Fnd1FKd3luNGd4NFFNaHFYT0Y1TkZzamc3MUgxNmM2bW95THVWZ3FR?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T13:03:04.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Education & Tech",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fct8o-0-f1kj",
+      "title": "जबलपुर में भाजपा की ‘लोकतंत्र बचाओ, अराजकता हटाओ’ पदयात्रा: केंद्रीय कानून मंत्री अर्जुन राम मेघवाल बोले- व... - Dainik Bhaskar",
+      "slug": "dainik-bhaskar",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmlIQ2NNM2kwTkRmNXVDbnR1SDhxTVZnWEdhR3RxaVZVSk9VVk1WSkQ0SGFOUlJwUW13a1hONGVxRVAxc2t3d19GVmpPNWhfX3ZVcmd1WFF1Vk5WcDAzVjI0VHgwMmswekhxS252VVRraV9wWUl1ZUZMVDBDUDVMTkY2LWl6VjhMbnR6aDhlRjV5TlNIRmszLW92MU",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmlIQ2NNM2kwTkRmNXVDbnR1SDhxTVZnWEdhR3RxaVZVSk9VVk1WSkQ0SGFOUlJwUW13a1hONGVxRVAxc2t3d19GVmpPNWhfX3ZVcmd1WFF1Vk5WcDAzVjI0VHgwMmswekhxS252VVRraV9wWUl1ZUZMVDBDUDVMTkY2LWl6VjhMbnR6aDhlRjV5TlNIRmszLW92MU",
+      "category": "Local News",
+      "source": "Dainik Bhaskar",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmlIQ2NNM2kwTkRmNXVDbnR1SDhxTVZnWEdhR3RxaVZVSk9VVk1WSkQ0SGFOUlJwUW13a1hONGVxRVAxc2t3d19GVmpPNWhfX3ZVcmd1WFF1Vk5WcDAzVjI0VHgwMmswekhxS252VVRraV9wWUl1ZUZMVDBDUDVMTkY2LWl6VjhMbnR6aDhlRjV5TlNIRmszLW92MUxRTUxXa0JKMlRsQUNxSEZMazNlMDlaeHFWaExoTDB5WS1nVnZITHZuRkHSAcsBQVVfeXFMUGNHRF9HZDVwQ2xMNTNfTjBWMW93V0JXWHlNQXBrZGNXMHFRMWlORGR1WVFmNkdCWWc3bUEwMTFlTU5hbWtvWUozUnV3VXJQR09LajQyUlNEMElMMXU4bFhBRm55OUtNVUtNMnBXeWNTWEgwaVR3NkFGODdydzR0RkM0ZzNCS1RvV1A4SjlVeDhlYUJEMDdFU1FzNnR1dzVWRlh0amlVVnpuLW1NWXVRdGdjWm5LNjZrMzY3QXgwUHZ2ZkNLc3V4MERMMGM?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T12:18:34.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvt-1-5kz8",
+      "title": "Mahindra XUV 7XO On Road Price in Jabalpur starts Rs.13.99 Lakh - CarDekho",
+      "slug": "mahindra-xuv-7xo-on-road-price-in-jabalpur-starts-rs-13-99-lakh-c",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1oQzN1WVhFUGxXM2VVNUR5WjNpRVhzVk1PWXJRSGR3S2labXZhNmtla0FleHg3TFZPZUkxamhGYTJvSDN3Uk9QSTQ5NmhmeUFZTTRpM0twMTU4OTFfdTFCdzZFMmZVYnh2ZTAw?oc=5\" target=\"_blank\">Mahindra XUV 7XO On Road Price in Jabalpur ",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1oQzN1WVhFUGxXM2VVNUR5WjNpRVhzVk1PWXJRSGR3S2labXZhNmtla0FleHg3TFZPZUkxamhGYTJvSDN3Uk9QSTQ5NmhmeUFZTTRpM0twMTU4OTFfdTFCdzZFMmZVYnh2ZTAw?oc=5\" target=\"_blank\">Mahindra XUV 7XO On Road Price in Jabalpur ",
+      "category": "Local News",
+      "source": "CarDekho",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1oQzN1WVhFUGxXM2VVNUR5WjNpRVhzVk1PWXJRSGR3S2labXZhNmtla0FleHg3TFZPZUkxamhGYTJvSDN3Uk9QSTQ5NmhmeUFZTTRpM0twMTU4OTFfdTFCdzZFMmZVYnh2ZTAw?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T07:02:46.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvx-44-a3f0",
+      "title": "Jabalpur School-Liquor Shop Case Raises Enforcement Questions - Urban Acres",
+      "slug": "jabalpur-school-liquor-shop-case-raises-enforcement-questions-urb",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5\" targ",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5\" targ",
+      "category": "Education & Tech",
+      "source": "Urban Acres",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaVZ2ZnFabVFLOWExT29SYU9yQlhvWnhuT1JnSVd4VlNUOWkzbUpDMldZUU92dzdoWDNWRWRhVFVtYTYwazlkOUVzQmE0NWYzM01ZLWkwVlRRY0ZRQmNVdkdUU3NjcnVZN250YTN4bUF4QXoyeUpDQmdRU1VuVEJRUTRKalBsTHdOSzhFelZRZFVlNXc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-02T05:20:06.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Education & Tech",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mw0fcsvx-36-551x",
       "title": "Opposition to renaming 122-year-old Model School as 'Sandipani': Alumni demand retention of its identity an... - Bhaskar English",
       "slug": "opposition-to-renaming-122-year-old-model-school-as-sandipani-alu",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVU9fX0NVakY5VzROZ1hyU0FGaDZaTmszMHFqRnBMZVVNLUFlNkdnUmZOWEdPbWh2NXpDb1BMRHNBTDlLWGZ6b2JOREQ3NXN0N0hmYks4Q0ROMG95NkpOcWl3MFRmNGhLOTZVcG9kbklzbFhJSkNBeHN2cE91bTA3VW9PeG5uQmw1Tkl0cDNpdEdwbzV4UTVBZkxvSU",
@@ -58,7 +323,7 @@
       "category": "Education & Tech",
       "source": "Bhaskar English",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVU9fX0NVakY5VzROZ1hyU0FGaDZaTmszMHFqRnBMZVVNLUFlNkdnUmZOWEdPbWh2NXpDb1BMRHNBTDlLWGZ6b2JOREQ3NXN0N0hmYks4Q0ROMG95NkpOcWl3MFRmNGhLOTZVcG9kbklzbFhJSkNBeHN2cE91bTA3VW9PeG5uQmw1Tkl0cDNpdEdwbzV4UTVBZkxvSUZIaFhnaTJoMm5TWk1XODQwb2dzcDYwM25WYXNUZkx2S1JUR3Y1dmtwQS1QWGxhUW1DbEctM2tR0gHYAUFVX3lxTE53cFhwQlNpVXUxNnpudUNzbDR0OUxqRUhLT3JuTUN0VGVPRExzZjkwd2p6N3JTN0RUVDlBSXVUdzlJckVOY2liS0xsN3I5UVUwb3VLOUktbnFqUVdoT3pGNmxQZkVSU0hmNEk4VXhWdTVlUk1CLVhkM1paSmFRWmI3ampZakVJbWpOcUs2QmZ1MVpxdVY0bWxoQVYyQWtRdUdOZER5S0g3WllSZEdPcklmaHFfU0VlYTF1ZnV1OVJsc0pQYXZpYjYxUVdOblRGNExYV1VucU5DUQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-02T03:14:15.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -69,26 +334,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1g-5-fr0p",
-      "title": "जबलपुर में आज का मौसम (Jabalpur Weather Today) - Navbharat Times",
-      "slug": "jabalpur-weather-today-navbharat-times",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5\" target=\"_blank\">जबलपुर में आज का मौसम (Jabal",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5\" target=\"_blank\">जबलपुर में आज का मौसम (Jabal",
-      "category": "Environment & City",
-      "source": "Navbharat Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9idXh1NU1jZk1DZ3AyR3M1UU5iRThTOTJzMUFWV05OWDJoXzNKTzd2ZkZoWDBycGdadFdZQ2UtN3ctalZhLWdCbEhZM2tqclpHN3ZmWHdULTYtRUN0TmJUenljTklISU04cXFkMXlYY2Z0WXFiUGc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-11-02T02:10:00.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Environment & City",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opf-74-g7v5",
+      "id": "jbp-mw0fcsw0-68-uiu7",
       "title": "MPPSC ADPO Exam 2026 Sees 58% Attendance Across MP, Lowest Turnout Of 50% Recorded In Indore - Free Press Journal",
       "slug": "mppsc-adpo-exam-2026-sees-58-attendance-across-mp-lowest-turnout-",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQck9TYkpUeTdsOUF4SXBSekxjYWRaZ29nT3JHYUI5WTJqX3VpVXRMWlU2NThkM295TzZRdlNxMnFiQzgxbFVtVllET29JZGd4ZFoxX2ZQYzByTzRJNTd4QWUwa2VrcVRaTVN1NW9zeTI4QXhfMFFReVZNRURubjVOUVVoSHByQ1VqR3RiQkk0anhQbmI4ZTZxLTlYZU",
@@ -96,7 +342,7 @@
       "category": "Education & Tech",
       "source": "Free Press Journal",
       "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQck9TYkpUeTdsOUF4SXBSekxjYWRaZ29nT3JHYUI5WTJqX3VpVXRMWlU2NThkM295TzZRdlNxMnFiQzgxbFVtVllET29JZGd4ZFoxX2ZQYzByTzRJNTd4QWUwa2VrcVRaTVN1NW9zeTI4QXhfMFFReVZNRURubjVOUVVoSHByQ1VqR3RiQkk0anhQbmI4ZTZxLTlYZU1GYkJJZ2Fqb2VUOUtYNE9MV3hiUXpUSVEzaTVBcW5kQjQwRDhkSGdBWVhWT2hSY1HSAcwBQVVfeXFMUHJPU2JKVHk3bDlBeElwUnpMY2FkWmdvZ09yR2FCOVkyal91aVV0TFpVNjU4ZDNveU82UXZTcTJxYkM4MWxVbVZZRE9vSWRneGRaMV9mUGMwck80STU3eEFlMGtla3FUWk1TdTVvc3kyOEF4XzBRUXlWTUVEbm41TlFVaEhwckNVakd0YkJJNGp4UG5iOGU2cS05WGVNRmJCSWdham9lVDlLWDRPTFd4YlF6VElRM2k1QXFuZEI0MEQ4ZEhnQVlYVk9oUmNR?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-02T01:30:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -107,26 +353,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6op9-1-w0mo",
-      "title": "Gold Rate Today in Jabalpur 2nd November 2026 : 22 & 24 Carat, Todays Gold Price in Jabalpur - Business Today",
-      "slug": "gold-rate-today-in-jabalpur-2nd-november-2026-22-24-carat-todays-",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5\" target=\"_blank\">Gold Rate Today in Jabalpur 2nd",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5\" target=\"_blank\">Gold Rate Today in Jabalpur 2nd",
-      "category": "Business & Jobs",
-      "source": "Business Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03R3hlUEc2N25JbFJvMU41Mk9NUDhVY05LTkQ4RmdpanI0NVNlSk5xamtLOEZZQ1RBVXFKQ0F3OVJyWDJtUldYak9VdDVaZ2pnQU9PRnJFVG5Mejg3ZU8za2tzNkdfWXV6ZHlJSW9BQ1RZQ1da?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-11-02T00:00:03.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Business & Jobs",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opb-31-crv6",
+      "id": "jbp-mw0fcsvw-32-t5su",
       "title": "BJP’s Save Democracy rally in Jabalpur: Union law minister to be chief guest; CM and state party president ... - Bhaskar English",
       "slug": "bjp-s-save-democracy-rally-in-jabalpur-union-law-minister-to-be-c",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPRkJxM0thV2REMjNCTTFSaUlFMVV6X2JxSU5pT1VMbXprVXg2dDdScXhXdXhOakpLTEZGWjNJRDlGci1FRlRaekllMm5BZlFXSHZXVFFORVZ3NWl2cVhoTTNpTUc4MXpubzhlVWJ2V1ZNZGNaR1NKdHRQNTFhQXMxM0FlWThsVzNzQkdWQzVSUFNPMl9CX282bGhXeF",
@@ -134,7 +361,7 @@
       "category": "Local News",
       "source": "Bhaskar English",
       "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRkJxM0thV2REMjNCTTFSaUlFMVV6X2JxSU5pT1VMbXprVXg2dDdScXhXdXhOakpLTEZGWjNJRDlGci1FRlRaekllMm5BZlFXSHZXVFFORVZ3NWl2cVhoTTNpTUc4MXpubzhlVWJ2V1ZNZGNaR1NKdHRQNTFhQXMxM0FlWThsVzNzQkdWQzVSUFNPMl9CX282bGhXeFlLa0I4ekRTYUZnblotc0Q2bEZUQkxjeEtHcmJhNjZIcXM0ONIBxAFBVV95cUxOS01yWF85UG1ON3BBdUlvU1F4czdnUFZQbEdQN3VjNHpyRnhobGZreHdPX1FTZXE3Y0NnWndiXy1NRTNqNlN1UEJXeGFnRzZMVldJSVVYUElNdVZKbVlLZDNTNUhSYmNZcDJsQlRoNzY2Z0dlaThSU1BjZGhZR1paNlJfRk85YmZod0xzcnRmNFJOWEdWQ1FFRnJ5OVdqa2ctQW9tbmhTM2VVQ19XQVRQS1dwMlk2aWE5ZXFBSFdJRmtSZXhJ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-01T23:30:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -145,7 +372,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-62-jmud",
+      "id": "jbp-mw0fcsvy-57-753e",
       "title": "23-Year Probe Into MPs Jabalpur University Re-Evaluation Scam Ends, Seven Of 13 Accused Die Before Charge - Free Press Journal",
       "slug": "23-year-probe-into-mps-jabalpur-university-re-evaluation-scam-end",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxNMXBhYVVlRGFyR3NVUnU2OUZUSUZDWEd2MjdQb1c1dU5zTnNoeTRzYzBfYlpRMjVEUUlvclo5aFBBaVh3bmxLNTdwVUF4ZTVEcFJvZmJrRVZRZU1pQ1FWdTZVY0M5OGs0VWVPSjZHSGtmMFV0eUtrZkpETF9LcTVKaFRZSTBHNnhVZnFFTmlWWDRCbzNRZFFyMUZyRG",
@@ -153,7 +380,7 @@
       "category": "Education & Tech",
       "source": "Free Press Journal",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNMXBhYVVlRGFyR3NVUnU2OUZUSUZDWEd2MjdQb1c1dU5zTnNoeTRzYzBfYlpRMjVEUUlvclo5aFBBaVh3bmxLNTdwVUF4ZTVEcFJvZmJrRVZRZU1pQ1FWdTZVY0M5OGs0VWVPSjZHSGtmMFV0eUtrZkpETF9LcTVKaFRZSTBHNnhVZnFFTmlWWDRCbzNRZFFyMUZyRGxIZUwwT083dUl4T0s2VFJJYnd3X280Ul8xdkR5MzZBcHpHM3JDSlpodnc5R0tKVjZrZnI2Y1ZTX1VXN3JvYUY0VWVTYXloV25ZV3Y5LUNV0gHwAUFVX3lxTE5zMG5EVTdWdjNjS1dOUkU1QlFScHhZREo3a0QyTldfT3lpZDdlc2QtenlGU1hCQjdmaVEzdkV4M01CNVhLWFlNUXUtZFRzY0RwQkMxaWlqcU1JZG5QeDBjNlhkNWNxNFpkNjFLdHB5bHFTeW5VNXpsWm5qb0dWQlE2YlJkOXkxZ0IyT1EtUm83NnlPZWgwenZkYWg3cktKTV9MSUZIS2lzY0N0QTFGYzU4cmNoNXNEenRISVhVVkFzZEVBQ1RwUWpFRE1rUV9aUzNsNXM4WVI5VUJXZWh0emFJbWlXX2V5LU5lYTd1ZHZURQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-01T19:30:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -164,7 +391,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1g-6-cy52",
+      "id": "jbp-mw0fct8p-7-fr5x",
       "title": "सिर्फ 3 लाख में मिल रहा घर! जबलपुर में 210 फ्लैट की ऑनलाइन बुकिंग स्टार्ट, फटाफट करें अप्लाई - ETV Bharat",
       "slug": "3-210-etv-bharat",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNWkVDM1dOTHNIekVzMGgzU3ZSMlJTVkJ6NnRuYWtRM09DTjcwRld1NEN0UWFONmJKSFRHUkFUYTB0aDc5b21ETFd5LWdLaXA2VXhiaUtFSFhNeTdYN1RGSEdST3gyYlM5ZmMwaXR4d21JNzNDb0xqOEdsX2Y1d2VfMGdSRElCODQxZEs0UWpkajhtWVJLY0RPb1REd1",
@@ -172,7 +399,7 @@
       "category": "Local News",
       "source": "ETV Bharat",
       "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWkVDM1dOTHNIekVzMGgzU3ZSMlJTVkJ6NnRuYWtRM09DTjcwRld1NEN0UWFONmJKSFRHUkFUYTB0aDc5b21ETFd5LWdLaXA2VXhiaUtFSFhNeTdYN1RGSEdST3gyYlM5ZmMwaXR4d21JNzNDb0xqOEdsX2Y1d2VfMGdSRElCODQxZEs0UWpkajhtWVJLY0RPb1REd1ZsZ2ZFYTYwLS1FU1NLOEE0RGhaWTA0Q0VlTVIxZGR4anlUanFmdGNNcGRnY202ZHFHT2PSAdQBQVVfeXFMTUxTa2xwc2RYcTV4bUFTR2VpSURpYlpkS2pxWGhlMjNKQ1gwWmR4UnRlRGRnc2lKMURuU1JYODdhS1ZPRGZBaE84aU1YX0tLZjdVWGZMS25BQkhXTmpOWlNoQm1ub0MtOWktMXZ6WGpYaDZ0S2toS3FMendSbXdlaWs0MW1wbVE4ZUZoUHg4MWZ3cXctWXV4OEotRTZfbEFnZU5LN05WOXhHOEEwQU9zaWRiNGl2azQ0ZjNQWEpKdXlnRVdTYzJlRjdseTdtbGZpbUVsaU8?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-01T06:55:11.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -183,7 +410,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opf-72-p5sq",
+      "id": "jbp-mw0fcsw0-65-up26",
       "title": "MP Foundation Day 2026 | How Bhopal’s Nawabi-Era Palaces Became Seats Of Power After Madhya Pradesh Was - Free Press Journal",
       "slug": "mp-foundation-day-2026-how-bhopal-s-nawabi-era-palaces-became-sea",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxOX201czZlcFVpLUZtSzh3LWxacjRZRGtXTnA1Y1RtUldPdXVMN0hDY3pqUEVjX3ZjZURKREtXckxmMlNtNU82T1JWT3RoRTdBS3pGMXhublViY25kTkNhbFBydFNfUEVScW9URkc5RlBtVVdUdnJrMHFGd0ZyeXBLSDU3WGRjcFBOWDJmUXkxcmFrX2N6U0tKS2xuZn",
@@ -191,27 +418,8 @@
       "category": "Local News",
       "source": "Free Press Journal",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOX201czZlcFVpLUZtSzh3LWxacjRZRGtXTnA1Y1RtUldPdXVMN0hDY3pqUEVjX3ZjZURKREtXckxmMlNtNU82T1JWT3RoRTdBS3pGMXhublViY25kTkNhbFBydFNfUEVScW9URkc5RlBtVVdUdnJrMHFGd0ZyeXBLSDU3WGRjcFBOWDJmUXkxcmFrX2N6U0tKS2xuZnpRSW1lMDlWYi1uQXYwdGJpVUl2NUlWLVFFdTJkaF9acGYyYUxEenQ4clVobjI3QTBwTmtSbmtCNmN4cTNYa1JJVTJ6NzRJU1pSTHV4a0HSAe8BQVVfeXFMT2YwMi16bkpQcjFRYzZaaDd3bzJVQldDM1MxMHEyXzlDd3huREptS25sWEhsZ2puU3MtWUVVREdoeGY0OTJtX29nUzFNWGJKVFBKeWJVcXplOEg2QnpPWGNsUUpWRld0V3pOcERIbmFyek5ZNkNLMDVEcEVreTNHTnhZVWJBT2h4N3BhdVY5UXluLXBXNngxTzMzenJwV0RhLVVWcUFlRXRxcEZsek5odnhENlU5T2xVbHhROGpYcmN2c19DOWxYRHdvVTk5MmViMHdIVFUtRUdXMnp6UVNMLWY2QWpzYVdWeHNVd0sxb1E?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-01T04:14:03.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6p1g-0-4ug3",
-      "title": "जबलपुर में 2 नवंबर को भाजपा निकालेगी पदयात्रा: सीएम डॉ. मोहन यादव होंगे शामिल; राकेश सिंह बोले- संवैधानिक स... - Dainik Bhaskar",
-      "slug": "2-dainik-bhaskar",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxOWWRPYkwyRWRHMEkwTjNBUTFBN3dTVktxU0dGblhRUWhYWU9UUDJoWGhuNERLMVRkMkVGN2JfY0F0R2lsMjdLLUpUc29memswVkN0Yk1YR0VTQXJvNHZmTXFNWUhPcFZjNmhscm5VQ3dhZTh3OXlyTmZPSDJ2eW5uZzV4YVZNc1AwTl80QkhFdGRiNUlMY2ZHcFBQek",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxOWWRPYkwyRWRHMEkwTjNBUTFBN3dTVktxU0dGblhRUWhYWU9UUDJoWGhuNERLMVRkMkVGN2JfY0F0R2lsMjdLLUpUc29memswVkN0Yk1YR0VTQXJvNHZmTXFNWUhPcFZjNmhscm5VQ3dhZTh3OXlyTmZPSDJ2eW5uZzV4YVZNc1AwTl80QkhFdGRiNUlMY2ZHcFBQek",
-      "category": "Local News",
-      "source": "Dainik Bhaskar",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWWRPYkwyRWRHMEkwTjNBUTFBN3dTVktxU0dGblhRUWhYWU9UUDJoWGhuNERLMVRkMkVGN2JfY0F0R2lsMjdLLUpUc29memswVkN0Yk1YR0VTQXJvNHZmTXFNWUhPcFZjNmhscm5VQ3dhZTh3OXlyTmZPSDJ2eW5uZzV4YVZNc1AwTl80QkhFdGRiNUlMY2ZHcFBQekFqdzdsanFIOHA3d3lvMnJkZUFVcHhsWjEtNFphUzBMR015Wk5VbE5z0gHKAUFVX3lxTE02bTQzRmptdGZmNDMxb19kaE9tbTJGWjg1dkFDdGk2N2JTNkZDcEEwVlA2TXdlMnZIcnFHZGFRd180YlBBVDJZWWQ2WV9aR081YmNOTlNnd0o4NzBKLU56Q1hraGxJTlRwVXNtdUZPWjQzdnF5MXdyZGtXYW5OZDdKTUIwcFdMX18yQmNuWU4wOEZ2RVpzS2NhVllPc3VuemdFckVUWnRtT2VJekRrU2Vyb21nTHdNc1VobmxBQzgzRF9raFpIdHR3M0E?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-11-01T02:32:24.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -240,7 +448,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opb-29-rnch",
+      "id": "jbp-mw0fcsvw-29-o2if",
       "title": "Pitru Paksha special train from Jabalpur to Gaya: 3 trips, 24 coaches; check dates here - Bhaskar English",
       "slug": "pitru-paksha-special-train-from-jabalpur-to-gaya-3-trips-24-coach",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTk95UUpWSm1oQThwWFluWVkxYjFwaVF3QkpXLVUtU2ctdTFqOGY2T25vYmE3bkc5QnR4ekpFN3FVWWFudzd3LXZBVmswUFMyenBzVkwzMUZNZDZXcVBXYjh5TWpVazZqRVg5Nm9oLWY5YTJEQVNIeVFPbzY1QWdQTS00bWE4RGh2c21wRzNPalNKNklhbkdHM2loNH",
@@ -259,7 +467,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1i-32-i2ds",
+      "id": "jbp-mw0fct8r-31-tbeb",
       "title": "Jhansi News: जबलपुर में ट्रक से 871 किलो गांजा बरामद, दो तस्कर गिरफ्तार - Amar Ujala",
       "slug": "jhansi-news-871-amar-ujala",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxQX2puVk9HalZ2bVlUejRJWEdnNEE2X3MwQXZ0a3NzOEJyMnBXUzZKU3pLbEJ5UXJ4ZldYLTFodzJOMTRieFZYN2I3bWROV3JyMGVkTGRQY0U0dEJPb1RCdkU1cXQ1am1iTFBmYXN5b3NvTGNrNDZXV203bHFMbjRXdGdlN2ZjZjJsd01hUnBzSTRXQ0pJYnFlaGlPUU",
@@ -267,7 +475,7 @@
       "category": "Local News",
       "source": "Amar Ujala",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQX2puVk9HalZ2bVlUejRJWEdnNEE2X3MwQXZ0a3NzOEJyMnBXUzZKU3pLbEJ5UXJ4ZldYLTFodzJOMTRieFZYN2I3bWROV3JyMGVkTGRQY0U0dEJPb1RCdkU1cXQ1am1iTFBmYXN5b3NvTGNrNDZXV203bHFMbjRXdGdlN2ZjZjJsd01hUnBzSTRXQ0pJYnFlaGlPUUJCVnhNVm9YdmVUdmZWVlhOb2NNczE4Vm9jQmk4aHBaWjhfbVRZVTUtdnRla0RrZmhndmJaWmJqZ2ZxS1JCVjFnOXRwUmNaSl9sWl9KNmFRakw4dGlTUnpJVGg0RtIB_gFBVV95cUxQS1V0cU9YTGdyc0hzeTFVOWI4bUlLb1NQemY5dXc3OGJ2ZlRRNEs0SFpRc1hVZVdveFp6N0J3LTQwa1lUdUNJX3JLZWtZcUpMM0ZtaGkwekFNMkFpOUpJTkNZdWEzQ3p4TXhMazlHb3FURVV0QUF4WDEwcXlCcG5oelVjNFYzN1d4Y21kczBqczFadkFvaktDbjRQNGw1WTROYWQ4d2hnTDh0YTJjbGJ5dlF3VGY1N3dOYlhyZ1dCRXhsS0NXLWNseFlGZGNTU2cwSTZCTl9aTXNiTEhrSlVhcmlyM2FhSm5IM2Zka0tBNWJIQW9Zclc3dW1wblFmQQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T20:35:23.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -278,7 +486,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1l-80-hf4j",
+      "id": "jbp-mw0fct8u-83-55o9",
       "title": "जबलपुर पुलिस के तीन अधिकारियों को भावभीनी विदाई, 40 से 42 वर्षों की बेदाग सेवा के बाद हुए सेवानिवृत्त - AIMA Media",
       "slug": "40-42-aima-media",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE0wZ3Z5ZWtHTmxHTHVZX05QU3Y2dW81eHRqbF9Pd3NOZXZ5TmlnX05mRU16YV9idUp3aklRMzN3MlNMcnVfSzR6X0VhYkpFV09KeW1pUUk3aG9tV3dtRkE?oc=5\" target=\"_blank\">जबलपुर पुलिस के तीन अधिकारियों को भावभीनी विदाई, 40 से 42 वर",
@@ -286,7 +494,7 @@
       "category": "Local News",
       "source": "AIMA Media",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0wZ3Z5ZWtHTmxHTHVZX05QU3Y2dW81eHRqbF9Pd3NOZXZ5TmlnX05mRU16YV9idUp3aklRMzN3MlNMcnVfSzR6X0VhYkpFV09KeW1pUUk3aG9tV3dtRkE?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T19:09:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -297,7 +505,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1k-56-symo",
+      "id": "jbp-mw0fct8t-62-oxc5",
       "title": "जबलपुर में कंटेनर से 871 किलोग्राम से अधिक गांजा जब्त, दो लोग गिरफ्तार - ThePrint Hindi",
       "slug": "871-theprint-hindi",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNUl9rb0ZfeW9mYzZiVXp2NEhEcFdIWE1ZckI3alJQOEYxRG5BTzU2RE11elE2bmVJSnlSdGlMdEgzY0xEc3lmSkFUeXZMdldpV2NxMXo0b0hMWHVSZFVfVnpZM0pBYlI2NTdycTNzY0NBQzRXREZrWVNtbzFWWnkwb3NnYWZMdGVheEs1YnNUZ2pBbGhPMVB4U1hjRD",
@@ -305,7 +513,7 @@
       "category": "Local News",
       "source": "ThePrint Hindi",
       "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUl9rb0ZfeW9mYzZiVXp2NEhEcFdIWE1ZckI3alJQOEYxRG5BTzU2RE11elE2bmVJSnlSdGlMdEgzY0xEc3lmSkFUeXZMdldpV2NxMXo0b0hMWHVSZFVfVnpZM0pBYlI2NTdycTNzY0NBQzRXREZrWVNtbzFWWnkwb3NnYWZMdGVheEs1YnNUZ2pBbGhPMVB4U1hjRDdWT21HRTJPQ3Rtc1lhZXZy0gGyAUFVX3lxTFBXYXp0Wl9RbHRsSUFJZ2VlQVRYZWdqVGVuSVgyREJpSnkxd0UyVXYtQ2I4V0tXU21lZlRxNG85YmZsQWlEM2pHLWxzN3lKUzROcURiOVRJMUF4TmJxTFdHTHo1Ym9Kam8xb2YweC1pWjNaLUJIUHVhTE12VzhseEI1Z2dTSHE5V3BKR3NjZlB2cmFYNlBydkdqV0Z1M054Y0JJb09qV2V1Z0ZtNHpyTzQyenc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T18:03:15.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -316,26 +524,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opf-70-my9j",
-      "title": "Jabalpur Police Seize Over 871 kg of Cannabis Worth Rs 4.35 Crore from Container, Two Arrested - Lokmat Times",
-      "slug": "jabalpur-police-seize-over-871-kg-of-cannabis-worth-rs-4-35-crore",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZUVpaWc0Ukh1dUc3aE42ZHo3QXp6T25DZjJnUm1MWEdrYV9fTF80X2ZlV1VHMktLWThOQy02OWhNcU1mY3VoOFgzdkZuZ3dvT2VtOGtURUh4MUc1am1jZFVPWUxCdTliLXJ2eVlJYjFkTHJ4TWRVaE0xRGVtemN2MXRtTGZONmRYZHg3NFVBUU9NTVk5Q194MUpwOH",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZUVpaWc0Ukh1dUc3aE42ZHo3QXp6T25DZjJnUm1MWEdrYV9fTF80X2ZlV1VHMktLWThOQy02OWhNcU1mY3VoOFgzdkZuZ3dvT2VtOGtURUh4MUc1am1jZFVPWUxCdTliLXJ2eVlJYjFkTHJ4TWRVaE0xRGVtemN2MXRtTGZONmRYZHg3NFVBUU9NTVk5Q194MUpwOH",
-      "category": "Local News",
-      "source": "Lokmat Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZUVpaWc0Ukh1dUc3aE42ZHo3QXp6T25DZjJnUm1MWEdrYV9fTF80X2ZlV1VHMktLWThOQy02OWhNcU1mY3VoOFgzdkZuZ3dvT2VtOGtURUh4MUc1am1jZFVPWUxCdTliLXJ2eVlJYjFkTHJ4TWRVaE0xRGVtemN2MXRtTGZONmRYZHg3NFVBUU9NTVk5Q194MUpwOHZXc2xqZlFWcklScnRuZjFlOGFvbXoyZEZVai1tZi1YbGR5bUpDdGVEeC1Balh2Q2ZLaVhNVFd5blVB0gHbAUFVX3lxTE5ycjViUXgyNjRSb2FvaVZmX2dJcWotUXA4YVJsb1ZfMFR6M0tXLUJzRXRVUzlrV1pwelExOU1WaEg1Q1FvU05LV0VnUlNjbnJYaWdzZlNFU2VhOTJ4OTlGNV9QZHpyajhVUHNTSGlvd2xuVm02Wms3SjRXYWNpZXhnTUZsRzg4TUF0SERONHY1X01TMjZtUWNsdmhvRVNyUVMxdmtXNHBPaHk5SkF0MDRNbExIUzFpZnFETGI1T0RWRWFpOGQzejJ3ZXdieU5oM2ZMMXFDRFBLSWF3SQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-31T18:01:15.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6op9-5-lgwo",
+      "id": "jbp-mw0fcsvu-7-xups",
       "title": "Container carrying 871kg ganja worth Rs 4.35cr seized in Jabalpur - The Times of India",
       "slug": "container-carrying-871kg-ganja-worth-rs-4-35cr-seized-in-jabalpur",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWW4tNkdtcGF0ODFhXzJEWGNKT1E2Y2plcjBMZ0FDWFFFQjJybFlBNGxtWnc3QVNfTjRoR25GSGZHeHg4NmRuVTJJc2NzOWxWZHJwbzNuaGVWdjNYNE9uN0NsSDl4YkF1OFFCTlJUd3YtWjV5b1NfTkNsVDV1YzVUU1BSSlQ0Z09NWnNUQ0ZIVjZSY1NEVmU3b25Md0",
@@ -343,7 +532,7 @@
       "category": "Local News",
       "source": "The Times of India",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWW4tNkdtcGF0ODFhXzJEWGNKT1E2Y2plcjBMZ0FDWFFFQjJybFlBNGxtWnc3QVNfTjRoR25GSGZHeHg4NmRuVTJJc2NzOWxWZHJwbzNuaGVWdjNYNE9uN0NsSDl4YkF1OFFCTlJUd3YtWjV5b1NfTkNsVDV1YzVUU1BSSlQ0Z09NWnNUQ0ZIVjZSY1NEVmU3b25Md0hnbHpMZjFmQ2RNUERpR2h0dEFjbVNnd0pBWW5LRktvNjZyWkwwN3VsbVItXzU4V0tWR0NNb1RaQnBB0gHbAUFVX3lxTFBxdlh3eDJoTWlVME1xT2JIYTg2VUk4ZlFKRnpwNE9qY05kd1dxZFBHUHdVajVsWHAzZ1JtSDUzd1YtRDZkWU13WlVOOTBZSy1tSzhHZHo2UFZaZHZMQkFzd2FrMmE2OUo5RDQwU3hUNzZFbnZQemYySnhXcEhnUWh4aURiWnQ0S2thYVBpb3hpeXBhLW1TempVb3ktWEdHNlBIRFlTaUg3RVhTNGtubXBQckJDU3lYb0pldmFGaFBpNTNMV28wd0ZMQVptNWVoc0lKUnJodE82bGJnbw?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T17:45:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -354,7 +543,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6op9-6-edmi",
+      "id": "jbp-mw0fcsvu-9-r1ar",
       "title": "Police Seize Rs 4.35 Crore Ganja Consignment In Jabalpur - Rediff",
       "slug": "police-seize-rs-4-35-crore-ganja-consignment-in-jabalpur-rediff",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPNUFDZlB1OE9HNU94WFYzNXlEZl8yUjI2cU5DQW5kQmtRZFpPRDJvZjVqRGlaRkNtVVBHcHZnZU03aFExWlY1am5fM0dQdlV2VE9ZczRJeExoNC04YVVScUNLbThua3B3dFVjdDB3aG1FdGJ5SVZ3TldORHBVM1MxeURHTFhDOG9sLUtYSzkxMm5GaExQUEw5QkF4c1",
@@ -362,7 +551,7 @@
       "category": "Local News",
       "source": "Rediff",
       "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNUFDZlB1OE9HNU94WFYzNXlEZl8yUjI2cU5DQW5kQmtRZFpPRDJvZjVqRGlaRkNtVVBHcHZnZU03aFExWlY1am5fM0dQdlV2VE9ZczRJeExoNC04YVVScUNLbThua3B3dFVjdDB3aG1FdGJ5SVZ3TldORHBVM1MxeURHTFhDOG9sLUtYSzkxMm5GaExQUEw5QkF4c1NyV05SNWliTEtB0gGoAUFVX3lxTFBXRDBaSTRFNFB6NGVnZnY3TVhZTWpZRW1FM2t2REpPQm9jV2lKVEtrRFhUaHY5amI1dHYxd1UySkg1Sy1LTGk5YWFwUjVXWWpJRW1Kd0M5X2NDaW9fYm15Zm5QbUVBY3J3Y1gyeWYzd3ktWlpncnY0cmhhZkpIRFNIWmtzNVBmTkFxLWlsejhCa25xem1FT0sxWVhRa0Y4SE41NzZEUmtzTQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T17:32:01.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -392,7 +581,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1g-9-4rzy",
+      "id": "jbp-mw0fct8p-9-tfiy",
       "title": "जबलपुर में कंटेनर से 4.35 करोड़ का 871 किलो गांजा जब्त, पेंट के 412 डिब्बों के बीच छिपाई थीं 28 बोरियां - Navbharat Live",
       "slug": "4-35-871-412-28-navbharat-live",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY181ODdjTjIzdUdyNVl2STVKdE5IMmlLYndCMWxrZXVFaXM2MUkxQ3BGdHBlR3RXbGhaRUVkSU16LWMwaVhFVFk4S1NzN1pWVTVxZHNUeldKNHVUdVFTWlF4N1RUbkY5ME01bWF2dFhSZkhHR0p4d3ZxMm5zTjFEV3BsOElleENuX2FWMjVCSXNSS0pXZ1EzbEdxRn",
@@ -411,7 +600,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6p1h-18-okh1",
+      "id": "jbp-mw0fct8q-21-xkcv",
       "title": "एएनटीएफ की बड़ी कार्रवाई, जबलपुर में 871 किलो गांजा बरामद - Hindustan",
       "slug": "871-hindustan",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbGVWN2RRbmlZOVFteGk3MXhSVVU4TlFFQkhLTEhhVHJMUlhmUU5rcXNJSVlFdWxJNm5RMVNua0ttYk9VQ3BzbVplb0ZRQnA2eXA5UFBIdHJVQmRqQ1lGUGJCY0Q4ZTgzVVFXWkkzRmUwWkxzUnNMc0tzaXZhNFhjLUEwall3NUFVSkxwS3RGRUtpaTIyNzU0SnQxZ1",
@@ -419,7 +608,7 @@
       "category": "Local News",
       "source": "Hindustan",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbGVWN2RRbmlZOVFteGk3MXhSVVU4TlFFQkhLTEhhVHJMUlhmUU5rcXNJSVlFdWxJNm5RMVNua0ttYk9VQ3BzbVplb0ZRQnA2eXA5UFBIdHJVQmRqQ1lGUGJCY0Q4ZTgzVVFXWkkzRmUwWkxzUnNMc0tzaXZhNFhjLUEwall3NUFVSkxwS3RGRUtpaTIyNzU0SnQxZ1BEYXVicVRNbVVEc2pvTzE3ZXljakFveWNYc2FycWd2NGNmNkstYXhleVNfTENMWTBxd1JmRWpNbWFQc9IB3AFBVV95cUxPZlVxV0hhWmRQWGFkbWJDNExHMGVpNDJ2dUFURDM2TjBZZWItZzgtcEQxb1BYaFlIbFZGSGdVVTdQcG8yOUZIOGtXQzJFdzdYR0dnN2RJVEdHVzhvV3BiYmJCOTVNRnprUmQ4dk1fWjY5c09NVDN0bmNBeEpidnhnZVpBelg2NmRBaVJCcVpvdG9JVUVwRm5XSDFFOUhiQThjRG9yRUFQOW8tSGxoU2tqdHBXRXBJbGZSOVhEQV9mLVZBR3lEdVRmZXNVSjRWR0JIMWRSWU44d2NHbjVn?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T16:24:22.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -430,16 +619,16 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opa-15-yx7c",
-      "title": "8 months’ job in Jabalpur using fake marksheet: Accused vanished after FIR, CBI begins search; got markshee... - Bhaskar English",
-      "slug": "8-months-job-in-jabalpur-using-fake-marksheet-accused-vanished-af",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS3g0MGc2RGtJc3VOczNSYk05T1YxRlFxNFk4bnhBQnJXcXV0QURHb3VMdUxicFUzckhqRnl3ckM5ZnNidUhiNUdSQTBjLThmSGJNM3haY0JnTmZmOUE0YUtNUU1peWUtdVBQZWlXbHRHdEhVaE5KZWV5UW1vVWFlOG5kQ2MwT2JHTUsyOGxEQXJHdktXcVJnX3p0U0",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS3g0MGc2RGtJc3VOczNSYk05T1YxRlFxNFk4bnhBQnJXcXV0QURHb3VMdUxicFUzckhqRnl3ckM5ZnNidUhiNUdSQTBjLThmSGJNM3haY0JnTmZmOUE0YUtNUU1peWUtdVBQZWlXbHRHdEhVaE5KZWV5UW1vVWFlOG5kQ2MwT2JHTUsyOGxEQXJHdktXcVJnX3p0U0",
+      "id": "jbp-mw0fcsvz-63-ddu4",
+      "title": "Jabalpur Police Seize Cannabis Worth ₹4.35 Crore; Two Suspected Smugglers Arrested - Dainik Jagran MP CG",
+      "slug": "jabalpur-police-seize-cannabis-worth-4-35-crore-two-suspected-smu",
+      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMHgyVjMzLWJYWTN3UzdvVFBuQUZuY2EzVDBmVFpNaWtWR1lfcjIzSnhFSG52UFhyTWMwT3BTNFl2VS1mc3ByN0xZRllIRzRHWXB2RWRPbzBqeGpyXzc1UkNwa0gtalF3dHYyY0djN294bWJtbXkwbDRyOUFOUFJLWElXZ0k3V2Q1b3J3a3AyTXpmS0g0Wm1yYktBSj",
+      "content": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMHgyVjMzLWJYWTN3UzdvVFBuQUZuY2EzVDBmVFpNaWtWR1lfcjIzSnhFSG52UFhyTWMwT3BTNFl2VS1mc3ByN0xZRllIRzRHWXB2RWRPbzBqeGpyXzc1UkNwa0gtalF3dHYyY0djN294bWJtbXkwbDRyOUFOUFJLWElXZ0k3V2Q1b3J3a3AyTXpmS0g0Wm1yYktBSj",
       "category": "Local News",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS3g0MGc2RGtJc3VOczNSYk05T1YxRlFxNFk4bnhBQnJXcXV0QURHb3VMdUxicFUzckhqRnl3ckM5ZnNidUhiNUdSQTBjLThmSGJNM3haY0JnTmZmOUE0YUtNUU1peWUtdVBQZWlXbHRHdEhVaE5KZWV5UW1vVWFlOG5kQ2MwT2JHTUsyOGxEQXJHdktXcVJnX3p0U0Zxa19FZy1vbmlyVHJJX3A0SjNMeGIzcDEyYXdDYmlUQ0l3VV8zUdIBxwFBVV95cUxPZGVIQVhWMWdBRGF5blZiNnpZamJkb0tQalpzRzB2THdUaHNYRTN1Rkx3NEFvTV9TSUtEVWtaOS1GSktXZzJxQkQzZnRQZlhNR3JMcXpmNkx4YUY1VEhGeExpWlhWVC1TMlYwc1dYeU00Rmd3Y011WnphYVpOZlNtUS0yU1BoV3VLTzNzMXFQUDdsNkRWRzBXanBzUVNJRFQyX3pia3lWaXlSRElvWl9temZDQ2QxYTB4TjJSX29XS05Rb2ZsX2hn?oc=5",
+      "source": "Dainik Jagran MP CG",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMHgyVjMzLWJYWTN3UzdvVFBuQUZuY2EzVDBmVFpNaWtWR1lfcjIzSnhFSG52UFhyTWMwT3BTNFl2VS1mc3ByN0xZRllIRzRHWXB2RWRPbzBqeGpyXzc1UkNwa0gtalF3dHYyY0djN294bWJtbXkwbDRyOUFOUFJLWElXZ0k3V2Q1b3J3a3AyTXpmS0g0Wm1yYktBSjBUWk96WXJyWXpxOHF1WGlITW1RM2p5bEtUYk13Y3hVSW1NUlJ6Y2hHUUNXWmNXTkdwSWpVUkdfQ0ViNWQtTDcwZnV5ck10YTB0S28?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-31T15:00:36.000Z",
+      "publishedAt": "2026-10-31T12:07:43.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -449,45 +638,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-57-jtni",
-      "title": "18.20 lakh passengers made cashless payments on West Central Railway: Digital payments rise; ticket booking... - Bhaskar English",
-      "slug": "18-20-lakh-passengers-made-cashless-payments-on-west-central-rail",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNLVVKUXZUZlFWZEs2akJiem5nVko1eTRMSl9xWWxPb3pzRkk0SlNVNHZuajdTLWZzVlhBVnAtUURkdnllaUZqdUszbklaVjNpRDdDbV82ZFFUalZsNUdOWDhHb04zQnB2cEtfYjlhckpNQjYyRHJ5ZkQ2aW5Pb3BxQlZMazNaWVMzcmRkaFFieTF1SFV1TjN3eFRwSk",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNLVVKUXZUZlFWZEs2akJiem5nVko1eTRMSl9xWWxPb3pzRkk0SlNVNHZuajdTLWZzVlhBVnAtUURkdnllaUZqdUszbklaVjNpRDdDbV82ZFFUalZsNUdOWDhHb04zQnB2cEtfYjlhckpNQjYyRHJ5ZkQ2aW5Pb3BxQlZMazNaWVMzcmRkaFFieTF1SFV1TjN3eFRwSk",
-      "category": "Smart City & Infra",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNLVVKUXZUZlFWZEs2akJiem5nVko1eTRMSl9xWWxPb3pzRkk0SlNVNHZuajdTLWZzVlhBVnAtUURkdnllaUZqdUszbklaVjNpRDdDbV82ZFFUalZsNUdOWDhHb04zQnB2cEtfYjlhckpNQjYyRHJ5ZkQ2aW5Pb3BxQlZMazNaWVMzcmRkaFFieTF1SFV1TjN3eFRwSk4zUDBKRmc4c0tjanM1MldzZUYzcXlxNFhOSkJOQlN4aV80U09kNDN1SnZV0gHMAUFVX3lxTE1qc3JNVzNRQTFZODU1ek1XaEh3SFR2NGp0bnJ5T2o5YVJwODR2WUdGVUY0d0dxV2c1bE1XMlR2cXBvMS1iZlFreWRtdERGeGVnYW5XcXhmMkJNZ2gwcG1EaFFBN1YwR1J2WWc5aFRpVzY3U19aaGlEZzdhSGJxdnJVbGtKNjA3NUM4SHBiNS01UVVUNTVmZ0t4Qk9GNEIxRERZR09mM0R4YlFXUFczd2FYdTQ1WEcwUS10MnRNd3lqd0dqd2tCOHJLLW5uVA?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-31T11:50:43.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Smart City & Infra",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opb-28-7f4i",
-      "title": "Teacher jailed for 10 days after calling girl 'Chor-Dayan': Hid arrest from department, returned to work us... - Bhaskar English",
-      "slug": "teacher-jailed-for-10-days-after-calling-girl-chor-dayan-hid-arre",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQTUQzenBuclpUZUdMZUpwM05YZVhEYTd0Nlc2Y0tXS1NSNVRRSWFlYndtc0VBSUluMHgtZzNFYWhlUEZ5TEd3a2pIZkt5X0VoUjZwNElTakRQbEJ1OGswZ3FrRExFRDVaYnFkRV9rZFJwTzFXT1o0eHBRb0NyUVF2ZVpvLTJLb0M1d0ZPRGtBY1E3VlBCaEdzQjJXVl",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQTUQzenBuclpUZUdMZUpwM05YZVhEYTd0Nlc2Y0tXS1NSNVRRSWFlYndtc0VBSUluMHgtZzNFYWhlUEZ5TEd3a2pIZkt5X0VoUjZwNElTakRQbEJ1OGswZ3FrRExFRDVaYnFkRV9rZFJwTzFXT1o0eHBRb0NyUVF2ZVpvLTJLb0M1d0ZPRGtBY1E3VlBCaEdzQjJXVl",
-      "category": "Local News",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTUQzenBuclpUZUdMZUpwM05YZVhEYTd0Nlc2Y0tXS1NSNVRRSWFlYndtc0VBSUluMHgtZzNFYWhlUEZ5TEd3a2pIZkt5X0VoUjZwNElTakRQbEJ1OGswZ3FrRExFRDVaYnFkRV9rZFJwTzFXT1o0eHBRb0NyUVF2ZVpvLTJLb0M1d0ZPRGtBY1E3VlBCaEdzQjJXVlBwcm55ZVdWNndNRW5KVVlhWF9iWnRqMzdqSHFxVkxmZWtkQ1JTSVREZUHSAcsBQVVfeXFMUGEyb0ZRUG4wWmUxYzQ4ajNmU3lNSkl5Vm42ajNIRXREZ0p3czU0WVdGTlJPTDV0cGt2UFVkZDZOeG5xNWJSSlRQMmFGckNUS2wxbEdoT2JMb291MkpEWVREemhEdGNRWFU3MG1kcFZwSEFYYlJzMmtCUjVOMG9nZ3lydnpjTlBiRHAtbnd2OGR1aGdfeWNmczRKeHZqTk1LUjVfbjVObnJ4R0hDc2lxZ2pWZmJpc0NTX0tWcTQ5Y1hRM3BrMVpHb0IxTnc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-31T07:57:44.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6op9-4-qcda",
+      "id": "jbp-mw0fcsvu-6-u83q",
       "title": "Call for Blogs: Centre for Research in Environmental Law, DNLU Jabalpur invites submissions for CREL blog series on a rolling basis - SCC Online",
       "slug": "call-for-blogs-centre-for-research-in-environmental-law-dnlu-jaba",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ0lPTWIzVjF5eU9PMGNwYVhTUkJiZ0hYR1VuYjZuZllmMXJvQmI5MXR6R1JSVk5RZFBxdzFfRWg5a21FaERaeHNFbFBYWjhITEIwVVZnVmItY2NlUzR5SWViZlJoMUhremk1ckFJdDhLV2hfYjlaSnVaMUhiWEw3UkxEWE94YnZUcFFjTzJtenFUdjNVbzNEZlRadF",
@@ -495,7 +646,7 @@
       "category": "Local News",
       "source": "SCC Online",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ0lPTWIzVjF5eU9PMGNwYVhTUkJiZ0hYR1VuYjZuZllmMXJvQmI5MXR6R1JSVk5RZFBxdzFfRWg5a21FaERaeHNFbFBYWjhITEIwVVZnVmItY2NlUzR5SWViZlJoMUhremk1ckFJdDhLV2hfYjlaSnVaMUhiWEw3UkxEWE94YnZUcFFjTzJtenFUdjNVbzNEZlRadFNUVHlXdWpIZGxud0MyMWoyVFV1bk1EYm5Qd2lI?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-31T06:30:34.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -506,7 +657,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opa-18-chdq",
+      "id": "jbp-mw0fcsvv-18-gp24",
       "title": "MP High Court Gives State 3 Months To Complete Eviction Proceedings Over Encroachment At Ancient Temple... - Live Law",
       "slug": "mp-high-court-gives-state-3-months-to-complete-eviction-proceedin",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUkJmV1BKNjRMQ0I5Y1JrTGtCamtibW5fS3JXakdDeXdqMUltQmhaSUltbU5qVU5id016TkdBYXJfaTBlczdXUjVwN0VPazdRN2xCdU45N3FEYkMzT2w4ZnpWcXlSQ1dTWGZOSkp3ZXdEOFNaY2w5Y0RzcVRCUmZELWx4MERZZmVuTzZvbUlJZU04N2xTRWVIYjdJRm",
@@ -525,7 +676,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opd-48-xt0f",
+      "id": "jbp-mw0fcsvx-45-uzos",
       "title": "Cyclone ‘Arnab’ weakens, rain continues in MP: 27 districts, including Gwalior and Jabalpur, to receive rai... - Bhaskar English",
       "slug": "cyclone-arnab-weakens-rain-continues-in-mp-27-districts-including",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPQ0tWbC1veXdmRDA0NnFvX2dibnk4RUtuT2ktUURjTXllQ1hzLXNqNXN1ODE5Q1VESW5mRDc4Rmd4d0N5UXpwOE4xakUtRHB2TUNGT3NVZFR3VGdFem5panVna2dzSDhJOGNNSkpVT0J4Z0l5cFViR0lSYUJic19FUnlBOWpKZXdKTnNqdUNnLWZsYjZESVNKdnhocD",
@@ -544,7 +695,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-69-ce42",
+      "id": "jbp-mw0fcsvz-62-1yi1",
       "title": "Madhya Pradesh High Court Judge Selection Challenged In PIL Filed In MP’s Jabalpur, OBC Advocates’ Body - Free Press Journal",
       "slug": "madhya-pradesh-high-court-judge-selection-challenged-in-pil-filed",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiogJBVV95cUxPcVNGTFpMa0NzQWZsRmdqOU5GLTJMZ2RaNkhXTTdIUmFDUlN5bm44RUp4WktOVEtlQU9COU9fRmJRdlZDNTB2NW5TTmZOUUtNUHc4V0poNzh3YzVHa0RHdXNiUVI5SWlQc1lIYUR6TGUyS2FSX2QxRzJzMmxidzVvcDltUXdFOFdOcTZZWkQ4T3I3cFlaTlB2WXJMZU",
@@ -552,7 +703,7 @@
       "category": "Local News",
       "source": "Free Press Journal",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPcVNGTFpMa0NzQWZsRmdqOU5GLTJMZ2RaNkhXTTdIUmFDUlN5bm44RUp4WktOVEtlQU9COU9fRmJRdlZDNTB2NW5TTmZOUUtNUHc4V0poNzh3YzVHa0RHdXNiUVI5SWlQc1lIYUR6TGUyS2FSX2QxRzJzMmxidzVvcDltUXdFOFdOcTZZWkQ4T3I3cFlaTlB2WXJMZUxvY1lBU1MyNF9fV2JzYjdqeHVBX042c0RKZTZqUGt5eGxQajd4WE81Vzdva3dMdkhfUlNHdnVIWGdwUExRZ1UzRW82WmxFM0RTMTlPR253TUlxMWdLekk3c2JDLUd2WDJHbURQMFNlbmJYLWwxcmJHd3FwalZxMmhkamx3TzFJUFlRQWJBUdIBpwJBVV95cUxQVDN6c0w3TlUzeDJlVEgzWHNhY0NkSXFVZmxsSVFIaURDM2JyTUlrYlNWSF9Rc1I1alVZdzV2eDlSeE05WWY5RUlENVA3a2VvSmtIR3JqSTJleGFnaVBRbV9MQWtoUXN1cUFFU3Q4bmZWX1hxVS1FWGdLRjNSVGp0RVdfU19ESzEtbTJKYUUxZjN5OGxwZWpzM1NlUXRkeGo2aTNuaFdyUHhOc1pDZHJVZDNPUGo1amRMQWN5Y0JLZ0dVN0dSV3dtZ3JZN2Y4T3V2MVNwUnJEYnk3ZWRtaDdNbnVZRmFOZkhPUUl2T2Nua2xDWVplMnd1U2ZWMG1PXzJoR3lGaTFGRGFzY3dvQXI2MDI5d2dfckpLMW5nMXI5dVBfckFJOHEw?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T21:48:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -563,7 +714,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-67-qjn7",
+      "id": "jbp-mw0fcsvz-61-9jv5",
       "title": "Madhya Pradesh Plans Major Urban Expansion With New SADAs In Bhopal, Indore, Ujjain And Jabalpur, Farmers To - Free Press Journal",
       "slug": "madhya-pradesh-plans-major-urban-expansion-with-new-sadas-in-bhop",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMigAJBVV95cUxNYk1uYTFXN3Mwa2FYUXlla3l1ZWw5UmY1UmFSbXhGd2RINHh0a2dBZDFiNURpMTM3NXkxU2xwc1VlRWhCYzRBak93NDBTZzBjS21aY2JvVEFnVHlvOERkc2JJX0ZfOVo2SWdwbW5SVjdqbFNRLWJ4bFc3aVFlUlNRVDV1Y1lJZzlXaUIyMWtFT2s4bGUwcHdqR0FoaG",
@@ -571,7 +722,7 @@
       "category": "Local News",
       "source": "Free Press Journal",
       "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNYk1uYTFXN3Mwa2FYUXlla3l1ZWw5UmY1UmFSbXhGd2RINHh0a2dBZDFiNURpMTM3NXkxU2xwc1VlRWhCYzRBak93NDBTZzBjS21aY2JvVEFnVHlvOERkc2JJX0ZfOVo2SWdwbW5SVjdqbFNRLWJ4bFc3aVFlUlNRVDV1Y1lJZzlXaUIyMWtFT2s4bGUwcHdqR0FoaGxmeFFYRWxyaFdXSzBXVnNhN0JmclNkUXdlNjdwTHpxa19TV2hiODMzeUFIbXRUVnZxZFJqZmZvVmY4LUEySmtWZHJwWGs0UjhIbFhTa0tXTDYxTFhUa3U4VU41cFl5em9kbGh40gGGAkFVX3lxTFA3OUttaGdrMkhpa3dMeHFjR2xFZXV4MXNXWTY1OTU5UlZ5cU1iTUltNWE5RE40aS1ZOXN5VWVSWjh0YUNQY3VSM245VUFHOGFFSnY5a18xUl9FdEQ5MVpHckNRMWdnM3ZvMkVxY1Qxc0lkRTMwRGFlc194VmlxWXZ5NF9rdGcwaTlSakJjclMzTGRrLTczQzI4RW9JZzVndGtKQ2JpbzNCWDJPa0dPRWxoQkxZSDhkUjV6VVB3bWJmSjJlc01uX0dGMDRUTmFSNG5aSkFyMTl5ZmNaVzNLMXN5V3hJMVdrVkZwLXZwMWdIb2I4RUw0YzJMX3RLOHNNLWlhOVdTYWc?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T20:48:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -582,7 +733,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opa-14-6dvn",
+      "id": "jbp-mw0fcsvv-19-umms",
       "title": "Video of constable weighing parts of seized vehicles at Jabalpur thana goes viral, probe on - The Times of India",
       "slug": "video-of-constable-weighing-parts-of-seized-vehicles-at-jabalpur-",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTkE1Nng4Tm1uZ2pHMF9WZHRkQ1dvQk90QTFNdVcxLWVpUXh2N3pSZi1DbW1RenB6OG1LQm1pb2lpTlpWRHJHUnVfb3cweXVUTXpyN3N0R1JaeTRTNlRjRkRHcFJaQmtSQ0xpcDRLLTJSSE9wTGZ4b3lMYkFWRG44elJOLWlnREFhUTM1ZlNHaHE4bW53UF9rMF9ZT3",
@@ -590,7 +741,7 @@
       "category": "Local News",
       "source": "The Times of India",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTkE1Nng4Tm1uZ2pHMF9WZHRkQ1dvQk90QTFNdVcxLWVpUXh2N3pSZi1DbW1RenB6OG1LQm1pb2lpTlpWRHJHUnVfb3cweXVUTXpyN3N0R1JaeTRTNlRjRkRHcFJaQmtSQ0xpcDRLLTJSSE9wTGZ4b3lMYkFWRG44elJOLWlnREFhUTM1ZlNHaHE4bW53UF9rMF9ZT3RBVUdwUnR0Vkd1SWNialVrZ0xPQ05sS2s3R1prMm80YmQ2dlEwTlZuVDdaNVJTbGhxZGNBYW0wV0xFNzlLRDlnYlFUajJockJLTWJDVjdxa2RYWXBoSEk2V2Rz0gH8AUFVX3lxTE9WZGNTZU51eG9MZVZycFFPN2cxQmZjS1l2MWpXbW1ha2IwVThQcGJlTFNKZklUY0FtVXMtdDRYTm5COXpDd1ZIc3ZKTUZXNEEyRUZUbGpydHkyNFh4aWwzbjJIQjFJRGhfbGxIUkVGNU5FNUhFdEh5U3ZFUWRIcjQ3MDVTOWEyYWp0MmYzMUg4SGp4dzE0QWZCdDlmUUhDWXM5NEdpMGNnVklpU3dhV3ZsM3NOaG5HWmdiZmo5bG5tcjNRa1lPbUZNMjVINXJQeGFTWnJQdXEzM2NMbnB2Tkc0Ri0wRXBUanB5ZVVtYUxHTFM4WFV5aGdvX1piMg?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T18:46:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -620,7 +771,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-68-2cvr",
+      "id": "jbp-mw0fcsvz-60-f4ec",
       "title": "Jabalpur Police Crack Down On Illegal Carbide Gun Trade, 3 Arrested; 14 Guns Seized - Free Press Journal",
       "slug": "jabalpur-police-crack-down-on-illegal-carbide-gun-trade-3-arreste",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPako1SFVRUzhvazluaTBuYXQ0eERaSHJMY3hQR2tScXRldno2NWlZbHZyVnFUdmxjc3BkWENtenV6SE9QTFYzRXVWWmh0dTBKdUlDeV83cXRYUGd5WWJyOFphbDRMSmMyRWIyRlIzamxpMVFTeDVrXzRBMzBEZUEyOFpJUVJfRDl6cHhqcG9Lak5NeG4wRWNEQ25OTj",
@@ -639,7 +790,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-55-kjap",
+      "id": "jbp-mw0fcsvy-49-2vz3",
       "title": "Hindustan Copper faces appeal against stay order in IVRCL case - scanx.trade",
       "slug": "hindustan-copper-faces-appeal-against-stay-order-in-ivrcl-case-sc",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPS09QamtGNDFmZlU1cXFseEVfcTllQmN4OFNYdzJMbFJFVWFrREx1UHU5VzdVRnNNTFdMSDZBOVkzS01PQ0tVd0IzUzd0Zm9YTWczWGduWGNnMlNIZ2VNZHh6akJBZXo2dExIUThtU3JISzQ0cU1TTUVhUDlpMTdKWkZab3h5bEh5MGVxOUU1anhjVUllVW0wRTNPZk",
@@ -647,7 +798,7 @@
       "category": "Business & Jobs",
       "source": "scanx.trade",
       "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPS09QamtGNDFmZlU1cXFseEVfcTllQmN4OFNYdzJMbFJFVWFrREx1UHU5VzdVRnNNTFdMSDZBOVkzS01PQ0tVd0IzUzd0Zm9YTWczWGduWGNnMlNIZ2VNZHh6akJBZXo2dExIUThtU3JISzQ0cU1TTUVhUDlpMTdKWkZab3h5bEh5MGVxOUU1anhjVUllVW0wRTNPZkhSMFoyaWU0dXlDUnBjOHVvTnVZdFpubWhnd00?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T11:18:16.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -658,7 +809,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opa-8-pc6r",
+      "id": "jbp-mw0fcsvv-13-jgqf",
       "title": "Police seize 28 kg of illegally stored calcium carbide in Jabalpur ahead of Diwali - ANI News",
       "slug": "police-seize-28-kg-of-illegally-stored-calcium-carbide-in-jabalpu",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUnBUNzFOSVdQOFN6aEVwTXc2Mi1FQ005dUM2RFUwMzk5WWFmaHdCOWh6cWItSE9sdzBRTlpmYmZwSEZOT0k2WkR0VHRrTDZNVXFkdTc5YlpHc00zMS1EdFFmQWdfd1BtN1dlRmVSeE8tRElyaVlISjR5TVpZazRqSjFCZ3R1UFdlQXJkc2pDcVNJVTV4blc0MTNSLV",
@@ -666,7 +817,7 @@
       "category": "Local News",
       "source": "ANI News",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUnBUNzFOSVdQOFN6aEVwTXc2Mi1FQ005dUM2RFUwMzk5WWFmaHdCOWh6cWItSE9sdzBRTlpmYmZwSEZOT0k2WkR0VHRrTDZNVXFkdTc5YlpHc00zMS1EdFFmQWdfd1BtN1dlRmVSeE8tRElyaVlISjR5TVpZazRqSjFCZ3R1UFdlQXJkc2pDcVNJVTV4blc0MTNSLVZLZWdfYk1GWGQ1Y3dJSW05alU1VlluYm1pX01lME9tR1NkbGVfQ0pDbE8zdmFTLUdlZTVqUVhnU0FWT2U2cGZ2TC1J?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T10:44:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -677,7 +828,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opb-24-cnd0",
+      "id": "jbp-mw0fcsvw-23-z89b",
       "title": "D.P. Abhushan inaugurates first FOCO showroom in Jabalpur - scanx.trade",
       "slug": "d-p-abhushan-inaugurates-first-foco-showroom-in-jabalpur-scanx-tr",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNWjJJMkxoVktEd2ZHQlJoWU44bFdrMkd3VFpJTjFlRG42STg0ZXMzLWc1NlFrTDhtYTVlOEItZjVpMl9WMXg1RHFLUjRDekFiUUZVRGRYLU44ZUxEN290aVdqUmpCU0NmaldkNDNNa2tJY3h6Q2NrdURCMjFEa1ItbTNFZUtvc1FJQUN6WXZ1cjJMb3BlMGNtcGRGRE",
@@ -685,8 +836,8 @@
       "category": "Business & Jobs",
       "source": "scanx.trade",
       "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWjJJMkxoVktEd2ZHQlJoWU44bFdrMkd3VFpJTjFlRG42STg0ZXMzLWc1NlFrTDhtYTVlOEItZjVpMl9WMXg1RHFLUjRDekFiUUZVRGRYLU44ZUxEN290aVdqUmpCU0NmaldkNDNNa2tJY3h6Q2NrdURCMjFEa1ItbTNFZUtvc1FJQUN6WXZ1cjJMb3BlMGNtcGRGRENIWGlKdGtxWXk4UG5ZdTR0bmNz?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-30T09:27:56.000Z",
+      "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-10-30T09:52:58.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -696,7 +847,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opf-73-velq",
+      "id": "jbp-mw0fcsw0-66-atfo",
       "title": "MP BJP Yuva Morcha Reshuffles 19 District Units; Jabalpur, Sagar Get New Chiefs - Dainik Jagran MP CG",
       "slug": "mp-bjp-yuva-morcha-reshuffles-19-district-units-jabalpur-sagar-ge",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNRW91XzNFYnpsR2E3dVVMTjQ4eFlYa3pwbWgwcDUzdXpEc2JIb1JZQVd3SEpkZDVvZFRqX29WNXUteTFzWnNNaTJ1dWk5TjdxQlJyT3pLdmNvMWxGVjhpeGpRMThlSE5RQ3hzYzVhazN2RGRsWjZOQzBNZkRlTlc1ME03N2QyeDNNWmF1cE5GOXdSSmIweElncjhMVl",
@@ -704,7 +855,7 @@
       "category": "Local News",
       "source": "Dainik Jagran MP CG",
       "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRW91XzNFYnpsR2E3dVVMTjQ4eFlYa3pwbWgwcDUzdXpEc2JIb1JZQVd3SEpkZDVvZFRqX29WNXUteTFzWnNNaTJ1dWk5TjdxQlJyT3pLdmNvMWxGVjhpeGpRMThlSE5RQ3hzYzVhazN2RGRsWjZOQzBNZkRlTlc1ME03N2QyeDNNWmF1cE5GOXdSSmIweElncjhMVlI2SHZQOGNTa0pXeHNLa0NIR3NFQlNSZ0RzVWwzaGl0bTdoNmpydFhDak8zUFNSYldIZw?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T06:31:28.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -734,7 +885,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opa-12-n4s3",
+      "id": "jbp-mw0fcsvv-14-xq1r",
       "title": "MLA Rohani meets CM, discusses issues on Jabalpur’s devpt - The Hitavada",
       "slug": "mla-rohani-meets-cm-discusses-issues-on-jabalpur-s-devpt-the-hita",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUnozUFNqdlRvTnVFY0gyYlhCaEV0VW9PRlpKcUxKYkNsRmhqTnJ0Y3VTdmlVQTdOTjQyNUpnS0x4UWtoS0ZmTGt1WG9Qc2xnMzBxWXlfYXREYUl4dE1jNFMwdWdNQmFpUjNMSDEzRzZDNnRpTWF5R18tWlRpelB0QW9qLXhwNGxiajlPLWo3TEZGbEJVb0xUZDZNdz",
@@ -742,7 +893,7 @@
       "category": "Local News",
       "source": "The Hitavada",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUnozUFNqdlRvTnVFY0gyYlhCaEV0VW9PRlpKcUxKYkNsRmhqTnJ0Y3VTdmlVQTdOTjQyNUpnS0x4UWtoS0ZmTGt1WG9Qc2xnMzBxWXlfYXREYUl4dE1jNFMwdWdNQmFpUjNMSDEzRzZDNnRpTWF5R18tWlRpelB0QW9qLXhwNGxiajlPLWo3TEZGbEJVb0xUZDZNdzBGcDdxVmtlaU1LLU0?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T05:45:40.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -753,7 +904,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6ope-56-dpcw",
+      "id": "jbp-mw0fcsvy-50-zy3p",
       "title": "JMC to have numbering system for Chhath Puja platforms at Adhartal - The Hitavada",
       "slug": "jmc-to-have-numbering-system-for-chhath-puja-platforms-at-adharta",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWlVRU9UcXRLSzFXZUlZaGszdTJNYnRwM1RpXzA2bW9lV08tVjJfc2FnZjNUaEMzMTlpdW9SSEQyUUlKX3o2VGk2eWc4REh3VGwydmE1MnNJb2FlRkFUSnM3WGY0eDF6cURHR2pyd1ZIeWd3NF9fb2F5eC1SYXU2NXFoWlFfdU40eDktTzlZcmFGMjhXYk40SG1CTy",
@@ -761,7 +912,7 @@
       "category": "Local News",
       "source": "The Hitavada",
       "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWlVRU9UcXRLSzFXZUlZaGszdTJNYnRwM1RpXzA2bW9lV08tVjJfc2FnZjNUaEMzMTlpdW9SSEQyUUlKX3o2VGk2eWc4REh3VGwydmE1MnNJb2FlRkFUSnM3WGY0eDF6cURHR2pyd1ZIeWd3NF9fb2F5eC1SYXU2NXFoWlFfdU40eDktTzlZcmFGMjhXYk40SG1CTy0xN2FVVm13NWQyYV9xdFNCTWZlX0gxdldrMGM?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T05:45:40.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
@@ -772,7 +923,7 @@
       ]
     },
     {
-      "id": "jbp-mvyz6opc-38-mkqa",
+      "id": "jbp-mw0fcsvx-38-ot88",
       "title": "14 carbide guns seized in Jabalpur, 2 arrested: Guns being made in Baghraji; police seize 45 kg of calcium ... - Bhaskar English",
       "slug": "14-carbide-guns-seized-in-jabalpur-2-arrested-guns-being-made-in-",
       "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdHpjYUZMNHJtUzZqU0RHZ3RpVWhQa1JwVElLc0NZbXBGWUlWbXVzZTRkbkNGUXNVS1NzQTQtZldweC03TU1fMENVT1JXWFJFZi1Yam5zcThzOXZnUlhuamFLeXYwSVpPeUhMazdiaWRlc2JFM2IxV2NtN00wdG1XdFp5LU1QOTVHRndBcnprSU94SUx4WTNWT2VyRX",
@@ -782,158 +933,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdHpjYUZMNHJtUzZqU0RHZ3RpVWhQa1JwVElLc0NZbXBGWUlWbXVzZTRkbkNGUXNVS1NzQTQtZldweC03TU1fMENVT1JXWFJFZi1Yam5zcThzOXZnUlhuamFLeXYwSVpPeUhMazdiaWRlc2JFM2IxV2NtN00wdG1XdFp5LU1QOTVHRndBcnprSU94SUx4WTNWT2VyRXYxRWZEZlRwVU5DbVoxczRwTTVkYldhaXBuSF9vN3VUQWRtclZuWjI4eUNFVGlFOXcxWk9U0gHWAUFVX3lxTE9nNmFOLVBVa3hHN0JVbzZZZmJ5aGJlYzVaRkJrRkNGcGI2U0J3TFViQ2ZmaEdrVFFUUTFBMkh4MWp5eGsxNFUzM0t2UTFlektwSmlGbkp4aHFBUHoxR0Vwb3VXcTFyZ3JfVmNoX0IxUHpYeXlITEZ2MUhzekNDWlRnRG5NMElPc3UyWS0xR2VPVll5eTRBVU9OdF9Ea0NDMWtSVG9LcUxocHdETnN3OFo3WjdkTUxKRjNoQW5XSGVOeFd5X0ZCY25CelpRWDIzZHdfSkJwc1E?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-10-30T04:53:45.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opb-33-tva4",
-      "title": "Cyclone Arnab Alert: Rain & Storms Across 33 MP Districts | Gwalior-Jabalpur - Bhaskar English",
-      "slug": "cyclone-arnab-alert-rain-storms-across-33-mp-districts-gwalior-ja",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcXNPWEttWDZhcU9HUkJZMWhoOTVoVlBnMUlSTUdrb19TTDJUTVM2NE0wVGF0cWRrU0VzZVFza2RjM2laSkdIeEtrM1NOMW9DMFZrWlVSU2R2X2xyR1gwTTZrM2VpQ2M0bWJaWno5R2l0YUJjakZzLU40bjBESkl4RGxlUGZTdlVhTjU4Yk5jZWtQbWZXWklVbEVlQ0",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcXNPWEttWDZhcU9HUkJZMWhoOTVoVlBnMUlSTUdrb19TTDJUTVM2NE0wVGF0cWRrU0VzZVFza2RjM2laSkdIeEtrM1NOMW9DMFZrWlVSU2R2X2xyR1gwTTZrM2VpQ2M0bWJaWno5R2l0YUJjakZzLU40bjBESkl4RGxlUGZTdlVhTjU4Yk5jZWtQbWZXWklVbEVlQ0",
-      "category": "Environment & City",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcXNPWEttWDZhcU9HUkJZMWhoOTVoVlBnMUlSTUdrb19TTDJUTVM2NE0wVGF0cWRrU0VzZVFza2RjM2laSkdIeEtrM1NOMW9DMFZrWlVSU2R2X2xyR1gwTTZrM2VpQ2M0bWJaWno5R2l0YUJjakZzLU40bjBESkl4RGxlUGZTdlVhTjU4Yk5jZWtQbWZXWklVbEVlQ05SNFJuMHBuRHJUV0U0T3VsNVNPdzMyRVc3b3RNMlA4ZE5uRnY?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T23:30:00.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Environment & City",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6p1k-61-pg78",
-      "title": "जबलपुर में देश का पहला पूर्ण हिंदी माध्यम मेडिकल कॉलेज खोलने की तैयारी - EMS-News",
-      "slug": "ems-news",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVE4zeUFORElmWGxzcnN5dEV4SVRLVUtaN3Z1VWRDUThfY1dJdmVlSFhYMWNEZmtsY0xPV0ZTaDBUbVZxazB3ZmNVYTEzVEZxbjY1aGJOdHlkRjRrSWE0elVMdndJUTFtV1BKSHZQd29IRmd2Umw3QVFNTzFacTJqVUdSa3NvODFQNHh2cTk0LW54dnJyQmd1RXpwdU",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVE4zeUFORElmWGxzcnN5dEV4SVRLVUtaN3Z1VWRDUThfY1dJdmVlSFhYMWNEZmtsY0xPV0ZTaDBUbVZxazB3ZmNVYTEzVEZxbjY1aGJOdHlkRjRrSWE0elVMdndJUTFtV1BKSHZQd29IRmd2Umw3QVFNTzFacTJqVUdSa3NvODFQNHh2cTk0LW54dnJyQmd1RXpwdU",
-      "category": "Local News",
-      "source": "EMS-News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVE4zeUFORElmWGxzcnN5dEV4SVRLVUtaN3Z1VWRDUThfY1dJdmVlSFhYMWNEZmtsY0xPV0ZTaDBUbVZxazB3ZmNVYTEzVEZxbjY1aGJOdHlkRjRrSWE0elVMdndJUTFtV1BKSHZQd29IRmd2Umw3QVFNTzFacTJqVUdSa3NvODFQNHh2cTk0LW54dnJyQmd1RXpwdUc4RllDUTQ2N2ZPZWRLQnBlVjl4RTNkX3hJdEMzalNwRnhyRjJqcElnLTF2ejh4YlU1VWdIWUxBNm9SOEgxRk5fYTZaU1IxNF9hcTFKMGF0OFNSSWd2RFVNRGtGZg?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T22:57:02.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6ope-66-142a",
-      "title": "NEET UG Candidate Moves Jabalpur High Court Over Denial Of MBBS Seat - Free Press Journal",
-      "slug": "neet-ug-candidate-moves-jabalpur-high-court-over-denial-of-mbbs-s",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaXF6cFgtN2NOMmRVSkZuYjRyRW93WDR2TkJTYXZBRzNjVzRaUmVfX1YtcS1Qd0szY1dldGNOZlNMVUdIZ05fTTNuMWZoOE5UYUpTRHZZejRxSFY3SFRNT1RTcFlTaGNYWEFoRWRhcGRCeTJaOTAybDBjcUZPak5meTd6OXBJUmtJVzVyeWZCanpVb09MVmNoLXdobG",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaXF6cFgtN2NOMmRVSkZuYjRyRW93WDR2TkJTYXZBRzNjVzRaUmVfX1YtcS1Qd0szY1dldGNOZlNMVUdIZ05fTTNuMWZoOE5UYUpTRHZZejRxSFY3SFRNT1RTcFlTaGNYWEFoRWRhcGRCeTJaOTAybDBjcUZPak5meTd6OXBJUmtJVzVyeWZCanpVb09MVmNoLXdobG",
-      "category": "Local News",
-      "source": "Free Press Journal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaXF6cFgtN2NOMmRVSkZuYjRyRW93WDR2TkJTYXZBRzNjVzRaUmVfX1YtcS1Qd0szY1dldGNOZlNMVUdIZ05fTTNuMWZoOE5UYUpTRHZZejRxSFY3SFRNT1RTcFlTaGNYWEFoRWRhcGRCeTJaOTAybDBjcUZPak5meTd6OXBJUmtJVzVyeWZCanpVb09MVmNoLXdobGExUkxPYW5RTUxINkc2UGfSAbABQVVfeXFMT3FlYVY3WmthbjA0MmFXOERpckVtRWE1RDIzZnVzNkZaZ19PLVFuSk5OSy1JZzNobEg3Rm4wS3E0N2g2NG5jRnE3cDBKSVUzUlM1YVZuOXB2cmtzSkd5UXdjMV91ZWs3UnhULWxMTXdJZ0R3S1hZekROaGdJTjhBTk5pVmZnSThTdUZfaEd1ZHg1aUMyejhMVjgxbEU5eVEzNmRrTHpvR21VSXI0QmNzVzM?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T17:30:00.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opc-43-gcax",
-      "title": "BJP Yuva Morcha replaces 19 district presidents and general secretaries: Ravindra Tiwari in Jabalpur, Jaswa... - Bhaskar English",
-      "slug": "bjp-yuva-morcha-replaces-19-district-presidents-and-general-secre",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUjA5T2VfTS1IU2JLS2VFNkhYUjhRTkJERzlWRVZkX3ZNbzhfOHIyZEwxbTJpeE9pMC1xT1pPMnBiWlJjS0tWNFQtZ25BSVFwZmFCM3BTZXBUeVdQbTMzNEJxWUZhQnFnM3FIankyeUNjNHFkWXhyRmxKLUdpOXBNRGZEajFZSUJ0d0cxY1M4WEJIc2NzRFIyNG9qTW",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUjA5T2VfTS1IU2JLS2VFNkhYUjhRTkJERzlWRVZkX3ZNbzhfOHIyZEwxbTJpeE9pMC1xT1pPMnBiWlJjS0tWNFQtZ25BSVFwZmFCM3BTZXBUeVdQbTMzNEJxWUZhQnFnM3FIankyeUNjNHFkWXhyRmxKLUdpOXBNRGZEajFZSUJ0d0cxY1M4WEJIc2NzRFIyNG9qTW",
-      "category": "Local News",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUjA5T2VfTS1IU2JLS2VFNkhYUjhRTkJERzlWRVZkX3ZNbzhfOHIyZEwxbTJpeE9pMC1xT1pPMnBiWlJjS0tWNFQtZ25BSVFwZmFCM3BTZXBUeVdQbTMzNEJxWUZhQnFnM3FIankyeUNjNHFkWXhyRmxKLUdpOXBNRGZEajFZSUJ0d0cxY1M4WEJIc2NzRFIyNG9qTWtydTNMWWNIZnBQUnI2WVFwQmswcEQ4U2pOOTkxbENJY1RrRnXSAcYBQVVfeXFMTm5HT2xCYU9RVWRIVV9TY2dha0t0dFZpS01kZzBRbExXdldPY3U5M2xEWWJHMnRYb3pROTZZY1FKYWZxNXZwenYzNUZkdDV3YXc5aUZId3IybXBMbHJnbDdMQm81eURpU0dFNVh5bFNuWFBsaFV5bF95eFF2MnludVEySE04UUJYckdKT3Nsb1Nyb3dFcXFpOUFjSWxSaGRfSVl2M2xXNjRvSzRTNEExTlJyOWVaVmNtWFc5SGs0YU5jcUJwYnNn?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T16:45:56.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6p1g-3-czaf",
-      "title": "जबलपुर में करवा चौथ पर पत्नी ने पति को दिया किडनी का उपहार, ICU वार्ड में ही तोड़ा व्रत - Navbharat Live",
-      "slug": "icu-navbharat-live",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQUWhNb1JlRHhSQlVFQUZFX2FwLUZwUkVxY3JNY1pkRjEwNDJKMXZrRjVhZWRpcDZwWkRxWjBtYVd0TWRoQVZyMU04NmZnYlR5RW9NaHBBUjh4NEFPVU1NWVJzTnZSNllGWThiTnBYOXJGLXZSLVMwczg0RjRCT01iNDBvZU5ZWGdwLWxBVmdISF9yaEJlbkFOZWpnaH",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQUWhNb1JlRHhSQlVFQUZFX2FwLUZwUkVxY3JNY1pkRjEwNDJKMXZrRjVhZWRpcDZwWkRxWjBtYVd0TWRoQVZyMU04NmZnYlR5RW9NaHBBUjh4NEFPVU1NWVJzTnZSNllGWThiTnBYOXJGLXZSLVMwczg0RjRCT01iNDBvZU5ZWGdwLWxBVmdISF9yaEJlbkFOZWpnaH",
-      "category": "Local News",
-      "source": "Navbharat Live",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUWhNb1JlRHhSQlVFQUZFX2FwLUZwUkVxY3JNY1pkRjEwNDJKMXZrRjVhZWRpcDZwWkRxWjBtYVd0TWRoQVZyMU04NmZnYlR5RW9NaHBBUjh4NEFPVU1NWVJzTnZSNllGWThiTnBYOXJGLXZSLVMwczg0RjRCT01iNDBvZU5ZWGdwLWxBVmdISF9yaEJlbkFOZWpnaHNHM0E0R2V4Sy00aEJMMHZJ0gG6AUFVX3lxTE5PU1hMeUY5MWkwQVF6VThReW9Wc3FKdTBxSXp6VXNZVVJGTUE0OC1YbW9qeFNzb1pCazBQWEJqa3BDckwxYi1uVUN6emtYZzFfSlRZTGJ1NEkzVFE3VU9KblNzTG9BM1lRS0NXblFjSmJKNXFqQXFKalZFRmhkcnJhd21Yam5IYXEtREpVRGNhNnBzdXVOOGJ0NS1IWlEtaTFkSjNLdGxmVExCVFB6bTA1aEZJWEl6TDZxQQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T15:36:29.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6opc-40-ms5d",
-      "title": "Jabalpur woman saves husband’s life by donating kidney: Performs Karwa Chauth puja in ICU after transplant,... - Bhaskar English",
-      "slug": "jabalpur-woman-saves-husband-s-life-by-donating-kidney-performs-k",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTC1CYkdxaVVya3BBSExNU3BzTFhITDRKMmlYLWQ0dGZYak9PUmQwemJKWlR4a3pLOWNidGxRVWhTNTlnZHdJd1B3ZmpDbXd1eUNGUk8wOS12T2EyNE9KNXdPODgxOHVib1c2NUxOZXFPYVNqZTJnb3M0d3QwZ0pEZ0ZyeEZiTkV3bGZ5YWFBYWdyNVJNMmFyclpkaX",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTC1CYkdxaVVya3BBSExNU3BzTFhITDRKMmlYLWQ0dGZYak9PUmQwemJKWlR4a3pLOWNidGxRVWhTNTlnZHdJd1B3ZmpDbXd1eUNGUk8wOS12T2EyNE9KNXdPODgxOHVib1c2NUxOZXFPYVNqZTJnb3M0d3QwZ0pEZ0ZyeEZiTkV3bGZ5YWFBYWdyNVJNMmFyclpkaX",
-      "category": "Local News",
-      "source": "Bhaskar English",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTC1CYkdxaVVya3BBSExNU3BzTFhITDRKMmlYLWQ0dGZYak9PUmQwemJKWlR4a3pLOWNidGxRVWhTNTlnZHdJd1B3ZmpDbXd1eUNGUk8wOS12T2EyNE9KNXdPODgxOHVib1c2NUxOZXFPYVNqZTJnb3M0d3QwZ0pEZ0ZyeEZiTkV3bGZ5YWFBYWdyNVJNMmFyclpkaXRYRVVpaWJQcHR2OWFCRzVqa1ZmcHhPZG1waTBJ0gG-AUFVX3lxTE1FMWFxQ1NOWHhBcXpQUXdWbmlKVGNzd2pFdV9ZMHhqcmVhZ1NKd1hET1V2WTB2aGRTVW5acnlNZDNpbnAtZnJqMHFfR0prQkNhUUE2bmNhUnlmYkt2NWxLeEdWVkxaWjJORHF3WGd6NHFGMURnWVVrTWdEYVNlTWMxZjh2TUs1emZ6Qm0wV1oweXNuMWptdW9TNnQ5N0VjLXBpdUZ3U25XRVVfMjdiZ2FxWV9fbjhqdFpVZ0VGZ3c?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T13:41:54.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6op9-2-dam5",
-      "title": "Rajnath Singh, Mohan Yadav perform Bhoomi Pujan for T-Series Tank Overhaul Project in Jabalpur - DD News",
-      "slug": "rajnath-singh-mohan-yadav-perform-bhoomi-pujan-for-t-series-tank-",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdWRjU1k4QUYxVXVBc0czeWJOaGYtVm1MUkRjN1dNdGlON1V4cGdDcEZWcEZnaUc0NVFVcEc0NGNQVVVJcEVEQUE3dW5mOXEwQkdOS2FRZ3RnLU90ZWwyN2RmWDBHRFdsNUV3R1lHRm1JbFA2RzMydHVvLUpfVTZTXzJ2T19BeUoxRDV0VGtvVVRCNTZzUUdXb2d5RW",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdWRjU1k4QUYxVXVBc0czeWJOaGYtVm1MUkRjN1dNdGlON1V4cGdDcEZWcEZnaUc0NVFVcEc0NGNQVVVJcEVEQUE3dW5mOXEwQkdOS2FRZ3RnLU90ZWwyN2RmWDBHRFdsNUV3R1lHRm1JbFA2RzMydHVvLUpfVTZTXzJ2T19BeUoxRDV0VGtvVVRCNTZzUUdXb2d5RW",
-      "category": "Local News",
-      "source": "DD News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdWRjU1k4QUYxVXVBc0czeWJOaGYtVm1MUkRjN1dNdGlON1V4cGdDcEZWcEZnaUc0NVFVcEc0NGNQVVVJcEVEQUE3dW5mOXEwQkdOS2FRZ3RnLU90ZWwyN2RmWDBHRFdsNUV3R1lHRm1JbFA2RzMydHVvLUpfVTZTXzJ2T19BeUoxRDV0VGtvVVRCNTZzUUdXb2d5RW1Kb1JvQldrT1VZVl9xdEszUmlOaTNvTG5rTmZrcG5z?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T10:13:02.000Z",
-      "readTime": "2 min read",
-      "isFeatured": false,
-      "tags": [
-        "Local News",
-        "Jabalpur",
-        "Madhya Pradesh"
-      ]
-    },
-    {
-      "id": "jbp-mvyz6p1g-2-imn8",
-      "title": "जबलपुर में ट्रायम्फ़ New Tiger 1200 क़ीमत - अक्टूबर 2026 जबलपुर में New Tiger 1200 की ऑन रोड क़ीमत - BikeWale",
-      "slug": "new-tiger-1200-2026-new-tiger-1200-bikewale",
-      "excerpt": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNV1BBazdFRU1sVVo4SGlFSWFkTTZRRl9hLVFWWk16UzdESmgweW1YZVNES0JYb3hVWHdVSVduMFBxdXdyN2hzNHpJakhtVWFYb21pMnhKbmhHZ3lnRFVqSFlrZHNoTGlOYy1NOE5qUnhXSDgtcEN3NnNZeERXZnhnRQ?oc=5\" target=\"_blank\">जबलपुर में ट्",
-      "content": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNV1BBazdFRU1sVVo4SGlFSWFkTTZRRl9hLVFWWk16UzdESmgweW1YZVNES0JYb3hVWHdVSVduMFBxdXdyN2hzNHpJakhtVWFYb21pMnhKbmhHZ3lnRFVqSFlrZHNoTGlOYy1NOE5qUnhXSDgtcEN3NnNZeERXZnhnRQ?oc=5\" target=\"_blank\">जबलपुर में ट्",
-      "category": "Local News",
-      "source": "BikeWale",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNV1BBazdFRU1sVVo4SGlFSWFkTTZRRl9hLVFWWk16UzdESmgweW1YZVNES0JYb3hVWHdVSVduMFBxdXdyN2hzNHpJakhtVWFYb21pMnhKbmhHZ3lnRFVqSFlrZHNoTGlOYy1NOE5qUnhXSDgtcEN3NnNZeERXZnhnRQ?oc=5",
-      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
-      "publishedAt": "2026-10-29T09:30:20.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
