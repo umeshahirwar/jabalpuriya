@@ -7,7 +7,8 @@ const attractions = [
     description: "Towering 100-foot white marble canyon carved by the holy Narmada river, world-renowned for moonlight boating and pristine river serenity.",
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
     badge: "Must Experience",
-    badgeColor: "bg-emerald-600 text-white"
+    badgeColor: "bg-emerald-600 text-white",
+    href: "/bhedaghat-guide"
   },
   {
     title: "Dhuandhar Waterfalls",
@@ -16,7 +17,8 @@ const attractions = [
     description: "The magnificent cascade where the Narmada plunges over a sheer rocky drop, throwing up a misty cloud that resembles smoke (dhuan).",
     image: "https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=800&q=80",
     badge: "Iconic Landmark",
-    badgeColor: "bg-sky-600 text-white"
+    badgeColor: "bg-sky-600 text-white",
+    href: "/bhedaghat-guide"
   },
   {
     title: "Madan Mahal & Balancing Rock",
@@ -25,7 +27,8 @@ const attractions = [
     description: "11th-century royal watchtower castle built by Gond ruler Raja Madan Singh, perched on an astonishing natural balancing rock formation.",
     image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
     badge: "Historic Fort",
-    badgeColor: "bg-amber-600 text-white"
+    badgeColor: "bg-amber-600 text-white",
+    href: "/#about"
   },
   {
     title: "Gwarighat Maha Aarti",
@@ -34,7 +37,8 @@ const attractions = [
     description: "Daily sacred evening prayer on the riverfront ghats with synchronized brass lamps and devotional hymns echoing across the Narmada.",
     image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
     badge: "Daily Devotion",
-    badgeColor: "bg-orange-600 text-white"
+    badgeColor: "bg-orange-600 text-white",
+    href: "/gwarighat-aarti"
   }
 ];
 ---
@@ -67,7 +71,7 @@ const attractions = [
     <!-- Spotlight Cards Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {attractions.map((item) => (
-        <div class="group bg-white dark:bg-[#0c1c33] rounded-3xl overflow-hidden border border-slate-200/90 dark:border-slate-800 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+        <a href={item.href} class="group bg-white dark:bg-[#0c1c33] rounded-3xl overflow-hidden border border-slate-200/90 dark:border-slate-800 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
           <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
             <img
               src={item.image}
@@ -87,7 +91,7 @@ const attractions = [
               <span class="text-[11px] font-extrabold text-jabalpur-secondary uppercase tracking-wider block">
                 {item.category}
               </span>
-              <h3 class="text-base font-black text-slate-900 dark:text-white mt-1">
+              <h3 class="text-base font-black text-slate-900 dark:text-white mt-1 group-hover:text-jabalpur-secondary transition-colors">
                 {item.title}
               </h3>
               <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-hindi font-semibold">
@@ -104,7 +108,7 @@ const attractions = [
               </span>
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
 

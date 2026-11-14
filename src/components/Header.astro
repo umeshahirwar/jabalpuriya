@@ -1,11 +1,12 @@
 ---
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'Latest News', href: '/#news-grid' },
-  { name: '✨ Rashifal (राशिफल)', href: '/#rashifal' },
-  { name: 'Culture & Tourism', href: '/#culture' },
-  { name: 'City Services', href: '/#directory' },
-  { name: 'About Jabalpur', href: '/#about' },
+  { name: 'होम', href: '/' },
+  { name: 'ताजा खबरें', href: '/#news-grid' },
+  { name: '✨ राशिफल', href: '/rashifal' },
+  { name: '🌾 मंडी भाव', href: '/mandi-bhav' },
+  { name: '🌊 भेड़ाघाट', href: '/bhedaghat-guide' },
+  { name: '🪔 ग्वारीघाट', href: '/gwarighat-aarti' },
+  { name: '📞 हेल्पलाइन', href: '/helplines' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -79,12 +80,12 @@ const currentPath = Astro.url.pathname;
       </div>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center space-x-1.5" aria-label="Main Navigation">
+      <nav class="hidden lg:flex items-center space-x-1" aria-label="Main Navigation">
         {navItems.map((item) => (
           <a
             href={item.href}
-            class={`px-3.5 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${
-              item.name.includes('Rashifal')
+            class={`px-3 py-2 rounded-xl text-xs xl:text-sm font-bold transition-all duration-200 ${
+              item.href === '/rashifal'
                 ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-800/60 shadow-sm'
                 : currentPath === item.href
                   ? 'text-white bg-jabalpur-primary shadow-md'

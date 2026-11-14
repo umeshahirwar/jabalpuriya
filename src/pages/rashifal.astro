@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RashifalSection from '../components/RashifalSection.astro';
+import AdSenseBanner from '../components/AdSenseBanner.astro';
+
+const rashifalFaqs = [
+  {
+    q: "दैनिक राशिफल का प्रभाव किस समय से प्रारंभ होता है?",
+    a: "वैदिक ज्योतिष के अनुसार दैनिक राशिफल का प्रभाव सूर्योदय काल से प्रारंभ होता है और आगामी सूर्योदय तक रहता है। शुभ कार्यों के लिए अपनी राशि का शुभ मुहूर्त और शुभ रंग अवश्य देखें।"
+  },
+  {
+    q: "संस्कारधानी जबलपुर में ज्योतिष व ग्रह गोचर की क्या महत्ता है?",
+    a: "नर्मदा तट पर स्थित संस्कारधानी जबलपुर आध्यात्मिक और वैदिक ज्ञान का प्रमुख केंद्र है। मां नर्मदा की आरती और ग्रह गोचर के आधार पर दिन की योजना बनाना अत्यंत शुभ माना जाता है।"
+  }
+];
+---
+
+<Layout
+  title="Aaj Ka Rashifal 2026 - Daily & Annual Horoscope | आज का राशिफल संस्कारधानी जबलपुर"
+  description="दैनिक एवं वार्षिक वैदिक राशिफल 2026। मेष, वृषभ, मिथुन, कर्क, सिंह, कन्या, तुला, वृश्चिक, धनु, मकर, कुंभ, मीन राशियों का शुभ रंग, भाग्यशाली अंक, प्रेम, करियर व स्वास्थ्य भविष्यवाणी।"
+  keywords={["Aaj Ka Rashifal", "आज का राशिफल", "Jabalpur Horoscope", "Rashifal 2026", "दैनिक राशिफल जबलपुर", "Mesh to Meen Rashifal"]}
+>
+  <div class="max-w-7xl mx-auto py-6 sm:py-10 space-y-8">
+    
+    <!-- Top Masthead Ad Placement -->
+    <AdSenseBanner slotType="masthead" />
+
+    <!-- Dedicated Header -->
+    <header class="text-center space-y-4 max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md">
+        ✨ वैदिक ज्योतिष एवं भविष्यफल
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+        आज का राशिफल एवं वार्षिक भविष्यफल 2026
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+        ग्रहों की स्थिति, नक्षत्र संचरण और वैदिक गणनाओं पर आधारित सभी 12 राशियों का प्रामाणिक दैनिक व वार्षिक राशिफल।
+      </p>
+
+      <div class="pt-2 flex justify-center">
+        <a
+          href={`https://api.whatsapp.com/send?text=${encodeURIComponent('✨ आज का राशिफल 2026 - मेष से मीन तक सभी 12 राशियों का वैदिक भविष्यफल देखें:\nhttps://jabalpuriya.com/rashifal')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm shadow-lg hover:scale-105 transition-all"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.068-1.109-.064-.407-.129-.933-.312-1.611-.607-1.425-.62-2.353-2.073-2.424-2.167-.071-.095-.579-.77-.579-1.469 0-.698.367-1.042.498-1.185.132-.143.287-.179.383-.179s.191.006.275.011c.088.005.206-.033.322.247.119.287.407 1.002.443 1.074.036.072.06.155.012.251-.048.096-.072.155-.144.239-.072.084-.151.187-.216.251-.072.072-.147.151-.063.295.084.144.373.615.8 1.001.551.498 1.015.653 1.159.724.144.072.228.06.312-.036.084-.096.359-.419.455-.563.096-.144.191-.12.323-.072.132.048.837.395.981.467.144.072.24.108.275.167.036.06.036.347-.108.752zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span>आज का राशिफल WhatsApp पर शेयर करें</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Rashifal Section Component -->
+    <RashifalSection />
+
+    <!-- In-Feed Ad -->
+    <AdSenseBanner slotType="in-feed" />
+
+    <!-- FAQ Section -->
+    <section class="max-w-4xl mx-auto space-y-4">
+      <h2 class="text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+        <span>❓</span> ज्योतिष एवं राशिफल संबंधित प्रश्न (FAQs)
+      </h2>
+      <div class="space-y-3">
+        {rashifalFaqs.map((faq) => (
+          <details class="p-5 rounded-2xl bg-white dark:bg-[#0c1c33] border border-slate-200 dark:border-slate-800 shadow-sm group">
+            <summary class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white cursor-pointer list-none flex justify-between items-center">
+              <span>{faq.q}</span>
+              <span class="text-jabalpur-secondary text-lg group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p class="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-3">
+              {faq.a}
+            </p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Return Home CTA -->
+    <div class="text-center pt-4">
+      <a href="/" class="inline-flex items-center px-6 py-3 rounded-xl font-bold text-sm bg-jabalpur-primary text-white hover:bg-jabalpur-secondary transition-all shadow-md">
+        ← मुख्य पृष्ठ (Home) पर लौटें
+      </a>
+    </div>
+
+  </div>
+</Layout>

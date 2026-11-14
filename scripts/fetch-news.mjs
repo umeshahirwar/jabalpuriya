@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Jabalpuriya.com - High-Performance Automated RSS Aggregator
+ * Jabalpuriya.com - High-Performance Automated RSS Aggregator & Content Engine
  * 
- * Upgrades:
- * - Multi-pattern image extraction (<enclosure>, <media:content>, <media:thumbnail>, <img> in CDATA)
- * - Curated 30+ vibrant Jabalpur & MP photography fallback pool with hash-based unique rotation
- * - Scaled output pool (up to 48+ articles) to power smooth infinite scroll
- * - Brand Safety & Dice semantic headline deduplication
+ * Features:
+ * - Permanent URL retention: NEVER deletes historical articles, ensuring all /news/[slug] URLs live forever
+ * - Multi-pattern image extraction with vibrant Jabalpur photography fallback
+ * - Robust entity decoding & clean excerpt generation (no broken Google redirect URLs)
+ * - Automated XML Sitemap & Google News Sitemap generation
+ * - Hindi & English keyword enrichment for maximum local search visibility
  */
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
@@ -17,6 +18,8 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const DATA_FILE = join(__dirname, '..', 'src', 'data', 'news.json');
+const SITEMAP_FILE = join(__dirname, '..', 'public', 'sitemap.xml');
+const SITEMAP_NEWS_FILE = join(__dirname, '..', 'public', 'sitemap-news.xml');
 
 // --- RSS Feed Sources ---
 const RSS_FEEDS = [
@@ -86,11 +89,11 @@ const CURATED_JABALPUR_IMAGES = {
 // Category Keywords Mapping
 const CATEGORY_RULES = [
   { category: 'Smart City & Infra', keywords: ['flyover', 'ring road', 'smart city', 'railway', 'airport', 'dumna airport', 'highway', 'metro', 'nhai', 'infrastructure', 'bridge', 'bypass', 'traffic', 'vande bharat'] },
-  { category: 'Culture & Tourism', keywords: ['bhedaghat', 'dhuandhar', 'narmada', 'aarti', 'gwarighat', 'madan mahal', 'heritage', 'chausath yogini', 'marble rocks', 'temple', 'festival', 'tourism', 'garba', 'navratri', 'mela'] },
+  { category: 'Culture & Tourism', keywords: ['bhedaghat', 'dhuandhar', 'narmada', 'aarti', 'gwarighat', 'madan mahal', 'heritage', 'chausath yogini', 'marble rocks', 'temple', 'festival', 'tourism', 'garba', 'navratri', 'mela', 'tilwara'] },
   { category: 'Education & Tech', keywords: ['iiitdm', 'rdvv', 'university', 'college', 'school', 'students', 'exam', 'engineering', 'ai hub', 'startup', 'robotics', 'result', 'admission'] },
   { category: 'Business & Jobs', keywords: ['garment', 'mpidc', 'textile', 'investment', 'industry', 'market', 'trade', 'chamber of commerce', 'jobs', 'economy', 'richhai', 'gold rate', 'business', 'mandi'] },
   { category: 'Environment & City', keywords: ['dumna park', 'forest', 'rain', 'weather', 'climate', 'pollution', 'aqi', 'wetland', 'wildlife', 'swachh', 'river', 'bargi dam'] },
-  { category: 'Local News', keywords: ['jabalpur', 'district', 'collector', 'commissioner', 'jmc', 'police', 'court', 'high court', 'sanskaardhani', 'shahar'] },
+  { category: 'Local News', keywords: ['jabalpur', 'district', 'collector', 'commissioner', 'jmc', 'police', 'court', 'high court', 'sanskaardhani', 'shahar', 'जबलपुर'] },
 ];
 
 const BLOCKED_DOMAINS = [
@@ -103,18 +106,62 @@ const PROHIBITED_KEYWORDS = [
   'porn', 'adult game', 'free crypto giveaway', 'miracle cure'
 ];
 
+/**
+ * Proper HTML Entity Decoder & Tag Stripper
+ */
 function cleanText(text) {
   if (!text) return '';
-  return text
-    .replace(/<[^>]+>/g, '')
+  let str = String(text)
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, ' ');
+
+  // Second pass in case of double-escaped HTML
+  str = str
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+
+  // Strip all HTML tags
+  str = str.replace(/<[^>]+>/g, '');
+  return str.replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Clean & Human-Friendly Story Excerpt Generator
+ */
+function formatCleanExcerpt(rawDesc, title, source, category) {
+  let cleaned = cleanText(rawDesc);
+
+  // If description contains source, clean it off the end
+  if (source && cleaned.endsWith(source)) {
+    cleaned = cleaned.slice(0, -source.length).trim();
+  }
+  cleaned = cleaned.replace(/^[-\s|•]+|[-\s|•]+$/g, '').trim();
+
+  const isDuplicateOfTitle = cleaned.toLowerCase() === title.toLowerCase();
+  const isUrlOrBroken = cleaned.includes('news.google.com') || cleaned.startsWith('http') || cleaned.length < 25;
+
+  if (!cleaned || isDuplicateOfTitle || isUrlOrBroken) {
+    const isHindi = /[\u0900-\u097F]/.test(title);
+    if (isHindi) {
+      return `${title} - संस्कारधानी जबलपुर और मध्य प्रदेश की ताज़ा व प्रामाणिक रिपोर्ट। विस्तार से जानें पूरा घटनाक्रम।`;
+    } else {
+      return `${title} - Verified local news report, infrastructure update, and civic development coverage from Jabalpur, Madhya Pradesh.`;
+    }
+  }
+
+  // Ensure proper end punctuation
+  if (!/[.!?।]$/.test(cleaned)) {
+    cleaned += '.';
+  }
+
+  return cleaned.slice(0, 300);
 }
 
 function normalizeTitleForComparison(title) {
@@ -196,7 +243,33 @@ function extractImageUrl(itemXml, category, index) {
   return pool[index % pool.length];
 }
 
-function parseRSSXml(xmlString, feedConfig) {
+/**
+ * Generate Permanent, SEO-Friendly Slugs
+ */
+function generateSlug(title, existingSlugs = new Set()) {
+  let baseSlug = title
+    .toLowerCase()
+    .replace(/\s*-\s*[^-]+$/, '') // remove trailing source e.g. " - Dainik Bhaskar"
+    .replace(/[^\w\s\u0900-\u097F-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .slice(0, 75)
+    .replace(/^-+|-+$/g, '');
+
+  if (!baseSlug || baseSlug.length < 3) {
+    baseSlug = 'jabalpur-samachar-' + Date.now().toString(36);
+  }
+
+  let slug = baseSlug;
+  let counter = 2;
+  while (existingSlugs.has(slug)) {
+    slug = `${baseSlug}-${counter}`;
+    counter++;
+  }
+  return slug;
+}
+
+function parseRSSXml(xmlString, feedConfig, existingSlugs) {
   const items = [];
   const itemMatches = xmlString.match(/<item[\s\S]*?<\/item>/gi) || [];
 
@@ -215,18 +288,19 @@ function parseRSSXml(xmlString, feedConfig) {
     const rawSource = sourceMatch ? (sourceMatch[1] || sourceMatch[2] || '') : '';
 
     const title = cleanText(rawTitle);
-    const excerpt = cleanText(rawDesc).slice(0, 260);
     const source = cleanText(rawSource) || feedConfig.name.split(' - ')[0];
     const sourceUrl = rawLink.trim();
 
     if (!title || !sourceUrl) continue;
 
-    const isJabalpurRelated = /jabalpur|sanskaardhani|bhedaghat|dhuandhar|narmada|gwarighat|madan mahal|dumna|iiitdm|rdvv|मदन महल|जबलपुर|भेड़ाघाट|नर्मदा|तिलवारा/i.test(`${title} ${excerpt}`);
+    const isJabalpurRelated = /jabalpur|sanskaardhani|bhedaghat|dhuandhar|narmada|gwarighat|madan mahal|dumna|iiitdm|rdvv|मदन महल|जबलपुर|भेड़ाघाट|नर्मदा|तिलवारा/i.test(`${title} ${rawDesc}`);
     if (!isJabalpurRelated && !feedConfig.name.includes('Jabalpur')) {
       continue;
     }
 
-    const category = classifyCategory(title, excerpt, feedConfig.defaultCategory);
+    const category = classifyCategory(title, rawDesc, feedConfig.defaultCategory);
+    const excerpt = formatCleanExcerpt(rawDesc, title, source, category);
+
     let publishedAt;
     try {
       publishedAt = rawPubDate ? new Date(rawPubDate).toISOString() : new Date().toISOString();
@@ -234,11 +308,8 @@ function parseRSSXml(xmlString, feedConfig) {
       publishedAt = new Date().toISOString();
     }
 
-    const slug = title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/(^-|-$)/g, '')
-      .slice(0, 65);
+    const slug = generateSlug(title, existingSlugs);
+    existingSlugs.add(slug);
 
     const id = `jbp-${Date.now().toString(36)}-${idx}-${Math.random().toString(36).substr(2, 4)}`;
     const imageUrl = extractImageUrl(itemXml, category, idx);
@@ -247,14 +318,14 @@ function parseRSSXml(xmlString, feedConfig) {
       id,
       title,
       slug,
-      excerpt: excerpt || `Latest updates regarding ${title} in Jabalpur, Madhya Pradesh.`,
+      excerpt,
       content: excerpt,
       category,
       source,
       sourceUrl,
       imageUrl,
       publishedAt,
-      readTime: `${Math.max(2, Math.ceil(title.split(' ').length / 28))} min read`,
+      readTime: `${Math.max(2, Math.ceil(title.split(' ').length / 26))} min read`,
       isFeatured: false,
       tags: [category, 'Jabalpur', 'Madhya Pradesh']
     });
@@ -265,16 +336,90 @@ function parseRSSXml(xmlString, feedConfig) {
   return items;
 }
 
+/**
+ * Generate XML Sitemaps Automatically (Standard + Google News)
+ */
+function generateSitemaps(articles) {
+  const baseUrl = 'https://jabalpuriya.com';
+  const nowIso = new Date().toISOString();
+
+  // 1. Static & Evergreen Guide Pages
+  const staticPages = [
+    { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'hourly', lastmod: nowIso },
+    { loc: `${baseUrl}/bhedaghat-guide`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/gwarighat-aarti`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/helplines`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/rashifal`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
+    { loc: `${baseUrl}/mandi-bhav`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
+    { loc: `${baseUrl}/about`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/contact`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/privacy-policy`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/terms`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' }
+  ];
+
+  let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+  for (const page of staticPages) {
+    sitemapXml += `  <url>\n    <loc>${page.loc}</loc>\n    <lastmod>${page.lastmod}</lastmod>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>\n`;
+  }
+
+  // Add all permanent news article URLs
+  for (const article of articles) {
+    if (!article.slug) continue;
+    sitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}</loc>\n    <lastmod>${article.publishedAt}</lastmod>\n    <changefreq>never</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  }
+
+  sitemapXml += `</urlset>\n`;
+  writeFileSync(SITEMAP_FILE, sitemapXml, 'utf-8');
+  console.log(`🗺️ [Sitemap] Generated public/sitemap.xml with ${staticPages.length + articles.length} permanent URLs`);
+
+  // 2. Google News Sitemap (Last 48 Hours)
+  const twoDaysAgo = Date.now() - 48 * 60 * 60 * 1000;
+  const recentArticles = articles.filter(a => new Date(a.publishedAt).getTime() > twoDaysAgo);
+
+  let newsSitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n`;
+
+  for (const article of recentArticles) {
+    const isHindi = /[\u0900-\u097F]/.test(article.title);
+    const escapedTitle = article.title
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+
+    newsSitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}</loc>\n    <news:news>\n      <news:publication>\n        <news:name>Jabalpuriya</news:name>\n        <news:language>${isHindi ? 'hi' : 'en'}</news:language>\n      </news:publication>\n      <news:publication_date>${article.publishedAt}</news:publication_date>\n      <news:title>${escapedTitle}</news:title>\n    </news:news>\n  </url>\n`;
+  }
+
+  newsSitemapXml += `</urlset>\n`;
+  writeFileSync(SITEMAP_NEWS_FILE, newsSitemapXml, 'utf-8');
+  console.log(`📰 [Google News] Generated public/sitemap-news.xml with ${recentArticles.length} recent stories`);
+}
+
 async function fetchAndNormalizeNews() {
-  console.log('🚀 [Jabalpuriya] Starting Enhanced News Aggregator...');
-  
+  console.log('🚀 [Jabalpuriya] Starting High-Performance News Aggregator...');
+
+  // 1. Load existing articles (they must be preserved FOREVER!)
   let existingArticles = [];
   if (existsSync(DATA_FILE)) {
     try {
       const data = JSON.parse(readFileSync(DATA_FILE, 'utf-8'));
       existingArticles = data.articles || [];
-      console.log(`📂 Loaded ${existingArticles.length} existing articles`);
+      console.log(`📂 Loaded ${existingArticles.length} existing articles from archive`);
     } catch (e) {}
+  }
+
+  // Sanitize existing articles' excerpts & ensure slug exists
+  const existingSlugs = new Set();
+  for (const art of existingArticles) {
+    if (!art.slug) {
+      art.slug = generateSlug(art.title, existingSlugs);
+    }
+    existingSlugs.add(art.slug);
+
+    // Clean existing excerpt if it has raw html/google tracking url
+    art.excerpt = formatCleanExcerpt(art.excerpt, art.title, art.source, art.category);
+    art.content = art.excerpt;
   }
 
   const fetchedPool = [];
@@ -284,7 +429,7 @@ async function fetchAndNormalizeNews() {
       console.log(`📡 Ingesting: ${feed.name}...`);
       const response = await fetch(feed.url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; JabalpuriyaBot/2.0; +https://jabalpuriya.com)'
+          'User-Agent': 'Mozilla/5.0 (compatible; JabalpuriyaBot/3.0; +https://jabalpuriya.com)'
         },
         signal: AbortSignal.timeout(12000)
       });
@@ -292,7 +437,7 @@ async function fetchAndNormalizeNews() {
       if (!response.ok) continue;
 
       const xml = await response.text();
-      const parsedItems = parseRSSXml(xml, feed);
+      const parsedItems = parseRSSXml(xml, feed, existingSlugs);
       console.log(`✅ Extracted ${parsedItems.length} items from ${feed.name}`);
       fetchedPool.push(...parsedItems);
     } catch (err) {
@@ -300,41 +445,45 @@ async function fetchAndNormalizeNews() {
     }
   }
 
-  const combined = [...fetchedPool, ...existingArticles];
-  const safeItems = combined.filter(item => isBrandSafe(item));
+  const safeFetched = fetchedPool.filter(item => isBrandSafe(item));
 
-  // Deduplicate
-  const deduplicated = [];
-  for (const candidate of safeItems) {
-    const isDup = deduplicated.some(existing => {
-      return calculateSimilarity(candidate.title, existing.title) > 0.62;
-    });
-    if (!isDup) {
-      deduplicated.push(candidate);
+  // Deduplicate newly fetched against each other AND against existing articles
+  const newUniqueArticles = [];
+  for (const candidate of safeFetched) {
+    const isDupOfNew = newUniqueArticles.some(existing => calculateSimilarity(candidate.title, existing.title) > 0.65);
+    const isDupOfOld = existingArticles.some(existing => calculateSimilarity(candidate.title, existing.title) > 0.65);
+
+    if (!isDupOfNew && !isDupOfOld) {
+      newUniqueArticles.push(candidate);
     }
   }
 
-  // Sort descending by date
-  deduplicated.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  console.log(`✨ Found ${newUniqueArticles.length} brand new unique stories`);
 
-  // Cap to top 48 high quality stories for rich infinite scroll
-  const finalArticles = deduplicated.slice(0, 48);
+  // Combine NEW stories with ALL EXISTING stories (Permanent Archive: Never delete old URLs!)
+  const combinedAll = [...newUniqueArticles, ...existingArticles];
 
-  if (finalArticles.length > 0) {
-    finalArticles.forEach((art, idx) => {
+  // Sort descending by publication date
+  combinedAll.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  if (combinedAll.length > 0) {
+    combinedAll.forEach((art, idx) => {
       art.isFeatured = idx === 0;
     });
   }
 
   const payload = {
     lastUpdated: new Date().toISOString(),
-    totalStories: finalArticles.length,
-    sources: [...new Set(finalArticles.map(a => a.source))],
-    articles: finalArticles
+    totalStories: combinedAll.length,
+    sources: [...new Set(combinedAll.map(a => a.source))],
+    articles: combinedAll
   };
 
   writeFileSync(DATA_FILE, JSON.stringify(payload, null, 2), 'utf-8');
-  console.log(`🎉 [Jabalpuriya] Saved ${finalArticles.length} vibrant stories to src/data/news.json!`);
+  console.log(`🎉 [Jabalpuriya] Successfully saved ${combinedAll.length} permanent stories to src/data/news.json!`);
+
+  // Generate sitemaps
+  generateSitemaps(combinedAll);
 }
 
 fetchAndNormalizeNews().catch(err => {

@@ -3,12 +3,12 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = {
   categories: [
-    { name: 'Local News & Civic', href: '/#news-grid' },
-    { name: 'Rashifal 2026 (राशिफल)', href: '/#rashifal' },
-    { name: 'Smart City Jabalpur', href: '/#news-grid' },
-    { name: 'Culture & Bhedaghat', href: '/#culture' },
-    { name: 'Education & RDVV/IIIT', href: '/#news-grid' },
-    { name: 'Business & Garment Park', href: '/#news-grid' },
+    { name: 'ताजा खबरें (Local News)', href: '/#news-grid' },
+    { name: 'दैनिक राशिफल (Daily Rashifal)', href: '/rashifal' },
+    { name: 'जबलपुर मंडी भाव (Mandi Bhav)', href: '/mandi-bhav' },
+    { name: 'भेड़ाघाट व धुआंधार गाइड', href: '/bhedaghat-guide' },
+    { name: 'ग्वारीघाट नर्मदा महाआरती', href: '/gwarighat-aarti' },
+    { name: 'आपातकालीन हेल्पलाइन सूची', href: '/helplines' },
   ],
   quickLinks: [
     { name: 'About Jabalpuriya', href: '/about' },
@@ -16,6 +16,7 @@ const footerLinks = {
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms of Service', href: '/terms' },
     { name: 'Contact Us', href: '/contact' },
+    { name: 'Google News Sitemap', href: '/sitemap-news.xml' },
     { name: 'XML Sitemap Index', href: '/sitemap.xml' },
   ],
   civicHelplines: [
@@ -111,6 +112,9 @@ const footerLinks = {
             </li>
           ))}
         </ul>
+        <a href="/helplines" class="block text-center mt-3 py-2 px-3 rounded-xl bg-red-600/20 hover:bg-red-600/30 text-red-300 font-bold text-xs border border-red-500/30 transition-colors">
+          सम्पूर्ण हेल्पलाइन सूची (View All) →
+        </a>
       </div>
 
     </div>
