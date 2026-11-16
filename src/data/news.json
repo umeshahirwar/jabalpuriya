@@ -1,12 +1,17 @@
 {
-  "lastUpdated": "2026-11-15T08:19:26.183Z",
-  "totalStories": 79,
+  "lastUpdated": "2026-11-16T08:28:43.982Z",
+  "totalStories": 92,
   "sources": [
-    "Dainik Bhaskar",
-    "Jagran",
-    "Social News XYZ",
-    "Prabhat Khabar",
     "bhaskarhindi.com",
+    "The Hitavada",
+    "Bhaskar English",
+    "Social News XYZ",
+    "Jagran",
+    "ThePrint",
+    "Raj Express",
+    "Dainik Bhaskar",
+    "Cricbuzz",
+    "Prabhat Khabar",
     "rajexpress.com",
     "EdexLive",
     "Free Press Journal",
@@ -18,12 +23,11 @@
     "Shop SSBCrack",
     "SSBCrack",
     "Agniban",
-    "Bhaskar English",
+    "swadesh news",
     "Defence.in",
     "mahamedianews",
     "Tractor Junction",
     "Patrika News",
-    "The Hitavada",
     "Business Today",
     "The Times of India",
     "BikeWale",
@@ -35,6 +39,7 @@
     "ETV Bharat",
     "rashtriyahindimail.in",
     "ZigWheels.com",
+    "palpalindia",
     "People's Update",
     "News18 Hindi",
     "Navbharat Live",
@@ -48,6 +53,196 @@
   ],
   "articles": [
     {
+      "id": "jbp-mwj04qwg-97-mepw",
+      "title": "Jabalpur news: उगते सूर्य को अर्घ्य के साथ लोक आस्था के महापर्व छठ का समापन | à¤‰à¤—à¤¤à¥‡ à¤¸à¥‚à¤°à¥ à¤¯ à¤•à¥‹ à¤…à¤°à¥ à¤˜à¥ à¤¯ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤²à¥‹à¤• à¤†à¤¸à¥ à¤¥à¤¾ à¤•à¥‡ à¤®à¤¹à¤¾à¤ªà¤°à¥ à¤µ à¤›à¤ à¤ - bhaskarhindi.com",
+      "slug": "jabalpur-news-उगते-सूर्य-को-अर्घ्य-के-साथ-लोक-आस्था-के-महापर्व-छठ-का-समापन",
+      "excerpt": "Jabalpur news: उगते सूर्य को अर्घ्य के साथ लोक आस्था के महापर्व छठ का समापन | à¤‰à¤—à¤¤à¥‡ à¤¸à¥‚à¤°à¥ à¤¯ à¤•à¥‹ à¤…à¤°à¥ à¤˜à¥ à¤¯ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤²à¥‹à¤• à¤†à¤¸à¥ à¤¥à¤¾ à¤•à¥‡ à¤®à¤¹à¤¾à¤ªà¤°à¥ à¤µ à¤›à¤ à¤.",
+      "content": "Jabalpur news: उगते सूर्य को अर्घ्य के साथ लोक आस्था के महापर्व छठ का समापन | à¤‰à¤—à¤¤à¥‡ à¤¸à¥‚à¤°à¥ à¤¯ à¤•à¥‹ à¤…à¤°à¥ à¤˜à¥ à¤¯ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤²à¥‹à¤• à¤†à¤¸à¥ à¤¥à¤¾ à¤•à¥‡ à¤®à¤¹à¤¾à¤ªà¤°à¥ à¤µ à¤›à¤ à¤.",
+      "category": "Local News",
+      "source": "bhaskarhindi.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EeGRjbG05Rjh3eFJ1R3R3d2dHRXlmT0k4YlNDclBPQnRsZmJIUUlhWmJfOWlfMENnQUc0QjNoeVBFc0xNa2FJYVdTdTYzd0RhZDAxOHlaOXNlaWk2aGlENGhn?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T07:30:36.000Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmq-10-az6t",
+      "title": "No relief as winter tightens grip after Diwali as every big city in poor air zone - The Hitavada",
+      "slug": "no-relief-as-winter-tightens-grip-after-diwali-as-every-big-city-in-poor-ai",
+      "excerpt": "No relief as winter tightens grip after Diwali as every big city in poor air zone.",
+      "content": "No relief as winter tightens grip after Diwali as every big city in poor air zone.",
+      "category": "Local News",
+      "source": "The Hitavada",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOTdFT1p1MVVEYk1sa0ZNdXBEWnZFQXNBVjd0ODA3WWdPZXlVYjFVTE44bTNrV0pfMkQ4YjRZa1RLM3JVUDAxSGhDbFdOUkFidUdTQ1ozVTdMQ0praWtsd0JwWG5uRVk5UjFQZUFyeFU5R29sb3Y0V1JMaVZJVllac0VraG5ZdW5WRFN4cmJobnF3ZmZURmJGRVBXcFZtZDlHblMwa3NGdkRjSjByUVZjbXM3ODdhRGpGdzVoYWxIZFAxdGVUcEJWMUpwTQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T05:38:18.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qms-28-txcs",
+      "title": "Teenager murdered over month-old slap in Jabalpur: 5 boys attacks 17-year-old with knives after hitting his... - Bhaskar English",
+      "slug": "teenager-murdered-over-month-old-slap-in-jabalpur-5-boys-attacks-17-year-ol",
+      "excerpt": "Teenager murdered over month-old slap in Jabalpur: 5 boys attacks 17-year-old with knives after hitting his...",
+      "content": "Teenager murdered over month-old slap in Jabalpur: 5 boys attacks 17-year-old with knives after hitting his...",
+      "category": "Local News",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYUZvWlNKZE9FWWg1dGVYRFBwZjZ0RVc4YXAzOVRFUGFqTXVwN0Z4aUZxcHhFUWJ2M3NyTGpkbEFpSmhYdXNjaXZWLWk4Z2NCM0J0UHQ3Q3pWRmpfd1FpaHJiQ1FEUldDbGl2czViUTd0SmhvcUhCVTgzN2VXdkdNTjFGZFFiMWdVSVFTMEI2eldJX2F6NEM3emhTSGIyLU9XU0U1SGlfTXV1dlVBQU1uMHltNzNKLW95YWx2b3NicjlIODBR0gHKAUFVX3lxTE9qS0xDUmNpQi1IQzdmcmJUbUgzcXBYWXhpMVJ2UmFqUnVuak9Yc3BWYkFteVFMako2SmM4SHIyODlfMm5xUWppcUZzekd0Ym53UXRXcHE1MldQLVM1QWROQWJsbUs1Y3NOT2dzcFJJbndwX01DM09LZXdES2FpNHppZWlsSWRORHpZYzBERDFiS2pRTVNvbXppUC02UHFvWWl3ZU5iSk1wakxYM0dVRWFHNVJkQm5CcnBYQUFnQk9HaXVXaE5TbmRkdlE?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T03:57:58.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmr-23-rbj4",
+      "title": "Jabalpur's second-place cleanliness ranking faces reality check: Bhaskar's report finds garbage piles acros... - Bhaskar English",
+      "slug": "jabalpurs-second-place-cleanliness-ranking-faces-reality-check-bhaskars-rep",
+      "excerpt": "Jabalpur's second-place cleanliness ranking faces reality check: Bhaskar's report finds garbage piles acros...",
+      "content": "Jabalpur's second-place cleanliness ranking faces reality check: Bhaskar's report finds garbage piles acros...",
+      "category": "Culture & Tourism",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOHJvWWRlbXh6ZGdtQnpVZE9vN3pScEFkY3NwblExRE5qcEpmUjFUOTVnSkgteWQ4Mnk1UnVVMmpzVkozc0JEbVVmcnQ1X3VQSWVJelNidkRxOU9ucW1QU3djMDhOM3Y5M0h0azNxdE9VWDZJWDRuZ3lmY0ptbmZrVjkzYkM4T0xhOUNpTmMxNVZjS0N1RkNXVGFqelV3UkhaUWdiMDZWZF92TnBJLURKTDF4LTc0THRnZ21FSmZEVDVWSm5JdFlyWDJ3bXXSAdIBQVVfeXFMTWxLZmVUa015SVl4QUIteE83TGpyNG9YcUlRLTIwbEVQNG5SZHpWeERwY1MyY2VudzhZQS1MUnJKX25lekpFN2wzS2EwLW9mNWRXSmhEUXBSamlFM2lUcndIV0hBNzdGcnM1MmFFeHQwQlhQM2tpalM2U3Q0YWgxQTNxTFFJNjE5ZzFjNDNFSHRuVk9qcW1tNElEZXhIaVFsRUUtM3g0emxzT2tST0pISTlId3I1blQxUzZ4SklPOHRTR3RFNndoUy1sd1NwdTFOWTlR?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1609743522653-52354461cf27?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T02:46:15.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Culture & Tourism",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmr-26-49z5",
+      "title": "Indore is MP's second-coldest city: Mercury dips below 15°C in 16 cities, including Jabalpur and Ujjain; ra... - Bhaskar English",
+      "slug": "indore-is-mps-second-coldest-city-mercury-dips-below-15c-in-16-cities-inclu",
+      "excerpt": "Indore is MP's second-coldest city: Mercury dips below 15°C in 16 cities, including Jabalpur and Ujjain; ra...",
+      "content": "Indore is MP's second-coldest city: Mercury dips below 15°C in 16 cities, including Jabalpur and Ujjain; ra...",
+      "category": "Local News",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQajRyaW1kRjRhMWFDTW1NWmNuUmJ2MXgtbzFnTDA0TWU3dUxRbGRmS05Ta000aTljb18teDBPZmlVUVZkQlRuNkRjS0VYTzZ3eGNDcmc0WlFWSTNSTk1kWEs1c21qSW1ZM21NSTlMenoteG5oSDZnZnI3VU9lcjM3a2J1dlo2ZW55NXNhMFpMU3N4aVBCSXAzZ1pob0VBTkc0NGEzcVdMM3lJLXQ3YzR6NTVEVlR2bElZbWQ5WHJMZGNPdW9h0gHKAUFVX3lxTE15empkc0RjRFZFQ0hvTGVqX2FBTlNucTd5OGpRQU1abS1QMU1xMHAzZTg1d2U1T3AyUWVfbVNXbHlrOFJYc2pfTy14TV9JMGUweU9UYXlJVEpHcDFoOUVZTW1aeXJVX0VSaUl5R3JUQ1lOdEVfNl9rdFE0REtVNGw0bFd4TDhQcnRPX0ttS0FydDg3N0VYT25VWGtacUhpVVZjdmJCbl81X3Y4eHhZNzROVmFXNm9aMlgtN2tRRGZyNjFQbGlITHU0Smc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T23:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmr-20-d17t",
+      "title": "Jabalpur: Chhath Puja #Gallery - Social News XYZ",
+      "slug": "jabalpur-chhath-puja-gallery",
+      "excerpt": "Jabalpur: Chhath Puja #Gallery.",
+      "content": "Jabalpur: Chhath Puja #Gallery.",
+      "category": "Local News",
+      "source": "Social News XYZ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDVGg3dGlqNFBXS1d3Wk50bHdwNzZHQ3Ewd2VLUXNsZTFCME54TUN1MkNjYVVxS1lxa2pGa3VXTV85dUh2VnlXVjVnNnhlY2R3ZTE4NWRneVRHNktjTmVuOWc0bzB5Ny14NVpIUG9NWDkzbzRnSEHSAXZBVV95cUxQQ1RoN3RpajRQV0tXd1pOdGx3cDc2R0NxMHdlS1FzbGUxQjBOeE1DdTJDY2FVcUtZcWtqRmt1V01fOXVIdlZ5V1Y1ZzZ4ZWNkd2UxODVkZ3lURzZLY05lbjlnNG8weTcteDVaSFBvTVg5M280Z0hB?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T17:09:40.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qwa-4-m1ro",
+      "title": "एमपी स्टेट बार काउंसिल के अध्यक्ष बने जबलपुर के शैलेन्द्र वर्मा, ग्वालियर के जितेन्द्र शर्मा को 3 वोट से हराया; प्रतिभा वालिया उपाध्यक्ष निर्वाचित - shailendra verma elected mp state bar council presiden - Jagran",
+      "slug": "एमपी-स्टेट-बार-काउंसिल-के-अध्यक्ष-बने-जबलपुर-के-शैलेन्द्र-वर्मा-ग्वालियर-के",
+      "excerpt": "एमपी स्टेट बार काउंसिल के अध्यक्ष बने जबलपुर के शैलेन्द्र वर्मा, ग्वालियर के जितेन्द्र शर्मा को 3 वोट से हराया; प्रतिभा वालिया उपाध्यक्ष निर्वाचित - shailendra verma elected mp state bar council presiden.",
+      "content": "एमपी स्टेट बार काउंसिल के अध्यक्ष बने जबलपुर के शैलेन्द्र वर्मा, ग्वालियर के जितेन्द्र शर्मा को 3 वोट से हराया; प्रतिभा वालिया उपाध्यक्ष निर्वाचित - shailendra verma elected mp state bar council presiden.",
+      "category": "Local News",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPakZCeUFJYmk5UFJPTUtkbEMyUVdBNnV3Uy1KelJsOFB4VlFoTDRxdXVCSVpsY2VLM292YnJ3V3M2ZjFmeDBqbUc2al9jU3hWNFhhQ1dKZldSZjJoX3NQeVpUdXNWWDk4NU5tNmZxanU3ajB2U0FtQjVWZGFtQ0JFcTI5cXo4azlJQVZjVk5PWEg2ak5KcThMdndidXZHbzM5YUg4Yy00czl3UzhMdzdjVDVvVGZfU3c?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T12:29:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmq-4-9gpg",
+      "title": "From Jabalpur to Cannes—The story of 2 businessmen backing independent cinema - ThePrint",
+      "slug": "from-jabalpur-to-cannesthe-story-of-2-businessmen-backing-independent-cinem",
+      "excerpt": "From Jabalpur to Cannes—The story of 2 businessmen backing independent cinema.",
+      "content": "From Jabalpur to Cannes—The story of 2 businessmen backing independent cinema.",
+      "category": "Business & Jobs",
+      "source": "ThePrint",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVlptYjlKdEQyQmVFSTdDV3ZzS3hLRE8zczZhWVIxcmJDZXk4ODk2QWxwa3IxQTB4Mmk0S0FLTHNRVU5oaWUzY08wazJhQ3dnOXZDU3dVZUdVMzFJOUFaQzQyVnZoTktWV2FIYnZZcjF2LU0wel9Jdjk0bjRVWF9RTjZRY01LRzdfR21WRl9KZW5TQmZtXzJVR3dyNVYzYlHSAaQBQVVfeXFMTmh2V0d3REVtQWpVeXJZM0w2OVJIVmg4RnFZUE14S1FkY0dvRU5BOWhma2pqaWtFb2RJc1lqUGFXX2RLX0xVWkFOdzVIMmJpeFZMazJySkFiQzBRalpfLTB4a2M3dFNETzZ4dGotcjRQZ2dESmZOOEJZZGdKSG5XckRZY29HV3VtejA3bGhraUxTTUFnSTU3UUpIUjRMRHZnZWhqYlE?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T11:46:32.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Business & Jobs",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qwf-80-nmro",
+      "title": "जबलपुर में अनोखा मामला, महिला पति के साथ मगरमच्छ लेकर पहुंची वन विभाग कार्यालय - Raj Express",
+      "slug": "जबलपुर-में-अनोखा-मामला-महिला-पति-के-साथ-मगरमच्छ-लेकर-पहुंची-वन-विभाग-कार्या",
+      "excerpt": "जबलपुर में अनोखा मामला, महिला पति के साथ मगरमच्छ लेकर पहुंची वन विभाग कार्यालय.",
+      "content": "जबलपुर में अनोखा मामला, महिला पति के साथ मगरमच्छ लेकर पहुंची वन विभाग कार्यालय.",
+      "category": "Local News",
+      "source": "Raj Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbXBRMjQyYmxhRWlHbU9wUXJTX2l4ckZ1NUJRaHcxcXgyT185R0hpVkFYSG1HcVdJRlZ3VlNqa2doZG84aG5laWMyYXJ5bjBfbUR2ZUNXck1WeDZYaFdldnd1Zkk2b3N4QzJKa0p2R3NzbUoxX0lqX3ZkeDdWc3dZUWtBM3ZlX1NUeU1wSlhlcU0xcnRFaWd4LU5EODdHNFlpWFFBTkk5Tzd5MWF4bDRCYTVCN1JOUmNvUy1F?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T10:17:18.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qwg-98-2qo1",
+      "title": "पन्ना न्यूज: भव्य पिच्छीका परिवर्तन समारोह:पन्ना में जिसमें, चित्र अनावरण जबलपुर वालों को प्राप्त दीप प्रज्वल स्थानीय कमेटी बड़ा मंदिर को प्राप्त हुआ | Grand Pichhika Parivartan Ceremony: In Panna, t - bhaskarhindi.com",
+      "slug": "पन्ना-न्यूज-भव्य-पिच्छीका-परिवर्तन-समारोहपन्ना-में-जिसमें-चित्र-अनावरण-जबलप",
+      "excerpt": "पन्ना न्यूज: भव्य पिच्छीका परिवर्तन समारोह:पन्ना में जिसमें, चित्र अनावरण जबलपुर वालों को प्राप्त दीप प्रज्वल स्थानीय कमेटी बड़ा मंदिर को प्राप्त हुआ | Grand Pichhika Parivartan Ceremony: In Panna, t.",
+      "content": "पन्ना न्यूज: भव्य पिच्छीका परिवर्तन समारोह:पन्ना में जिसमें, चित्र अनावरण जबलपुर वालों को प्राप्त दीप प्रज्वल स्थानीय कमेटी बड़ा मंदिर को प्राप्त हुआ | Grand Pichhika Parivartan Ceremony: In Panna, t.",
+      "category": "Local News",
+      "source": "bhaskarhindi.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPVGJvQ0FQVzZycXJ0RXRkYi1rWUNnaV8wR3ZNS2xicVQ5N2tRWWc3c1hNaXdOUUdkT2RKVHQxVm4xTElWQmJFa3RVcFhqYXkzV29Kd244bEdvbG5zRkpPaEU4VWtER0tFcHBjMDZiV0pQb21ENnhleXlEVzF5c0R2c242N1NiVWh0aHNJeWhZeFFUalpEdDlKMzQwMzYtc2FjcXpEMzJabXRZM09QVTBLZWU3WEc3WGZvZ3h6Q3M0Z1IyM2ZmaWpWVElUd1QzdFpTUlFjYWZadEk0NnlwMUg1T0lkYVNSOFpQR0JhN3RWWTVWWERHNW5rdjkweXI1TlMwNGVMS1prWUV0R1FHWmFyeWdwNUJIYTAzLXRqcjg2Rl92NlBlbGhYQlBHUEZzVDZ0Q2dpejNxck5BbGV6OTdJNmxEMA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-15T09:59:14.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "jbp-mwhkcxqb-25-vqy7",
       "title": "504 कर्मचारियों से 3.78 लाख रुपए लेने की शिकायत: बलपुर में CMHO ने NHM के दो अधिकारियों को नोटिस दिया; 3 दि... - Dainik Bhaskar",
       "slug": "504-कर्मचारियों-से-378-लाख-रुपए-लेने-की-शिकायत-बलपुर-में-cmho-ने-nhm-के-दो",
@@ -59,7 +254,26 @@
       "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-15T05:56:30.000Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qmq-6-8grb",
+      "title": "Jabalpur Royal Lions Cricket Team matches, scorecards, news and statistics - Cricbuzz",
+      "slug": "jabalpur-royal-lions-cricket-team-matches-scorecards-news-and-statistics",
+      "excerpt": "Jabalpur Royal Lions Cricket Team matches, scorecards, news and statistics.",
+      "content": "Jabalpur Royal Lions Cricket Team matches, scorecards, news and statistics.",
+      "category": "Local News",
+      "source": "Cricbuzz",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TRHBoaVBhdWt6bWFFOWxXdzNQMmpUeTg3bG9nZXdzUWFReDliTi1FT3FxTVFUdlM1ZG84ZjV5blZjaGZkdzBOMlUxWFhRd2ttd2VycHdQV0dWMnQtNkZuVnV2dWRVOEFpU19fb1Itc2tGbEtObXZEamJKdXY?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-14T18:28:12.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
       "tags": [
         "Local News",
         "Jabalpur",
@@ -362,6 +576,25 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbnlNWmFXZzBpdGEwZDNzazFfa2JZdWR5MTd3X1ByYThMdXlzSm5IOFpid2VpWXdUWmRrRjgzekoyUHRoUU1oVTNUWFB1T053Ni1HVmVkYTBhQVRMOEcyZXdycWtLZDI5WGJaQUIzam9FRXVFODR5dXRfclJ1VmZTUDY5Qm9hQm5jUVY2VTduaVdxTXI5VTZWcEtHVjllTldXeDFMZ3JYNVBVNmxrRU1TRQ?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-14T08:57:59.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qwg-96-xoxa",
+      "title": "LIVE : जबलपुर में राष्ट्रीय जनजातीय गौरव सप्ताह का शुभारंभ, CM मोहन यादव ने किया उद्घाटन | Swadesh - swadesh news",
+      "slug": "live-जबलपुर-में-राष्ट्रीय-जनजातीय-गौरव-सप्ताह-का-शुभारंभ-cm-मोहन-यादव-ने-कि",
+      "excerpt": "LIVE : जबलपुर में राष्ट्रीय जनजातीय गौरव सप्ताह का शुभारंभ, CM मोहन यादव ने किया उद्घाटन | Swadesh.",
+      "content": "LIVE : जबलपुर में राष्ट्रीय जनजातीय गौरव सप्ताह का शुभारंभ, CM मोहन यादव ने किया उद्घाटन | Swadesh.",
+      "category": "Local News",
+      "source": "swadesh news",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX1N1ZmI4UVdlTmpKSGNIUHEwNFdSLTB0NEJHRnZfaDFKV3RmZlM0OTJ4MW9xMkVZUUlWNzVLTUNQQWd4UTd3TVpqV2FJaTBQVmt2WG80Y0xBM0FGdTN2eTdKTVVGVXYxSnZIaHBTaVVxNl9udzdKWHgyZzFqY0V6WjBUZnMyT2tMdVFhNWUwR2dNRjF5ekpWT0VPbVFpSHBNTzV2di1hR2w?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-14T04:24:29.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -955,6 +1188,25 @@
       "isFeatured": false,
       "tags": [
         "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwj04qwg-94-bkk9",
+      "title": "22वें स्थान से देश के दूसरे सबसे स्वच्छ शहर तक जबलपुर का ऐतिहासिक सफर, राम प्रकाश अहिरवार की मेहनत ने रचा स्वच्छता का नया अध्याय - palpalindia",
+      "slug": "22वें-स्थान-से-देश-के-दूसरे-सबसे-स्वच्छ-शहर-तक-जबलपुर-का-ऐतिहासिक-सफर-राम-प",
+      "excerpt": "22वें स्थान से देश के दूसरे सबसे स्वच्छ शहर तक जबलपुर का ऐतिहासिक सफर, राम प्रकाश अहिरवार की मेहनत ने रचा स्वच्छता का नया अध्याय.",
+      "content": "22वें स्थान से देश के दूसरे सबसे स्वच्छ शहर तक जबलपुर का ऐतिहासिक सफर, राम प्रकाश अहिरवार की मेहनत ने रचा स्वच्छता का नया अध्याय.",
+      "category": "Local News",
+      "source": "palpalindia",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNlVxZDZ0aTVLbkZLa1VtUlloMVlqRVVnd3ktYWJFVTdUcGw4Y0ZrNjlHTW04dF9DUl93aDFjemxHWnp2OHpnRGhwSS01TmxNamk5NGlFZVhnNjl0WjJmSFdLWTMxd0xLOUxDU01wcUx3aC1VdDkySVo3OXF5aVBhSHlWRUg4Q1RsSUozZTBwVGE4dEtNRGIyWXBySFVfMEZYTlhtYzBjZVZRcXVxWTUzQ0xMaGRSV0Z5YjhGZ3hHTHU3ZmtudEVFTFFR?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-11T18:20:36.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
         "Jabalpur",
         "Madhya Pradesh"
       ]
