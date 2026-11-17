@@ -102,8 +102,14 @@ const BLOCKED_DOMAINS = [
 ];
 
 const PROHIBITED_KEYWORDS = [
+  // Spam & prohibited categories
   'gambling', 'casino', 'betting app', 'lottery result hack',
-  'porn', 'adult game', 'free crypto giveaway', 'miracle cure'
+  'porn', 'adult game', 'free crypto giveaway', 'miracle cure',
+  // AdSense brand-safety: graphic violence, self-harm, sensitive crime
+  'suicide', 'आत्महत्या', 'dead body', 'body found', 'शव मिला', 'लाश मिली',
+  'murdered', 'serial killer', 'beheaded', 'rape', 'दुष्कर्म', 'बलात्कार',
+  'molest', 'sexual assault', 'gangrape', 'acid attack', 'hanging', 'फांसी लगाई',
+  'communal riot', 'love jihad', 'pressured her to convert', 'forced conversion'
 ];
 
 /**
@@ -343,18 +349,18 @@ function generateSitemaps(articles) {
   const baseUrl = 'https://jabalpuriya.com';
   const nowIso = new Date().toISOString();
 
-  // 1. Static & Evergreen Guide Pages
+  // 1. Static & Evergreen Guide Pages (always trailing slash to match GitHub Pages & prevent 301 redirects)
   const staticPages = [
     { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'hourly', lastmod: nowIso },
-    { loc: `${baseUrl}/bhedaghat-guide`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
-    { loc: `${baseUrl}/gwarighat-aarti`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
-    { loc: `${baseUrl}/helplines`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
-    { loc: `${baseUrl}/rashifal`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
-    { loc: `${baseUrl}/mandi-bhav`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
-    { loc: `${baseUrl}/about`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
-    { loc: `${baseUrl}/contact`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
-    { loc: `${baseUrl}/privacy-policy`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
-    { loc: `${baseUrl}/terms`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' }
+    { loc: `${baseUrl}/bhedaghat-guide/`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/gwarighat-aarti/`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/helplines/`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
+    { loc: `${baseUrl}/rashifal/`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
+    { loc: `${baseUrl}/mandi-bhav/`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
+    { loc: `${baseUrl}/about/`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/contact/`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/privacy-policy/`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
+    { loc: `${baseUrl}/terms/`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' }
   ];
 
   let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
@@ -363,10 +369,10 @@ function generateSitemaps(articles) {
     sitemapXml += `  <url>\n    <loc>${page.loc}</loc>\n    <lastmod>${page.lastmod}</lastmod>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>\n`;
   }
 
-  // Add all permanent news article URLs
+  // Add all permanent news article URLs (with trailing slash)
   for (const article of articles) {
     if (!article.slug) continue;
-    sitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}</loc>\n    <lastmod>${article.publishedAt}</lastmod>\n    <changefreq>never</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+    sitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}/</loc>\n    <lastmod>${article.publishedAt}</lastmod>\n    <changefreq>never</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
   }
 
   sitemapXml += `</urlset>\n`;
@@ -388,7 +394,7 @@ function generateSitemaps(articles) {
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&apos;');
 
-    newsSitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}</loc>\n    <news:news>\n      <news:publication>\n        <news:name>Jabalpuriya</news:name>\n        <news:language>${isHindi ? 'hi' : 'en'}</news:language>\n      </news:publication>\n      <news:publication_date>${article.publishedAt}</news:publication_date>\n      <news:title>${escapedTitle}</news:title>\n    </news:news>\n  </url>\n`;
+    newsSitemapXml += `  <url>\n    <loc>${baseUrl}/news/${encodeURIComponent(article.slug)}/</loc>\n    <news:news>\n      <news:publication>\n        <news:name>Jabalpuriya</news:name>\n        <news:language>${isHindi ? 'hi' : 'en'}</news:language>\n      </news:publication>\n      <news:publication_date>${article.publishedAt}</news:publication_date>\n      <news:title>${escapedTitle}</news:title>\n    </news:news>\n  </url>\n`;
   }
 
   newsSitemapXml += `</urlset>\n`;

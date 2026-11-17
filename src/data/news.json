@@ -1,13 +1,14 @@
 {
-  "lastUpdated": "2026-11-17T09:40:11.964Z",
-  "totalStories": 103,
+  "lastUpdated": "2026-11-17T15:19:07.049Z",
+  "totalStories": 107,
   "sources": [
+    "Jagran",
+    "Bhaskar English",
     "Free Press Journal",
     "MP Breaking News",
-    "Bhaskar English",
     "The Hitavada",
+    "NDTV Profit",
     "The Times of India",
-    "Jagran",
     "bhaskarhindi.com",
     "rajexpress.com",
     "Social News XYZ",
@@ -54,6 +55,44 @@
   ],
   "articles": [
     {
+      "id": "jbp-mwku8cr5-37-pi7k",
+      "title": "MP में बाघों के गलियारे पर विकास की मार, कहीं ट्रेन से मौत तो कहीं सड़क-खनन से रास्ते बंद; सिवनी का इको फ्रेंडली हाईवे बना मिसाल - mp tiger corridors face development threat seoni ecohighway - Jagran",
+      "slug": "mp-में-बाघों-के-गलियारे-पर-विकास-की-मार-कहीं-ट्रेन-से-मौत-तो-कहीं-सड़क-खनन",
+      "excerpt": "MP में बाघों के गलियारे पर विकास की मार, कहीं ट्रेन से मौत तो कहीं सड़क-खनन से रास्ते बंद; सिवनी का इको फ्रेंडली हाईवे बना मिसाल - mp tiger corridors face development threat seoni ecohighway.",
+      "content": "MP में बाघों के गलियारे पर विकास की मार, कहीं ट्रेन से मौत तो कहीं सड़क-खनन से रास्ते बंद; सिवनी का इको फ्रेंडली हाईवे बना मिसाल - mp tiger corridors face development threat seoni ecohighway.",
+      "category": "Smart City & Infra",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaUhPbEtyUVVEdFhDelk3WWVFS0toWGF3dTlOYWZBTXRldWozNDRrMi1SWThUeVQwZlhQMXJiMDlWemN1Y0hnZUFRN2JCdnJqZmFkd2JFQ3BBck5ndlhuSzBFY3lEYkRHU3JaRGFFN1Nnek1SM2lORVBKX29DRk8xdGRKbzFXenJZVUQ1UnpSOExsRFgzSUhiQllMeVZnT3I4aDVaMUJRczRDMFJIQnptcUQzOVdGdVc5SnJ0aQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-17T13:29:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Smart City & Infra",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwku8cd9-44-9d1l",
+      "title": "Former IAS Shailesh Pathak appointed SPV vice-chairman: Will prepare blueprint for Jabalpur-Bhopal-Indore i... - Bhaskar English",
+      "slug": "former-ias-shailesh-pathak-appointed-spv-vice-chairman-will-prepare-bluepri",
+      "excerpt": "Former IAS Shailesh Pathak appointed SPV vice-chairman: Will prepare blueprint for Jabalpur-Bhopal-Indore i...",
+      "content": "Former IAS Shailesh Pathak appointed SPV vice-chairman: Will prepare blueprint for Jabalpur-Bhopal-Indore i...",
+      "category": "Local News",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMmR2ZlZzNlZWQ3pNM2d2WC1FLTB5VWNiR1QySW1QQmJLVk5meU5HdzBkYWpqM2pjZXF1Z2tXN1JYTXktbGpUMjZrR0ktZWpobENFTTB3SU5KaUR2M2lZRDVDQk9oMjZpYjZrcGtQb0RaS21heENUQzFhVm9hZlhBd2xsU3N4NjE5ZUJZSlJCM0hIUlVqTzJ6SXFUamxzakxjdjNVYkF6V2FpZzRrOU5aVk1XeWhvZUUxQktkQ0pfSlI3NGM3VFVZ0gHMAUFVX3lxTE9TblVDY1F2akNsRU1EQlZacWJOeWlkYnE2YmpWQ2F0bGMwaTlsZ25kLXVUNWpnU0NLT2tEMFJTLW5fYUlxT0FkWnNlc3lXSWZtOG5kN1pzMTRqYWUtNWEzNWxpY0hreGkzajRfVE5qbE1hWk5XTzlxWUtycnNVZ0tyM0tzdWlvSllNUi1jVHlLZDlzMzAzeVNPMU81X3hmSUU5N2FOcUtVemlmd0pSbzNXQm5zSGFlaGJoXzhYaGp0TlluUEU4dWNnVl82Wg?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-17T10:58:28.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "jbp-mwki4hou-20-4n0o",
       "title": "Jabalpur Latest News: Mans Body Found Floating In Hiran River At Simariya Ghat - Free Press Journal",
       "slug": "jabalpur-latest-news-mans-body-found-floating-in-hiran-river-at-simariya-gh",
@@ -65,7 +104,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-17T07:34:49.000Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
       "tags": [
         "Environment & City",
         "Jabalpur",
@@ -144,6 +183,25 @@
       "isFeatured": false,
       "tags": [
         "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwku8cd7-19-g140",
+      "title": "Gold Rate Today In Jabalpur, Check Live 22 And 24 Carat Gold Price - NDTV Profit",
+      "slug": "gold-rate-today-in-jabalpur-check-live-22-and-24-carat-gold-price",
+      "excerpt": "Gold Rate Today In Jabalpur, Check Live 22 And 24 Carat Gold Price.",
+      "content": "Gold Rate Today In Jabalpur, Check Live 22 And 24 Carat Gold Price.",
+      "category": "Business & Jobs",
+      "source": "NDTV Profit",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yZXR4eDE4aDkwLTFEVkprdkpvcGtuTWphNkVoc3RWamw2elJZRFFSS0pNcUJmSWp5RnpFNjF1WHBOTXhmOVZJeE5xZEIza0d2U2VuSkpaY084RDFFdVFFdkE0bG9QX2FOckRVcEpVQXdvYnBu?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T19:37:50.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Business & Jobs",
         "Jabalpur",
         "Madhya Pradesh"
       ]
@@ -292,6 +350,25 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOTdFT1p1MVVEYk1sa0ZNdXBEWnZFQXNBVjd0ODA3WWdPZXlVYjFVTE44bTNrV0pfMkQ4YjRZa1RLM3JVUDAxSGhDbFdOUkFidUdTQ1ozVTdMQ0praWtsd0JwWG5uRVk5UjFQZUFyeFU5R29sb3Y0V1JMaVZJVllac0VraG5ZdW5WRFN4cmJobnF3ZmZURmJGRVBXcFZtZDlHblMwa3NGdkRjSjByUVZjbXM3ODdhRGpGdzVoYWxIZFAxdGVUcEJWMUpwTQ?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-16T05:38:18.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwku8cda-47-hc10",
+      "title": "5 boys attacks 17-year-old with knives after hitting his head with stone; uncle claims revenge for catching theft - Bhaskar English",
+      "slug": "5-boys-attacks-17-year-old-with-knives-after-hitting-his-head-with-stone-un",
+      "excerpt": "5 boys attacks 17-year-old with knives after hitting his head with stone; uncle claims revenge for catching theft.",
+      "content": "5 boys attacks 17-year-old with knives after hitting his head with stone; uncle claims revenge for catching theft.",
+      "category": "Local News",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQnRPcWZVa3BGaFppd3VvR1lxWXE5TGxnZXZ6Y2MtZnBrYnpWbmFEUUUzUkUzbkdMU2V6d3pPbllTSjhqMGFSZXFqQ0lRdm0zNEZNZmdSVF9yU0lBbThCVWdtck55aDBGNU15YV9FVW1FVERyVVNDc3JacEpOOC10dGVKc2dZeVRQU0FnWWswSkdFaDZzbUdkU1pyaXdmTk9oMnNTeFc3blhmSjg4RWpiZzVSb0R6LXJCeGZsN2htTzhEeVN3aWc?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-16T03:57:58.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [

@@ -55,9 +55,9 @@ const categoryBadgeConfig: Record<string, { bg: string; text: string; border: st
 
 const badge = categoryBadgeConfig[category] || { bg: 'bg-slate-700 text-white', text: 'text-slate-300', border: 'border-slate-600', icon: '📰' };
 
-const articleHref = slug ? `/news/${slug}` : (sourceUrl || `#${id}`);
+const articleHref = slug ? `/news/${slug}/` : (sourceUrl || `#${id}`);
 
-const whatsappShareText = encodeURIComponent(`⚡ जबलपुर समाचार: ${title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${slug || id}`);
+const whatsappShareText = encodeURIComponent(`⚡ जबलपुर समाचार: ${title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${slug || id}/`);
 const whatsappUrl = `https://api.whatsapp.com/send?text=${whatsappShareText}`;
 ---
 

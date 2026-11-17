@@ -28,19 +28,72 @@ const formattedTime = pubDate.toLocaleTimeString('en-IN', {
   timeZone: 'Asia/Kolkata'
 });
 
-// Related stories from the same or other categories (excluding current)
-const relatedArticles = newsData.articles
-  .filter((a) => a.id !== article.id)
-  .slice(0, 4);
+// Related stories: prioritize same category first for stronger topical clustering, then fill to 4
+const sameCategory = newsData.articles.filter((a) => a.id !== article.id && a.category === article.category);
+const otherCategory = newsData.articles.filter((a) => a.id !== article.id && a.category !== article.category);
+const relatedArticles = [...sameCategory, ...otherCategory].slice(0, 4);
 
-// Canonical & Share URLs
-const articleUrl = `https://jabalpuriya.com/news/${article.slug}`;
+// Canonical & Share URLs (always trailing slash to match GitHub Pages & prevent 301 redirects)
+const articleUrl = `https://jabalpuriya.com/news/${article.slug}/`;
 const whatsappShareText = encodeURIComponent(`⚡ जबलपुर समाचार: ${article.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\n${articleUrl}`);
 const whatsappShareUrl = `https://api.whatsapp.com/send?text=${whatsappShareText}`;
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(articleUrl)}&via=jabalpuriya`;
 const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
 
 const isHindi = /[\u0900-\u097F]/.test(article.title);
+
+// Category-specific local Jabalpur context to add genuine editorial depth
+const categoryContextMap: Record<string, { heading: string; text: string; tipLabel: string; tipHref: string }> = {
+  'Smart City & Infra': {
+    heading: 'जबलपुर स्मार्ट सिटी व अधोसंरचना संदर्भ (Civic & Infra Context)',
+    text: 'जबलपुर मध्य प्रदेश का एक प्रमुख स्मार्ट सिटी और महाकौशल अंचल का सबसे बड़ा परिवहन व शहरी केंद्र है। रिंग रोड, मदन महल फ्लाईओवर, डुमना एयरपोर्ट विस्तार और पश्चिम मध्य रेलवे (WCR) की परियोजनाएं शहर की कनेक्टिविटी को निरंतर सशक्त बना रही हैं।',
+    tipLabel: '📞 जबलपुर नगर निगम व आपातकालीन हेल्पलाइन देखें',
+    tipHref: '/helplines/'
+  },
+  'Culture & Tourism': {
+    heading: 'संस्कारधानी पर्यटन व सांस्कृतिक विरासत (Heritage Context)',
+    text: 'मां नर्मदा के पावन तट पर बसा जबलपुर अपनी संगमरमर की चट्टानों (भेड़ाघाट), धुआंधार जलप्रपात, ग्वारीघाट महाआरती और गोंडवाना कालीन ऐतिहासिक धरोहरों के लिए देशभर में प्रसिद्ध है। पर्यटन और लोक संस्कृति से जुड़े हर बड़े आयोजन की जानकारी जबलपुरिया पर उपलब्ध है।',
+    tipLabel: '🌊 भेड़ाघाट व धुआंधार संपूर्ण पर्यटन गाइड पढ़ें',
+    tipHref: '/bhedaghat-guide/'
+  },
+  'Education & Tech': {
+    heading: 'शिक्षा व तकनीकी हब जबलपुर (Education & Tech Context)',
+    text: 'जबलपुर में रानी दुर्गावती विश्वविद्यालय (RDVV), IIITDM जबलपुर, नेताजी सुभाष चंद्र बोस मेडिकल कॉलेज, जबलपुर इंजीनियरिंग कॉलेज (JEC) और नानाजी देशमुख पशु चिकित्सा विश्वविद्यालय जैसे प्रतिष्ठित संस्थान स्थित हैं, जो महाकौशल के छात्रों को उच्च शिक्षा व तकनीक के नए अवसर दे रहे हैं।',
+    tipLabel: '✨ छात्रों व नागरिकों के लिए आज का दैनिक राशिफल देखें',
+    tipHref: '/rashifal/'
+  },
+  'Business & Jobs': {
+    heading: 'जबलपुर व्यापार, मंडी व रोजगार परिदृश्य (Economy Context)',
+    text: 'जबलपुर रक्षा कारखानों (OFK, VFJ, GCF), गारमेंट क्लस्टर, रिछाई औद्योगिक क्षेत्र और प्रसिद्ध जबलपुरी हरा मटर (ODOP) कृषि उपज मंडी के कारण मध्य भारत का महत्वपूर्ण व्यापारिक केंद्र है। दैनिक फसल व सराफा बाजार भाव से व्यापारियों और किसानों को सीधा लाभ मिलता है।',
+    tipLabel: '🌾 आज का जबलपुर कृषि उपज मंडी व सराफा भाव देखें',
+    tipHref: '/mandi-bhav/'
+  },
+  'Environment & City': {
+    heading: 'नर्मदा संरक्षण व शहर पर्यावरण (Environment Context)',
+    text: 'डुमना नेचर रिजर्व, बरगी बांध और मां नर्मदा का कछार जबलपुर को प्राकृतिक रूप से समृद्ध बनाते हैं। स्वच्छ सर्वेक्षण में राष्ट्रीय स्तर पर अग्रणी प्रदर्शन के साथ शहर के मौसम, जल संरक्षण और हरित पहल पर नियमित अपडेट यहाँ संकलित किए जाते हैं।',
+    tipLabel: '🪔 ग्वारीघाट नर्मदा महाआरती समय व घाट गाइड देखें',
+    tipHref: '/gwarighat-aarti/'
+  },
+  'Local News': {
+    heading: 'संस्कारधानी जबलपुर स्थानीय समाचार संदर्भ (Local Context)',
+    text: 'मध्य प्रदेश उच्च न्यायालय (MP High Court) की मुख्य पीठ और महाकौशल संभाग के मुख्यालय के रूप में जबलपुर में प्रशासनिक, सामाजिक और नागरिक गतिविधियां पूरे क्षेत्र को प्रभावित करती हैं। जबलपुरिया न्यूज़ डेस्क नागरिकों तक सत्यापित व उपयोगी स्थानीय जानकारी पहुंचाता है।',
+    tipLabel: '📞 जबलपुर शहर की आवश्यक हेल्पलाइन डायरेक्टरी देखें',
+    tipHref: '/helplines/'
+  }
+};
+
+const localContext = categoryContextMap[article.category] || categoryContextMap['Local News'];
+
+// BreadcrumbList Schema for Google Search Rich Hierarchy
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jabalpuriya.com/" },
+    { "@type": "ListItem", "position": 2, "name": article.category, "item": "https://jabalpuriya.com/#news-grid" },
+    { "@type": "ListItem", "position": 3, "name": article.title, "item": articleUrl }
+  ]
+};
 ---
 
 <Layout
@@ -53,6 +106,7 @@ const isHindi = /[\u0900-\u097F]/.test(article.title);
   category={article.category}
   keywords={[article.category, 'Jabalpur News', 'जबलपुर समाचार', 'Sanskaardhani', article.source, 'MP News']}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <div class="max-w-4xl mx-auto py-6 sm:py-10 space-y-8">
     
     <!-- Breadcrumb Navigation -->
@@ -182,10 +236,36 @@ const isHindi = /[\u0900-\u097F]/.test(article.title);
           {article.excerpt}
         </p>
 
-        <!-- Contextual Insight -->
-        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
-          संस्कारधानी जबलपुर की नगर विकास, स्मार्ट सिटी परियोजना, प्रशासनिक दिशानिर्देशों और स्थानीय गतिविधियों पर यह ताज़ा अपडेट है। जबलपुरिया पोर्टल पर हम शहर के नागरिकों के लिए प्रामाणिक व सत्यापित समाचार निरंतर प्रस्तुत करते हैं।
-        </p>
+        <!-- Contextual Local Jabalpur Insight -->
+        <div class="p-5 rounded-2xl bg-sky-50/70 dark:bg-sky-950/20 border border-sky-200/70 dark:border-sky-800/40 space-y-2.5">
+          <h3 class="text-sm font-black text-slate-900 dark:text-white">
+            📍 {localContext.heading}
+          </h3>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            {localContext.text}
+          </p>
+          <a
+            href={localContext.tipHref}
+            class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-extrabold text-jabalpur-secondary hover:underline pt-1"
+          >
+            <span>{localContext.tipLabel}</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Useful Jabalpur City Guides Strip -->
+        <div class="pt-2">
+          <p class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
+            संस्कारधानी जबलपुर उपयोगी गाइड (City Essentials)
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-bold">
+            <a href="/mandi-bhav/" class="px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">🌾 मंडी व सराफा भाव</a>
+            <a href="/rashifal/" class="px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20 hover:bg-amber-500/20 transition-colors">✨ आज का राशिफल</a>
+            <a href="/bhedaghat-guide/" class="px-3 py-1.5 rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-300 border border-sky-500/20 hover:bg-sky-500/20 transition-colors">🌊 भेड़ाघाट गाइड</a>
+            <a href="/gwarighat-aarti/" class="px-3 py-1.5 rounded-xl bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-500/20 hover:bg-teal-500/20 transition-colors">🪔 ग्वारीघाट आरती</a>
+            <a href="/helplines/" class="px-3 py-1.5 rounded-xl bg-orange-500/10 text-orange-700 dark:text-orange-300 border border-orange-500/20 hover:bg-orange-500/20 transition-colors">📞 हेल्पलाइन नंबर</a>
+          </div>
+        </div>
       </div>
 
       <!-- In-Article AdSense Banner -->
@@ -234,7 +314,7 @@ const isHindi = /[\u0900-\u097F]/.test(article.title);
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {relatedArticles.map((rel) => (
           <a
-            href={`/news/${rel.slug}`}
+            href={`/news/${rel.slug}/`}
             class="group p-4 rounded-2xl bg-white dark:bg-[#0c1c33] border border-slate-200/80 dark:border-slate-800 hover:border-jabalpur-secondary shadow-sm hover:shadow-lg transition-all flex gap-4 items-center"
           >
             <div class="w-20 h-20 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">

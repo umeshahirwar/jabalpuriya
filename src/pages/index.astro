@@ -43,7 +43,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
           <span class="px-2.5 py-1 rounded-md bg-gradient-to-r from-red-600 to-red-500 text-white font-black tracking-wide uppercase shadow-sm">
             ⚡ Jabalpur Top Story
           </span>
-          <a href={`/news/${featuredArticle.slug}`} class="text-slate-800 dark:text-slate-200 font-bold truncate max-w-xl hover:text-jabalpur-secondary transition-colors">
+          <a href={`/news/${featuredArticle.slug}/`} class="text-slate-800 dark:text-slate-200 font-bold truncate max-w-xl hover:text-jabalpur-secondary transition-colors">
             {featuredArticle.title}
           </a>
         </div>
@@ -80,7 +80,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
             </div>
 
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight drop-shadow-md">
-              <a href={`/news/${featuredArticle.slug}`} class="hover:underline focus:outline-none">
+              <a href={`/news/${featuredArticle.slug}/`} class="hover:underline focus:outline-none">
                 {featuredArticle.title}
               </a>
             </h1>
@@ -92,7 +92,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
             <div class="pt-3 flex items-center justify-between text-xs text-slate-300 gap-2 flex-wrap">
               <div class="flex items-center gap-2.5">
                 <a
-                  href={`/news/${featuredArticle.slug}`}
+                  href={`/news/${featuredArticle.slug}/`}
                   class="inline-flex items-center px-5 py-2.5 rounded-xl font-black text-sm bg-white text-slate-950 hover:bg-slate-100 transition-all shadow-lg hover:scale-105"
                 >
                   Read Full Coverage
@@ -100,7 +100,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
                 </a>
 
                 <a
-                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`⚡ जबलपुर मुख्य समाचार: ${featuredArticle.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${featuredArticle.slug}`)}`}
+                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`⚡ जबलपुर मुख्य समाचार: ${featuredArticle.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${featuredArticle.slug}/`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md hover:scale-105 transition-all"
@@ -128,19 +128,19 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
             </h3>
             
             <div class="grid grid-cols-2 gap-2.5 text-xs font-bold">
-              <a href="/rashifal" class="p-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 transition-all flex items-center gap-2 border border-amber-300/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
+              <a href="/rashifal/" class="p-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 transition-all flex items-center gap-2 border border-amber-300/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">✨</span> आज का राशिफल
               </a>
-              <a href="/mandi-bhav" class="p-3 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 transition-all flex items-center gap-2 border border-emerald-300/40 dark:border-emerald-700/40 shadow-sm hover:scale-[1.02]">
+              <a href="/mandi-bhav/" class="p-3 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 transition-all flex items-center gap-2 border border-emerald-300/40 dark:border-emerald-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">🌾</span> मंडी व सराफा भाव
               </a>
-              <a href="/bhedaghat-guide" class="p-3 rounded-2xl bg-sky-500/10 hover:bg-sky-500/20 text-sky-800 dark:text-sky-300 transition-all flex items-center gap-2 border border-sky-300/40 dark:border-sky-700/40 shadow-sm hover:scale-[1.02]">
+              <a href="/bhedaghat-guide/" class="p-3 rounded-2xl bg-sky-500/10 hover:bg-sky-500/20 text-sky-800 dark:text-sky-300 transition-all flex items-center gap-2 border border-sky-300/40 dark:border-sky-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">🏛️</span> भेड़ाघाट गाइड
               </a>
-              <a href="/gwarighat-aarti" class="p-3 rounded-2xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-800 dark:text-teal-300 transition-all flex items-center gap-2 border border-teal-300/40 dark:border-teal-700/40 shadow-sm hover:scale-[1.02]">
+              <a href="/gwarighat-aarti/" class="p-3 rounded-2xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-800 dark:text-teal-300 transition-all flex items-center gap-2 border border-teal-300/40 dark:border-teal-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">🌊</span> ग्वारीघाट आरती
               </a>
-              <a href="/helplines" class="p-3 rounded-2xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center gap-2 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.02]">
+              <a href="/helplines/" class="p-3 rounded-2xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center gap-2 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.02]">
                 <span class="text-base">📞</span> आपात हेल्पलाइन
               </a>
               <a href="#news-grid" class="p-3 rounded-2xl bg-slate-100 hover:bg-slate-200/80 dark:bg-slate-800 dark:text-slate-200 transition-all flex items-center gap-2 border border-slate-200/60 dark:border-slate-700/60 shadow-sm hover:scale-[1.02]">

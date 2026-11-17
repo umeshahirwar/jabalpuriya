@@ -28,6 +28,17 @@ const {
 } = Astro.props;
 
 const siteUrl = "https://jabalpuriya.com";
+const normalizedCanonicalUrl = (() => {
+  try {
+    const parsed = new URL(canonicalUrl);
+    if (!parsed.pathname.endsWith('/')) {
+      parsed.pathname = `${parsed.pathname}/`;
+    }
+    return parsed.toString();
+  } catch {
+    return canonicalUrl.endsWith('/') ? canonicalUrl : `${canonicalUrl}/`;
+  }
+})();
 const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
 
 // Structured Data (Schema.org JSON-LD)
@@ -93,7 +104,7 @@ const articleSchema = type === 'article' ? {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": canonicalUrl
+    "@id": normalizedCanonicalUrl
   },
   "articleSection": category,
   "keywords": keywords.join(", "),
@@ -122,7 +133,7 @@ const articleSchema = type === 'article' ? {
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords.join(", ")} />
     <meta name="author" content={author} />
-    <link rel="canonical" href={canonicalUrl} />
+    <link rel="canonical" href={normalizedCanonicalUrl} />
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="MyUDxheJ0BpMtGBnvbKtE54ccLf9ImP17Diuqk8FKV4" />
@@ -135,7 +146,7 @@ const articleSchema = type === 'article' ? {
     
     <!-- OpenGraph / Facebook -->
     <meta property="og:type" content={type} />
-    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:url" content={normalizedCanonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={fullImageUrl} />
@@ -144,7 +155,7 @@ const articleSchema = type === 'article' ? {
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:url" content={normalizedCanonicalUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={fullImageUrl} />
