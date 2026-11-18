@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-11-18T08:58:56.860Z",
-  "totalStories": 111,
+  "lastUpdated": "2026-11-18T12:29:44.964Z",
+  "totalStories": 113,
   "sources": [
     "https://whispersinthecorridors.net/",
+    "The Hitavada",
     "MP Breaking News",
     "Bhaskar English",
     "Rediff",
     "Jagran",
     "Free Press Journal",
-    "The Hitavada",
     "NDTV Profit",
     "The Times of India",
     "bhaskarhindi.com",
@@ -29,6 +29,7 @@
     "SSBCrack",
     "Agniban",
     "swadesh news",
+    "BikeJunction",
     "Defence.in",
     "mahamedianews",
     "Tractor Junction",
@@ -69,6 +70,25 @@
       "publishedAt": "2026-11-18T06:15:34.000Z",
       "readTime": "2 min read",
       "isFeatured": true,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwm3mdmv-19-6f3e",
+      "title": "MPPKVVC continues drive against major electricity bill defaulters - The Hitavada",
+      "slug": "mppkvvc-continues-drive-against-major-electricity-bill-defaulters",
+      "excerpt": "MPPKVVC continues drive against major electricity bill defaulters.",
+      "content": "MPPKVVC continues drive against major electricity bill defaulters.",
+      "category": "Local News",
+      "source": "The Hitavada",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWjk5NW5xY2hmRWNReTdaRXY5dzVrcER2cEhlamR3SEUwN05rSGFVZk1qb1hXRjNjVzUxY3g2OVgxS3dDQ1hqTThkYmZzYjJWbzMxMTN6XzlvMVZueDNqZWw0ZFNldDBvcWpRdmFLa29GbDlSckcwUmVvbUY5cmdvb1hIQ28xNldZTWlaSkJkdTRiR2RYcFlmZ09ZdFJiN1d2OGE3MUJZU2pIUFJFV25LN1RBdGxuUjA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-18T05:31:42.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
       "tags": [
         "Local News",
         "Jabalpur",
@@ -979,6 +999,25 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb05KeWJhWHItczNwTHExa1pBdFJkeWpCMTJOcWtIU0pzTnNCQjZRSTVUbFgzSTlId2plcHMxZV9OQWVseWdEVEdqUVNkektPajg4Q2hDLWxwNjFtZ3c3dTR6OFBqOGNVRU42LVM2RjM5Y0RQY3BLSzByeVlSSGRqVVFmQWtDT2c2YlJfUTdaMy1SNnA4OS12X0g0b29ZMGhraWdHSm5OTk94Z3NKaDhyOWp5Um1HRmRERWg0REJBN2hVTXPSAcgBQVVfeXFMTVF0c2xkV21WeUFUa1RKdU51MmdDZzZwQUw0ZXZlaEc0dEdFeF95bXlDNmlQaGdVYlZ4NC1RMUctaDJydzdlSHZSYndtZThMYlNYcUprZHZLNEtCLTByWGJGSmYzWjFacXRYNHJKYWRBOHZzYzN4QVpQQWdXeXFtaW1mejg1aXphZEp0T1NPOHpQYXZZbkFGMk40Yi1qd2Q2aDlIVVR0V3c2TzRoTVNGZWRUMUpqQ1JZcnVZWFBPem4tZjE5allnZnc?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-13T23:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwm3me1w-3-toar",
+      "title": "जबलपुर में वीएलएफ मॉब्स्टर की कीमत - BikeJunction",
+      "slug": "जबलपुर-में-वीएलएफ-मॉब्स्टर-की-कीमत",
+      "excerpt": "जबलपुर में वीएलएफ मॉब्स्टर की कीमत.",
+      "content": "जबलपुर में वीएलएफ मॉब्स्टर की कीमत.",
+      "category": "Local News",
+      "source": "BikeJunction",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82ZmxqUnlTWC12Q09GU3l2eFZ3bGwxTUpqazREbU9FSnJDa3Y1VmhOeWlKMEwzalN0YWFGN3ZTLW9qNG9jdG9ZRzhDNnh0Q2FtczFWM1VpZVFORzI2OTgyb1NtRm9UcHkwZ0J1TEZaUFVNRnByUU9QcA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-13T23:11:51.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [

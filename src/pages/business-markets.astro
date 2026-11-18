@@ -1,0 +1,546 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdSenseBanner from '../components/AdSenseBanner.astro';
+import marketsData from '../data/markets.json';
+
+const formatIN = (num: number | null | undefined) => {
+  if (typeof num !== 'number' || Number.isNaN(num)) return '—';
+  return num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+};
+
+const lastUpdatedIST = new Intl.DateTimeFormat('en-IN', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'Asia/Kolkata'
+}).format(new Date(marketsData.lastUpdated));
+
+const newsCategories = ['All', 'Stock Market', 'India Business', 'हिंदी बिजनेस'];
+
+const faqs = [
+  {
+    q: "भारतीय शेयर बाजार (NSE व BSE) खुलने और बंद होने का समय क्या है?",
+    a: "नेशनल स्टॉक एक्सचेंज (NSE) और बॉम्बे स्टॉक एक्सचेंज (BSE) सोमवार से शुक्रवार सुबह 9:15 बजे से दोपहर 3:30 बजे (IST) तक खुले रहते हैं। प्री-ओपन सेशन सुबह 9:00 बजे से 9:15 बजे तक चलता है। शनिवार, रविवार और राष्ट्रीय अवकाशों पर बाजार बंद रहता है।"
+  },
+  {
+    q: "NIFTY 50 और BSE SENSEX में क्या अंतर है?",
+    a: "NIFTY 50 नेशनल स्टॉक एक्सचेंज (NSE) का प्रमुख बेंचमार्क इंडेक्स है जो भारत की 50 सबसे बड़ी सूचीबद्ध कंपनियों को ट्रैक करता है। वहीं BSE SENSEX बॉम्बे स्टॉक एक्सचेंज (BSE) का इंडेक्स है जो 30 प्रमुख ब्लू-चिप भारतीय कंपनियों के प्रदर्शन को दर्शाता है।"
+  },
+  {
+    q: "इस पेज पर दिखाए गए शेयर बाजार के आंकड़े और बिजनेस समाचार किन स्रोतों से आते हैं?",
+    a: "बाजार सूचकांक (NIFTY 50, SENSEX, BANK NIFTY) और प्रमुख भारतीय शेयरों के भाव NSE/BSE एक्सचेंज फीड (Yahoo Finance व TradingView चार्ट) से लिए जाते हैं। बिजनेस और मार्केट समाचार The Economic Times, LiveMint, Moneycontrol और Google News India के आधिकारिक RSS फीड से संकलित हैं।"
+  },
+  {
+    q: "निवेश करने से पहले SEBI पंजीकृत सलाहकार की जांच कैसे करें?",
+    a: "किसी भी निवेश निर्णय या टिप पर भरोसा करने से पहले भारतीय प्रतिभूति और विनिमय बोर्ड (SEBI) की आधिकारिक वेबसाइट sebi.gov.in या investor.sebi.gov.in पर पंजीकरण संख्या की पुष्टि अवश्य करें।"
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.a
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jabalpuriya.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Business & Stock Market", "item": "https://jabalpuriya.com/business-markets/" }
+  ]
+};
+---
+
+<Layout
+  title="India Business News & Stock Market Today | भारतीय शेयर बाजार, निफ्टी 50, सेंसेक्स व बिजनेस समाचार"
+  description="आज के भारतीय शेयर बाजार (NIFTY 50, BSE SENSEX, BANK NIFTY, NIFTY IT), टॉप 10 ब्लू-चिप स्टॉक्स, लाइव चार्ट और भारत की ताज़ा बिजनेस व इकोनॉमी खबरें।"
+  keywords={[
+    "Indian Stock Market Today",
+    "India Business News",
+    "Nifty 50 Today",
+    "BSE Sensex Today",
+    "Bank Nifty Live",
+    "भारतीय शेयर बाजार",
+    "निफ्टी 50 आज का भाव",
+    "सेंसेक्स आज का भाव",
+    "बिजनेस समाचार भारत",
+    "Jabalpuriya Business Markets"
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="max-w-7xl mx-auto py-6 sm:py-10 space-y-10">
+
+    <!-- Hero Header -->
+    <header class="text-center space-y-4">
+      <div class="flex items-center justify-center flex-wrap gap-2">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+          📈 India Business & Stock Market Desk
+        </span>
+        <span
+          id="ist-market-status"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+        >
+          🕒 Checking NSE/BSE Session...
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+        भारतीय शेयर बाजार व बिजनेस समाचार
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+        <strong>NIFTY 50, BSE SENSEX, BANK NIFTY</strong> के ताज़ा सूचकांक, प्रमुख भारतीय ब्लू-चिप शेयरों का प्रदर्शन, लाइव इंटरैक्टिव चार्ट और भारत के विश्वसनीय वित्तीय समाचार एक ही स्थान पर।
+      </p>
+      <p class="text-xs text-slate-500 dark:text-slate-400">
+        🔄 एक्सचेंज डेटा अपडेट: <strong class="text-slate-700 dark:text-slate-200">{lastUpdatedIST} IST</strong> • स्रोत: NSE/BSE, Economic Times, LiveMint, Moneycontrol
+      </p>
+
+      <!-- WhatsApp Share Bar -->
+      <div class="pt-2 flex justify-center">
+        <a
+          href={`https://api.whatsapp.com/send?text=${encodeURIComponent('📈 आज का भारतीय शेयर बाजार (NIFTY 50, SENSEX, BANK NIFTY) और भारत की ताज़ा बिजनेस खबरें देखें:\nhttps://jabalpuriya.com/business-markets/')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm shadow-lg hover:scale-105 transition-all"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.068-1.109-.064-.407-.129-.933-.312-1.611-.607-1.425-.62-2.353-2.073-2.424-2.167-.071-.095-.579-.77-.579-1.469 0-.698.367-1.042.498-1.185.132-.143.287-.179.383-.179s.191.006.275.011c.088.005.206-.033.322.247.119.287.407 1.002.443 1.074.036.072.06.155.012.251-.048.096-.072.155-.144.239-.072.084-.151.187-.216.251-.072.072-.147.151-.063.295.084.144.373.615.8 1.001.551.498 1.015.653 1.159.724.144.072.228.06.312-.036.084-.096.359-.419.455-.563.096-.144.191-.12.323-.072.132.048.837.395.981.467.144.072.24.108.275.167.036.06.036.347-.108.752zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span>शेयर बाजार अपडेट WhatsApp पर साझा करें</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Top Ad Placement -->
+    <AdSenseBanner slotType="masthead" />
+
+    <!-- Indian Market Indices Grid -->
+    <section class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <span>🏛️</span> भारतीय प्रमुख सूचकांक (Indian Market Indices)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            NSE, BSE व फॉरेक्स के प्रमुख बेंचमार्क इंडेक्स
+          </p>
+        </div>
+        <span class="text-xs px-3 py-1 bg-sky-500/10 text-sky-700 dark:text-sky-400 font-bold rounded-lg border border-sky-500/20 w-fit">
+          Official NSE / BSE Feed
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {marketsData.indices.map((idx) => {
+          const isPositive = idx.change >= 0;
+          const rangeSpan = idx.dayHigh - idx.dayLow;
+          const dayPos = rangeSpan > 0 ? Math.min(100, Math.max(0, ((idx.price - idx.dayLow) / rangeSpan) * 100)) : 50;
+          return (
+            <div class="p-5 rounded-3xl bg-white dark:bg-[#0c1c33] border border-slate-200/90 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    {idx.exchange}
+                  </span>
+                  <h3 class="text-lg font-black text-slate-900 dark:text-white mt-1">
+                    {idx.name}
+                  </h3>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 font-hindi">{idx.hindiName}</p>
+                </div>
+                <span class={`px-2.5 py-1 rounded-xl text-xs font-black whitespace-nowrap ${
+                  isPositive
+                    ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30'
+                    : 'bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-500/30'
+                }`}>
+                  {isPositive ? '▲' : '▼'} {isPositive ? '+' : ''}{idx.changePercent.toFixed(2)}%
+                </span>
+              </div>
+
+              <div class="flex items-baseline justify-between gap-2">
+                <div class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                  {idx.prefix}{formatIN(idx.price)}
+                </div>
+                <div class={`text-xs sm:text-sm font-bold ${isPositive ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                  {isPositive ? '+' : ''}{formatIN(idx.change)} pts
+                </div>
+              </div>
+
+              <!-- Day Low - High Range Bar -->
+              <div class="pt-2 border-t border-slate-100 dark:border-slate-800 space-y-1.5">
+                <div class="flex justify-between text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                  <span>Day Low: {idx.prefix}{formatIN(idx.dayLow)}</span>
+                  <span>Day High: {idx.prefix}{formatIN(idx.dayHigh)}</span>
+                </div>
+                <div class="w-full h-1.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                  <div
+                    class={`h-full rounded-full ${isPositive ? 'bg-emerald-500' : 'bg-rose-500'}`}
+                    style={`width: ${dayPos.toFixed(1)}%`}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Live Interactive TradingView Chart Widget -->
+    <section class="space-y-4">
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-3">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+          <span>📊</span> लाइव इंटरैक्टिव मार्केट चार्ट (Interactive BSE SENSEX & Blue-Chip Charts)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          BSE SENSEX और प्रमुख भारतीय कंपनियों के चार्ट (1D, 1M, 3M, 1Y) सीधे देखें
+        </p>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0c1c33] shadow-lg p-2 sm:p-4">
+        <div class="tradingview-widget-container" style="height: 440px; width: 100%;">
+          <div class="tradingview-widget-container__widget" style="height: 100%; width: 100%;"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async is:inline>
+          {
+            "symbols": [
+              ["BSE SENSEX", "BSE:SENSEX|1M"],
+              ["Reliance", "BSE:RELIANCE|1M"],
+              ["TCS", "BSE:TCS|1M"],
+              ["HDFC Bank", "BSE:HDFCBANK|1M"],
+              ["Infosys", "BSE:INFY|1M"],
+              ["SBI", "BSE:SBIN|1M"],
+              ["ICICI Bank", "BSE:ICICIBANK|1M"],
+              ["ITC", "BSE:ITC|1M"]
+            ],
+            "chartOnly": false,
+            "width": "100%",
+            "height": "100%",
+            "locale": "en",
+            "colorTheme": "light",
+            "autosize": true,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": false,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "11",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "lineWidth": 2,
+            "lineType": 0,
+            "dateRanges": [
+              "1d|1",
+              "1m|30",
+              "3m|60",
+              "12m|1D",
+              "60m|1W"
+            ]
+          }
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top 10 Indian Blue-Chip Stocks Watchlist -->
+    <section class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <span>💎</span> टॉप 10 भारतीय ब्लू-चिप स्टॉक्स (NSE Large-Cap Watchlist)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            भारत की शीर्ष 10 कंपनियों के शेयर भाव, दैनिक बदलाव और 52-सप्ताह की रेंज
+          </p>
+        </div>
+        <span class="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold rounded-lg border border-emerald-500/20 w-fit">
+          दरें: ₹ (INR) प्रति शेयर
+        </span>
+      </div>
+
+      <div class="overflow-x-auto rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm bg-white dark:bg-[#0c1c33]">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 font-black uppercase text-[11px] tracking-wider border-b border-slate-200 dark:border-slate-800">
+            <tr>
+              <th scope="col" class="py-3.5 px-4 sm:px-6">कंपनी (Company)</th>
+              <th scope="col" class="py-3.5 px-3 sm:px-4">सेक्टर (Sector)</th>
+              <th scope="col" class="py-3.5 px-3 sm:px-4 text-right">भाव (Price ₹)</th>
+              <th scope="col" class="py-3.5 px-3 sm:px-4 text-right">बदलाव (Change)</th>
+              <th scope="col" class="py-3.5 px-3 sm:px-4 text-right hidden md:table-cell">Day Range (₹)</th>
+              <th scope="col" class="py-3.5 px-4 sm:px-6 text-right hidden lg:table-cell">52W Range (₹)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 font-medium text-slate-700 dark:text-slate-200">
+            {marketsData.stocks.map((st) => {
+              const isPos = st.change >= 0;
+              return (
+                <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition-colors">
+                  <td class="py-3.5 px-4 sm:px-6">
+                    <div class="font-black text-slate-900 dark:text-white">{st.ticker}</div>
+                    <div class="text-[11px] text-slate-500 dark:text-slate-400">{st.name}</div>
+                  </td>
+                  <td class="py-3.5 px-3 sm:px-4">
+                    <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-[11px] font-bold">
+                      {st.sector}
+                    </span>
+                  </td>
+                  <td class="py-3.5 px-3 sm:px-4 text-right font-black text-slate-900 dark:text-white text-sm sm:text-base">
+                    ₹{formatIN(st.price)}
+                  </td>
+                  <td class="py-3.5 px-3 sm:px-4 text-right">
+                    <span class={`inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-black ${
+                      isPos
+                        ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400'
+                        : 'bg-rose-500/15 text-rose-700 dark:text-rose-400'
+                    }`}>
+                      {isPos ? '▲' : '▼'} {isPos ? '+' : ''}{st.changePercent.toFixed(2)}%
+                    </span>
+                    <div class={`text-[11px] mt-0.5 font-semibold ${isPos ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                      {isPos ? '+' : ''}₹{formatIN(st.change)}
+                    </div>
+                  </td>
+                  <td class="py-3.5 px-3 sm:px-4 text-right text-xs text-slate-500 dark:text-slate-400 hidden md:table-cell">
+                    ₹{formatIN(st.dayLow)} – ₹{formatIN(st.dayHigh)}
+                  </td>
+                  <td class="py-3.5 px-4 sm:px-6 text-right text-xs text-slate-500 dark:text-slate-400 hidden lg:table-cell">
+                    {st.week52Low && st.week52High ? `₹${formatIN(st.week52Low)} – ₹${formatIN(st.week52High)}` : '—'}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Mid Ad Placement -->
+    <AdSenseBanner slotType="in-feed" />
+
+    <!-- India Business & Stock Market News Feed -->
+    <section id="business-news" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-jabalpur-secondary/10 text-jabalpur-secondary border border-jabalpur-secondary/20">
+            📰 Live India Finance Wire
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1.5">
+            भारत के ताज़ा बिजनेस व शेयर बाजार समाचार
+          </h2>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1" id="biz-filter-bar">
+          {newsCategories.map((cat, idx) => (
+            <button
+              type="button"
+              data-biz-filter={cat}
+              class={`biz-filter-btn px-4 py-2 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer ${
+                idx === 0
+                  ? 'bg-gradient-to-r from-jabalpur-primary to-jabalpur-700 text-white shadow-md'
+                  : 'bg-white dark:bg-[#0c1c33] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-jabalpur-secondary'
+              }`}
+            >
+              {cat === 'All' ? 'सभी खबरें (All)' : cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="biz-news-grid">
+        {marketsData.news.map((item) => {
+          const itemDate = new Intl.DateTimeFormat('en-IN', {
+            day: 'numeric',
+            month: 'short',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZone: 'Asia/Kolkata'
+          }).format(new Date(item.publishedAt));
+          const waShare = `https://api.whatsapp.com/send?text=${encodeURIComponent(`📈 इंडिया बिजनेस व शेयर बाजार समाचार:\n${item.title}\n\nपढ़ें जबलपुरिया मार्केट्स पर:\nhttps://jabalpuriya.com/business-markets/`)}`;
+          return (
+            <article
+              data-biz-category={item.category}
+              class="biz-news-card flex flex-col justify-between p-5 rounded-3xl bg-white dark:bg-[#0c1c33] border border-slate-200/90 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all space-y-4"
+            >
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2 text-[11px]">
+                  <span class="px-2.5 py-0.5 rounded-full font-black bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                    {item.category}
+                  </span>
+                  <span class="text-slate-500 dark:text-slate-400 font-semibold">{itemDate}</span>
+                </div>
+
+                <h3 class="text-base font-black text-slate-900 dark:text-white leading-snug line-clamp-3">
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-jabalpur-secondary transition-colors"
+                  >
+                    {item.title}
+                  </a>
+                </h3>
+
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
+                  {item.excerpt}
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+                <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 truncate">
+                  ✓ {item.source}
+                </span>
+                <div class="flex items-center gap-2 flex-shrink-0">
+                  <a
+                    href={waShare}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Share on WhatsApp"
+                    class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-colors"
+                  >
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.068-1.109-.064-.407-.129-.933-.312-1.611-.607-1.425-.62-2.353-2.073-2.424-2.167-.071-.095-.579-.77-.579-1.469 0-.698.367-1.042.498-1.185.132-.143.287-.179.383-.179s.191.006.275.011c.088.005.206-.033.322.247.119.287.407 1.002.443 1.074.036.072.06.155.012.251-.048.096-.072.155-.144.239-.072.084-.151.187-.216.251-.072.072-.147.151-.063.295.084.144.373.615.8 1.001.551.498 1.015.653 1.159.724.144.072.228.06.312-.036.084-.096.359-.419.455-.563.096-.144.191-.12.323-.072.132.048.837.395.981.467.144.072.24.108.275.167.036.06.036.347-.108.752zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                  </a>
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-xs font-extrabold text-jabalpur-primary dark:text-jabalpur-300 hover:text-jabalpur-secondary transition-colors"
+                  >
+                    Read Full →
+                  </a>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Authentic Official Market Resources & Regulatory Links -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 space-y-3">
+        <h3 class="text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+          <span>🏛️</span> आधिकारिक भारतीय बाजार व नियामक पोर्टल (Official Sources)
+        </h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-600 dark:text-slate-300">
+          <li>• <strong>NSE India (National Stock Exchange):</strong> <a href="https://www.nseindia.com" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 underline font-semibold">nseindia.com</a></li>
+          <li>• <strong>BSE India (Bombay Stock Exchange):</strong> <a href="https://www.bseindia.com" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 underline font-semibold">bseindia.com</a></li>
+          <li>• <strong>SEBI Investor Education Portal:</strong> <a href="https://investor.sebi.gov.in" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 underline font-semibold">investor.sebi.gov.in</a></li>
+          <li>• <strong>Reserve Bank of India (RBI):</strong> <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 underline font-semibold">rbi.org.in</a></li>
+        </ul>
+      </div>
+
+      <div class="p-6 rounded-3xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-800/40 space-y-3">
+        <h3 class="text-base font-black text-amber-900 dark:text-amber-300 flex items-center gap-2">
+          <span>⚠️</span> निवेश अस्वीकरण (SEBI & Financial Disclaimer)
+        </h3>
+        <p class="text-xs sm:text-sm text-amber-900/80 dark:text-amber-200/80 leading-relaxed">
+          जबलपुरिया (Jabalpuriya.com) पर प्रस्तुत शेयर बाजार के आंकड़े, चार्ट और बिजनेस समाचार केवल <strong>शैक्षणिक व सूचनात्मक उद्देश्य (Informational Purpose)</strong> के लिए हैं। हम SEBI पंजीकृत निवेश सलाहकार नहीं हैं। शेयर बाजार में निवेश बाजार जोखिमों के अधीन है — किसी भी वित्तीय निर्णय से पहले अपने प्रमाणित वित्तीय सलाहकार से परामर्श अवश्य करें।
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="space-y-5 pt-2">
+      <div class="text-center space-y-1.5">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+          शेयर बाजार से जुड़े प्रमुख प्रश्न (FAQ)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          NSE, BSE, NIFTY 50, SENSEX व निवेश सुरक्षा से जुड़ी उपयोगी जानकारी
+        </p>
+      </div>
+
+      <div class="space-y-3.5 max-w-4xl mx-auto">
+        {faqs.map((f, i) => (
+          <div class="p-5 rounded-2xl bg-white dark:bg-[#0c1c33] border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+            <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white flex items-start gap-2">
+              <span class="text-emerald-600 dark:text-emerald-400 font-black">Q{i + 1}.</span>
+              <span>{f.q}</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+              {f.a}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Bottom Ad Placement -->
+    <AdSenseBanner slotType="bottom" />
+
+    <!-- Return Home Button -->
+    <div class="text-center pt-2">
+      <a href="/" class="inline-flex items-center px-6 py-3 rounded-xl font-bold text-sm bg-jabalpur-primary text-white hover:bg-jabalpur-secondary transition-all shadow-md">
+        ← जबलपुरिया होमपेज पर वापस जाएं
+      </a>
+    </div>
+
+  </div>
+</Layout>
+
+<script>
+  // 1. Live IST Market Session Status Indicator (Mon–Fri, 9:15 AM – 3:30 PM IST)
+  const statusEl = document.getElementById('ist-market-status');
+  if (statusEl) {
+    const now = new Date();
+    const istParts = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Kolkata',
+      weekday: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    }).formatToParts(now);
+
+    const weekday = istParts.find((p) => p.type === 'weekday')?.value || '';
+    const hour = parseInt(istParts.find((p) => p.type === 'hour')?.value || '0', 10);
+    const minute = parseInt(istParts.find((p) => p.type === 'minute')?.value || '0', 10);
+    const mins = hour * 60 + minute;
+    const isWeekday = !['Sat', 'Sun'].includes(weekday);
+
+    if (isWeekday && mins >= 555 && mins <= 930) {
+      statusEl.textContent = '🟢 NSE/BSE Market Open (Live Session)';
+      statusEl.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30';
+    } else if (isWeekday && mins >= 540 && mins < 555) {
+      statusEl.textContent = '🟡 NSE/BSE Pre-Open Session (9:00–9:15 IST)';
+      statusEl.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/30';
+    } else {
+      statusEl.textContent = '🔴 Market Closed (Latest Exchange Close)';
+      statusEl.className = 'inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700';
+    }
+  }
+
+  // 2. Interactive Business News Category Filter
+  const filterBtns = document.querySelectorAll('.biz-filter-btn');
+  const newsCards = document.querySelectorAll('.biz-news-card');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const selected = btn.getAttribute('data-biz-filter') || 'All';
+
+      filterBtns.forEach((b) => {
+        b.className = 'biz-filter-btn px-4 py-2 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer bg-white dark:bg-[#0c1c33] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-jabalpur-secondary';
+      });
+      btn.className = 'biz-filter-btn px-4 py-2 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer bg-gradient-to-r from-jabalpur-primary to-jabalpur-700 text-white shadow-md';
+
+      newsCards.forEach((card) => {
+        const cat = card.getAttribute('data-biz-category');
+        if (selected === 'All' || cat === selected) {
+          (card as HTMLElement).style.display = 'flex';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

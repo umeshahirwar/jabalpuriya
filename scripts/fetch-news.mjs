@@ -14,6 +14,7 @@
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { fetchMarketsData } from './fetch-markets.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -357,6 +358,7 @@ function generateSitemaps(articles) {
     { loc: `${baseUrl}/helplines/`, priority: '0.9', changefreq: 'weekly', lastmod: nowIso },
     { loc: `${baseUrl}/rashifal/`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
     { loc: `${baseUrl}/mandi-bhav/`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
+    { loc: `${baseUrl}/business-markets/`, priority: '0.9', changefreq: 'daily', lastmod: nowIso },
     { loc: `${baseUrl}/about/`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
     { loc: `${baseUrl}/contact/`, priority: '0.7', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
     { loc: `${baseUrl}/privacy-policy/`, priority: '0.5', changefreq: 'monthly', lastmod: '2026-11-14T00:00:00.000Z' },
@@ -490,6 +492,13 @@ async function fetchAndNormalizeNews() {
 
   // Generate sitemaps
   generateSitemaps(combinedAll);
+
+  // Also refresh Indian Stock Market & Business News data
+  try {
+    await fetchMarketsData();
+  } catch (err) {
+    console.warn(`⚠️ Markets refresh warning: ${err.message}`);
+  }
 }
 
 fetchAndNormalizeNews().catch(err => {

@@ -2,6 +2,7 @@
 const navItems = [
   { name: 'होम', href: '/' },
   { name: 'ताजा खबरें', href: '/#news-grid' },
+  { name: '📈 शेयर बाजार', href: '/business-markets/' },
   { name: '✨ राशिफल', href: '/rashifal/' },
   { name: '🌾 मंडी भाव', href: '/mandi-bhav/' },
   { name: '🌊 भेड़ाघाट', href: '/bhedaghat-guide/' },
@@ -84,12 +85,14 @@ const currentPath = Astro.url.pathname;
         {navItems.map((item) => (
           <a
             href={item.href}
-            class={`px-3 py-2 rounded-xl text-xs xl:text-sm font-bold transition-all duration-200 ${
-              item.href === '/rashifal/'
-                ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-800/60 shadow-sm'
-                : currentPath === item.href
-                  ? 'text-white bg-jabalpur-primary shadow-md'
-                  : 'text-slate-700 hover:text-jabalpur-secondary hover:bg-slate-100 dark:text-slate-200 dark:hover:text-white dark:hover:bg-slate-800/80'
+            class={`px-2.5 xl:px-3 py-2 rounded-xl text-xs xl:text-sm font-bold transition-all duration-200 whitespace-nowrap ${
+              item.href === '/business-markets/'
+                ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-800/60 shadow-sm'
+                : item.href === '/rashifal/'
+                  ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-800/60 shadow-sm'
+                  : currentPath === item.href
+                    ? 'text-white bg-jabalpur-primary shadow-md'
+                    : 'text-slate-700 hover:text-jabalpur-secondary hover:bg-slate-100 dark:text-slate-200 dark:hover:text-white dark:hover:bg-slate-800/80'
             }`}
           >
             {item.name}
