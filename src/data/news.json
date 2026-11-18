@@ -1,11 +1,13 @@
 {
-  "lastUpdated": "2026-11-17T15:19:07.049Z",
-  "totalStories": 107,
+  "lastUpdated": "2026-11-18T08:58:56.860Z",
+  "totalStories": 111,
   "sources": [
-    "Jagran",
-    "Bhaskar English",
-    "Free Press Journal",
+    "https://whispersinthecorridors.net/",
     "MP Breaking News",
+    "Bhaskar English",
+    "Rediff",
+    "Jagran",
+    "Free Press Journal",
     "The Hitavada",
     "NDTV Profit",
     "The Times of India",
@@ -55,6 +57,82 @@
   ],
   "articles": [
     {
+      "id": "jbp-mwlw3alh-6-qo6u",
+      "title": "Shailesh Pathak appointed as Vice Chairman of Jabalpur Indore Industrial Corridor Ltd - https://whispersinthecorridors.net/",
+      "slug": "shailesh-pathak-appointed-as-vice-chairman-of-jabalpur-indore-industrial-co",
+      "excerpt": "Shailesh Pathak appointed as Vice Chairman of Jabalpur Indore Industrial Corridor Ltd.",
+      "content": "Shailesh Pathak appointed as Vice Chairman of Jabalpur Indore Industrial Corridor Ltd.",
+      "category": "Local News",
+      "source": "https://whispersinthecorridors.net/",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ3JDS0thdzdmTmxfeW1uYlVqS0Z6Wi1MT2lVaUY5dDRYMWhDLTYtQkZ3V2paWGdETUgyLURBUDdqZmh3XzczSTR6aUE0LWxNX3BYOXg4NlNsNHdTMW9xdXBBNUNxV09ub0FlVmJSdFVDR0RCT25CSDIweEYybUwzakRNd3k2NmRHV19jUUxPc2JvZGZQa2lZWWE0VUJxajZqNDNhaXNYQmdMeGpXc3J0RjlRSWtrRnZhMDRDT2NwMlB1Q1U?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-18T06:15:34.000Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwlw3ava-86-uswp",
+      "title": "जबलपुर में गांजा तस्करी पर पुलिस का एक्शन, 2 जगह से 137 किलो मादक पदार्थ जब्त - MP Breaking News",
+      "slug": "जबलपुर-में-गांजा-तस्करी-पर-पुलिस-का-एक्शन-2-जगह-से-137-किलो-मादक-पदार्थ-जब्",
+      "excerpt": "जबलपुर में गांजा तस्करी पर पुलिस का एक्शन, 2 जगह से 137 किलो मादक पदार्थ जब्त.",
+      "content": "जबलपुर में गांजा तस्करी पर पुलिस का एक्शन, 2 जगह से 137 किलो मादक पदार्थ जब्त.",
+      "category": "Local News",
+      "source": "MP Breaking News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTktnX0MtOWsza0xnS2I0dlVGaG5ERXlnekRnY3B3S0gtT2RENnBWR0dUbnh4OWhCN0Zfd3g3QUtNbjFIZndlcldHMUJXWDZrX1ZIQThJejk2UFlJa0pxS3JwMG5xd2FIRDBIakdXTjVEZm1lMWppUWJzQllLU3pVZUMzOTBTc1BCcnFnQmJfWXo5ZFd1bnpRdC16eGFIZnJZNjJmRlRNWnZBY09ubVR0Z2tXb1hoUjhKRUVJ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-18T02:35:42.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwlw3all-38-a56f",
+      "title": "MP braces for thunderstorms and rain on November 20-21: Cyclone Akvan to affect weather; Jabalpur, Rewa, an... - Bhaskar English",
+      "slug": "mp-braces-for-thunderstorms-and-rain-on-november-20-21-cyclone-akvan-to-aff",
+      "excerpt": "MP braces for thunderstorms and rain on November 20-21: Cyclone Akvan to affect weather; Jabalpur, Rewa, an...",
+      "content": "MP braces for thunderstorms and rain on November 20-21: Cyclone Akvan to affect weather; Jabalpur, Rewa, an...",
+      "category": "Environment & City",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNGU0NEpjR2RGdHlfUTVpZlREVV83dHFONlhGNFNwVnQwbFNEZmRJLVhibW9WSmdhT0c3a2hnTDNreDBtSkJrZFhlU1NIS1h1QW90c3Z6b2ZZZzJtR0twbFZfZV96V3NuMTEzMHZueV9QaUF6Tm5oVnFuT0l6OUVxVnVORldhVHFoU3Q2MDE1VVprSTdaeXBNS1Bva0ZPYjRHX1QtQzdNYldKbEdITEd4RW9PR0E0X0Vwd2xWSlBkdHJxUUVQTFHSAcsBQVVfeXFMTnVnSEhHNXZKOXY1Z3FRNnY2dUtTellNNE11TjZEdkNGc3hVSnJTMFVkNWxXZlZtbGlsY01ST1A4Y05jZ3Jsek9HRHd4ZHNZV2ZUQUdNS295WGViQnhqSk1DVXFPWDQ1cWkteGtIU3p6bkkxWFNuSHlKZ0ZNN25QdVRpeXhkZ04tQm9mSVY3NzZmeDM3dW9heERRQ0tQOWtEV0tNZEFZMVRTWG1BT2dfUUNTM0d6SHlpRGRRajB5WlBTOHNNNDBUb25iNDg?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-17T23:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Environment & City",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwlw3alh-7-krb4",
+      "title": "Major Cannabis Haul In Jabalpur: Police Seize 136 Kg From Abandoned Vehicle - Rediff",
+      "slug": "major-cannabis-haul-in-jabalpur-police-seize-136-kg-from-abandoned-vehicle",
+      "excerpt": "Major Cannabis Haul In Jabalpur: Police Seize 136 Kg From Abandoned Vehicle.",
+      "content": "Major Cannabis Haul In Jabalpur: Police Seize 136 Kg From Abandoned Vehicle.",
+      "category": "Local News",
+      "source": "Rediff",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWlNKWkNMUnJIN0pTRWdMMzJFb3lBZ0d6WEZVR01hRE95VVhmXy1UTlAtcHh3YUF6RkprWWk4czRtR0hhejVPM084V2ZJclk3TW9xLUh2VDRRRFM0N3VvTGRXRENEWGh3b09NRVJSTmt3ZHM1NFJ5d2RJU3piUjVTTVJiU0x0MVhEV1ZnclJSeGtlTnNTaFAxRmk3TFI0bWRDNEhIbGFELTR6eTNIQjkxLURQNA?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-17T19:23:04.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "jbp-mwku8cr5-37-pi7k",
       "title": "MP में बाघों के गलियारे पर विकास की मार, कहीं ट्रेन से मौत तो कहीं सड़क-खनन से रास्ते बंद; सिवनी का इको फ्रेंडली हाईवे बना मिसाल - mp tiger corridors face development threat seoni ecohighway - Jagran",
       "slug": "mp-में-बाघों-के-गलियारे-पर-विकास-की-मार-कहीं-ट्रेन-से-मौत-तो-कहीं-सड़क-खनन",
@@ -66,7 +144,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-17T13:29:00.000Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
       "tags": [
         "Smart City & Infra",
         "Jabalpur",
