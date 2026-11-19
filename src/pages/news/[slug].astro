@@ -35,7 +35,13 @@ const relatedArticles = [...sameCategory, ...otherCategory].slice(0, 4);
 
 // Canonical & Share URLs (always trailing slash to match GitHub Pages & prevent 301 redirects)
 const articleUrl = `https://jabalpuriya.com/news/${article.slug}/`;
-const whatsappShareText = encodeURIComponent(`⚡ जबलपुर समाचार: ${article.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\n${articleUrl}`);
+const isBusinessCategory = ['Stock Market', 'India Business', 'हिंदी बिजनेस', 'Business & Jobs'].includes(article.category);
+
+const whatsappShareText = encodeURIComponent(
+  isBusinessCategory
+    ? `📈 शेयर बाजार व बिजनेस समाचार: ${article.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\n${articleUrl}`
+    : `⚡ जबलपुर समाचार: ${article.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\n${articleUrl}`
+);
 const whatsappShareUrl = `https://api.whatsapp.com/send?text=${whatsappShareText}`;
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(articleUrl)}&via=jabalpuriya`;
 const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
@@ -44,6 +50,24 @@ const isHindi = /[\u0900-\u097F]/.test(article.title);
 
 // Category-specific local Jabalpur context to add genuine editorial depth
 const categoryContextMap: Record<string, { heading: string; text: string; tipLabel: string; tipHref: string }> = {
+  'Stock Market': {
+    heading: 'भारतीय शेयर बाजार व स्टॉक एक्सचेंज संदर्भ (Stock Market & NSE/BSE Context)',
+    text: 'भारतीय शेयर बाजार (NSE NIFTY 50, BSE SENSEX, BANK NIFTY) देश की आर्थिक विकास यात्रा और शीर्ष कंपनियों का आईना है। जबलपुर व मध्य प्रदेश के निवेशकों, कारोबारियों और ट्रेडर्स के लिए बाज़ार के ताज़ा रुझान, सेबी (SEBI) नियम और वित्तीय अपडेट्स यहाँ विश्लेषित किए जाते हैं।',
+    tipLabel: '📈 आज का लाइव निफ्टी 50, सेंसेक्स चार्ट व ब्लू-चिप स्टॉक्स देखें',
+    tipHref: '/business-markets/'
+  },
+  'India Business': {
+    heading: 'भारतीय अर्थव्यवस्था, कॉर्पोरेट व व्यापार परिदृश्य (India Economy & Business Context)',
+    text: 'भारत की जीडीपी ग्रोथ, रिज़र्व बैंक (RBI) मौद्रिक नीति, कॉर्पोरेट परिणाम और राष्ट्रीय वाणिज्यिक नीतियों का असर पूरे देश के व्यापारिक केंद्रों पर होता है। जबलपुरिया बिजनेस डेस्क स्थानीय व राष्ट्रीय स्तर पर वित्तीय अवसरों का विश्वसनीय विश्लेषण प्रस्तुत करता है।',
+    tipLabel: '📈 भारत के शीर्ष ब्लू-चिप स्टॉक्स व बिजनेस डेस्क देखें',
+    tipHref: '/business-markets/'
+  },
+  'हिंदी बिजनेस': {
+    heading: 'ताज़ा हिंदी व्यापार व वित्तीय समाचार (Hindi Business Desk)',
+    text: 'भारतीय शेयर बाजार, कमोडिटी, सराफा (सोना-चांदी) और व्यापार जगत की महत्वपूर्ण खबरें हिंदी में। जबलपुर और महाकौशल संभाग के व्यापारियों और नागरिकों के लिए सटीक, उपयोगी और सत्यापित वित्तीय जानकारी।',
+    tipLabel: '🌾 जबलपुर कृषि उपज मंडी व सराफा के दैनिक भाव देखें',
+    tipHref: '/mandi-bhav/'
+  },
   'Smart City & Infra': {
     heading: 'जबलपुर स्मार्ट सिटी व अधोसंरचना संदर्भ (Civic & Infra Context)',
     text: 'जबलपुर मध्य प्रदेश का एक प्रमुख स्मार्ट सिटी और महाकौशल अंचल का सबसे बड़ा परिवहन व शहरी केंद्र है। रिंग रोड, मदन महल फ्लाईओवर, डुमना एयरपोर्ट विस्तार और पश्चिम मध्य रेलवे (WCR) की परियोजनाएं शहर की कनेक्टिविटी को निरंतर सशक्त बना रही हैं।',
@@ -90,7 +114,12 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jabalpuriya.com/" },
-    { "@type": "ListItem", "position": 2, "name": article.category, "item": "https://jabalpuriya.com/#news-grid" },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": isBusinessCategory ? "Business & Stock Market" : article.category,
+      "item": isBusinessCategory ? "https://jabalpuriya.com/business-markets/" : "https://jabalpuriya.com/#news-grid"
+    },
     { "@type": "ListItem", "position": 3, "name": article.title, "item": articleUrl }
   ]
 };
@@ -104,7 +133,9 @@ const breadcrumbSchema = {
   type="article"
   publishedTime={article.publishedAt}
   category={article.category}
-  keywords={[article.category, 'Jabalpur News', 'जबलपुर समाचार', 'Sanskaardhani', article.source, 'MP News']}
+  keywords={isBusinessCategory
+    ? [article.category, 'Indian Stock Market', 'Business News India', 'शेयर बाजार', 'Nifty 50', 'BSE Sensex', article.source, 'Jabalpur Business']
+    : [article.category, 'Jabalpur News', 'जबलपुर समाचार', 'Sanskaardhani', article.source, 'MP News']}
 >
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <div class="max-w-4xl mx-auto py-6 sm:py-10 space-y-8">
@@ -113,7 +144,9 @@ const breadcrumbSchema = {
     <nav class="flex items-center space-x-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400 overflow-x-auto pb-1" aria-label="Breadcrumb">
       <a href="/" class="hover:text-jabalpur-secondary transition-colors whitespace-nowrap">Home</a>
       <span>/</span>
-      <a href="/#news-grid" class="hover:text-jabalpur-secondary transition-colors whitespace-nowrap">Jabalpur News</a>
+      <a href={isBusinessCategory ? "/business-markets/" : "/#news-grid"} class="hover:text-jabalpur-secondary transition-colors whitespace-nowrap">
+        {isBusinessCategory ? "Business & Markets" : "Jabalpur News"}
+      </a>
       <span>/</span>
       <span class="text-slate-800 dark:text-slate-200 font-bold whitespace-nowrap">{article.category}</span>
     </nav>
@@ -148,11 +181,13 @@ const breadcrumbSchema = {
         <!-- Timestamp & Reporter Attribution -->
         <div class="flex items-center justify-between text-xs sm:text-sm text-slate-500 dark:text-slate-400 border-y border-slate-100 dark:border-slate-800/80 py-3 flex-wrap gap-2">
           <div class="flex items-center space-x-2">
-            <span>📍 Jabalpur, MP</span>
+            <span>{isBusinessCategory ? '📈 भारतीय वित्तीय बाजार / National Wire' : '📍 Jabalpur, MP'}</span>
             <span>•</span>
             <time datetime={article.publishedAt}>{formattedDate} at {formattedTime} IST</time>
           </div>
-          <span class="text-jabalpur-secondary font-bold font-hindi">जबलपुरिया न्यूज़ डेस्क</span>
+          <span class="text-jabalpur-secondary font-bold font-hindi">
+            {isBusinessCategory ? 'जबलपुरिया बिजनेस डेस्क' : 'जबलपुरिया न्यूज़ डेस्क'}
+          </span>
         </div>
       </div>
 
@@ -224,17 +259,30 @@ const breadcrumbSchema = {
             <span class="text-jabalpur-secondary">⚡</span> मुख्य बिंदु (Key Takeaways)
           </h2>
           <ul class="list-disc pl-5 text-sm space-y-1.5 text-slate-600 dark:text-slate-300">
-            <li><strong>क्षेत्र (Location):</strong> जबलपुर (संस्कारधानी), मध्य प्रदेश</li>
+            <li><strong>कवरेज क्षेत्र (Coverage):</strong> {isBusinessCategory ? 'राष्ट्रीय व भारतीय वित्तीय बाजार (Indian Financial Markets)' : 'जबलपुर (संस्कारधानी), मध्य प्रदेश'}</li>
             <li><strong>श्रेणी (Category):</strong> {article.category}</li>
             <li><strong>सूचना प्रदाता (Wire Source):</strong> {article.source}</li>
             <li><strong>तिथि व समय:</strong> {formattedDate} ({formattedTime} IST)</li>
           </ul>
         </div>
 
-        <!-- Excerpt Paragraph -->
-        <p class="font-medium text-slate-800 dark:text-slate-100 text-lg leading-relaxed">
-          {article.excerpt}
-        </p>
+        <!-- Excerpt Paragraph & Financial Context -->
+        <div class="space-y-4">
+          <p class="font-medium text-slate-800 dark:text-slate-100 text-lg leading-relaxed">
+            {article.excerpt}
+          </p>
+
+          {isBusinessCategory && (
+            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1.5">
+              <p class="font-bold flex items-center gap-1.5">
+                <span>⚠️</span> वित्तीय व निवेश अस्वीकरण (Investor Notice):
+              </p>
+              <p class="leading-relaxed">
+                शेयर बाजार, आईपीओ (IPO) और वित्तीय संपत्तियों में निवेश बाजार जोखिमों के अधीन है। यह रिपोर्ट केवल सामान्य सूचनात्मक व शैक्षणिक उद्देश्य के लिए है। किसी भी वित्तीय निर्णय या निवेश से पहले SEBI पंजीकृत निवेश सलाहकार से परामर्श अवश्य लें।
+              </p>
+            </div>
+          )}
+        </div>
 
         <!-- Contextual Local Jabalpur Insight -->
         <div class="p-5 rounded-2xl bg-sky-50/70 dark:bg-sky-950/20 border border-sky-200/70 dark:border-sky-800/40 space-y-2.5">
@@ -276,10 +324,10 @@ const breadcrumbSchema = {
       <div class="p-5 rounded-2xl bg-slate-100/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="space-y-1 text-center sm:text-left">
           <span class="text-xs uppercase font-extrabold text-slate-500 tracking-wider">
-            स्रोत प्रमाणीकरण (Official Source)
+            स्रोत प्रमाणीकरण व विस्तृत कवरेज (Official Source Attribution)
           </span>
           <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-            यह समाचार <strong>{article.source}</strong> द्वारा प्रकाशित किया गया है। विस्तृत जानकारी के लिए आप मूल प्रकाशक की वेबसाइट पर भी जा सकते हैं।
+            यह समाचार मूल रूप से <strong>{article.source}</strong> द्वारा रिपोर्ट किया गया है। संपादकीय शुचिता, निष्पक्षता और विस्तृत विवरण के लिए आप मूल प्रकाशक की वेबसाइट पर भी जा सकते हैं।
           </p>
         </div>
 
@@ -301,14 +349,14 @@ const breadcrumbSchema = {
     <!-- Bottom AdSense Banner -->
     <AdSenseBanner slotType="bottom" />
 
-    <!-- Related Jabalpur Stories Section (Keeps users on the site) -->
+    <!-- Related Stories Section (Keeps users on the site) -->
     <section class="space-y-6 pt-4">
       <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
         <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
-          <span>📰</span> संबंधित जबलपुर समाचार (Related Stories)
+          <span>📰</span> {isBusinessCategory ? 'संबंधित बिजनेस व मार्केट समाचार (Related Markets)' : 'संबंधित जबलपुर समाचार (Related Stories)'}
         </h2>
-        <a href="/#news-grid" class="text-xs font-bold text-jabalpur-secondary hover:underline">
-          सभी समाचार देखें →
+        <a href={isBusinessCategory ? "/business-markets/" : "/#news-grid"} class="text-xs font-bold text-jabalpur-secondary hover:underline">
+          {isBusinessCategory ? 'मार्केट्स डेस्क देखें →' : 'सभी समाचार देखें →'}
         </a>
       </div>
 

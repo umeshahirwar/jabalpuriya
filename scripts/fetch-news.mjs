@@ -84,11 +84,29 @@ const CURATED_JABALPUR_IMAGES = {
     'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80',
     'https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80',
     'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80'
+  ],
+  'Stock Market': [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1000&q=80'
+  ],
+  'India Business': [
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+  ],
+  'हिंदी बिजनेस': [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80',
+    'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80'
   ]
 };
 
 // Category Keywords Mapping
 const CATEGORY_RULES = [
+  { category: 'Stock Market', keywords: ['sensex', 'nifty', 'share market', 'bse', 'nse', 'stock market', 'ipo', 'gmp', 'bull market', 'bear market', 'दलाल स्ट्रीट'] },
+  { category: 'India Business', keywords: ['rbi', 'gdp', 'inflation', 'corporate', 'economy', 'merger', 'acquisition', 'earnings', 'revenue', 'startups'] },
+  { category: 'हिंदी बिजनेस', keywords: ['शेयर बाजार', 'सेंसेक्स', 'निफ्टी', 'व्यापार', 'सोना चांदी', 'सराफा', 'रुपया', 'कारोबार'] },
   { category: 'Smart City & Infra', keywords: ['flyover', 'ring road', 'smart city', 'railway', 'airport', 'dumna airport', 'highway', 'metro', 'nhai', 'infrastructure', 'bridge', 'bypass', 'traffic', 'vande bharat'] },
   { category: 'Culture & Tourism', keywords: ['bhedaghat', 'dhuandhar', 'narmada', 'aarti', 'gwarighat', 'madan mahal', 'heritage', 'chausath yogini', 'marble rocks', 'temple', 'festival', 'tourism', 'garba', 'navratri', 'mela', 'tilwara'] },
   { category: 'Education & Tech', keywords: ['iiitdm', 'rdvv', 'university', 'college', 'school', 'students', 'exam', 'engineering', 'ai hub', 'startup', 'robotics', 'result', 'admission'] },
@@ -432,6 +450,20 @@ async function fetchAndNormalizeNews() {
 
   const fetchedPool = [];
 
+  // Ingest Indian Stock Market & Business News into pool
+  let marketsPayload = null;
+  try {
+    marketsPayload = await fetchMarketsData(existingSlugs);
+    if (marketsPayload?.news && Array.isArray(marketsPayload.news)) {
+      console.log(`📈 Ingesting ${marketsPayload.news.length} business stories from markets desk...`);
+      for (const bizItem of marketsPayload.news) {
+        fetchedPool.push(bizItem);
+      }
+    }
+  } catch (err) {
+    console.warn(`⚠️ Markets ingest warning: ${err.message}`);
+  }
+
   for (const feed of RSS_FEEDS) {
     try {
       console.log(`📡 Ingesting: ${feed.name}...`);
@@ -492,13 +524,6 @@ async function fetchAndNormalizeNews() {
 
   // Generate sitemaps
   generateSitemaps(combinedAll);
-
-  // Also refresh Indian Stock Market & Business News data
-  try {
-    await fetchMarketsData();
-  } catch (err) {
-    console.warn(`⚠️ Markets refresh warning: ${err.message}`);
-  }
 }
 
 fetchAndNormalizeNews().catch(err => {

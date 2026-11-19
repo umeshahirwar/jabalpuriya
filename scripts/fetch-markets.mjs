@@ -20,6 +20,54 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const MARKETS_DATA_FILE = join(__dirname, '..', 'src', 'data', 'markets.json');
 
+const CURATED_BUSINESS_IMAGES = [
+  'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+];
+
+export function generateSlug(title, existingSlugs = new Set()) {
+  let baseSlug = title
+    .toLowerCase()
+    .replace(/\s*-\s*[^-]+$/, '') // remove trailing source e.g. " - LiveMint"
+    .replace(/[^\w\s\u0900-\u097F-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .slice(0, 75)
+    .replace(/^-+|-+$/g, '');
+
+  if (!baseSlug || baseSlug.length < 3) {
+    baseSlug = 'business-market-news-' + Date.now().toString(36);
+  }
+
+  let slug = baseSlug;
+  let counter = 2;
+  while (existingSlugs.has(slug)) {
+    slug = `${baseSlug}-${counter}`;
+    counter++;
+  }
+  return slug;
+}
+
+function extractBusinessImageUrl(itemXml, index) {
+  const mediaContent = itemXml.match(/<media:content[^>]+url=["']([^"']+)["']/i);
+  if (mediaContent && mediaContent[1] && mediaContent[1].startsWith('http')) return mediaContent[1];
+
+  const enclosure = itemXml.match(/<enclosure[^>]+url=["']([^"']+)["']/i);
+  if (enclosure && enclosure[1] && enclosure[1].startsWith('http') && !enclosure[1].includes('.mp3')) return enclosure[1];
+
+  const mediaThumbnail = itemXml.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i);
+  if (mediaThumbnail && mediaThumbnail[1] && mediaThumbnail[1].startsWith('http')) return mediaThumbnail[1];
+
+  const imgSrc = itemXml.match(/<img[^>]+src=["']([^"']+)["']/i);
+  if (imgSrc && imgSrc[1] && imgSrc[1].startsWith('http')) return imgSrc[1];
+
+  return CURATED_BUSINESS_IMAGES[index % CURATED_BUSINESS_IMAGES.length];
+}
+
 const MARKET_INDICES = [
   { symbol: '^NSEI', name: 'NIFTY 50', hindiName: 'निफ्टी 50', exchange: 'NSE', prefix: '' },
   { symbol: '^BSESN', name: 'BSE SENSEX', hindiName: 'बीएसई सेंसेक्स', exchange: 'BSE', prefix: '' },
@@ -147,7 +195,7 @@ async function fetchYahooQuote(symbol) {
   };
 }
 
-function parseBusinessRss(xml, feed) {
+function parseBusinessRss(xml, feed, existingSlugs = new Set()) {
   const items = [];
   const itemRegex = /<item>([\s\S]*?)<\/item>/gi;
   let match;
@@ -179,16 +227,27 @@ function parseBusinessRss(xml, feed) {
     }
 
     const excerpt = formatExcerpt(descMatch ? descMatch[1] : '', rawTitle, sourceName);
+    const slug = generateSlug(rawTitle, existingSlugs);
+    existingSlugs.add(slug);
+
+    const imageUrl = extractBusinessImageUrl(block, count);
+    const id = `biz-${Buffer.from(rawTitle.slice(0, 40)).toString('base64').replace(/[^a-zA-Z0-9]/g, '').slice(0, 12)}-${count}`;
 
     items.push({
-      id: `biz-${Buffer.from(rawTitle.slice(0, 40)).toString('base64').replace(/[^a-zA-Z0-9]/g, '').slice(0, 12)}-${count}`,
+      id,
       title: rawTitle,
+      slug,
       excerpt,
+      content: excerpt,
       source: sourceName,
       sourceUrl: link,
       category: feed.category,
+      imageUrl,
       lang: /[\u0900-\u097F]/.test(rawTitle) ? 'hi' : feed.lang,
-      publishedAt
+      publishedAt,
+      readTime: `${Math.max(2, Math.ceil(rawTitle.split(' ').length / 24))} min read`,
+      isFeatured: false,
+      tags: [feed.category, 'Indian Stock Market', 'Business News', 'NSE', 'BSE', 'India Economy']
     });
     count++;
   }
@@ -196,7 +255,7 @@ function parseBusinessRss(xml, feed) {
   return items;
 }
 
-export async function fetchMarketsData() {
+export async function fetchMarketsData(externalExistingSlugs = new Set()) {
   console.log('📈 [Jabalpuriya Markets] Fetching Indian Stock Market & Business News...');
 
   let existing = { indices: [], stocks: [], news: [] };
@@ -204,6 +263,29 @@ export async function fetchMarketsData() {
     try {
       existing = JSON.parse(readFileSync(MARKETS_DATA_FILE, 'utf-8'));
     } catch {}
+  }
+
+  const existingSlugs = new Set(externalExistingSlugs);
+  if (existing.news && Array.isArray(existing.news)) {
+    for (let i = 0; i < existing.news.length; i++) {
+      const item = existing.news[i];
+      if (!item.slug) {
+        item.slug = generateSlug(item.title, existingSlugs);
+      }
+      existingSlugs.add(item.slug);
+      if (!item.imageUrl) {
+        item.imageUrl = CURATED_BUSINESS_IMAGES[i % CURATED_BUSINESS_IMAGES.length];
+      }
+      if (!item.content) {
+        item.content = item.excerpt;
+      }
+      if (!item.readTime) {
+        item.readTime = `${Math.max(2, Math.ceil(item.title.split(' ').length / 24))} min read`;
+      }
+      if (!item.tags) {
+        item.tags = [item.category, 'Indian Stock Market', 'Business News', 'NSE', 'BSE', 'India Economy'];
+      }
+    }
   }
 
   // 1. Fetch Market Indices
@@ -244,7 +326,7 @@ export async function fetchMarketsData() {
       });
       if (!res.ok) continue;
       const xml = await res.text();
-      const parsed = parseBusinessRss(xml, feed);
+      const parsed = parseBusinessRss(xml, feed, existingSlugs);
       console.log(`✅ [Markets RSS] ${feed.name}: ${parsed.length} stories`);
       newsPool.push(...parsed);
     } catch (err) {
