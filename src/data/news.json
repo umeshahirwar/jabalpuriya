@@ -1,23 +1,25 @@
 {
-  "lastUpdated": "2026-11-21T08:41:06.430Z",
-  "totalStories": 248,
+  "lastUpdated": "2026-11-22T08:40:31.200Z",
+  "totalStories": 274,
   "sources": [
     "Mint (LiveMint)",
-    "Free Press Journal",
+    "HinduPost",
     "The Economic Times",
+    "DD News",
+    "Jagran",
+    "Business Standard",
+    "NiftyTrader",
+    "Free Press Journal",
     "Jagran Josh",
+    "The Hitavada",
     "Bhaskar English",
     "Social News XYZ",
-    "DD News",
-    "Business Standard",
     "Facebook",
     "TaxGuru",
-    "Jagran",
     "Navbharat Live",
     "Upstox",
     "AajTak",
     "Hindustan",
-    "The Hitavada",
     "Daijiworld",
     "India TV Hindi",
     "Udaipur Kiran",
@@ -26,19 +28,23 @@
     "Instagram",
     "ETV Bharat",
     "The Times of India",
+    "Lokmat Times",
     "Dainik Bhaskar",
+    "DNA India",
     "Singrauli Mirror",
     "CarDekho",
     "Patrika News",
     "APAC Media",
     "Bar and Bench",
     "Inshorts",
+    "YouTube",
     "bhaskarhindi.com",
     "The News Mill",
     "hindi.revoi.in",
     "매일경제",
     "rajexpress.com",
     "https://whispersinthecorridors.net/",
+    "PSU India",
     "MP Breaking News",
     "rojgarpulse.in",
     "Rediff",
@@ -81,6 +87,385 @@
   ],
   "articles": [
     {
+      "id": "biz-TWludCBFeHBs-0",
+      "title": "Mint Explainer| How Sebi’s margin tweaks may boost agri commodities",
+      "slug": "mint-explainer-how-sebis-margin-tweaks-may-boost-agri-commodities",
+      "excerpt": "Lower margin requirements can improve capital efficiency for traders and brokers, potentially encouraging greater participation in commodity derivatives.",
+      "content": "Lower margin requirements can improve capital efficiency for traders and brokers, potentially encouraging greater participation in commodity derivatives.",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/sebi-agricultural-commodity-trading-margins-liquidity-11795330448989.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/INDIA-SEBI-FOREIGN-INVESTORS-0_1795336275840_NonT_1795336288109_54jR_1a27879d-3fd9-47ef-8064-8885c095a32c_Zeh8.JPG",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": true,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-V2VXb3JrIElu-1",
+      "title": "WeWork India share price jumps 40% in 6 months; ICICI Direct sees 37% more gains ahead - Buy? Check Target",
+      "slug": "wework-india-share-price-jumps-40-in-6-months-icici-direct-sees-37-more-gai",
+      "excerpt": "WeWork India shares fell 1.60% to ₹683.30 on Friday, extending weekly losses, but have gained about 40% in six months. ICICI Securities expects the company to fund planned capex internally and forecasts 22%...",
+      "content": "WeWork India shares fell 1.60% to ₹683.30 on Friday, extending weekly losses, but have gained about 40% in six months. ICICI Securities expects the company to fund planned capex internally and forecasts 22%...",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/wework-india-share-price-jumps-40-in-6-months-icici-direct-sees-37-more-gains-ahead-buy-check-target-11795334473941.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/WeWork_India_Share_Price_Target_1795334609754_EzCG_1795334621862_eIj9_0fee33a5-f97c-4d36-96db-1bc9ae18f96b_fYo9.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-V2hhdCBpcyBm-2",
+      "title": "What is future of gold rates? Price crash continues as AI selloff, Fed rate-hike concerns weigh on investors' sentiment",
+      "slug": "what-is-future-of-gold-rates-price-crash-continues-as-ai-selloff-fed-rate",
+      "excerpt": "Gold fell for a fifth consecutive day, recording its steepest weekly decline since March as expectations of a US Federal Reserve rate hike, a stronger dollar, and a selloff in AI-linked stocks weighed on pre...",
+      "content": "Gold fell for a fifth consecutive day, recording its steepest weekly decline since March as expectations of a US Federal Reserve rate hike, a stronger dollar, and a selloff in AI-linked stocks weighed on pre...",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/commodities/what-is-future-of-gold-rates-price-crash-continues-as-ai-selloff-fed-rate-hike-concerns-weigh-on-investors-sentiment-11795325490076.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/gold_price_outlook_1795330465931_Eekr_1795330466027_QXIY_1d9395e8-fea4-4fcb-a503-c1c3f88ef775_xz7Z.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-VG9wIDMgc3Rv-3",
+      "title": "Top 3 stocks to buy: Swiggy, Tata Chemicals, Amber Enterprises by Ganesh Dongre of Anand Rathi | Targets, stop-loss",
+      "slug": "top-3-stocks-to-buy-swiggy-tata-chemicals-amber-enterprises-by-ganesh-dongr",
+      "excerpt": "Stock market prediction: Ganesh Dongre of Anand Rathi believes that Dalal Street bias has improved and a decisive breakout by the Nifty 50 above 26,500 would further strengthen the bullish outlook",
+      "content": "Stock market prediction: Ganesh Dongre of Anand Rathi believes that Dalal Street bias has improved and a decisive breakout by the Nifty 50 above 26,500 would further strengthen the bullish outlook",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/top-3-stocks-to-buy-swiggy-tata-chemicals-amber-enterprises-by-ganesh-dongre-of-anand-rathi-targets-stoploss-11795312924053.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/Ganesh_Dongre_stock_recommendations_today_1795313323282_a9Cy_1795313323405_dnMD_e22b8dc7-08d1-433c-842e-30adf2f49017_Rc22.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-UGVubnkgc3Rv-5",
+      "title": "Penny stock under ₹10 with strong fundamentals, high book value; do you own this Reliance Group share? Target, SL",
+      "slug": "penny-stock-under-10-with-strong-fundamentals-high-book-value-do-you-own-th",
+      "excerpt": "Penny stock under ₹10: The Reliance Group company has a book value of around ₹26, which means the microcap stock is trading at a huge discount with price-to-book ratio of around 0.35",
+      "content": "Penny stock under ₹10: The Reliance Group company has a book value of around ₹26, which means the microcap stock is trading at a huge discount with price-to-book ratio of around 0.35",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/penny-stock-under-rs-10-with-strong-fundamentals-high-book-value-do-you-own-this-reliance-group-share-target-sl-11795316117383.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/Penny_Stock_under_Rs_10_with_high_book_value_1795316571258_wu8X_1795316571377_nOGg_14287839-11f0-41d5-b73e-c53962607fc0_WEFu.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-V2FsbCBTdHJl-6",
+      "title": "Wall Street sell-off: Is the worst over? Goldman Sachs warns of fresh selling wave, flags 3 recovery triggers",
+      "slug": "wall-street-sell",
+      "excerpt": "Goldman Sachs warns that systematic investors may drive another substantial wave of selling after the S&P 500 entered correction territory.",
+      "content": "Goldman Sachs warns that systematic investors may drive another substantial wave of selling after the S&P 500 entered correction territory.",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/wall-street-sell-off-is-the-worst-over-goldman-sachs-warns-of-fresh-selling-wave-flags-3-recovery-triggers-11795316021375.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/goldman_1795318294472_fk60_1795318309760_sPAE_54dd879f-8f81-473d-84c0-ba6d4e03c912_0HMn.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-QmVzdCAzIHN0-7",
+      "title": "Best 3 stocks to buy under ₹100: IDFC First Bank, Jayaswal Neco Industries, Sagility by Sumeet Bagadia | Targets, SL",
+      "slug": "best-3-stocks-to-buy-under-100-idfc-first-bank-jayaswal-neco-industries-sag",
+      "excerpt": "Stock market prediction: Sumeet Bagadia believes that Dalal Street bias has improved following the sharp rally in Indian indices",
+      "content": "Stock market prediction: Sumeet Bagadia believes that Dalal Street bias has improved following the sharp rally in Indian indices",
+      "source": "Mint (LiveMint)",
+      "sourceUrl": "https://www.livemint.com/market/stock-market-news/best-3-stocks-to-buy-under-rs-100-idfc-first-bank-jayaswal-neco-industries-sagility-by-sumeet-bagadia-targets-sl-11795278599364.html",
+      "category": "Stock Market",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/21/1600x900/logo/Sumeet_Bagadia_stock_reccommmendations_today_1795278875991_m8SW_1795278876220_Qe12_6b9d4901-6de5-4211-b900-2879c1f6a3d7_kIu6.png",
+      "lang": "en",
+      "publishedAt": "2026-11-22T08:40:29.080Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "jbp-mwrl70bf-25-vy3x",
+      "title": "खुद को हिंदू बताकर दोस्ती, फिर मतांतरण का दबाव: जबलपुर - HinduPost",
+      "slug": "खुद-को-हिंदू-बताकर-दोस्ती-फिर-मतांतरण-का-दबाव-जबलपुर",
+      "excerpt": "खुद को हिंदू बताकर दोस्ती, फिर मतांतरण का दबाव: जबलपुर.",
+      "content": "खुद को हिंदू बताकर दोस्ती, फिर मतांतरण का दबाव: जबलपुर.",
+      "category": "Local News",
+      "source": "HinduPost",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQjBhZ3hOcnNvWTVMOWtvcTZOZGRqRUg5c1ZHSm9CbHJoUzIyRGJ3NGZtS3FjN2hIa25ZVEdBeFU5NXF1ZVBmWkhPYXNORXYxVzhsUldkY2FEbkYtRXNaSDVESlNvalRmNzlEckdOLUMzNTNhbHFXZk5FSi04ZlpsdXdUWTdUS3Rwekd1OHVKNXB0QXBmV1dn?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-22T07:00:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "biz-SW52SVQgSVBP-0",
+      "title": "InvIT IPO rush gathers pace; 4-5 private trusts likely to go public by Mar 2027]]>",
+      "slug": "invit-ipo-rush-gathers-pace-4",
+      "excerpt": "Four to five Infrastructure Investment Trusts are expected to launch public offerings to raise Rs 17,000 crore by 2027. These offerings aim to mobilise long-term capital for infrastructure development while...",
+      "content": "Four to five Infrastructure Investment Trusts are expected to launch public offerings to raise Rs 17,000 crore by 2027. These offerings aim to mobilise long-term capital for infrastructure development while...",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/markets/ipos/fpos/invit-ipo-rush-gathers-pace-4-5-private-trusts-likely-to-go-public-by-mar-2027/articleshow/136069094.cms",
+      "category": "Stock Market",
+      "imageUrl": "https://img.etimg.com/photo/msid-136069094,imgsize-41748.cms",
+      "lang": "en",
+      "publishedAt": "2026-11-22T06:45:10.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-NSBwZW5ueSBz-1",
+      "title": "5 penny stocks plunge up to 68% in six months. Do you own any?]]>",
+      "slug": "5-penny-stocks-plunge-up-to-68-in-six-months-do-you-own-any",
+      "excerpt": "Five BSE Smallcap penny stocks have fallen between 21% and 68% in recent months. Kalind and Empower India led the declines, plunging 68% and 62%, respectively.]]>",
+      "content": "Five BSE Smallcap penny stocks have fallen between 21% and 68% in recent months. Kalind and Empower India led the declines, plunging 68% and 62%, respectively.]]>",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/markets/stocks/news/5-penny-stocks-plunge-up-to-68-in-six-months-do-you-own-any/slideshow/136069072.cms",
+      "category": "Stock Market",
+      "imageUrl": "https://img.etimg.com/photo/msid-136068975,imgsize-10749.cms",
+      "lang": "en",
+      "publishedAt": "2026-11-22T06:33:45.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-UmVsaWFuY2Ug-2",
+      "title": "Reliance Brands FY26 revenue up 3.8% to Rs 3,390.9 crore; loss narrows to Rs 137 crore]]>",
+      "slug": "reliance-brands-fy26-revenue-up-38-to-rs-33909-crore-loss-narrows-to-rs-137",
+      "excerpt": "Reliance Brands has marked a significant financial milestone, achieving a revenue of Rs 3,390.89 crore for FY26 and reducing losses. Operating more than 1,085 Points of Sale nationwide, the brand continues t...",
+      "content": "Reliance Brands has marked a significant financial milestone, achieving a revenue of Rs 3,390.89 crore for FY26 and reducing losses. Operating more than 1,085 Points of Sale nationwide, the brand continues t...",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/markets/stocks/earnings/reliance-brands-fy26-revenue-up-3-8-to-rs-3390-9-crore-loss-narrows-to-rs-137-crore/articleshow/136068185.cms",
+      "category": "Stock Market",
+      "imageUrl": "https://img.etimg.com/photo/msid-136068185,imgsize-169960.cms",
+      "lang": "en",
+      "publishedAt": "2026-11-22T05:44:52.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-4KSt4KS4KSw4-2",
+      "title": "भारतीय शेयर बाजार की मामूली बढ़त के साथ शुरुआत, सेंसेक्स 96 अंक चढ़ा; निफ्टी 23,084 पर",
+      "slug": "भारतीय-शेयर-बाजार-की-मामूली-बढ़त-के-साथ-शुरुआत-सेंसेक्स-96-अंक-चढ़ा-निफ्टी",
+      "excerpt": "भारतीय शेयर बाजार की मामूली बढ़त के साथ शुरुआत, सेंसेक्स 96 अंक चढ़ा; निफ्टी 23,084 पर — भारतीय शेयर बाजार और व्यापार जगत की ताज़ा रिपोर्ट (DD News)।",
+      "content": "भारतीय शेयर बाजार की मामूली बढ़त के साथ शुरुआत, सेंसेक्स 96 अंक चढ़ा; निफ्टी 23,084 पर — भारतीय शेयर बाजार और व्यापार जगत की ताज़ा रिपोर्ट (DD News)।",
+      "source": "DD News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSnB5WHBkSDNhWGxJMGFFWHhOSWFGRFZsM0pLSk5ZQ29QREJwWnpVdzBZX1BRcy1MX1RxNk1rd3lIbWRxRE83TF9sOWduazhBQUtqbFRzbUd1eU1nUUt1WnN0R0RnMkVIWnNHYVU1ODk5WFBJekd0T0U2MmVYUkxoVVNoYWE4Yjh0d0RhTmNKeDdwYXo2NS1mdE5DNlRyYTVhdUwtSWpZYw?oc=5",
+      "category": "हिंदी बिजनेस",
+      "imageUrl": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1000&q=80",
+      "lang": "hi",
+      "publishedAt": "2026-11-22T04:08:40.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "हिंदी बिजनेस",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-QW50aHJvcGlj-3",
+      "title": "Anthropic's post-debut stumble delivers reality check for AI trade]]>",
+      "slug": "anthropics-post",
+      "excerpt": "Anthropic’s shares fell about 9% after their market debut, deepening concerns over stretched AI valuations and showing that even a marquee listing has not revived investor enthusiasm for the sector. The focu...",
+      "content": "Anthropic’s shares fell about 9% after their market debut, deepening concerns over stretched AI valuations and showing that even a marquee listing has not revived investor enthusiasm for the sector. The focu...",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropics-post-debut-stumble-delivers-reality-check-for-ai-trade/articleshow/136066633.cms",
+      "category": "Stock Market",
+      "imageUrl": "https://img.etimg.com/photo/msid-136066633,imgsize-42900.cms",
+      "lang": "en",
+      "publishedAt": "2026-11-22T03:30:15.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "jbp-mwrl70be-17-i26y",
+      "title": "भोपाल से जबलपुर और पंजाब तक ‘बंटी-बबली’ के खिलाफ शिकायतें, प्रॉपर्टी के नाम करोड़ों की ठगी; पुलिस ने रिमांड पर लिया - fraudulent builder couple falls into police net remanded to three day police custody - Jagran",
+      "slug": "भोपाल-से-जबलपुर-और-पंजाब-तक-बंटी-बबली-के-खिलाफ-शिकायतें-प्रॉपर्टी-के-नाम-कर",
+      "excerpt": "भोपाल से जबलपुर और पंजाब तक ‘बंटी-बबली’ के खिलाफ शिकायतें, प्रॉपर्टी के नाम करोड़ों की ठगी; पुलिस ने रिमांड पर लिया - fraudulent builder couple falls into police net remanded to three day police custody.",
+      "content": "भोपाल से जबलपुर और पंजाब तक ‘बंटी-बबली’ के खिलाफ शिकायतें, प्रॉपर्टी के नाम करोड़ों की ठगी; पुलिस ने रिमांड पर लिया - fraudulent builder couple falls into police net remanded to three day police custody.",
+      "category": "Local News",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT2dyYThaWE1nYm9iSmxuTmNRaFQ0TjFubUQzbHd3ZmlPQldFbEVKREt3NXZYYXNhX1FMcXFfNE96UFRkanMydkJ4ZGx1OGpFMEYyRktyUXQtUHpKbFRjWnhnRVFsa0JCVGg2M2pzTHNwaXFiczhrdTZKSElWV3lkU0xWS1VXZkR1YURsSTVScXFwNElqeU4tZVFHMGRUYlYyLTRqUHNiUjcxaTl6RzVYaTFLcFA4YnhHSkNXeFc1RU1MOW5PTXcySnRhLTFUYm1l?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-21T20:30:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwrl70bg-43-hxek",
+      "title": "'जज की कुर्सी पर नहीं बैठे एआई', बोले जस्टिस जोयमाल्या बागची - justice joymalya bagchi ai not to replace judges in courts - Jagran",
+      "slug": "जज-की-कुर्सी-पर-नहीं-बैठे-एआई-बोले-जस्टिस-जोयमाल्या-बागची---justice-joymaly",
+      "excerpt": "'जज की कुर्सी पर नहीं बैठे एआई', बोले जस्टिस जोयमाल्या बागची - justice joymalya bagchi ai not to replace judges in courts.",
+      "content": "'जज की कुर्सी पर नहीं बैठे एआई', बोले जस्टिस जोयमाल्या बागची - justice joymalya bagchi ai not to replace judges in courts.",
+      "category": "Local News",
+      "source": "Jagran",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZExtN1Z4eUxEZXg2TGdkTU9DMFJtN2NocVlOVVJtVGZwWWpkUVFaNEVqTVA3WmFveWxoRVBXODMtRkRpYjJqX2RVTGduMDg4YUpxMWtkNFFuSFFOemkzclRTRkpvdHNmV1BYNU1hS2hFUzFJVElFU2ZxVDlkUVJwazFhR3JnRjB2WWVSdFIzQkdxVkxXQjlzSmtmU0hiMmxndUh3WXlMeHJ4VWtuaWNtT0VKM2t3R1gyYjEw?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-21T18:22:00.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "biz-UkJJIEd1diBv-1",
+      "title": "RBI Guv opens financial inclusion camp in Maharashtra, focuses on re-KYC",
+      "slug": "rbi-guv-opens-financial-inclusion-camp-in-maharashtra-focuses-on-re",
+      "excerpt": "RBI Guv opens financial inclusion camp in Maharashtra, focuses on re-KYC — Latest Indian stock market, corporate, and economy coverage reported by Business Standard.",
+      "content": "RBI Guv opens financial inclusion camp in Maharashtra, focuses on re-KYC — Latest Indian stock market, corporate, and economy coverage reported by Business Standard.",
+      "source": "Business Standard",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdU9hcFplc2FObWp4UG1fVGRyYS13eTdnZnlZTmIxUmE2OWVhOVVxT3hmMUFfd1V0SjgxV3RjVktxdVF5Z1prOS0xOTFrUkthc2ZMSWZtWnFVbUtPX0ZGMG9lM2RJdFM4azZ0VXh5VGVqdzBqT1lmQnI2WXp3d0R5cnEtNlRVamUzYW5ubmNLanNFYTA3MUxhdWYzMThZNm1ySUxiaEJ0dGg1SGFlX2d5Qkw3Wk1UZ0ZuZTZqVW1sdGFRVm05ckRoMHEtNjhfQUpTSzhfMk1lb1BJQdIB2gFBVV95cUxQdU9hcFplc2FObWp4UG1fVGRyYS13eTdnZnlZTmIxUmE2OWVhOVVxT3hmMUFfd1V0SjgxV3RjVktxdVF5Z1prOS0xOTFrUkthc2ZMSWZtWnFVbUtPX0ZGMG9lM2RJdFM4azZ0VXh5VGVqdzBqT1lmQnI2WXp3d0R5cnEtNlRVamUzYW5ubmNLanNFYTA3MUxhdWYzMThZNm1ySUxiaEJ0dGg1SGFlX2d5Qkw3Wk1UZ0ZuZTZqVW1sdGFRVm05ckRoMHEtNjhfQUpTSzhfMk1lb1BJQQ?oc=5",
+      "category": "India Business",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80",
+      "lang": "en",
+      "publishedAt": "2026-11-21T17:51:33.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "India Business",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-TmlmdHkgZXll-4",
+      "title": "Nifty eyes 26,200 as rally strengthens; 6 sectors signal outperformance]]>",
+      "slug": "nifty-eyes-26200-as-rally-strengthens-6-sectors-signal-outperformance",
+      "excerpt": "Nifty surged 2.61% last week, gaining 656 points amid strong FII inflows and improving technical indicators. Resistance lies at 25,950–26,200, while banking, IT and financial services lead sectoral momentum....",
+      "content": "Nifty surged 2.61% last week, gaining 656 points amid strong FII inflows and improving technical indicators. Resistance lies at 25,950–26,200, while banking, IT and financial services lead sectoral momentum....",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-eyes-26200-as-rally-strengthens-6-sectors-signal-outperformance/articleshow/136050218.cms",
+      "category": "Stock Market",
+      "imageUrl": "https://img.etimg.com/photo/msid-136050218,imgsize-154742.cms",
+      "lang": "en",
+      "publishedAt": "2026-11-21T09:39:05.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
       "id": "biz-TnZpZGlhIHZz-3",
       "title": "Nvidia vs Anthropic shares: AI chip stock tanks 14% while Claude-maker falls 8.5% - See who wins in earnings, valuation?",
       "slug": "nvidia-vs-anthropic-shares-ai-chip-stock-tanks-14-while-claude-maker-falls",
@@ -93,7 +478,7 @@
       "lang": "en",
       "publishedAt": "2026-11-21T08:41:04.119Z",
       "readTime": "2 min read",
-      "isFeatured": true,
+      "isFeatured": false,
       "tags": [
         "Stock Market",
         "Indian Stock Market",
@@ -130,8 +515,8 @@
       "id": "biz-VG9wIDMgc3Rv-5",
       "title": "Top 3 stocks to buy: Axis Bank, Bajaj Finance, HDFC Life by Sumeet Bagadia | Targets, stop-loss, stock market prediction",
       "slug": "top-3-stocks-to-buy-axis-bank-bajaj-finance-hdfc-life-by-sumeet-bagadia-tar",
-      "excerpt": "Stock market prediction: Sumeet Bagadia of Choice Broking believes that Dalal Street bias has improved after sharp rally in the Indian indices",
-      "content": "Stock market prediction: Sumeet Bagadia of Choice Broking believes that Dalal Street bias has improved after sharp rally in the Indian indices",
+      "excerpt": "Stock market prediction: Sumeet Bagadia of Choice Broking believes that Dalal Street bias has improved after sharp rally in the Indian indices.",
+      "content": "Stock market prediction: Sumeet Bagadia of Choice Broking believes that Dalal Street bias has improved after sharp rally in the Indian indices.",
       "source": "Mint (LiveMint)",
       "sourceUrl": "https://www.livemint.com/market/stock-market-news/top-3-stocks-to-buy-axis-bank-bajaj-finance-hdfc-life-by-sumeet-bagadia-targets-stop-loss-stock-market-prediction-11795228228586.html",
       "category": "Stock Market",
@@ -265,6 +650,29 @@
       ]
     },
     {
+      "id": "biz-V2h5IEhpbmR1-0",
+      "title": "Why Hinduja Leyland Finance Needs a 4-6 Week Independent Review of Its Loan Systems",
+      "slug": "why-hinduja-leyland-finance-needs-a-4",
+      "excerpt": "Why Hinduja Leyland Finance Needs a 4-6 Week Independent Review of Its Loan Systems — Latest Indian stock market, corporate, and economy coverage reported by NiftyTrader.",
+      "content": "Why Hinduja Leyland Finance Needs a 4-6 Week Independent Review of Its Loan Systems — Latest Indian stock market, corporate, and economy coverage reported by NiftyTrader.",
+      "source": "NiftyTrader",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE11UC1nSXZLRTU1NlJxWnF5QkVRa2xYY1FoRXA2czNIVjhFcjJac2w0RmhTREthdUhQSXZzVFU1UWJfekpvQVlWQlh1ZDd4UkNCTUtCYUgycU9xUkxNWUQ3LXR4eW9JTTlneUx1R0ZfZk0?oc=5",
+      "category": "India Business",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80",
+      "lang": "en",
+      "publishedAt": "2026-11-21T08:24:16.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "India Business",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
       "id": "jbp-mwq5rwa0-31-ljml",
       "title": "Jabalpur Rabies Scare: Around 250 Villagers Get Vaccinated After Cow Dies Following Dog Bite - Free Press Journal",
       "slug": "jabalpur-rabies-scare-around-250-villagers-get-vaccinated-after-cow-dies-fo",
@@ -299,6 +707,29 @@
       "isFeatured": false,
       "tags": [
         "Stock Market",
+        "Indian Stock Market",
+        "Business News",
+        "NSE",
+        "BSE",
+        "India Economy"
+      ]
+    },
+    {
+      "id": "biz-J0xvb2sgYXQg-3",
+      "title": "'Look at India': Trump cites 7% growth to criticise US Fed's rate policy",
+      "slug": "look-at-india-trump-cites-7-growth-to-criticise-us-feds-rate-policy",
+      "excerpt": "'Look at India': Trump cites 7% growth to criticise US Fed's rate policy — Latest Indian stock market, corporate, and economy coverage reported by Business Standard.",
+      "content": "'Look at India': Trump cites 7% growth to criticise US Fed's rate policy — Latest Indian stock market, corporate, and economy coverage reported by Business Standard.",
+      "source": "Business Standard",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZHFTa1RZQU9MWE1pOVNOaHpNMUlJOG1vaF9lZ1F0Y3hvcVpKUXAtX1VsXzdNdG5ncWhRVXRxZkZuY3lPV3dudnpmUXhGZVBEX1YtZmVRcGlMZXNadWlnbzFVd0J3Rk9ka2otMUZETHpNSVNWMjhxMm9CV2hYQlNVNWFNbm00X2FmV0w4NG81dVRBTzltNEFFNTlTSjBkQzU1dmY0LXVrRlFKQVJ3cVdZanFqdldPOXd3ZGRVdG4xaWtOeUhPVGY2MjVpU0tvWTdIYWU40gHTAUFVX3lxTE5kcVNrVFlBT0xYTWk5U05oek0xSUk4bW9oX2VnUXRjeG9xWkpRcC1fVWxfN010bmdxaFFVdHFmRm5jeU9Xd252emZReEZlUERfVi1mZVFwaUxlc1p1aWdvMVV3QndGT2Rrai0xRkRMek1JU1YyOHEyb0JXaFhCU1U1YU1ubTRfYWZXTDg0bzV1VEFPOW00QUU1OVNKMGRDNTV2ZjQtdWtGUUpBUndxV1lqcWp2V085d3dkZFV0bjFpa055SE9UZjYyNWlTS29ZN0hhZTg?oc=5",
+      "category": "India Business",
+      "imageUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80",
+      "lang": "en",
+      "publishedAt": "2026-11-21T07:03:40.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "India Business",
         "Indian Stock Market",
         "Business News",
         "NSE",
@@ -344,6 +775,25 @@
       "isFeatured": false,
       "tags": [
         "Education & Tech",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwrl7001-17-3p07",
+      "title": "Speeding car mows down two onlookers near burning mini-truck in Beltarodi - The Hitavada",
+      "slug": "speeding-car-mows-down-two-onlookers-near-burning-mini-truck-in-beltarodi",
+      "excerpt": "Speeding car mows down two onlookers near burning mini-truck in Beltarodi.",
+      "content": "Speeding car mows down two onlookers near burning mini-truck in Beltarodi.",
+      "category": "Local News",
+      "source": "The Hitavada",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaGEzU291N3d6RnVIcVFkbUJBOFhTRGhSNGRSR1ZWSXl6X1FtSDhjV29EX0d1NVZSeFRhdXcyOE5sb0RCaHNsbTY4UWstQnVpLTRGck5TdG1lYkxOblJmNDFKR1RBSk9qMGhfMzU3OHF3cDd0UmROYVJKdnZuTnQwUGdGUTNxRHFhWXY0bXFlVnJxRHVuaUFqZllEZGNaOFhjY2ZaejJIaTVaRXM0UHRwUmhfdFo3cURVX1I3anFxS00?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-21T06:19:22.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
         "Jabalpur",
         "Madhya Pradesh"
       ]
@@ -698,6 +1148,25 @@
         "NSE",
         "BSE",
         "India Economy"
+      ]
+    },
+    {
+      "id": "jbp-mwrl7003-55-hu06",
+      "title": "Jabalpur Knife Attack: ‘Maine Hath Jod Liya...,’ Minor Boys Attack Student With Knife & Belts Near Sangram - Free Press Journal",
+      "slug": "jabalpur-knife-attack-maine-hath-jod-liya-minor-boys-attack-student-with-kn",
+      "excerpt": "Jabalpur Knife Attack: ‘Maine Hath Jod Liya...,’ Minor Boys Attack Student With Knife & Belts Near Sangram.",
+      "content": "Jabalpur Knife Attack: ‘Maine Hath Jod Liya...,’ Minor Boys Attack Student With Knife & Belts Near Sangram.",
+      "category": "Local News",
+      "source": "Free Press Journal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNeGJjR2tQYW1VZTh4WnBLWWNnVjR2OWs1al8xSEJuRXFuR29yaUZxcnJSRjdGaVQ4a216VUlPcVNyZjRKaEVOSlRhdUdGUkcxZjRwT3Mzc1pldWxiRVVrOVJ3OGhYTTE2SHJWeEhiaVI5QWl4M3dGWWI4N1RvdzZmNUFqcnpEeUtfSmNoSWhOTk00bUZ2VkNnblpIbjBJYUVMRGlEQUhqZVl3MFJjN0ZyT2RSN0NMQmdlLU9zZ3czUkNPLVVjSkJIRnVYZUotdWhDSklLMGxSeUctS1J6U2VvVmxlTWFqWGNwbFo3eGhZZDlkakczSkF2NElhZUvSAfwBQVVfeXFMTXhiY0drUGFtVWU4eFpwS1ljZ1Y0djlrNWpfMUhCbkVxbkdvcmlGcXJyUkY3RmlUOGttelVJT3FTcmY0SmhFTkpUYXVHRlJHMWY0cE9zM3NaZXVsYkVVazlSdzhoWE0xNkhyVnhIYmlSOUFpeDN3RlliODdUb3c2ZjVBanJ6RHlLX0pjaEloTk5NNG1GdlZDZ25aSG4wSWFFTERpREFIamVZdzBSYzdGck9kUjdDTEJnZS1Pc2d3M1JDTy1VY0pCSEZ1WGVKLXVoQ0pJSzBsUnlHLUtSelNlb1ZsZU1halhjcGxaN3hoWWQ5ZGpHM0pBdjRJYWVL?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-20T09:42:48.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
       ]
     },
     {
@@ -1321,6 +1790,25 @@
       ]
     },
     {
+      "id": "jbp-mwrl7004-56-88dt",
+      "title": "Arrested in Patna, alleges custodial torture: Picked up 800 km away in assault case; Mayank claims police b... - Bhaskar English",
+      "slug": "arrested-in-patna-alleges-custodial-torture-picked-up-800-km-away-in-assaul",
+      "excerpt": "Arrested in Patna, alleges custodial torture: Picked up 800 km away in assault case; Mayank claims police b...",
+      "content": "Arrested in Patna, alleges custodial torture: Picked up 800 km away in assault case; Mayank claims police b...",
+      "category": "Local News",
+      "source": "Bhaskar English",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaGo2V2dsRjZQNWEyWFFnbklTR1BqZjQ0NEdwNkRoYUs2ZUt2d1Nja21ZMm5HdlhIODI3ZEFXR01oNjJrbThhXzZ5NE5USEh0V3NUVDlDUnItSzNyMFJQa19GZnE3U2VzTXIwT3UtaC1MaS1PQ1FWa2t0Y0JuV0NZZTlrTVkyUUxGQXdpQlEySkhlX0VrOXMyMlpaUGYwd2QyUFdET1NsMjhON1JKdml5X1lYNVcxVEVMNXNJT0tnTVNwRWdRUDg5TnFmU3RuRk3SAc8BQVVfeXFMUGhqNldnbEY2UDVhMlhRZ25JU0dQamY0NDRHcDZEaGFLNmVLdndTY2ttWTJuR3ZYSDgyN2RBV0dNaDYya204YV82eTROVEhIdFdzVFQ5Q1JyLUszcjBSUGtfRmZxN1Nlc01yME91LWgtTGktT0NRVmtrdGNCbldDWWU5a01ZMlFMRkF3aUJRMkpIZV9FazlzMjJaWlBmMHdkMlBXRE9TbDI4TjdSSnZpeV9ZWDVXMVRFTDVzSU9LZ01TcEVnUVA4OU5xZlN0bkZN?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-20T01:11:53.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "biz-UkJJIHByb2Jl-1",
       "title": "RBI probes suspicious off-market trades in illiquid state bonds",
       "slug": "rbi-probes-suspicious-off",
@@ -1534,6 +2022,25 @@
       ]
     },
     {
+      "id": "jbp-mwrl7003-44-h26y",
+      "title": "Jabalpur: Speeding Truck Kills Three, Injures Two Near Dhaba - Lokmat Times",
+      "slug": "jabalpur-speeding-truck-kills-three-injures-two-near-dhaba",
+      "excerpt": "Jabalpur: Speeding Truck Kills Three, Injures Two Near Dhaba.",
+      "content": "Jabalpur: Speeding Truck Kills Three, Injures Two Near Dhaba.",
+      "category": "Local News",
+      "source": "Lokmat Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc3c2QTdSRzI4WTEzcXpVMFQ0LTh1RWZRdFZOQzBQeVdSWWZKYW5QRnBORDEtZ2h1UXR0N2VpbXJvUHhyLTJMaXpaeTBUcGNiYS1EY05qQjkxckFrX3ZlS1hMWFp5dl9rNlRTVTk1ZW94bEMwLWJqM3d6MGVXYVdRTjY3RjVTcnQ4ZmJkdktKWm1iQzV5N2lIYXUydXFFTWpibXk4RWRMNVfSAa4BQVVfeXFMUFlZNy1HWmVqeTBzTmIxTktmSHNyNHpWUEVqdjg1c2ZjbTZ1UjNRb29NMnlwSXZkN1ZUd1RUVXFzbU1PbTdRVjVpcGU5TXU3MjhReDAxRnZ2cWpYSHN6NUN6MlFFeUdpSm5aUlVJZzVXd29Db3JKa3hpMGQzSW5fdFhFenVCN0R4STlmUF9nbGNOODlJY1E2M0cwYTVwb1NSQWZrdlhWZU0yUnNPN0JR?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-19T12:30:36.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "jbp-mwor13r0-40-b1vu",
       "title": "वन विभाग ने 11.53 हेक्टेयर वनभूमि से अतिक्रमण हटाया: सिहोरा में 12 पर कार्रवाई, 200 कंटूर ट्रेंच और 600 मीट... - Dainik Bhaskar",
       "slug": "वन-विभाग-ने-1153-हेक्टेयर-वनभूमि-से-अतिक्रमण-हटाया-सिहोरा-में-12-पर-कार्रवा",
@@ -1582,6 +2089,25 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUFotTURYWlEzU3RlV2JrbTE4Q1EyemRWU2xVdEdZTWg2MkdnNHJkVWRhczB5S1B2WGhDQnZrajBHOGppZmU2aVUxcDZLYTRHQXlOUDFvd3dGLUNhM1Vld0ZfcFRLRTc1c3JwbDBHbEJGdktWazBXbVhkVktqZGFXSXJHcEt0MjdqeWcxS0R2Wl9LdUZfeWFNNXhxX01fY2lpVDMySGlEenlfRkY5LWhHNy02dndDeGRFcGhUb2JXNNIBxAFBVV95cUxOUXN2UWh1ajdNRHVwSVllVmRERlRCN2NVQTlhakY3WU00SVZJTHpSSVd6cno0NWkyQmxhOTllS3p5S3UzMm8tQklqS050Qk9yMnVIc2FvS0pkNXV0U1NGV1hfdmhXbWw3Q2VQaFA1ekJYbkJ0S2VKa1htT2NZemdxSGJCSERzckdEbFYxSkhhdVRVYUJyVkk4TUVJQVRVQ0x0WlZhaFJaY2ZUOVhpZWk4amE5dmc1NURTMHB6WHpOWXZFTXQy?oc=5",
       "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
       "publishedAt": "2026-11-19T10:58:50.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwrl7003-48-3cv3",
+      "title": "Jabalpur accident: 3 killed as speeding maize truck crashes into roadside dhaba on NH-45 - DNA India",
+      "slug": "jabalpur-accident-3-killed-as-speeding-maize-truck-crashes-into-roadside-dh",
+      "excerpt": "Jabalpur accident: 3 killed as speeding maize truck crashes into roadside dhaba on NH-45.",
+      "content": "Jabalpur accident: 3 killed as speeding maize truck crashes into roadside dhaba on NH-45.",
+      "category": "Local News",
+      "source": "DNA India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNm9XWGVZSmhINzRFemhtWkE4Q2U5NTgtUTlXSGxmWUhqWVpZSlRNbjZLUEIybzExM1RWcHR4el95aGZlWnZUdjVDQXcwdDhtRVE0b2tjazUybHhkZFRWVmdSc04tNjlnMWhzQkcxckVLbXBfUTh5Wkk0bjRDWFZoVU9JMzZiSkZtQ3BhVE5CS2J5WEVGZFlBbl9fVU9xTzhYdG9zRWUyTmIwXzdzTjlvNTN5VzFPU2RFc1hvb3lHd1JkZGtJVVdGbzBnMERXdVdGb1Nv0gHTAUFVX3lxTE02b1dYZVlKaEg3NEV6aG1aQThDZTk1OC1ROVdIbGZZSGpZWllKVE1uNktQQjJvMTEzVFZwdHh6X3loZmVadlR2NUNBdzB0OG1FUTRva2NrNTJseGRkVFZWZ1JzTi02OWcxaHNCRzFyRUttcF9ROHlaSTRuNENYVmhVT0kzNmJKRm1DcGFUTkJLYnlYRUZkWUFuX19VT3FPOFh0b3NFZTJOYjBfN3NOOW81M3lXMU9TZEVzWG9veUd3UmRka0lVV0ZvMGcwRFd1V0ZvU28?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-19T09:51:00.000Z",
       "readTime": "2 min read",
       "isFeatured": false,
       "tags": [
@@ -2294,6 +2820,25 @@
       ]
     },
     {
+      "id": "jbp-mwrl7001-18-c8dw",
+      "title": "धनगर यादव समाज, जबलपुर मध्य प्रदेश द्वारा मंगलवार, 17 नवंबर को यादव मोहल्ला, रामपुर में गोपाष्टमी मह - YouTube",
+      "slug": "धनगर-यादव-समाज-जबलपुर-मध्य-प्रदेश-द्वारा-मंगलवार-17-नवंबर-को-यादव-मोहल्ला-र",
+      "excerpt": "धनगर यादव समाज, जबलपुर मध्य प्रदेश द्वारा मंगलवार, 17 नवंबर को यादव मोहल्ला, रामपुर में गोपाष्टमी मह.",
+      "content": "धनगर यादव समाज, जबलपुर मध्य प्रदेश द्वारा मंगलवार, 17 नवंबर को यादव मोहल्ला, रामपुर में गोपाष्टमी मह.",
+      "category": "Local News",
+      "source": "YouTube",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uamd5NmJ2ck03U2Q4SS10WmFBVkpFTEJCTWtZSHROaHRvbUVMNXByV1NWc1pfc3Rqbjk3aHI3elRsSExuNXd0Mzl6eE14dDZ5SzBvSjFyM2xFMHdn?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-18T15:55:16.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
       "id": "biz-R29sZG1hbiBT-5",
       "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027",
       "slug": "goldman-sachs-sees-rbi-repo-rate-rising-by-75-bps-to-625-by-mid",
@@ -2996,6 +3541,25 @@
       "isFeatured": false,
       "tags": [
         "Local News",
+        "Jabalpur",
+        "Madhya Pradesh"
+      ]
+    },
+    {
+      "id": "jbp-mwrl7003-49-oojm",
+      "title": "NSE Senior Advisor Shailesh K. Pathak Named Vice-Chairman of Jabalpur–Bhopal–Indore Corridor SPV - PSU India",
+      "slug": "nse-senior-advisor-shailesh-k-pathak-named-vice-chairman-of-jabalpurbhopali",
+      "excerpt": "NSE Senior Advisor Shailesh K. Pathak Named Vice-Chairman of Jabalpur–Bhopal–Indore Corridor SPV.",
+      "content": "NSE Senior Advisor Shailesh K. Pathak Named Vice-Chairman of Jabalpur–Bhopal–Indore Corridor SPV.",
+      "category": "Stock Market",
+      "source": "PSU India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZnVzdGlUSzdXVDMxVnd1aDdXTzQwMmtfYUUzVGd0enN2N3JNaWdBTTJ1d2lNNDlUakNvcFhJV2lkMVNRYnRIMTI5WXp6OVVheW1maVRqSXhoeVJyS3VhczVZY1d4OVp5X2xtNXlRckpmQ0J5N0xGaWwxVEkzekVUZ3IzWTJWNmVaMUpmY0VjODRscnBUZGFOdUdiYTRVcjY5U3ZLZXl0bmprRmpXVUQzMWJNRjdTZHZoMm9vNVhCWHdIT0JJUVhramJZNmJLMW5oLWpEVtIB2gFBVV95cUxPVWZTeVZRSnFWb21BTGpKb3hrRUNFd2FWWnllTXd5b1lzTHlXNlNFd0N4UjZxTHh2dk9pYkVBcWlEM28yWmQzbG5YYWxIZXdUd2ZhdlJWak1Gd1IzT2pNM3BqcVREeTdldjBkdnhraG15TzBsQ19YX2djVi0yR19keWNsYXZzR093VGZSTWZKRDMtTDB4ZDBWT0YyM051SlgyNTh4UXV1dzV2SVMtZlhDenF2aUdKOUhBNFVJcjV3QmVFYktFZEtJcU5GLTF5VzBEMWlxNkpfTkNVUQ?oc=5",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80",
+      "publishedAt": "2026-11-18T05:11:54.000Z",
+      "readTime": "2 min read",
+      "isFeatured": false,
+      "tags": [
+        "Stock Market",
         "Jabalpur",
         "Madhya Pradesh"
       ]
