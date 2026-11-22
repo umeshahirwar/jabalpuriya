@@ -1,0 +1,791 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdSenseBanner from '../components/AdSenseBanner.astro';
+import bhaktiData from '../data/bhakti.json';
+
+const today = bhaktiData.todaySnapshot;
+const heritage = bhaktiData.meta.heritage;
+const festivals = bhaktiData.majorFestivals2026;
+const muhurat = bhaktiData.muhuratGuide;
+const monthsJson = JSON.stringify(bhaktiData.months);
+
+const faqs = [
+  {
+    q: "लाला रामस्वरूप रामनारायण पंचांग का संस्कारधानी जबलपुर से क्या ऐतिहासिक संबंध है?",
+    a: "लाला रामस्वरूप रामनारायण पंचांग की स्थापना वर्ष 1934 में संस्कारधानी जबलपुर (मध्य प्रदेश) में हुई थी। पिछले 90 से अधिक वर्षों से यह पंचांग कैलेंडर संपूर्ण भारत में सनातन धर्म के परिवारों, किसानों एवं ज्योतिष प्रेमियों द्वारा दैनिक तिथि, राहुकाल, व्रत, त्योहार एवं फसल मौसम के अचूक आकलन के लिए उपयोग किया जाता है।"
+  },
+  {
+    q: "आज कौन सा व्रत अथवा त्योहार है और भोजन के क्या नियम हैं?",
+    a: `आज ${today.tithi} (${today.vratName}) है। शास्त्रों के अनुसार आज के दिन का आहार नियम: "${today.foodAdvisory}"। ${today.fastingDetail}`
+  },
+  {
+    q: "वर्ष 2026 में विवाह के लिए कौन से महीने शुभ हैं और चातुर्मास कब है?",
+    a: "वर्ष 2026 में 20 जुलाई (देवशयनी एकादशी) से 20 नवंबर (देवउठनी एकादशी) तक चातुर्मास रहेगा, जिसके दौरान विवाह आदि मांगलिक कार्य पूर्णतः वर्जित रहते हैं। विवाह के शुभ लग्न जनवरी, फरवरी, अप्रैल, मई, जून तथा 21 नवंबर (तुलसी विवाह) के बाद दिसंबर में उपलब्ध हैं।"
+  },
+  {
+    q: "संस्कारधानी जबलपुर में कार्तिक पूर्णिमा (देव दिवाली) पर नर्मदा तटों पर क्या आयोजन होते हैं?",
+    a: "कार्तिक पूर्णिमा जबलपुर का विशालतम धार्मिक महापर्व है। इस दिन ग्वारीघाट, भेड़ाघाट, तिलवाराघाट, जिलहरीघाट एवं ललपुर में लाखों श्रद्धालु मां नर्मदा में आस्था की डुबकी लगाते हैं और शाम को 5 लाख से अधिक दीपदान व भव्य महाआरती का आयोजन होता है।"
+  },
+  {
+    q: "नया वाहन, सोना अथवा गृह प्रवेश के लिए सबसे उत्तम अबूझ मुहूर्त कौन सा है?",
+    a: "वैदिक ज्योतिष में अक्षय तृतीया (20 अप्रैल 2026), धनतेरस (06 नवंबर 2026), विजयादशमी (दशहरा) तथा रवि/गुरु पुष्य योग को स्वयं-सिद्ध अबूझ मुहूर्त माना गया है। इन दिनों बिना पंचांग शुद्धि के भी नवीन संपत्ति व वाहन क्रय किए जा सकते हैं।"
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.a
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "होम", "item": "https://jabalpuriya.com/" },
+    { "@type": "ListItem", "position": 2, "name": "भक्ति व पंचांग", "item": "https://jabalpuriya.com/bhakti/" }
+  ]
+};
+---
+
+<Layout
+  title="Bhakti, Panchang & Lala Ramswaroop Calendar 2026 | जबलपुरिया भक्ति व दैनिक पंचांग"
+  description="संस्कारधानी जबलपुर का दैनिक वैदिक पंचांग, लाला रामस्वरूप रामनारायण कैलेंडर 2026, आज की तिथि, शुभ मुहूर्त, राहुकाल, एकादशी व्रत, त्योहार एवं सात्विक आहार नियम।"
+  keywords={[
+    "Lala Ramswaroop Calendar 2026",
+    "लाला रामस्वरूप पंचांग जबलपुर",
+    "Jabalpur Panchang Today",
+    "आज की तिथि जबलपुर",
+    "आज का शुभ मुहूर्त",
+    "राहुकाल जबलपुर",
+    "एकादशी व्रत 2026",
+    "विवाह मुहूर्त 2026",
+    "जबलपुर भक्ति समाचार",
+    "कार्तिक पूर्णिमा ग्वारीघाट",
+    "नर्मदा महाआरती"
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="max-w-7xl mx-auto py-4 sm:py-8 space-y-10">
+
+    <!-- Top Masthead Ad Placement -->
+    <AdSenseBanner slotType="masthead" />
+
+    <!-- Hero Header with Jabalpur Heritage Badge -->
+    <header class="text-center space-y-3.5 max-w-4xl mx-auto">
+      <div class="flex items-center justify-center flex-wrap gap-2">
+        <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/30 shadow-sm">
+          <span>🪔</span> संस्कारधानी भक्ति व दैनिक पंचांग
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+          <span>🏛️</span> लाला रामस्वरूप पंचांग परंपरा (1934 से)
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight font-hindi">
+        दैनिक वैदिक पंचांग एवं लाला रामस्वरूप कैलेंडर 2026
+      </h1>
+      
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
+        संस्कारधानी जबलपुर की 90+ वर्षों की ऐतिहासिक धरोहर पर आधारित दैनिक तिथि, शुभ-अशुभ मुहूर्त, उपवास व आहार नियम, प्रमुख त्योहार एवं मांगलिक मुहूर्त।
+      </p>
+    </header>
+
+    <!-- SECTION 1: TODAY'S LIVE PANCHANG & FOOD/FASTING ADVISORY -->
+    <section class="bg-gradient-to-br from-amber-950 via-[#1c0f04] to-[#0d0701] text-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-amber-800/60 shadow-2xl space-y-6 relative overflow-hidden">
+      <!-- Glow ambient backdrop -->
+      <div class="absolute -top-24 -right-24 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Top Headline Bar -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-amber-800/80 gap-3">
+        <div class="flex items-center space-x-2.5">
+          <span class="px-3 py-1 rounded-lg bg-gradient-to-r from-amber-600 to-orange-500 text-white font-black text-xs uppercase tracking-wider shadow-md">
+            ⚡ आज का पंचांग
+          </span>
+          <span class="text-sm font-bold text-amber-200 font-hindi">
+            {today.weekday}, 23 नवंबर 2026 | विक्रम संवत {bhaktiData.meta.currentVikramSamvat}
+          </span>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold text-amber-300 border border-white/10">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          जबलपुर प्रामाणिक सूर्योदय-सूर्यास्त गणना
+        </div>
+      </div>
+
+      <!-- Main Highlight Card: Tithi & Strict Food / Fasting Rule -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Left: Tithi & Special Day Banner (2 Cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/20 text-amber-300 font-bold text-xs border border-amber-500/30">
+            <span>✨</span> {today.hinduMonth}
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug font-hindi">
+            {today.tithi}
+          </h2>
+
+          <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 backdrop-blur-sm space-y-2">
+            <div class="flex items-center gap-2 text-sm font-black text-amber-300 font-hindi">
+              <span>⚠️</span> आज का आहार व उपवास नियम:
+            </div>
+            <p class="text-xs sm:text-sm text-slate-100 font-medium leading-relaxed">
+              <strong class="text-amber-200 font-bold">{today.foodAdvisory}</strong>. {today.fastingDetail}
+            </p>
+          </div>
+
+          <!-- Alert for tomorrow's big festival in Jabalpur -->
+          <div class="p-3.5 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-200 text-xs sm:text-sm font-bold flex items-center gap-2.5">
+            <span class="text-xl">🪔</span>
+            <span>{today.tomorrowBigEvent}</span>
+          </div>
+        </div>
+
+        <!-- Right: Sun, Moon & Auspicious Muhurat Gauges (1 Col) -->
+        <div class="bg-white/5 rounded-2xl p-5 border border-white/10 space-y-4 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 flex items-center gap-1.5 pb-2 border-b border-white/10">
+              <span>🕒</span> शुभ एवं अशुभ समय
+            </h3>
+
+            <div class="space-y-3 pt-3 text-xs">
+              <div class="flex items-center justify-between p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+                <div>
+                  <span class="font-bold text-emerald-300 block">अभिजीत मुहूर्त (शुभ)</span>
+                  <span class="text-[10px] text-slate-400">सभी मांगलिक कार्य हेतु</span>
+                </div>
+                <span class="font-black text-white">{today.abhijitMuhurat}</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2 rounded-xl bg-red-500/10 border border-red-500/20">
+                <div>
+                  <span class="font-bold text-red-300 block">राहुकाल (वर्जित समय)</span>
+                  <span class="text-[10px] text-slate-400">नया कार्य न करें</span>
+                </div>
+                <span class="font-black text-white">{today.rahukaal}</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2 rounded-xl bg-sky-500/10 border border-sky-500/20">
+                <div>
+                  <span class="font-bold text-sky-300 block">ब्रह्म मुहूर्त</span>
+                  <span class="text-[10px] text-slate-400">ईश्वर स्मरण व ध्यान</span>
+                </div>
+                <span class="font-black text-white">{today.brahmaMuhurat}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sun & Moon times -->
+          <div class="grid grid-cols-3 gap-2 text-center pt-2 border-t border-white/10 text-[11px]">
+            <div class="bg-white/5 p-2 rounded-lg">
+              <span class="block text-slate-400 text-[10px]">सूर्योदय</span>
+              <span class="font-black text-amber-300">{today.sunrise}</span>
+            </div>
+            <div class="bg-white/5 p-2 rounded-lg">
+              <span class="block text-slate-400 text-[10px]">सूर्यास्त</span>
+              <span class="font-black text-orange-300">{today.sunset}</span>
+            </div>
+            <div class="bg-white/5 p-2 rounded-lg">
+              <span class="block text-slate-400 text-[10px]">चंद्रोदय</span>
+              <span class="font-black text-sky-300">{today.moonrise}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Bar: Nakshatra, Yoga, Karana -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 text-xs">
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+          <span class="text-[10px] text-slate-400 block">नक्षत्र</span>
+          <span class="font-bold text-white text-sm">{today.nakshatra}</span>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+          <span class="text-[10px] text-slate-400 block">योग</span>
+          <span class="font-bold text-white text-sm">{today.yoga}</span>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+          <span class="text-[10px] text-slate-400 block">करण</span>
+          <span class="font-bold text-white text-sm">{today.karana}</span>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+          <span class="text-[10px] text-slate-400 block">संस्कारधानी तीर्थ</span>
+          <span class="font-bold text-amber-300 text-sm">ग्वारीघाट महाआरती (शाम 7:00)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTERACTIVE CALENDAR VIEW (लाला रामस्वरूप कैलेंडर 2026) -->
+    <section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-lg space-y-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-slate-200 dark:border-slate-800">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20">
+            <span>📅</span> संपूर्ण वर्ष 2026
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-1.5 font-hindi">
+            इंटरैक्टिव लाला रामस्वरूप कैलेंडर व्यू
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+            माह का चयन करें और किसी भी तारीख पर क्लिक करके उस दिन की तिथि, व्रत एवं भोजन-उपवास नियम देखें।
+          </p>
+        </div>
+
+        <!-- Month Navigation Selector Dropdown / Buttons -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <label for="month-select" class="text-xs font-bold text-slate-600 dark:text-slate-300">माह चुनें:</label>
+          <select 
+            id="month-select"
+            class="px-4 py-2 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer shadow-sm"
+          >
+            {bhaktiData.months.map((m) => (
+              <option value={m.monthIndex} selected={m.monthIndex === 10}>
+                {m.hindiName} ({m.hinduMonth})
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <!-- Month Title & Vikram Samvat Banner -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-amber-500/10 dark:bg-amber-950/40 p-4 rounded-2xl border border-amber-500/20 text-xs font-bold gap-2">
+        <div class="flex items-center gap-2 text-amber-900 dark:text-amber-200">
+          <span class="text-base">🚩</span>
+          <span class="text-sm font-black" id="active-month-title">नवंबर 2026 (कार्तिक - मार्गशीर्ष)</span>
+        </div>
+        <div class="text-slate-600 dark:text-slate-400">
+          विक्रम संवत: <span class="font-extrabold text-amber-700 dark:text-amber-400">2082 - 2083 (कालयुक्त)</span>
+        </div>
+      </div>
+
+      <!-- Calendar & Day Inspector Grid Split -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        
+        <!-- Left: 7-Column Calendar Grid (2 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          
+          <!-- Weekday Headers -->
+          <div class="grid grid-cols-7 gap-1 sm:gap-2 text-center text-xs font-black text-slate-600 dark:text-slate-400">
+            <span class="py-2 rounded-lg bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400">रवि</span>
+            <span class="py-2 rounded-lg bg-slate-100 dark:bg-slate-800">सोम</span>
+            <span class="py-2 rounded-lg bg-slate-100 dark:bg-slate-800">मंगल</span>
+            <span class="py-2 rounded-lg bg-slate-100 dark:bg-slate-800">बुध</span>
+            <span class="py-2 rounded-lg bg-slate-100 dark:bg-slate-800">गुरु</span>
+            <span class="py-2 rounded-lg bg-slate-100 dark:bg-slate-800">शुक्र</span>
+            <span class="py-2 rounded-lg bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400">शनि</span>
+          </div>
+
+          <!-- Dynamic Calendar Cells Container -->
+          <div id="calendar-days-grid" class="grid grid-cols-7 gap-1 sm:gap-2">
+            <!-- Populated via Client Script -->
+          </div>
+
+          <!-- Legend -->
+          <div class="flex items-center gap-4 text-[11px] font-bold text-slate-500 pt-2 flex-wrap">
+            <span class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+              <span>व्रत / उपवास दिवस</span>
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <span>प्रमुख हिंदू त्योहार</span>
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              <span>मांसाहार वर्जित दिन</span>
+            </span>
+            <span class="text-slate-400 text-[10px] ml-auto">
+              (किसी भी तारीख पर क्लिक करें)
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Day Inspector Card (1 Col) -->
+        <div id="day-inspector-card" class="bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-5 sm:p-6 border border-slate-200 dark:border-slate-700 shadow-md space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-700">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">🪔</span>
+              <h3 class="text-sm font-black text-slate-900 dark:text-white font-hindi">
+                तारीख विवरण व आहार नियम
+              </h3>
+            </div>
+            <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-800 dark:text-amber-300" id="inspector-badge">
+              चयनित दिन
+            </span>
+          </div>
+
+          <div class="space-y-3">
+            <div>
+              <span class="text-2xl font-black text-slate-900 dark:text-white block font-hindi" id="inspector-date-str">
+                23 नवंबर 2026
+              </span>
+              <span class="text-xs font-bold text-amber-700 dark:text-amber-400 block" id="inspector-weekday-tithi">
+                सोमवार | शुक्ल पक्ष चतुर्दशी (बैकुंठ चतुर्दशी)
+              </span>
+            </div>
+
+            <!-- Festival Tag if present -->
+            <div id="inspector-festival-container" class="p-3 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-900 dark:text-amber-200 text-xs font-bold space-y-1">
+              <span class="text-[10px] font-black uppercase tracking-wider text-amber-700 dark:text-amber-400 block">पर्व / त्योहार:</span>
+              <span class="text-sm font-black" id="inspector-festival-name">बैकुंठ चतुर्दशी (कार्तिक स्नान)</span>
+            </div>
+
+            <!-- Food & Fasting Advisory -->
+            <div class="p-3.5 rounded-2xl bg-white dark:bg-[#0c1c33] border border-slate-200 dark:border-slate-700 space-y-1.5 shadow-sm">
+              <div class="flex items-center gap-1.5 text-xs font-black text-red-600 dark:text-red-400">
+                <span>⚠️</span> भोजन व उपवास नियम:
+              </div>
+              <p class="text-xs text-slate-700 dark:text-slate-300 font-bold leading-relaxed" id="inspector-food-rule">
+                सात्विक आहार (मांसाहार, मदिरा एवं तामसिक भोजन पूर्णतः वर्जित)
+              </p>
+            </div>
+
+            <!-- Muhurats -->
+            <div class="space-y-2 text-xs pt-1">
+              <div class="flex items-center justify-between p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40">
+                <span class="font-bold text-emerald-800 dark:text-emerald-300">अभिजीत मुहूर्त</span>
+                <span class="font-black text-slate-800 dark:text-slate-200" id="inspector-abhijit">11:46 AM - 12:31 PM</span>
+              </div>
+              <div class="flex items-center justify-between p-2 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800/40">
+                <span class="font-bold text-red-800 dark:text-red-300">राहुकाल (अशुभ)</span>
+                <span class="font-black text-slate-800 dark:text-slate-200" id="inspector-rahu">07:30 AM - 09:00 AM</span>
+              </div>
+            </div>
+
+            <!-- Snan / Narmada info -->
+            <div class="p-3 rounded-2xl bg-sky-50 dark:bg-sky-950/30 border border-sky-200 dark:border-sky-800/40 text-[11px] text-sky-900 dark:text-sky-200 font-semibold">
+              <span class="font-bold block">🌊 नर्मदा दर्शन व पुण्य:</span>
+              <span id="inspector-snan">ग्वारीघाट एवं भेड़ाघाट में दीपदान व सांध्य महाआरती</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION 3: MAJOR HINDU FESTIVALS & VRATS 2026 -->
+    <section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/20">
+            <span>🚩</span> वर्ष 2026 संपूर्ण तालिका
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-1.5 font-hindi">
+            वर्ष 2026 के प्रमुख हिंदू त्योहार एवं व्रत
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+            दीपावली, होली, नवरात्रि, महाशिवरात्रि, जन्माष्टमी, करवा चौथ एवं प्रमुख एकादशी व्रतों की प्रामाणिक तिथियां
+          </p>
+        </div>
+
+        <!-- Filter Search Box -->
+        <div class="flex-shrink-0 w-full sm:w-64">
+          <input 
+            type="text" 
+            id="festival-search" 
+            placeholder="त्योहार खोजें (उदा: दिवाली, होली, एकादशी)..." 
+            class="w-full px-3.5 py-2 rounded-2xl text-xs bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          />
+        </div>
+      </div>
+
+      <!-- Festivals List Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs" id="festivals-table">
+          <thead>
+            <tr class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-black uppercase border-b border-slate-200 dark:border-slate-700">
+              <th class="py-3 px-4 rounded-l-xl">दिनांक व वार</th>
+              <th class="py-3 px-4">त्योहार / पर्व का नाम</th>
+              <th class="py-3 px-4">व्रत का स्वरूप</th>
+              <th class="py-3 px-4 rounded-r-xl">धार्मिक महत्व व जबलपुर परंपरा</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800/80 font-medium">
+            {festivals.map((fest) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors festival-row">
+                <td class="py-3 px-4 whitespace-nowrap font-bold text-slate-900 dark:text-white">
+                  <span>{fest.date}</span>
+                  <span class="block text-[10px] text-slate-400 font-normal">({fest.day})</span>
+                </td>
+                <td class="py-3 px-4 font-black text-amber-800 dark:text-amber-300 font-hindi text-sm">
+                  {fest.name}
+                </td>
+                <td class="py-3 px-4 whitespace-nowrap">
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-500/10 text-amber-800 dark:text-amber-300 border border-amber-500/20">
+                    {fest.vratType}
+                  </span>
+                </td>
+                <td class="py-3 px-4 text-slate-600 dark:text-slate-300 leading-relaxed max-w-md">
+                  {fest.significance}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: SHUBH MUHURAT GUIDE FOR INDIAN FAMILIES -->
+    <section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-6">
+      
+      <div class="pb-4 border-b border-slate-100 dark:border-slate-800">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+          <span>💍</span> मांगलिक कार्य मार्गदर्शिका 2026
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-1.5 font-hindi">
+          भारतीय परिवारों के लिए शुभ मुहूर्त (विवाह, गृह प्रवेश व वाहन)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+          सनातन परंपरा में नया घर खरीदने, गृह प्रवेश, शादी-ब्याह व वाहन लेने के लिए प्रामाणिक मुहूर्त सूत्र।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1: Vivah Muhurat -->
+        <div class="bg-gradient-to-b from-amber-500/5 to-transparent rounded-2xl p-5 border border-amber-500/20 space-y-3.5">
+          <div class="flex items-center gap-2.5 text-amber-900 dark:text-amber-200">
+            <span class="text-2xl">💍</span>
+            <h3 class="text-base font-black font-hindi">विवाह शुभ मुहूर्त 2026</h3>
+          </div>
+          
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+            {muhurat.vivah.note}
+          </p>
+
+          <div class="space-y-2.5 pt-2 text-xs border-t border-amber-500/20">
+            {muhurat.vivah.auspiciousMonths.map((m) => (
+              <div class="p-2.5 rounded-xl bg-white dark:bg-[#0c1c33] border border-amber-200/60 dark:border-amber-800/60">
+                <span class="font-extrabold text-amber-800 dark:text-amber-300 block">{m.month}</span>
+                <span class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 block">{m.dates}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Card 2: Griha Pravesh -->
+        <div class="bg-gradient-to-b from-emerald-500/5 to-transparent rounded-2xl p-5 border border-emerald-500/20 space-y-3.5">
+          <div class="flex items-center gap-2.5 text-emerald-900 dark:text-emerald-200">
+            <span class="text-2xl">🏡</span>
+            <h3 class="text-base font-black font-hindi">गृह प्रवेश व वास्तु पूजन</h3>
+          </div>
+          
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+            {muhurat.grihaPravesh.note}
+          </p>
+
+          <div class="space-y-2 pt-2 text-xs border-t border-emerald-500/20">
+            <span class="font-bold text-slate-700 dark:text-slate-300 block text-[11px]">प्रमुख श्रेष्ठ तिथियां 2026:</span>
+            {muhurat.grihaPravesh.keyDates.map((dateStr) => (
+              <div class="p-2 rounded-xl bg-white dark:bg-[#0c1c33] border border-emerald-200/60 dark:border-emerald-800/60 font-bold text-emerald-800 dark:text-emerald-300 text-xs flex items-center gap-1.5">
+                <span>✓</span> {dateStr}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Card 3: Vehicle & Property Purchase -->
+        <div class="bg-gradient-to-b from-sky-500/5 to-transparent rounded-2xl p-5 border border-sky-500/20 space-y-3.5">
+          <div class="flex items-center gap-2.5 text-sky-900 dark:text-sky-200">
+            <span class="text-2xl">🚗</span>
+            <h3 class="text-base font-black font-hindi">वाहन व संपत्ति क्रय</h3>
+          </div>
+          
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+            {muhurat.vehicleAndProperty.note}
+          </p>
+
+          <div class="space-y-2 pt-2 text-xs border-t border-sky-500/20">
+            <span class="font-bold text-slate-700 dark:text-slate-300 block text-[11px]">सर्वश्रेष्ठ अबूझ दिन 2026:</span>
+            {muhurat.vehicleAndProperty.keyDates.map((dateStr) => (
+              <div class="p-2 rounded-xl bg-white dark:bg-[#0c1c33] border border-sky-200/60 dark:border-sky-800/60 font-bold text-sky-800 dark:text-sky-300 text-xs flex items-center gap-1.5">
+                <span>✓</span> {dateStr}
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION 5: LALA RAMSWAROOP CALENDAR HERITAGE DESK -->
+    <section class="bg-gradient-to-br from-slate-900 via-[#071e3d] to-[#041224] text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl space-y-6">
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        
+        <div class="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-amber-600 to-orange-500 flex items-center justify-center text-4xl shadow-xl ring-4 ring-amber-500/30">
+          <span>🏛️</span>
+        </div>
+
+        <div class="space-y-3 text-center lg:text-left flex-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            <span>📍</span> जबलपुर की ऐतिहासिक शान (1934 से)
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl font-black text-white font-hindi">
+            {heritage.title}
+          </h2>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium max-w-3xl">
+            {heritage.description}
+          </p>
+
+          <div class="flex items-center gap-4 pt-2 text-xs font-bold text-amber-300 flex-wrap justify-center lg:justify-start">
+            <span>✓ स्थापना: वर्ष {heritage.originYear}</span>
+            <span>•</span>
+            <span>✓ मूल केंद्र: संस्कारधानी जबलपुर</span>
+            <span>•</span>
+            <span>✓ {heritage.tradition}</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: JABALPUR AARTI & SPIRITUAL HUBS (QUICK LINKS) -->
+    <section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-6">
+      
+      <div class="pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight font-hindi flex items-center gap-2">
+          <span>🌊</span> संस्कारधानी महाआरती व पवित्र तीर्थ
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+          मां नर्मदा के पावन तटों की नित्य महाआरती, दर्शन समय एवं पर्यटन गाइड
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <a 
+          href="/gwarighat-aarti/" 
+          class="p-5 rounded-2xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 transition-all group flex items-start gap-3.5 shadow-sm hover:scale-[1.02]"
+        >
+          <span class="text-3xl">🪔</span>
+          <div class="space-y-1">
+            <h3 class="font-black text-teal-900 dark:text-teal-200 group-hover:text-jabalpur-secondary text-sm font-hindi">
+              ग्वारीघाट नर्मदा महाआरती
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              प्रतिदिन सांध्य महाआरती (शाम 7:00 बजे), दीपदान परंपरा एवं नौकायन समय।
+            </p>
+          </div>
+        </a>
+
+        <a 
+          href="/bhedaghat-guide/" 
+          class="p-5 rounded-2xl bg-sky-500/10 hover:bg-sky-500/20 border border-sky-500/30 transition-all group flex items-start gap-3.5 shadow-sm hover:scale-[1.02]"
+        >
+          <span class="text-3xl">🏛️</span>
+          <div class="space-y-1">
+            <h3 class="font-black text-sky-900 dark:text-sky-200 group-hover:text-jabalpur-secondary text-sm font-hindi">
+              भेड़ाघाट व चौसठ योगिनी मंदिर
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              धुआंधार जलप्रपात, 10वीं शताब्दी का ऐतिहासिक चौसठ योगिनी मंदिर एवं संगमरमरी चट्टानें।
+            </p>
+          </div>
+        </a>
+
+        <a 
+          href="/rashifal/" 
+          class="p-5 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition-all group flex items-start gap-3.5 shadow-sm hover:scale-[1.02]"
+        >
+          <span class="text-3xl">✨</span>
+          <div class="space-y-1">
+            <h3 class="font-black text-amber-900 dark:text-amber-200 group-hover:text-jabalpur-secondary text-sm font-hindi">
+              दैनिक एवं वार्षिक राशिफल
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              मेष से मीन तक सभी 12 राशियों का वैदिक ज्योतिष भविष्यफल एवं सटीक उपाय।
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: FAQS ACCORDION -->
+    <section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-6">
+      <div class="pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight font-hindi flex items-center gap-2">
+          <span>❓</span> अक्सर पूछे जाने वाले धार्मिक प्रश्न (FAQs)
+        </h2>
+      </div>
+
+      <div class="space-y-3.5">
+        {faqs.map((faq, index) => (
+          <details class="group p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 cursor-pointer">
+            <summary class="font-black text-sm text-slate-900 dark:text-white flex items-center justify-between list-none">
+              <span>{faq.q}</span>
+              <span class="text-amber-500 group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-3 leading-relaxed border-t border-slate-200 dark:border-slate-700/80 mt-2 font-medium">
+              {faq.a}
+            </p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Bottom In-Feed Ad Placement -->
+    <AdSenseBanner slotType="bottom" />
+
+  </div>
+</Layout>
+
+<!-- Client Script: Interactive Calendar Month Switching & Day Clicking -->
+<script is:inline define:vars={{ monthsData: bhaktiData.months }}>
+  let currentMonthIdx = 10; // Default: November (0-indexed: 10)
+  const monthSelect = document.getElementById('month-select');
+  const monthTitle = document.getElementById('active-month-title');
+  const daysGrid = document.getElementById('calendar-days-grid');
+
+  // Inspector Elements
+  const inspDate = document.getElementById('inspector-date-str');
+  const inspTithi = document.getElementById('inspector-weekday-tithi');
+  const inspFestContainer = document.getElementById('inspector-festival-container');
+  const inspFestName = document.getElementById('inspector-festival-name');
+  const inspFoodRule = document.getElementById('inspector-food-rule');
+  const inspAbhijit = document.getElementById('inspector-abhijit');
+  const inspRahu = document.getElementById('inspector-rahu');
+  const inspSnan = document.getElementById('inspector-snan');
+
+  function renderCalendar(monthIdx) {
+    if (!daysGrid) return;
+    const month = monthsData[monthIdx];
+    if (!month) return;
+
+    if (monthTitle) {
+      monthTitle.textContent = `${month.hindiName} (${month.hinduMonth})`;
+    }
+
+    daysGrid.innerHTML = '';
+
+    // In JS/Python, firstDayWeekday: 0=Mon, 6=Sun. 
+    // In our UI: Col 0=Sun, Col 1=Mon ... Col 6=Sat.
+    // Sunday offset conversion:
+    const sunOffset = (month.firstDayWeekday + 1) % 7;
+
+    // Blank cells before day 1
+    for (let i = 0; i < sunOffset; i++) {
+      const blank = document.createElement('div');
+      blank.className = 'p-2 rounded-xl bg-slate-50/50 dark:bg-slate-800/20 opacity-30 pointer-events-none min-h-[56px] sm:min-h-[68px]';
+      daysGrid.appendChild(blank);
+    }
+
+    // Days cells
+    month.days.forEach((dayObj) => {
+      const cell = document.createElement('button');
+      cell.type = 'button';
+      cell.setAttribute('data-date', dayObj.date);
+      
+      const isToday = dayObj.date === '2026-11-23';
+      const hasFest = !!dayObj.festival;
+      const isVrat = dayObj.isVrat;
+
+      let borderClass = 'border-slate-200/80 dark:border-slate-700/80';
+      let bgClass = 'bg-white dark:bg-[#0c1c33] text-slate-800 dark:text-slate-100';
+
+      if (isToday) {
+        borderClass = 'border-2 border-amber-500 shadow-md';
+        bgClass = 'bg-amber-500/15 dark:bg-amber-950/60 font-black';
+      } else if (hasFest) {
+        borderClass = 'border-amber-400/80 dark:border-amber-600/80';
+        bgClass = 'bg-amber-50/80 dark:bg-amber-950/30';
+      } else if (isVrat) {
+        borderClass = 'border-red-300 dark:border-red-900';
+        bgClass = 'bg-red-50/50 dark:bg-red-950/20';
+      }
+
+      cell.className = `p-1.5 sm:p-2 rounded-xl text-left border ${borderClass} ${bgClass} hover:border-amber-500 transition-all flex flex-col justify-between min-h-[56px] sm:min-h-[68px] cursor-pointer group`;
+
+      cell.innerHTML = `
+        <div class="flex items-center justify-between w-full">
+          <span class="text-xs sm:text-sm font-black">${dayObj.day}</span>
+          ${hasFest ? '<span class="w-2 h-2 rounded-full bg-emerald-500"></span>' : isVrat ? '<span class="w-2 h-2 rounded-full bg-amber-500"></span>' : ''}
+        </div>
+        <div class="w-full">
+          <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 truncate block font-bold leading-tight">
+            ${dayObj.tithi}
+          </span>
+          ${hasFest ? `<span class="text-[8px] sm:text-[9px] font-extrabold text-amber-700 dark:text-amber-400 truncate block mt-0.5">🚩 ${dayObj.festival.split(' ')[0]}</span>` : ''}
+        </div>
+      `;
+
+      cell.addEventListener('click', () => {
+        selectDay(dayObj);
+      });
+
+      daysGrid.appendChild(cell);
+    });
+  }
+
+  function selectDay(dayObj) {
+    if (!inspDate) return;
+    
+    // Format date string
+    const dateParts = dayObj.date.split('-');
+    const formatted = `${dateParts[2]} ${getMonthNameHindi(parseInt(dateParts[1]))} ${dateParts[0]}`;
+
+    inspDate.textContent = formatted;
+    inspTithi.textContent = `${dayObj.weekday} | ${dayObj.tithi}`;
+
+    if (dayObj.festival) {
+      if (inspFestContainer) inspFestContainer.classList.remove('hidden');
+      if (inspFestName) inspFestName.textContent = dayObj.festival;
+    } else {
+      if (inspFestContainer) inspFestContainer.classList.add('hidden');
+    }
+
+    if (inspFoodRule) inspFoodRule.textContent = dayObj.foodRule;
+    if (inspAbhijit) inspAbhijit.textContent = dayObj.abhijitMuhurat;
+    if (inspRahu) inspRahu.textContent = dayObj.rahuKaal;
+    if (inspSnan) inspSnan.textContent = dayObj.snanSignificance || 'मां नर्मदा दर्शन व नमन';
+  }
+
+  function getMonthNameHindi(m) {
+    const names = ['', 'जनवरी', 'फरवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'];
+    return names[m] || '';
+  }
+
+  // Month Select change event
+  if (monthSelect) {
+    monthSelect.addEventListener('change', (e) => {
+      currentMonthIdx = parseInt(e.target.value);
+      renderCalendar(currentMonthIdx);
+    });
+  }
+
+  // Festival search filter
+  const searchInput = document.getElementById('festival-search');
+  const tableRows = document.querySelectorAll('.festival-row');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      tableRows.forEach(row => {
+        const text = row.textContent?.toLowerCase() || '';
+        if (text.includes(term)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // Initial render for November 2026
+  renderCalendar(currentMonthIdx);
+</script>

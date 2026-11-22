@@ -1,0 +1,95 @@
+---
+export interface Props {
+  articles: Array<{
+    id: string;
+    title: string;
+    slug?: string;
+    category: string;
+    source: string;
+    publishedAt: string;
+    imageUrl?: string;
+    readTime?: string;
+  }>;
+}
+
+const { articles = [] } = Astro.props;
+const trendingList = articles.slice(0, 5);
+
+function formatTime(dateStr: string) {
+  try {
+    const diffHours = Math.floor((Date.now() - new Date(dateStr).getTime()) / (1000 * 60 * 60));
+    if (diffHours < 1) return 'Just now';
+    if (diffHours < 24) return `${diffHours}h ago`;
+    return '1d ago';
+  } catch {
+    return 'Trending';
+  }
+}
+---
+
+<div class="bg-white dark:bg-[#0c1c33] rounded-3xl p-5 sm:p-6 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-4">
+  <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+    <div class="flex items-center gap-2">
+      <span class="flex h-2.5 w-2.5 relative">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+      </span>
+      <h3 class="text-base font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-1.5 font-hindi">
+        <span>🔥</span> ट्रेंडिंग जबलपुर
+      </h3>
+    </div>
+    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+      Top 5 Buzz
+    </span>
+  </div>
+
+  <div class="divide-y divide-slate-100 dark:divide-slate-800/80">
+    {trendingList.map((story, index) => {
+      const rank = index + 1;
+      const rankColor = 
+        rank === 1 ? 'bg-gradient-to-br from-red-600 to-orange-500 text-white shadow-md' :
+        rank === 2 ? 'bg-orange-500 text-white' :
+        rank === 3 ? 'bg-amber-500 text-white' :
+        'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300';
+
+      return (
+        <a 
+          href={`/news/${story.slug}/`} 
+          class="group flex items-start gap-3.5 py-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-2xl px-2 -mx-2 transition-all duration-200"
+        >
+          <!-- Rank Number Badge -->
+          <div class={`flex-shrink-0 w-6 h-6 rounded-lg flex items-center justify-center font-black text-xs ${rankColor}`}>
+            {rank}
+          </div>
+
+          <!-- Story Details -->
+          <div class="flex-1 min-w-0 space-y-1">
+            <h4 class="text-xs sm:text-sm font-extrabold text-slate-800 dark:text-slate-200 leading-snug line-clamp-2 group-hover:text-jabalpur-secondary transition-colors">
+              {story.title}
+            </h4>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400">
+              <span class="font-bold text-jabalpur-primary dark:text-jabalpur-300">
+                {story.category}
+              </span>
+              <span>•</span>
+              <span>{formatTime(story.publishedAt)}</span>
+            </div>
+          </div>
+
+          <!-- Thumbnail -->
+          {story.imageUrl && (
+            <div class="flex-shrink-0 w-14 h-14 rounded-xl overflow-hidden bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800">
+              <img 
+                src={story.imageUrl} 
+                alt="" 
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=150&q=80';"
+              />
+            </div>
+          )}
+        </a>
+      );
+    })}
+  </div>
+</div>

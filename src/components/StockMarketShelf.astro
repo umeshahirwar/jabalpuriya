@@ -1,0 +1,81 @@
+---
+import newsData from '../data/news.json';
+
+const marketArticles = newsData.articles
+  .filter(a => ['Stock Market', 'हिंदी बिजनेस', 'India Business', 'Business & Jobs'].includes(a.category))
+  .slice(0, 4);
+
+function formatPublishedDate(dateStr: string) {
+  try {
+    const diffHours = Math.floor((Date.now() - new Date(dateStr).getTime()) / (1000 * 60 * 60));
+    if (diffHours < 1) return 'Just now';
+    if (diffHours < 24) return `${diffHours}h ago`;
+    return '1d ago';
+  } catch {
+    return 'Latest';
+  }
+}
+---
+
+<section class="bg-gradient-to-br from-slate-900 via-[#07192f] to-[#041122] text-white rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl space-y-6">
+  <!-- Shelf Header -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-slate-800">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+        <span>📈</span> Business & Markets Desk
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight mt-2 font-hindi">
+        भारतीय शेयर बाजार व कॉरपोरेट हलचल
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-300 font-medium mt-1">
+        Mint, Economic Times व Moneycontrol से संकलित लाइव वित्तीय व मार्केट खबरें
+      </p>
+    </div>
+
+    <a 
+      href="/business-markets/"
+      class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-xs transition-all shadow-md hover:scale-105 flex-shrink-0"
+    >
+      <span>सभी बिजनेस खबरें व लाइव चार्ट्स</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+  </div>
+
+  <!-- 4-Card Horizontal Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+    {marketArticles.map((article) => (
+      <a 
+        href={`/news/${article.slug}/`}
+        class="group flex flex-col bg-white/5 hover:bg-white/10 rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 shadow-sm"
+      >
+        <div class="relative aspect-[16/9] w-full overflow-hidden bg-slate-950">
+          <img 
+            src={article.imageUrl} 
+            alt={article.title}
+            loading="lazy"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+          
+          <div class="absolute top-2 left-2">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-black bg-emerald-600/90 text-white backdrop-blur-sm shadow-md">
+              {article.category}
+            </span>
+          </div>
+        </div>
+
+        <div class="p-3.5 flex flex-col flex-1 justify-between space-y-2">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-100 group-hover:text-emerald-400 line-clamp-2 leading-snug transition-colors">
+            {article.title}
+          </h3>
+
+          <div class="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-white/5">
+            <span class="font-semibold truncate max-w-[120px]">{article.source}</span>
+            <span>{formatPublishedDate(article.publishedAt)}</span>
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

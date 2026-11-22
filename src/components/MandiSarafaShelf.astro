@@ -1,0 +1,123 @@
+---
+const topCrops = [
+  { name: "सोयाबीन (Soyabean)", variety: "पीला / बोल्ड", modal: "₹4,600", range: "₹4,200 - ₹4,850", unit: "क्विंटल", icon: "🌱" },
+  { name: "जबलपुर हरा मटर (ODOP)", variety: "ताजा हरा मटर", modal: "₹3,100", range: "₹2,200 - ₹3,800", unit: "क्विंटल", icon: "🫛" },
+  { name: "गेहूं (शरबती)", variety: "शरबती प्रीमियम", modal: "₹3,850", range: "₹3,400 - ₹4,250", unit: "क्विंटल", icon: "🌾" },
+  { name: "धान (बासमती 1121)", variety: "1121 सुगंधित", modal: "₹4,100", range: "₹3,600 - ₹4,400", unit: "क्विंटल", icon: "🍚" }
+];
+
+const bullionRates = [
+  { item: "24 कैरेट सोना (Pure Gold)", rate: "₹89,500", range: "₹88,500 - ₹91,000", unit: "प्रति 10 ग्राम", purity: "99.9% शुद्ध", icon: "🪙" },
+  { item: "22 कैरेट सोना (Jewellery)", rate: "₹82,400", range: "₹81,200 - ₹83,500", unit: "प्रति 10 ग्राम", purity: "91.6% हॉलमार्क", icon: "✨" },
+  { item: "चांदी (Silver Pure)", rate: "₹98,000", range: "₹96,000 - ₹1,02,000", unit: "प्रति 1 किलोग्राम", purity: "99.9% फाइन", icon: "🥈" }
+];
+---
+
+<section class="bg-white dark:bg-[#0c1c33] rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-6">
+  <!-- Shelf Header -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20">
+        <span>🌾</span> Jabalpur Agri & Bullion Desk
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-2 font-hindi">
+        जबलपुर कृषि उपज मंडी व सराफा लाइव भाव
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">
+        दमोह नाका कृषि मंडी एवं बड़ा फुहारा सराफा बाजार के दैनिक मानक भाव
+      </p>
+    </div>
+
+    <a 
+      href="/mandi-bhav/"
+      class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs transition-all shadow-md hover:scale-105 flex-shrink-0"
+    >
+      <span>पूरी मंडी व सराफा लिस्ट देखें</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+  </div>
+
+  <!-- 2-Column Split: Agri Desk + Sarafa Desk -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+    
+    <!-- Left: Top Agri Commodities -->
+    <div class="bg-slate-50 dark:bg-slate-800/40 rounded-2xl p-5 border border-slate-200/80 dark:border-slate-800 space-y-3.5">
+      <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-slate-700">
+        <h3 class="text-sm font-black text-slate-900 dark:text-white flex items-center gap-1.5 font-hindi">
+          <span>🌾</span> प्रमुख फसलें (कृषि उपज मंडी)
+        </h3>
+        <span class="text-[11px] font-bold text-slate-400">मॉडल भाव (क्विंटल)</span>
+      </div>
+
+      <div class="space-y-2.5">
+        {topCrops.map((crop) => (
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-white dark:bg-[#0c1c33] border border-slate-200/60 dark:border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <span class="text-lg">{crop.icon}</span>
+              <div>
+                <span class="text-xs font-black text-slate-800 dark:text-slate-200 block font-hindi">
+                  {crop.name}
+                </span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400">
+                  {crop.variety} • {crop.range}
+                </span>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <span class="text-sm font-black text-emerald-600 dark:text-emerald-400 block">
+                {crop.modal}
+              </span>
+              <span class="text-[10px] text-slate-400 font-semibold">
+                /{crop.unit}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Right: Bullion Desk (Gold / Silver) -->
+    <div class="bg-amber-500/5 dark:bg-amber-500/10 rounded-2xl p-5 border border-amber-500/20 space-y-3.5">
+      <div class="flex items-center justify-between pb-2 border-b border-amber-500/20">
+        <h3 class="text-sm font-black text-amber-900 dark:text-amber-200 flex items-center gap-1.5 font-hindi">
+          <span>🪙</span> सराफा बाजार (सोना - चांदी)
+        </h3>
+        <span class="text-[11px] font-bold text-amber-700 dark:text-amber-400">जबलपुर सराफा एसोसिएशन</span>
+      </div>
+
+      <div class="space-y-2.5">
+        {bullionRates.map((item) => (
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-white dark:bg-[#0c1c33] border border-amber-200/60 dark:border-amber-800/60">
+            <div class="flex items-center gap-2.5">
+              <span class="text-lg">{item.icon}</span>
+              <div>
+                <span class="text-xs font-black text-slate-800 dark:text-slate-200 block font-hindi">
+                  {item.item}
+                </span>
+                <span class="text-[10px] text-amber-700 dark:text-amber-400 font-semibold">
+                  {item.purity} • {item.range}
+                </span>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <span class="text-sm font-black text-amber-800 dark:text-amber-300 block">
+                {item.rate}
+              </span>
+              <span class="text-[10px] text-slate-400 font-semibold">
+                {item.unit}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="pt-2 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-between border-t border-amber-500/20">
+        <span>📍 बड़ा फुहारा सराफा</span>
+        <a href="/mandi-bhav/" class="text-jabalpur-secondary font-bold hover:underline">विस्तृत रिपोर्ट →</a>
+      </div>
+    </div>
+
+  </div>
+</section>

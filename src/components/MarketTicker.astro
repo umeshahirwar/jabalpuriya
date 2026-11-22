@@ -1,0 +1,191 @@
+---
+import marketsData from '../data/markets.json';
+
+const formatPrice = (price: number | null | undefined, prefix = '') => {
+  if (typeof price !== 'number' || Number.isNaN(price)) return '—';
+  return `${prefix}${price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+};
+
+// Key indices from markets.json
+const indices = marketsData.indices.slice(0, 5);
+
+// Key stocks from markets.json
+const featuredStocks = (marketsData.stocks || []).slice(0, 4);
+
+// Local Jabalpur Mandi & Sarafa prices
+const localCommodities = [
+  { name: '24K सोना', price: '₹89,500/10g', change: 'स्थिर', isBullion: true, href: '/mandi-bhav/' },
+  { name: 'चांदी (फाइन)', price: '₹98,000/kg', change: 'स्थिर', isBullion: true, href: '/mandi-bhav/' },
+  { name: 'सोयाबीन (मंडी)', price: '₹4,600/qtl', change: 'मजबूत', isBullion: false, href: '/mandi-bhav/' },
+  { name: 'जबलपुर हरा मटर', price: '₹3,100/qtl', change: 'ताजा आवक', isBullion: false, href: '/mandi-bhav/' },
+  { name: 'शरबती गेहूं', price: '₹3,850/qtl', change: 'प्रीमियम', isBullion: false, href: '/mandi-bhav/' }
+];
+---
+
+<div class="w-full bg-white dark:bg-[#07162b] border-y border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden text-xs select-none">
+  <div class="max-w-7xl mx-auto flex items-center">
+    
+    <!-- Left Static Anchor / Badge -->
+    <a 
+      href="/business-markets/" 
+      class="flex-shrink-0 z-10 flex items-center gap-1.5 px-3 py-2 bg-slate-900 text-white dark:bg-jabalpur-secondary font-black tracking-wider uppercase text-[11px] shadow-sm hover:opacity-95 transition-opacity"
+      title="View Live Indian Stock Markets & Mandi Bhav"
+    >
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+      </span>
+      <span class="hidden sm:inline">LIVE</span>
+      <span>MARKETS</span>
+    </a>
+
+    <!-- Scrolling Marquee Container -->
+    <div class="flex-1 overflow-hidden relative py-1.5">
+      <div class="animate-ticker-infinite flex items-center space-x-6 whitespace-nowrap pl-4">
+        
+        <!-- Stream 1 (Original Items) -->
+        {indices.map((idx) => {
+          const isUp = idx.change >= 0;
+          return (
+            <a 
+              href="/business-markets/"
+              class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+            >
+              <span class="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-jabalpur-secondary">
+                {idx.name}
+              </span>
+              <span class="font-bold text-slate-900 dark:text-white">
+                {formatPrice(idx.price, idx.prefix)}
+              </span>
+              <span class={`inline-flex items-center text-[10px] font-black px-1.5 py-0.2 rounded ${
+                isUp 
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-400' 
+                  : 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-400'
+              }`}>
+                {isUp ? '▲ +' : '▼ '}{idx.changePercent.toFixed(2)}%
+              </span>
+            </a>
+          );
+        })}
+
+        {featuredStocks.map((stock) => {
+          const isUp = stock.change >= 0;
+          return (
+            <a 
+              href="/business-markets/"
+              class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+            >
+              <span class="font-bold text-slate-700 dark:text-slate-300 group-hover:text-jabalpur-secondary">
+                {stock.ticker}
+              </span>
+              <span class="font-bold text-slate-900 dark:text-white">
+                ₹{stock.price.toLocaleString('en-IN')}
+              </span>
+              <span class={`text-[10px] font-black px-1.5 py-0.2 rounded ${
+                isUp 
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-400' 
+                  : 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-400'
+              }`}>
+                {isUp ? '+' : ''}{stock.changePercent.toFixed(2)}%
+              </span>
+            </a>
+          );
+        })}
+
+        {localCommodities.map((comm) => (
+          <a 
+            href={comm.href}
+            class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+          >
+            <span class="font-bold text-amber-700 dark:text-amber-400 group-hover:underline">
+              {comm.isBullion ? '🪙' : '🌾'} {comm.name}
+            </span>
+            <span class="font-black text-slate-900 dark:text-white">
+              {comm.price}
+            </span>
+            <span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 dark:bg-amber-950/50 dark:text-amber-300">
+              {comm.change}
+            </span>
+          </a>
+        ))}
+
+        <!-- Stream 2 (Duplicate for continuous loop) -->
+        {indices.map((idx) => {
+          const isUp = idx.change >= 0;
+          return (
+            <a 
+              href="/business-markets/"
+              class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+            >
+              <span class="font-extrabold text-slate-800 dark:text-slate-200 group-hover:text-jabalpur-secondary">
+                {idx.name}
+              </span>
+              <span class="font-bold text-slate-900 dark:text-white">
+                {formatPrice(idx.price, idx.prefix)}
+              </span>
+              <span class={`inline-flex items-center text-[10px] font-black px-1.5 py-0.2 rounded ${
+                isUp 
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-400' 
+                  : 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-400'
+              }`}>
+                {isUp ? '▲ +' : '▼ '}{idx.changePercent.toFixed(2)}%
+              </span>
+            </a>
+          );
+        })}
+
+        {featuredStocks.map((stock) => {
+          const isUp = stock.change >= 0;
+          return (
+            <a 
+              href="/business-markets/"
+              class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+            >
+              <span class="font-bold text-slate-700 dark:text-slate-300 group-hover:text-jabalpur-secondary">
+                {stock.ticker}
+              </span>
+              <span class="font-bold text-slate-900 dark:text-white">
+                ₹{stock.price.toLocaleString('en-IN')}
+              </span>
+              <span class={`text-[10px] font-black px-1.5 py-0.2 rounded ${
+                isUp 
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-400' 
+                  : 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-400'
+              }`}>
+                {isUp ? '+' : ''}{stock.changePercent.toFixed(2)}%
+              </span>
+            </a>
+          );
+        })}
+
+        {localCommodities.map((comm) => (
+          <a 
+            href={comm.href}
+            class="inline-flex items-center gap-2 group px-2 py-0.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+          >
+            <span class="font-bold text-amber-700 dark:text-amber-400 group-hover:underline">
+              {comm.isBullion ? '🪙' : '🌾'} {comm.name}
+            </span>
+            <span class="font-black text-slate-900 dark:text-white">
+              {comm.price}
+            </span>
+            <span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 dark:bg-amber-950/50 dark:text-amber-300">
+              {comm.change}
+            </span>
+          </a>
+        ))}
+
+      </div>
+    </div>
+
+    <!-- Right Quick Action Link -->
+    <a 
+      href="/business-markets/" 
+      class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 text-[11px] font-bold text-slate-600 dark:text-slate-300 hover:text-jabalpur-secondary border-l border-slate-200 dark:border-slate-800 flex-shrink-0"
+    >
+      <span>बाजार विश्लेषण</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+    </a>
+
+  </div>
+</div>

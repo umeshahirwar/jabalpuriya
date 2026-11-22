@@ -1,0 +1,95 @@
+---
+import marketsData from '../data/markets.json';
+
+const formatIN = (num: number | null | undefined) => {
+  if (typeof num !== 'number' || Number.isNaN(num)) return '—';
+  return num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+};
+
+const topIndices = marketsData.indices.slice(0, 3);
+const keyStocks = (marketsData.stocks || []).slice(0, 2);
+---
+
+<div class="bg-white dark:bg-[#0c1c33] rounded-3xl p-5 sm:p-6 border border-slate-200/90 dark:border-slate-800 shadow-md space-y-4">
+  <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+    <div class="flex items-center gap-2">
+      <span class="text-emerald-500 font-bold text-base">📈</span>
+      <h3 class="text-base font-black text-slate-900 dark:text-white tracking-tight font-hindi">
+        शेयर बाजार स्नैपशॉट
+      </h3>
+    </div>
+    <span class="inline-flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
+      <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      NSE / BSE
+    </span>
+  </div>
+
+  <!-- Indices List -->
+  <div class="space-y-2.5">
+    {topIndices.map((idx) => {
+      const isUp = idx.change >= 0;
+      return (
+        <a 
+          href="/business-markets/"
+          class="flex items-center justify-between p-2.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group"
+        >
+          <div>
+            <span class="text-xs font-black text-slate-800 dark:text-slate-200 block group-hover:text-jabalpur-secondary transition-colors">
+              {idx.name}
+            </span>
+            <span class="text-[10px] text-slate-500 dark:text-slate-400 font-medium">
+              {idx.exchange} Index
+            </span>
+          </div>
+
+          <div class="text-right">
+            <span class="text-xs font-black text-slate-900 dark:text-white block">
+              {formatIN(idx.price)}
+            </span>
+            <span class={`inline-flex items-center text-[10px] font-extrabold px-1.5 py-0.2 rounded ${
+              isUp 
+                ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-400' 
+                : 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-400'
+            }`}>
+              {isUp ? '▲ +' : '▼ '}{idx.changePercent.toFixed(2)}%
+            </span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+
+  <!-- Key Blue-chip Stocks -->
+  <div class="grid grid-cols-2 gap-2 pt-1 border-t border-slate-100 dark:border-slate-800 text-xs">
+    {keyStocks.map((stock) => {
+      const isUp = stock.change >= 0;
+      return (
+        <a 
+          href="/business-markets/"
+          class="p-2 rounded-xl bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+        >
+          <div class="flex items-center justify-between">
+            <span class="font-extrabold text-[11px] text-slate-700 dark:text-slate-300">
+              {stock.ticker}
+            </span>
+            <span class={`text-[10px] font-black ${isUp ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
+              {isUp ? '+' : ''}{stock.changePercent.toFixed(2)}%
+            </span>
+          </div>
+          <span class="text-xs font-black text-slate-900 dark:text-white block mt-0.5">
+            ₹{stock.price.toLocaleString('en-IN')}
+          </span>
+        </a>
+      );
+    })}
+  </div>
+
+  <!-- Footer CTA -->
+  <a 
+    href="/business-markets/"
+    class="w-full flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-2xl bg-slate-100 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 dark:hover:text-emerald-400 text-slate-700 dark:text-slate-200 font-extrabold text-xs transition-colors border border-slate-200/80 dark:border-slate-700"
+  >
+    <span>पूरा मार्केट व स्टॉक्स लाइव देखें</span>
+    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+  </a>
+</div>
