@@ -15,10 +15,17 @@ import newsData from '../data/news.json';
 // Partition news data (prioritize Jabalpur local stories for the hero top banner)
 const localArticles = newsData.articles.filter(a => ['Local News', 'Smart City & Infra', 'Culture & Tourism'].includes(a.category));
 const featuredArticle = localArticles.find(a => a.isFeatured) || localArticles[0] || newsData.articles.find(a => a.isFeatured) || newsData.articles[0];
-const regularArticles = newsData.articles.filter(a => a.id !== featuredArticle.id);
+
+// 4 Top City Highlights directly under the Hero banner on the left stage
+const topHighlights = localArticles.filter(a => a.id !== featuredArticle.id).slice(0, 4);
+const topHighlightIds = new Set([featuredArticle.id, ...topHighlights.map(a => a.id)]);
 
 // Top 5 trending articles for the Yahoo-style right rail
-const trendingArticles = localArticles.filter(a => a.id !== featuredArticle.id).slice(0, 5);
+const trendingArticles = localArticles.filter(a => !topHighlightIds.has(a.id)).slice(0, 5);
+const trendingIds = new Set(trendingArticles.map(a => a.id));
+
+// Regular articles for the main news wire feed (no duplicate cards)
+const regularArticles = newsData.articles.filter(a => !topHighlightIds.has(a.id) && !trendingIds.has(a.id));
 
 // Extract distinct categories
 const categories = [
@@ -76,72 +83,93 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
         </div>
       </div>
 
-      <!-- Main 3-Zone Yahoo Grid: Featured Story (Left 65%) + Right Rail (35%) -->
+      <!-- Main 3-Zone Yahoo Grid: Featured Story + Top City Highlights (Left 65%) & Right Rail (35%) -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
         
-        <!-- Large Featured Story Banner (2 Cols on Desktop) -->
-        <div class="lg:col-span-2 relative group rounded-3xl overflow-hidden bg-slate-950 border border-slate-800 shadow-2xl min-h-[440px] sm:min-h-[500px] lg:min-h-[580px] flex flex-col justify-end p-6 sm:p-10">
-          <img
-            src={featuredArticle.imageUrl}
-            alt={featuredArticle.title}
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85"
-            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=1200&q=80';"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+        <!-- Left Stage (2 Cols on Desktop): Lead Hero Story + 4 City Highlights -->
+        <div class="lg:col-span-2 space-y-6">
+          
+          <!-- Large Featured Story Banner -->
+          <div class="relative group rounded-3xl overflow-hidden bg-slate-950 border border-slate-800 shadow-2xl min-h-[420px] sm:min-h-[460px] flex flex-col justify-end p-6 sm:p-10">
+            <img
+              src={featuredArticle.imageUrl}
+              alt={featuredArticle.title}
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=1200&q=80';"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
 
-          <!-- Hero Story Details -->
-          <div class="relative z-10 space-y-4 max-w-2xl">
-            <div class="flex items-center gap-2.5 flex-wrap">
-              <span class="px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-gradient-to-r from-jabalpur-secondary to-orange-600 text-white shadow-lg">
-                ★ Top Breaking Story
-              </span>
-              <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/20">
-                {featuredArticle.category}
-              </span>
-              <span class="text-xs text-slate-300 flex items-center gap-1 font-semibold">
-                • {featuredArticle.source}
-              </span>
-            </div>
-
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight drop-shadow-md">
-              <a href={`/news/${featuredArticle.slug}/`} class="hover:underline focus:outline-none">
-                {featuredArticle.title}
-              </a>
-            </h1>
-
-            <p class="text-slate-200 text-sm sm:text-base leading-relaxed line-clamp-3 font-medium">
-              {featuredArticle.excerpt}
-            </p>
-
-            <div class="pt-3 flex items-center justify-between text-xs text-slate-300 gap-2 flex-wrap">
-              <div class="flex items-center gap-2.5">
-                <a
-                  href={`/news/${featuredArticle.slug}/`}
-                  class="inline-flex items-center px-5 py-2.5 rounded-xl font-black text-sm bg-white text-slate-950 hover:bg-slate-100 transition-all shadow-lg hover:scale-105"
-                >
-                  Read Full Coverage
-                  <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
-
-                <a
-                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`⚡ जबलपुर मुख्य समाचार: ${featuredArticle.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${featuredArticle.slug}/`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md hover:scale-105 transition-all"
-                  title="Share on WhatsApp"
-                >
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.068-1.109-.064-.407-.129-.933-.312-1.611-.607-1.425-.62-2.353-2.073-2.424-2.167-.071-.095-.579-.77-.579-1.469 0-.698.367-1.042.498-1.185.132-.143.287-.179.383-.179s.191.006.275.011c.088.005.206-.033.322.247.119.287.407 1.002.443 1.074.036.072.06.155.012.251-.048.096-.072.155-.144.239-.072.084-.151.187-.216.251-.072.072-.147.151-.063.295.084.144.373.615.8 1.001.551.498 1.015.653 1.159.724.144.072.228.06.312-.036.084-.096.359-.419.455-.563.096-.144.191-.12.323-.072.132.048.837.395.981.467.144.072.24.108.275.167.036.06.036.347-.108.752zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
-                  </svg>
-                  <span>Share</span>
-                </a>
+            <!-- Hero Story Details -->
+            <div class="relative z-10 space-y-4 max-w-2xl">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-gradient-to-r from-jabalpur-secondary to-orange-600 text-white shadow-lg">
+                  ★ Top Breaking Story
+                </span>
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/20">
+                  {featuredArticle.category}
+                </span>
+                <span class="text-xs text-slate-300 flex items-center gap-1 font-semibold">
+                  • {featuredArticle.source}
+                </span>
               </div>
-              <span class="bg-black/40 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/10 font-bold">{featuredArticle.readTime}</span>
+
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight drop-shadow-md">
+                <a href={`/news/${featuredArticle.slug}/`} class="hover:underline focus:outline-none">
+                  {featuredArticle.title}
+                </a>
+              </h1>
+
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed line-clamp-3 font-medium">
+                {featuredArticle.excerpt}
+              </p>
+
+              <div class="pt-3 flex items-center justify-between text-xs text-slate-300 gap-2 flex-wrap">
+                <div class="flex items-center gap-2.5">
+                  <a
+                    href={`/news/${featuredArticle.slug}/`}
+                    class="inline-flex items-center px-5 py-2.5 rounded-xl font-black text-sm bg-white text-slate-950 hover:bg-slate-100 transition-all shadow-lg hover:scale-105"
+                  >
+                    Read Full Coverage
+                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </a>
+
+                  <a
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`⚡ जबलपुर मुख्य समाचार: ${featuredArticle.title}\n\nविस्तार से पढ़िए जबलपुरिया पर:\nhttps://jabalpuriya.com/news/${featuredArticle.slug}/`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md hover:scale-105 transition-all"
+                    title="Share on WhatsApp"
+                  >
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.068-1.109-.064-.407-.129-.933-.312-1.611-.607-1.425-.62-2.353-2.073-2.424-2.167-.071-.095-.579-.77-.579-1.469 0-.698.367-1.042.498-1.185.132-.143.287-.179.383-.179s.191.006.275.011c.088.005.206-.033.322.247.119.287.407 1.002.443 1.074.036.072.06.155.012.251-.048.096-.072.155-.144.239-.072.084-.151.187-.216.251-.072.072-.147.151-.063.295.084.144.373.615.8 1.001.551.498 1.015.653 1.159.724.144.072.228.06.312-.036.084-.096.359-.419.455-.563.096-.144.191-.12.323-.072.132.048.837.395.981.467.144.072.24.108.275.167.036.06.036.347-.108.752zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+                    </svg>
+                    <span>Share</span>
+                  </a>
+                </div>
+                <span class="bg-black/40 px-3 py-1 rounded-lg backdrop-blur-sm border border-white/10 font-bold">{featuredArticle.readTime}</span>
+              </div>
             </div>
           </div>
+
+          <!-- 4 Top City Highlights / Editor's Picks (2x2 Grid) -->
+          <div class="space-y-3.5 pt-1">
+            <div class="flex items-center justify-between pb-1 border-b border-slate-200/80 dark:border-slate-800">
+              <h3 class="text-sm font-black text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2 font-hindi">
+                <span class="text-jabalpur-secondary">⚡</span> संस्कारधानी विशेष (Top City Stories)
+              </h3>
+              <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400">जबलपुर प्रमुख खबरें</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {topHighlights.map((story) => (
+                <NewsCard {...story} />
+              ))}
+            </div>
+          </div>
+
         </div>
 
-        <!-- Right Rail (1 Col): Trending Stories + Market Snapshot + Weather + Quick Links -->
+        <!-- Right Rail (1 Col): Trending Stories + Market Snapshot + Weather -->
         <div class="flex flex-col gap-5">
           <!-- 🔥 Trending Top 5 Jabalpur Stories -->
           <TrendingRail articles={trendingArticles} />
@@ -152,47 +180,46 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
           <!-- Weather Snapshot -->
           <WeatherWidget />
 
-          <!-- Quick Services Menu -->
-          <div class="bg-white dark:bg-[#0c1c33] p-5 sm:p-6 rounded-3xl border border-slate-200/90 dark:border-slate-800 shadow-md space-y-4">
-            <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
-              <span class="text-jabalpur-secondary">⚡</span> Jabalpur Quick Connect
-            </h3>
-            
-            <div class="grid grid-cols-2 gap-2 text-xs font-bold">
-              <a href="/bhakti/" class="p-2.5 rounded-2xl bg-amber-600/10 hover:bg-amber-600/20 text-amber-800 dark:text-amber-300 transition-all flex items-center gap-1.5 border border-amber-400/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
-                <span>🪔</span> भक्ति व पंचांग
-              </a>
-              <a href="/rashifal/" class="p-2.5 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 transition-all flex items-center gap-1.5 border border-amber-300/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
-                <span>✨</span> आज का राशिफल
-              </a>
-              <a href="/mandi-bhav/" class="p-2.5 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 transition-all flex items-center gap-1.5 border border-emerald-300/40 dark:border-emerald-700/40 shadow-sm hover:scale-[1.02]">
-                <span>🌾</span> मंडी व सराफा भाव
-              </a>
-              <a href="/business-markets/" class="p-2.5 rounded-2xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-800 dark:text-indigo-300 transition-all flex items-center gap-1.5 border border-indigo-300/40 dark:border-indigo-700/40 shadow-sm hover:scale-[1.02]">
-                <span>📈</span> शेयर बाजार लाइव
-              </a>
-              <a href="/bhedaghat-guide/" class="p-2.5 rounded-2xl bg-sky-500/10 hover:bg-sky-500/20 text-sky-800 dark:text-sky-300 transition-all flex items-center gap-1.5 border border-sky-300/40 dark:border-sky-700/40 shadow-sm hover:scale-[1.02]">
-                <span>🏛️</span> भेड़ाघाट गाइड
-              </a>
-              <a href="/gwarighat-aarti/" class="p-2.5 rounded-2xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-800 dark:text-teal-300 transition-all flex items-center gap-1.5 border border-teal-300/40 dark:border-teal-700/40 shadow-sm hover:scale-[1.02]">
-                <span>🌊</span> ग्वारीघाट आरती
-              </a>
-              <a href="/helplines/" class="col-span-2 p-2 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center justify-center gap-1.5 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.01]">
-                <span>📞</span> आपातकालीन हेल्पलाइन 24x7
-              </a>
-            </div>
-
-            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] font-semibold text-slate-500 flex items-center justify-between">
-              <span>District Code: MP-20</span>
-              <span>PIN: 482001 - 482056</span>
-            </div>
-          </div>
-
           <!-- Right Sidebar AdSense Slot -->
           <AdSenseBanner slotType="sidebar" />
         </div>
 
       </div>
+    </section>
+
+    <!-- Full-Width Jabalpur Quick Connect Bar -->
+    <div class="bg-white dark:bg-[#0c1c33] p-4 sm:p-5 rounded-3xl border border-slate-200/90 dark:border-slate-800 shadow-sm space-y-3">
+      <div class="flex items-center justify-between">
+        <h3 class="text-xs sm:text-sm font-black text-slate-900 dark:text-white flex items-center gap-2 font-hindi">
+          <span class="text-jabalpur-secondary">⚡</span> Jabalpur Quick Connect (संस्कारधानी त्वरित सेवाएं)
+        </h3>
+        <span class="text-[11px] font-semibold text-slate-400 hidden sm:inline">District: MP-20 • PIN: 482001 - 482056</span>
+      </div>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 text-xs font-bold">
+        <a href="/bhakti/" class="p-2.5 rounded-2xl bg-amber-600/10 hover:bg-amber-600/20 text-amber-800 dark:text-amber-300 transition-all flex items-center justify-center gap-1.5 border border-amber-400/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
+          <span>🪔</span> भक्ति व पंचांग
+        </a>
+        <a href="/rashifal/" class="p-2.5 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 transition-all flex items-center justify-center gap-1.5 border border-amber-300/40 dark:border-amber-700/40 shadow-sm hover:scale-[1.02]">
+          <span>✨</span> आज का राशिफल
+        </a>
+        <a href="/mandi-bhav/" class="p-2.5 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 transition-all flex items-center justify-center gap-1.5 border border-emerald-300/40 dark:border-emerald-700/40 shadow-sm hover:scale-[1.02]">
+          <span>🌾</span> मंडी व सराफा
+        </a>
+        <a href="/business-markets/" class="p-2.5 rounded-2xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-800 dark:text-indigo-300 transition-all flex items-center justify-center gap-1.5 border border-indigo-300/40 dark:border-indigo-700/40 shadow-sm hover:scale-[1.02]">
+          <span>📈</span> शेयर बाजार
+        </a>
+        <a href="/bhedaghat-guide/" class="p-2.5 rounded-2xl bg-sky-500/10 hover:bg-sky-500/20 text-sky-800 dark:text-sky-300 transition-all flex items-center justify-center gap-1.5 border border-sky-300/40 dark:border-sky-700/40 shadow-sm hover:scale-[1.02]">
+          <span>🏛️</span> भेड़ाघाट गाइड
+        </a>
+        <a href="/gwarighat-aarti/" class="p-2.5 rounded-2xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-800 dark:text-teal-300 transition-all flex items-center justify-center gap-1.5 border border-teal-300/40 dark:border-teal-700/40 shadow-sm hover:scale-[1.02]">
+          <span>🌊</span> ग्वारीघाट आरती
+        </a>
+        <a href="/helplines/" class="col-span-2 sm:col-span-1 p-2.5 rounded-2xl bg-orange-500/10 hover:bg-orange-500/20 text-orange-800 dark:text-orange-300 transition-all flex items-center justify-center gap-1.5 border border-orange-300/40 dark:border-orange-700/40 shadow-sm hover:scale-[1.02]">
+          <span>📞</span> हेल्पलाइन 24x7
+        </a>
+      </div>
+    </div>
     </section>
 
     <!-- News Feed Section with Interactive Category Filter & Unlimited Scroll -->
