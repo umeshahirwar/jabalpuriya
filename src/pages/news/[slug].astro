@@ -28,10 +28,11 @@ const formattedTime = pubDate.toLocaleTimeString('en-IN', {
   timeZone: 'Asia/Kolkata'
 });
 
-// Related stories: prioritize same category first for stronger topical clustering, then fill to 4
+// Next relevant article: prioritize same category first for seamless reading flow, then other categories
 const sameCategory = newsData.articles.filter((a) => a.id !== article.id && a.category === article.category);
 const otherCategory = newsData.articles.filter((a) => a.id !== article.id && a.category !== article.category);
-const relatedArticles = [...sameCategory, ...otherCategory].slice(0, 4);
+const nextRelevantArticle = sameCategory[0] || otherCategory[0] || newsData.articles[0];
+const relatedArticles = [...sameCategory.slice(1), ...otherCategory].slice(0, 4);
 
 // Canonical & Share URLs (always trailing slash to match GitHub Pages & prevent 301 redirects)
 const articleUrl = `https://jabalpuriya.com/news/${article.slug}/`;
@@ -99,10 +100,10 @@ const categoryContextMap: Record<string, { heading: string; text: string; tipLab
     tipHref: '/gwarighat-aarti/'
   },
   'Local News': {
-    heading: 'जबलपुरिया कम्युनिटी विज़न (Our Mission & Community Vision)',
-    text: 'Jabalpuriya.com is a dedicated digital news portal and community platform headquartered in Jabalpur, Madhya Pradesh. Founded with the mission to connect the residents and global diaspora of Sanskaardhani, we are building this platform from the ground up with the vision to connect people and make this your home away from home.',
-    tipLabel: '🏡 जबलपुरिया मुख्य पृष्ठ पर सभी सेवाएं देखें',
-    tipHref: '/'
+    heading: 'संस्कारधानी जबलपुर स्थानीय संदर्भ (Sanskaardhani Jabalpur)',
+    text: 'संस्कारधानी जबलपुर, मध्य प्रदेश की सांस्कृतिक राजधानी के रूप में अपनी जीवंत संस्कृति, मां नर्मदा के पावन तटों, शिक्षा, व्यापार और स्थानीय विकास के लिए जानी जाती है। जबलपुरिया पर शहर के सभी प्रमुख नागरिक व सामाजिक अपडेट उपलब्ध हैं।',
+    tipLabel: '📍 जबलपुर के सभी स्थानीय समाचार देखें',
+    tipHref: '/#news-grid'
   }
 };
 
@@ -381,19 +382,6 @@ const breadcrumbSchema = {
           </div>
         )}
 
-        <!-- Community Diaspora & Mission Box (Connecting People Globally) -->
-        <div class="p-6 rounded-3xl bg-gradient-to-br from-orange-500/10 via-amber-500/5 to-transparent border border-orange-500/20 space-y-3">
-          <div class="flex items-center gap-2 text-jabalpur-secondary font-black text-sm">
-            <span>🏡</span> जबलपुरिया कम्युनिटी मिशन (Our Vision & Mission)
-          </div>
-          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
-            <strong>Jabalpuriya.com</strong> is a dedicated digital news portal and community platform headquartered in Jabalpur, Madhya Pradesh. Founded with the mission to connect the residents and global diaspora of <em>Sanskaardhani</em>. We are building this platform from the ground up with the vision to connect people and make this your home away from home.
-          </p>
-          <p class="text-xs text-slate-600 dark:text-slate-400 font-hindi">
-            संस्कारधानी जबलपुर और देश-विदेश में बसे हर जबलपुरी साथी को अपनी जड़ों से जोड़ना ही हमारा मुख्य संकल्प है।
-          </p>
-        </div>
-
         <!-- Contextual Local Jabalpur Insight -->
         <div class="p-5 rounded-2xl bg-sky-50/70 dark:bg-sky-950/20 border border-sky-200/70 dark:border-sky-800/40 space-y-2.5">
           <h3 class="text-sm font-black text-slate-900 dark:text-white">
@@ -411,8 +399,66 @@ const breadcrumbSchema = {
           </a>
         </div>
 
-        <!-- Useful Jabalpur City Guides Strip -->
+        <!-- Next Relevant Story Suggestion Card (Continuous Reading Flow) -->
         <div class="pt-2">
+          <div class="p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-[#0a1a30] to-slate-950 text-white border border-slate-800 shadow-xl relative overflow-hidden group">
+            <div class="absolute -right-10 -top-10 w-36 h-36 bg-jabalpur-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
+              
+              <!-- Story Info -->
+              <div class="space-y-2 flex-1 min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-gradient-to-r from-jabalpur-secondary to-orange-600 text-white shadow-sm">
+                    <span>⏭️</span> अगली खबर (Up Next)
+                  </span>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-slate-200 border border-white/10">
+                    {nextRelevantArticle.category}
+                  </span>
+                  <span class="text-slate-400 text-xs hidden sm:inline">• {nextRelevantArticle.source}</span>
+                  <span class="text-slate-400 text-xs hidden sm:inline">• {nextRelevantArticle.readTime}</span>
+                </div>
+
+                <h3 class="text-base sm:text-lg font-black text-white group-hover:text-jabalpur-secondary transition-colors leading-snug line-clamp-2">
+                  <a href={`/news/${nextRelevantArticle.slug}/`} class="focus:outline-none hover:underline">
+                    {nextRelevantArticle.title}
+                  </a>
+                </h3>
+
+                <p class="text-xs sm:text-sm text-slate-300 line-clamp-2 leading-relaxed font-normal">
+                  {nextRelevantArticle.excerpt}
+                </p>
+              </div>
+
+              <!-- Action Button & Thumbnail -->
+              <div class="flex items-center gap-3.5 flex-shrink-0">
+                {nextRelevantArticle.imageUrl && (
+                  <a href={`/news/${nextRelevantArticle.slug}/`} class="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-slate-900 border border-white/10 flex-shrink-0 hidden sm:block">
+                    <img
+                      src={nextRelevantArticle.imageUrl}
+                      alt={nextRelevantArticle.title}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=400&q=80';"
+                    />
+                  </a>
+                )}
+
+                <a
+                  href={`/news/${nextRelevantArticle.slug}/`}
+                  class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-jabalpur-secondary hover:bg-orange-600 text-white font-black text-xs sm:text-sm shadow-lg hover:shadow-orange-500/25 transition-all hover:scale-105 whitespace-nowrap"
+                >
+                  <span>अगली खबर पढ़ें</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Useful Jabalpur City Guides Strip -->
+        <div class="pt-1">
           <p class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
             संस्कारधानी जबलपुर उपयोगी गाइड (City Essentials)
           </p>
