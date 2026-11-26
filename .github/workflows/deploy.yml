@@ -19,10 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout Repository
@@ -61,7 +58,7 @@ jobs:
       - name: 💾 Commit and Push Updated News Data
         if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && steps.git-check.outputs.has_changes == 'true'
         run: |
-          git commit -m "chore(news): auto-update Jabalpur news wire"
+          git commit -m "chore(news): auto-update Jabalpur news wire [skip ci]"
           git push origin main
 
       - name: 🛠️ Setup GitHub Pages
@@ -77,6 +74,13 @@ jobs:
         with:
           path: './dist'
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
