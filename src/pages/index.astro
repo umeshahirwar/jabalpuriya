@@ -12,16 +12,81 @@ import RashifalSection from '../components/RashifalSection.astro';
 import AdSenseBanner from '../components/AdSenseBanner.astro';
 import newsData from '../data/news.json';
 
-// Partition news data (prioritize Jabalpur local stories for the hero top banner)
-const localArticles = newsData.articles.filter(a => ['Local News', 'Smart City & Infra', 'Culture & Tourism'].includes(a.category));
-const featuredArticle = localArticles.find(a => a.isFeatured) || localArticles[0] || newsData.articles.find(a => a.isFeatured) || newsData.articles[0];
+// Prohibited & sensitive keywords that must NEVER appear as the top hero story or city highlights
+// (Ensures readers are greeted with inspiring, happy, constructive news first)
+const SENSITIVE_KEYWORDS = [
+  'मौत', 'मृत्यु', 'मरा', 'मृत', 'शव', 'लाश', 'निधन', 'दम तोड़ा', 'कफन', 'शोक', 'अंतिम संस्कार',
+  'हत्या', 'कत्ल', 'मर्डर', 'चाकूबाजी', 'गोलीबारी', 'गोलियां चलीं', 'वारदात', 'गला रेता',
+  'आत्महत्या', 'फांसी', 'जहर', 'खुदकुशी',
+  'अफेयर', 'प्रेम प्रसंग', 'अवैध संबंध', 'धोखा', 'दुष्कर्म', 'बलात्कार', 'छेड़छाड़', 'हनीट्रैप', 'ब्लैकमेल', 'दहेज', 'विवाद',
+  'हादसा', 'दुर्घटना', 'टक्कर', 'घायल', 'गंभीर', 'जख्मी', 'पलटी', 'आग लगी', 'झुलस', 'करंट',
+  'गिरफ्तार', 'रिश्वत', 'घूस', 'ट्रैप', 'सीबीआई', 'ईडी', 'जेल', 'हिरासत', 'एफआईआर', 'धोखाधड़ी', 'ठगी', 'सट्टा', 'जुआ',
+  'समस्या', 'परेशानी', 'बवाल', 'हंगामा', 'आंदोलन', 'घोटाला', 'फर्जी', 'लापरवाही', 'मुसीबत', 'ठप',
+  'death', 'dead', 'dies', 'died', 'fatal', 'killed', 'body found', 'corpse', 'deceased', 'drowned',
+  'murder', 'murdered', 'homicide', 'stabbed', 'beheaded', 'shootout', 'suicide', 'hanging',
+  'affair', 'extramarital', 'rape', 'molest', 'sexual assault', 'blackmail', 'scandal',
+  'accident', 'collision', 'crashed', 'overturned', 'injured', 'critical condition',
+  'arrest', 'arrested', 'bribe', 'police custody', 'jail', 'fraud', 'scam',
+  'disrupt', 'disrupts', 'mars', 'cancelled', 'protest', 'clash', 'strike', 'derailed'
+];
 
-// 4 Top City Highlights directly under the Hero banner on the left stage
-const topHighlights = localArticles.filter(a => a.id !== featuredArticle.id).slice(0, 4);
+// Positive, inspiring, cultural, sporting, and developmental keywords
+const POSITIVE_KEYWORDS = [
+  'महोत्सव', 'उत्सव', 'त्योहार', 'मेला', 'नर्मदा', 'आरती', 'महाआरती', 'संस्कृति', 'धरोहर', 'पर्यटन', 'भेड़ाघाट', 'धुआंधार', 'गौरव',
+  'विकास', 'सौगात', 'ट्रेन', 'रेलवे', 'स्टेशन', 'फ्लाईओवर', 'रिंग रोड', 'स्मार्ट सिटी', 'एयरपोर्ट', 'उद्घाटन', 'शिलान्यास', 'सुविधा', 'तैयारी',
+  'मैराथन', 'दौड़', 'खेल', 'विजेता', 'खिलाड़ी', 'मेडल', 'गोल्ड', 'चैंपियन', 'फिटनेस', 'योग', 'हर्ष',
+  'सम्मान', 'पुरस्कार', 'अवार्ड', 'सफलता', 'उपलब्धि', 'छात्र', 'विश्वविद्यालय', 'कॉलेज', 'रिसर्च', 'इनोवेशन',
+  'हरियाली', 'स्वच्छ', 'सुहावना', 'पार्क', 'उद्यान', 'खुशखबरी', 'अमृत', 'दर्जा',
+  'marathon', 'runners', 'festival', 'celebration', 'heritage', 'tourism', 'development', 'infrastructure',
+  'smart city', 'award', 'honor', 'success', 'achievement', 'train', 'airport', 'connectivity', 'green', 'clean', 'progress'
+];
+
+function isSensitiveStory(article: { title: string; excerpt?: string }) {
+  const text = `${article.title} ${article.excerpt || ''}`.toLowerCase();
+  return SENSITIVE_KEYWORDS.some(kw => text.includes(kw));
+}
+
+function getHappyScore(article: { title: string; excerpt?: string; category: string; publishedAt: string }) {
+  if (isSensitiveStory(article)) return -1000;
+  let score = 50;
+  const text = `${article.title} ${article.excerpt || ''}`.toLowerCase();
+  for (const kw of POSITIVE_KEYWORDS) {
+    if (text.includes(kw)) score += 25;
+  }
+  if (['Culture & Tourism', 'Smart City & Infra'].includes(article.category)) score += 20;
+  if (['Education & Tech', 'Environment & City'].includes(article.category)) score += 10;
+  
+  // Prefer fresh stories
+  const pubTime = new Date(article.publishedAt).getTime();
+  const hoursAgo = (Date.now() - pubTime) / (1000 * 60 * 60);
+  if (hoursAgo < 48) score += 40;
+  else if (hoursAgo < 96) score += 20;
+  else if (hoursAgo < 168) score += 10;
+  
+  return score;
+}
+
+// Partition local articles
+const localArticles = newsData.articles.filter(a => 
+  ['Local News', 'Smart City & Infra', 'Culture & Tourism', 'Education & Tech', 'Environment & City'].includes(a.category)
+);
+
+// Rank happy stories: strictly positive and uplifting
+const happyLocalStories = localArticles
+  .filter(a => !isSensitiveStory(a))
+  .map(a => ({ ...a, _score: getHappyScore(a) }))
+  .sort((a, b) => b._score - a._score);
+
+// Featured Hero Top Story: Guaranteed positive and inspiring
+const featuredArticle = happyLocalStories[0] || localArticles[0] || newsData.articles[0];
+
+// 4 Top City Highlights directly under the Hero banner: Clean positive local developments
+const topHighlights = happyLocalStories.filter(a => a.id !== featuredArticle.id).slice(0, 4);
 const topHighlightIds = new Set([featuredArticle.id, ...topHighlights.map(a => a.id)]);
 
-// Top 5 trending articles for the Yahoo-style right rail
-const trendingArticles = localArticles.filter(a => !topHighlightIds.has(a.id)).slice(0, 5);
+// Top 5 trending articles for the Yahoo-style right rail (sensitive topics filtered from top buzz)
+const trendingCandidates = localArticles.filter(a => !topHighlightIds.has(a.id) && !isSensitiveStory(a));
+const trendingArticles = (trendingCandidates.length >= 5 ? trendingCandidates : localArticles.filter(a => !topHighlightIds.has(a.id))).slice(0, 5);
 const trendingIds = new Set(trendingArticles.map(a => a.id));
 
 // Regular articles for the main news wire feed (no duplicate cards)
@@ -74,7 +139,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
           <span class="px-2.5 py-1 rounded-md bg-gradient-to-r from-red-600 to-red-500 text-white font-black tracking-wide uppercase shadow-sm">
             ⚡ Jabalpur Top Story
           </span>
-          <a href={`/news/${featuredArticle.slug}/`} class="text-slate-800 dark:text-slate-200 font-bold truncate max-w-xl hover:text-jabalpur-secondary transition-colors">
+          <a href={`/news/${featuredArticle.slug}/`} class="text-slate-800 dark:text-slate-200 font-bold line-clamp-2 sm:line-clamp-1 max-w-2xl hover:text-jabalpur-secondary transition-colors leading-snug">
             {featuredArticle.title}
           </a>
         </div>
@@ -119,7 +184,7 @@ const lastUpdatedFormatted = new Date(newsData.lastUpdated).toLocaleDateString('
                 </a>
               </h1>
 
-              <p class="text-slate-200 text-sm sm:text-base leading-relaxed line-clamp-3 font-medium">
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed line-clamp-4 font-medium">
                 {featuredArticle.excerpt}
               </p>
 

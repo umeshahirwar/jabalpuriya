@@ -124,12 +124,65 @@ const PROHIBITED_KEYWORDS = [
   // Spam & prohibited categories
   'gambling', 'casino', 'betting app', 'lottery result hack',
   'porn', 'adult game', 'free crypto giveaway', 'miracle cure',
-  // AdSense brand-safety: graphic violence, self-harm, sensitive crime
+  // AdSense brand-safety & family-friendly: graphic violence, death, crime, self-harm, scandalous topics
   'suicide', 'आत्महत्या', 'dead body', 'body found', 'शव मिला', 'लाश मिली',
   'murdered', 'serial killer', 'beheaded', 'rape', 'दुष्कर्म', 'बलात्कार',
   'molest', 'sexual assault', 'gangrape', 'acid attack', 'hanging', 'फांसी लगाई',
-  'communal riot', 'love jihad', 'pressured her to convert', 'forced conversion'
+  'communal riot', 'love jihad', 'pressured her to convert', 'forced conversion',
+  'अफेयर', 'प्रेम प्रसंग', 'अवैध संबंध', 'हनीट्रैप', 'सेक्स स्कैंडल', 'sex scandal', 'extramarital'
 ];
+
+// Sensitive keywords that disqualify a story from ever being featured as the Top Story
+const SENSITIVE_KEYWORDS = [
+  'मौत', 'मृत्यु', 'मरा', 'मृत', 'शव', 'लाश', 'निधन', 'दम तोड़ा', 'कफन', 'शोक', 'अंतिम संस्कार',
+  'हत्या', 'कत्ल', 'मर्डर', 'चाकूबाजी', 'गोलीबारी', 'गोलियां चलीं', 'वारदात', 'गला रेता',
+  'आत्महत्या', 'फांसी', 'जहर', 'खुदकुशी',
+  'अफेयर', 'प्रेम प्रसंग', 'अवैध संबंध', 'धोखा', 'दुष्कर्म', 'बलात्कार', 'छेड़छाड़', 'हनीट्रैप', 'ब्लैकमेल', 'दहेज', 'विवाद',
+  'हादसा', 'दुर्घटना', 'टक्कर', 'घायल', 'गंभीर', 'जख्मी', 'पलटी', 'आग लगी', 'झुलस', 'करंट',
+  'गिरफ्तार', 'रिश्वत', 'घूस', 'ट्रैप', 'सीबीआई', 'ईडी', 'जेल', 'हिरासत', 'एफआईआर', 'धोखाधड़ी', 'ठगी', 'सट्टा', 'जुआ',
+  'समस्या', 'परेशानी', 'बवाल', 'हंगामा', 'आंदोलन', 'घोटाला', 'फर्जी', 'लापरवाही', 'मुसीबत', 'ठप',
+  'death', 'dead', 'dies', 'died', 'fatal', 'killed', 'body found', 'corpse', 'deceased', 'drowned',
+  'murder', 'murdered', 'homicide', 'stabbed', 'beheaded', 'shootout', 'suicide', 'hanging',
+  'affair', 'extramarital', 'rape', 'molest', 'sexual assault', 'blackmail', 'scandal',
+  'accident', 'collision', 'crashed', 'overturned', 'injured', 'critical condition',
+  'arrest', 'arrested', 'bribe', 'police custody', 'jail', 'fraud', 'scam',
+  'disrupt', 'disrupts', 'mars', 'cancelled', 'protest', 'clash', 'strike', 'derailed'
+];
+
+// Positive & Uplifting Story Scoring Keywords
+const POSITIVE_KEYWORDS = [
+  'महोत्सव', 'उत्सव', 'त्योहार', 'मेला', 'नर्मदा', 'आरती', 'महाआरती', 'संस्कृति', 'धरोहर', 'पर्यटन', 'भेड़ाघाट', 'धुआंधार', 'गौरव',
+  'विकास', 'सौगात', 'ट्रेन', 'रेलवे', 'स्टेशन', 'फ्लाईओवर', 'रिंग रोड', 'स्मार्ट सिटी', 'एयरपोर्ट', 'उद्घाटन', 'शिलान्यास', 'सुविधा', 'तैयारी',
+  'मैराथन', 'दौड़', 'खेल', 'विजेता', 'खिलाड़ी', 'मेडल', 'गोल्ड', 'चैंपियन', 'फिटनेस', 'योग', 'हर्ष',
+  'सम्मान', 'पुरस्कार', 'अवार्ड', 'सफलता', 'उपलब्धि', 'छात्र', 'विश्वविद्यालय', 'कॉलेज', 'रिसर्च', 'इनोवेशन',
+  'हरियाली', 'स्वच्छ', 'सुहावना', 'पार्क', 'उद्यान', 'खुशखबरी', 'अमृत', 'दर्जा',
+  'marathon', 'runners', 'festival', 'celebration', 'heritage', 'tourism', 'development', 'infrastructure',
+  'smart city', 'award', 'honor', 'success', 'achievement', 'train', 'airport', 'connectivity', 'green', 'clean', 'progress'
+];
+
+function isSensitiveStory(article) {
+  const text = `${article.title} ${article.excerpt || ''}`.toLowerCase();
+  return SENSITIVE_KEYWORDS.some(kw => text.includes(kw));
+}
+
+function calculateHappyScore(article) {
+  if (isSensitiveStory(article)) return -1000;
+  let score = 50;
+  const text = `${article.title} ${article.excerpt || ''}`.toLowerCase();
+  for (const kw of POSITIVE_KEYWORDS) {
+    if (text.includes(kw)) score += 25;
+  }
+  if (['Culture & Tourism', 'Smart City & Infra'].includes(article.category)) score += 20;
+  if (['Education & Tech', 'Environment & City'].includes(article.category)) score += 10;
+  
+  const pubTime = new Date(article.publishedAt).getTime();
+  const hoursAgo = (Date.now() - pubTime) / (1000 * 60 * 60);
+  if (hoursAgo < 48) score += 40;
+  else if (hoursAgo < 96) score += 20;
+  else if (hoursAgo < 168) score += 10;
+  
+  return score;
+}
 
 /**
  * Proper HTML Entity Decoder & Tag Stripper
@@ -137,6 +190,8 @@ const PROHIBITED_KEYWORDS = [
 function cleanText(text) {
   if (!text) return '';
   let str = String(text)
+    .replace(/<!\[CDATA\[/gi, '')
+    .replace(/\]\]>/gi, '')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
@@ -154,6 +209,10 @@ function cleanText(text) {
 
   // Strip all HTML tags
   str = str.replace(/<[^>]+>/g, '');
+
+  // Strip dangling ellipses or broken dashes at end of title
+  str = str.replace(/\s*(\.\.\.|…|\.\.)\s*$/, '').trim();
+
   return str.replace(/\s+/g, ' ').trim();
 }
 
@@ -186,7 +245,16 @@ function formatCleanExcerpt(rawDesc, title, source, category) {
     cleaned += '.';
   }
 
-  return cleaned.slice(0, 300);
+  // Smart word-boundary trimming so sentences are never cut awkwardly
+  if (cleaned.length > 300) {
+    const boundary = cleaned.lastIndexOf(' ', 300);
+    cleaned = (boundary > 180 ? cleaned.slice(0, boundary) : cleaned.slice(0, 300)).trim();
+    if (!/[.!?।]$/.test(cleaned)) {
+      cleaned += '...';
+    }
+  }
+
+  return cleaned;
 }
 
 function normalizeTitleForComparison(title) {
@@ -506,9 +574,20 @@ async function fetchAndNormalizeNews() {
   // Sort descending by publication date
   combinedAll.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
+  // Smart Happy Story Selector for Featured Top Story (Never sensitive or sad)
+  const localCandidates = combinedAll.filter(a => 
+    ['Local News', 'Smart City & Infra', 'Culture & Tourism', 'Education & Tech', 'Environment & City'].includes(a.category)
+  );
+  const happyRanked = localCandidates
+    .filter(a => !isSensitiveStory(a))
+    .map(a => ({ article: a, score: calculateHappyScore(a) }))
+    .sort((a, b) => b.score - a.score);
+
+  const topHappyStory = happyRanked[0]?.article || localCandidates[0] || combinedAll[0];
+
   if (combinedAll.length > 0) {
-    combinedAll.forEach((art, idx) => {
-      art.isFeatured = idx === 0;
+    combinedAll.forEach((art) => {
+      art.isFeatured = (topHappyStory && art.id === topHappyStory.id);
     });
   }
 

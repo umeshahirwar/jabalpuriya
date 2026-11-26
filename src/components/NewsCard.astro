@@ -110,7 +110,7 @@ const whatsappUrl = `https://api.whatsapp.com/send?text=${whatsappShareText}`;
       <div class="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 gap-1.5 flex-wrap">
         <div class="flex items-center space-x-1.5">
           <!-- Verified Source Pill -->
-          <span class="inline-flex items-center font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800/90 px-2 py-0.5 rounded-md border border-slate-200/60 dark:border-slate-700/60 truncate max-w-[130px]">
+          <span class="inline-flex items-center font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800/90 px-2 py-0.5 rounded-md border border-slate-200/60 dark:border-slate-700/60 truncate max-w-[180px]">
             <svg class="w-2.5 h-2.5 text-emerald-500 mr-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
@@ -122,15 +122,15 @@ const whatsappUrl = `https://api.whatsapp.com/send?text=${whatsappShareText}`;
         <span class="text-amber-600 dark:text-amber-400 text-[10px] font-bold bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.5 rounded">{readTime}</span>
       </div>
 
-      <!-- Article Title -->
-      <h3 class={`font-black tracking-tight text-slate-900 dark:text-white group-hover:text-jabalpur-secondary transition-colors leading-snug ${isFeatured ? 'text-xl sm:text-2xl' : 'text-sm sm:text-base line-clamp-2'}`}>
+      <!-- Article Title: Increased line-clamp to prevent truncation -->
+      <h3 class={`font-black tracking-tight text-slate-900 dark:text-white group-hover:text-jabalpur-secondary transition-colors leading-snug ${isFeatured ? 'text-xl sm:text-2xl' : 'text-sm sm:text-base line-clamp-3 sm:line-clamp-4'}`}>
         <a href={articleHref} class="focus:outline-none hover:underline">
           {title}
         </a>
       </h3>
 
-      <!-- Excerpt -->
-      <p class={`text-slate-600 dark:text-slate-300 text-xs leading-relaxed ${isFeatured ? 'line-clamp-3' : 'line-clamp-2'}`}>
+      <!-- Excerpt: Generous 3-4 lines for complete story context -->
+      <p class={`text-slate-600 dark:text-slate-300 text-xs sm:text-[13px] leading-relaxed ${isFeatured ? 'line-clamp-4' : 'line-clamp-3 sm:line-clamp-4'}`}>
         {excerpt}
       </p>
     </div>
