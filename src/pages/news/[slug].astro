@@ -64,7 +64,7 @@ const categoryContextMap: Record<string, { heading: string; text: string; tipLab
   },
   'हिंदी बिजनेस': {
     heading: 'ताज़ा हिंदी व्यापार व वित्तीय समाचार (Hindi Business Desk)',
-    text: 'भारतीय शेयर बाजार, कमोडिटी, सराफा (सोना-चांदी) और व्यापार जगत की महत्वपूर्ण खबरें हिंदी में। जबलपुर और महाकौशल संभाग के व्यापारियों और नागरिकों के लिए सटीक, उपयोगी और सत्यापित वित्तीय जानकारी।',
+    text: 'भारतीय शेयर बाजार, कमोडिटी, सराफा (सोना-चांदी) और व्यापार जगत की महत्वपूर्ण खबरें हिंदी में। जबलपुर और महाकौशल संभाग के व्यापारियों और नागरिकों के लिए उपयोगी वित्तीय जानकारी।',
     tipLabel: '🌾 जबलपुर कृषि उपज मंडी व सराफा के दैनिक भाव देखें',
     tipHref: '/mandi-bhav/'
   },
@@ -99,14 +99,89 @@ const categoryContextMap: Record<string, { heading: string; text: string; tipLab
     tipHref: '/gwarighat-aarti/'
   },
   'Local News': {
-    heading: 'संस्कारधानी जबलपुर स्थानीय समाचार संदर्भ (Local Context)',
-    text: 'मध्य प्रदेश उच्च न्यायालय (MP High Court) की मुख्य पीठ और महाकौशल संभाग के मुख्यालय के रूप में जबलपुर में प्रशासनिक, सामाजिक और नागरिक गतिविधियां पूरे क्षेत्र को प्रभावित करती हैं। जबलपुरिया न्यूज़ डेस्क नागरिकों तक सत्यापित व उपयोगी स्थानीय जानकारी पहुंचाता है।',
-    tipLabel: '📞 जबलपुर शहर की आवश्यक हेल्पलाइन डायरेक्टरी देखें',
-    tipHref: '/helplines/'
+    heading: 'जबलपुरिया कम्युनिटी विज़न (Our Mission & Community Vision)',
+    text: 'Jabalpuriya.com is a dedicated digital news portal and community platform headquartered in Jabalpur, Madhya Pradesh. Founded with the mission to connect the residents and global diaspora of Sanskaardhani, we are building this platform from the ground up with the vision to connect people and make this your home away from home.',
+    tipLabel: '🏡 जबलपुरिया मुख्य पृष्ठ पर सभी सेवाएं देखें',
+    tipHref: '/'
   }
 };
 
 const localContext = categoryContextMap[article.category] || categoryContextMap['Local News'];
+
+// Build comprehensive structured story narrative and summary
+function buildStoryNarrative(art: typeof article) {
+  const isHindiText = /[\u0900-\u097F]/.test(art.title);
+  const cleanTitle = art.title.replace(/\s*-\s*[^-]+$/, '').trim();
+  const sourceName = art.source || 'Jabalpur Wire';
+
+  if (isHindiText) {
+    return {
+      overview: art.excerpt && art.excerpt.length > 50 && !art.excerpt.includes(cleanTitle)
+        ? art.excerpt
+        : `${cleanTitle} - संस्कारधानी जबलपुर और मध्य प्रदेश से जुड़ी इस महत्वपूर्ण गतिविधि पर मुख्य विवरण सामने आया है।`,
+      sections: [
+        {
+          title: 'मुख्य घटनाक्रम व समाचार विवरण (Story Overview)',
+          content: `${sourceName} की रिपोर्ट के अनुसार, "${cleanTitle}" को लेकर ताज़ा अपडेट सामने आया है। इस विषय पर क्षेत्र के नागरिकों, संबंधित विभागों और स्थानीय समुदाय में चर्चा बनी हुई है। मामले से जुड़े सभी पहलुओं पर नजर रखी जा रही है ताकि जनसामान्य को स्पष्ट जानकारी मिल सके।`
+        },
+        {
+          title: 'पृष्ठभूमि व स्थानीय प्रभाव (Context & Significance)',
+          content: art.category === 'Smart City & Infra'
+            ? `जबलपुर शहर में अधोसंरचना, रेलवे, सड़क और स्मार्ट सिटी परियोजनाओं का सीधा असर आम नागरिकों के दैनिक जीवन पर पड़ता है। इस कार्य से महाकौशल क्षेत्र में सुगम आवागमन, समय की बचत और नागरिक सुविधाओं में सुधार की उम्मीद है।`
+            : art.category === 'Culture & Tourism'
+            ? `संस्कारधानी जबलपुर अपनी समृद्ध सांस्कृतिक विरासत, मां नर्मदा के पावन तटों और ऐतिहासिक धरोहरों के लिए विख्यात है। इस प्रकार के सामाजिक व सांस्कृतिक आयोजन शहर की सामूहिक पहचान को सशक्त बनाते हैं।`
+            : art.category === 'Stock Market' || art.category === 'हिंदी बिजनेस' || art.category === 'India Business'
+            ? `भारतीय वित्तीय बाजारों और व्यापारिक गतिविधियों में होने वाले उतार-चढ़ाव का सीधा संबंध निवेशकों की धारणा और आर्थिक संकेतकों से होता है। विश्लेषक बाज़ार के रुझानों और कॉरपोरेट घोषणाओं पर नजर बनाए हुए हैं।`
+            : `जबलपुर और आसपास के अंचल में हो रहे इन सामाजिक व सामुदायिक घटनाक्रमों का सीधा संबंध नागरिकों के दैनिक जनजीवन से है। क्षेत्र में व्यवस्था को सुचारू बनाए रखने और विकास को गति देने के प्रयास निरंतर जारी हैं।`
+        },
+        {
+          title: 'नागरिकों व पाठकों के लिए उपयोगी जानकारी (What You Need to Know)',
+          content: `इस समाचार से जुड़ी विस्तृत रिपोर्टिंग और आगे के घटनाक्रम के लिए मूल प्रकाशक (${sourceName}) की कवरेज का संदर्भ लें। जबलपुरिया कम्युनिटी इस विषय पर स्थानीय नागरिकों और देश-विदेश में बसे जबलपुरी साथियों के विचारों का स्वागत करती है।`
+        }
+      ],
+      bullets: [
+        `मुख्य विषय: ${cleanTitle}`,
+        `संबंधित क्षेत्र: ${['Stock Market', 'India Business', 'हिंदी बिजनेस'].includes(art.category) ? 'भारतीय वित्तीय बाजार' : 'जबलपुर (संस्कारधानी), मध्य प्रदेश'}`,
+        `रिपोर्टिंग वायर: ${sourceName}`,
+        `श्रेणी: ${art.category}`
+      ]
+    };
+  } else {
+    return {
+      overview: art.excerpt && art.excerpt.length > 50 && !art.excerpt.includes(cleanTitle)
+        ? art.excerpt
+        : `${cleanTitle} - Here is a comprehensive overview and key takeaways from the latest reporting.`,
+      sections: [
+        {
+          title: 'Development Overview & Core Details',
+          content: `According to reporting by ${sourceName}, "${cleanTitle}" represents a notable recent update. The development has drawn attention from local residents, industry observers, and civic stakeholders across the region.`
+        },
+        {
+          title: 'Context, Regional Impact & Key Drivers',
+          content: art.category === 'Smart City & Infra'
+            ? `Infrastructure, railway modernizations, and civic expansion projects across Jabalpur play a pivotal role in strengthening regional mobility and economic convenience for the Mahakoshal division.`
+            : art.category === 'Culture & Tourism'
+            ? `Cultural festivals, heritage conservation, and tourism along the sacred Narmada riverbanks continue to define the vibrant spirit and community bond of Sanskaardhani Jabalpur.`
+            : art.category === 'Stock Market' || art.category === 'India Business'
+            ? `In the broader Indian financial ecosystem, corporate performance, capital inflows, and regulatory frameworks drive investor sentiment and market liquidity across key benchmark indices.`
+            : `Civic, educational, and community developments in Jabalpur contribute directly to local growth, public awareness, and civic participation across the district.`
+        },
+        {
+          title: 'Citizen & Community Takeaway',
+          content: `Readers and community members are encouraged to review the official wire report on ${sourceName} for further granular data, official communiqués, and ongoing developments.`
+        }
+      ],
+      bullets: [
+        `Core Focus: ${cleanTitle}`,
+        `Location: ${['Stock Market', 'India Business', 'हिंदी बिजनेस'].includes(art.category) ? 'Indian Financial Markets' : 'Jabalpur, Madhya Pradesh'}`,
+        `Reporting Wire: ${sourceName}`,
+        `Topic Category: ${art.category}`
+      ]
+    };
+  }
+}
+
+const narrative = buildStoryNarrative(article);
 
 // BreadcrumbList Schema for Google Search Rich Hierarchy
 const breadcrumbSchema = {
@@ -211,7 +286,7 @@ const breadcrumbSchema = {
           <p class="text-sm font-black text-slate-900 dark:text-white flex items-center justify-center sm:justify-start gap-1.5">
             <span class="text-emerald-600">💬</span> यह खबर दोस्तों व परिजनों से साझा करें
           </p>
-          <p class="text-xs text-slate-600 dark:text-slate-400">Share this verified story with Jabalpur WhatsApp groups</p>
+          <p class="text-xs text-slate-600 dark:text-slate-400">Share this update with fellow Jabalpurias & family groups</p>
         </div>
 
         <div class="flex items-center gap-2.5 w-full sm:w-auto justify-center">
@@ -250,38 +325,73 @@ const breadcrumbSchema = {
         </div>
       </div>
 
-      <!-- Main Article Content & Takeaways -->
-      <div class="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg space-y-5">
+      <!-- Main Article Content & Structured Summary -->
+      <div class="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg space-y-6">
         
-        <!-- Key Highlights Box -->
-        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 space-y-2">
-          <h2 class="text-sm font-extrabold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
-            <span class="text-jabalpur-secondary">⚡</span> मुख्य बिंदु (Key Takeaways)
+        <!-- Story Overview Lead Paragraph -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-jabalpur-secondary">
+            <span>⚡</span> त्वरित समाचार सारांश (Executive Summary)
+          </div>
+          <p class="font-medium text-slate-900 dark:text-white text-base sm:text-lg leading-relaxed">
+            {narrative.overview}
+          </p>
+        </div>
+
+        <!-- Key Takeaways Bullets -->
+        <div class="p-5 rounded-2xl bg-white dark:bg-[#071324] border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-3">
+          <h2 class="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-2">
+            <span class="text-jabalpur-secondary">📌</span> मुख्य बातें (Key Takeaways)
           </h2>
-          <ul class="list-disc pl-5 text-sm space-y-1.5 text-slate-600 dark:text-slate-300">
-            <li><strong>कवरेज क्षेत्र (Coverage):</strong> {isBusinessCategory ? 'राष्ट्रीय व भारतीय वित्तीय बाजार (Indian Financial Markets)' : 'जबलपुर (संस्कारधानी), मध्य प्रदेश'}</li>
-            <li><strong>श्रेणी (Category):</strong> {article.category}</li>
-            <li><strong>सूचना प्रदाता (Wire Source):</strong> {article.source}</li>
-            <li><strong>तिथि व समय:</strong> {formattedDate} ({formattedTime} IST)</li>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 list-none pl-0">
+            {narrative.bullets.map((bullet) => (
+              <li class="flex items-start gap-2 bg-slate-50 dark:bg-slate-900/50 p-2.5 rounded-xl border border-slate-200/60 dark:border-slate-800">
+                <span class="text-jabalpur-secondary mt-0.5">•</span>
+                <span>{bullet}</span>
+              </li>
+            ))}
           </ul>
         </div>
 
-        <!-- Excerpt Paragraph & Financial Context -->
-        <div class="space-y-4">
-          <p class="font-medium text-slate-800 dark:text-slate-100 text-lg leading-relaxed">
-            {article.excerpt}
-          </p>
+        <!-- Structured Narrative Sections -->
+        <div class="space-y-5 pt-2">
+          {narrative.sections.map((section, idx) => (
+            <section class="space-y-2">
+              <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-jabalpur-primary/10 dark:bg-jabalpur-primary/20 text-jabalpur-secondary text-xs flex items-center justify-center font-bold">
+                  {idx + 1}
+                </span>
+                <span>{section.title}</span>
+              </h3>
+              <p class="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed font-normal">
+                {section.content}
+              </p>
+            </section>
+          ))}
+        </div>
 
-          {isBusinessCategory && (
-            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1.5">
-              <p class="font-bold flex items-center gap-1.5">
-                <span>⚠️</span> वित्तीय व निवेश अस्वीकरण (Investor Notice):
-              </p>
-              <p class="leading-relaxed">
-                शेयर बाजार, आईपीओ (IPO) और वित्तीय संपत्तियों में निवेश बाजार जोखिमों के अधीन है। यह रिपोर्ट केवल सामान्य सूचनात्मक व शैक्षणिक उद्देश्य के लिए है। किसी भी वित्तीय निर्णय या निवेश से पहले SEBI पंजीकृत निवेश सलाहकार से परामर्श अवश्य लें।
-              </p>
-            </div>
-          )}
+        {isBusinessCategory && (
+          <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1.5">
+            <p class="font-bold flex items-center gap-1.5">
+              <span>⚠️</span> वित्तीय व निवेश अस्वीकरण (Investor Notice):
+            </p>
+            <p class="leading-relaxed">
+              शेयर बाजार, आईपीओ (IPO) और वित्तीय संपत्तियों में निवेश बाजार जोखिमों के अधीन है। यह रिपोर्ट केवल सामान्य सूचनात्मक उद्देश्य के लिए है। किसी भी वित्तीय निर्णय से पहले SEBI पंजीकृत वित्तीय सलाहकार से परामर्श अवश्य लें।
+            </p>
+          </div>
+        )}
+
+        <!-- Community Diaspora & Mission Box (Connecting People Globally) -->
+        <div class="p-6 rounded-3xl bg-gradient-to-br from-orange-500/10 via-amber-500/5 to-transparent border border-orange-500/20 space-y-3">
+          <div class="flex items-center gap-2 text-jabalpur-secondary font-black text-sm">
+            <span>🏡</span> जबलपुरिया कम्युनिटी मिशन (Our Vision & Mission)
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
+            <strong>Jabalpuriya.com</strong> is a dedicated digital news portal and community platform headquartered in Jabalpur, Madhya Pradesh. Founded with the mission to connect the residents and global diaspora of <em>Sanskaardhani</em>. We are building this platform from the ground up with the vision to connect people and make this your home away from home.
+          </p>
+          <p class="text-xs text-slate-600 dark:text-slate-400 font-hindi">
+            संस्कारधानी जबलपुर और देश-विदेश में बसे हर जबलपुरी साथी को अपनी जड़ों से जोड़ना ही हमारा मुख्य संकल्प है।
+          </p>
         </div>
 
         <!-- Contextual Local Jabalpur Insight -->
@@ -324,10 +434,10 @@ const breadcrumbSchema = {
       <div class="p-5 rounded-2xl bg-slate-100/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="space-y-1 text-center sm:text-left">
           <span class="text-xs uppercase font-extrabold text-slate-500 tracking-wider">
-            स्रोत प्रमाणीकरण व विस्तृत कवरेज (Official Source Attribution)
+            मूल समाचार स्रोत (Source Attribution)
           </span>
           <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-            यह समाचार मूल रूप से <strong>{article.source}</strong> द्वारा रिपोर्ट किया गया है। संपादकीय शुचिता, निष्पक्षता और विस्तृत विवरण के लिए आप मूल प्रकाशक की वेबसाइट पर भी जा सकते हैं।
+            यह समाचार <strong>{article.source}</strong> द्वारा प्रकाशित रिपोर्ट पर आधारित है। विस्तृत विवरण के लिए आप मूल प्रकाशक की वेबसाइट पर भी जा सकते हैं।
           </p>
         </div>
 
